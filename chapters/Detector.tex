@@ -1,0 +1,111 @@
+\chapter{Detector}
+
+\section{Introduction}
+
+The CMS detector is one of the four LHC experiments. It was designed to explore 
+O(TeV) energy proton-proton collisions for indications of physics beyond the 
+Standard Model. \\
+
+The CMS detector is 21.6m long and 14.6m in diameter and has a total weight of
+12 500 tonnes. It is located at Point 5 on the LHC ring near Cessy in France. In
+the following sections each component of the detector is described starting from
+the innermost and going to the outermost. \\
+
+The trigger is also described.
+
+\section{Pixel Detector}
+
+The pixel detector consists of 3 barrel layers with 2 endcap disks on each side
+(Figure \ref{fig:Pixel}). The barrel layers are at mean radii of $4.4\cm$,
+$7.3\cm$ and $10.2\cm$ and have a length of $53\cm$. The endcap disks are placed 
+either side at $|z| = 34.5\cm$ and $46.5\cm$. \\
+
+\begin{figure}
+\label{fig:Pixel}
+\end{figure}
+
+The main goal of the pixel detector is to give good primary vertex resolution.
+The pixel size is $100\times150\um$. The endcap disks are arranged in a 
+turbine-like geometry with blades angled at $20^{\circ}$ to take advantage of 
+the Lorentz effect. \\
+
+The spatial resolution is about $10\um$ for the (r,$\phi$) measurement and 
+about $20\um$ for the z measurement.
+
+\section{Silicon Strip Tracker}
+
+\section{Electromagnetic Calorimeter}
+
+The Electromagnetic Calorimeter (ECAL) is designed to measure the energy of the
+electromagnetic particles: photons and electrons. It must provide good
+containment of the electromagnetic shower and good energy resolution. \\
+
+The ECAL is a homogeneous calorimeter made of lead tungstate ($PbWO_{4}$)
+crystals. These crystals have a short radiation length ($0.89\cm$) and a short 
+Moliere radius ($2.2\cm$). The length of the crystals is $23\cm$ and  
+
+The energy resolution, $\sigma$, has been parameterised as a function of energy 
+in Equation \ref{eq:ECAL_Resolution}. 
+
+\begin{equation}
+\left( \frac{\sigma}{E} \right)^{2} = \left( \frac{a}{\sqrt{E}} \right)^{2} +
+\left( \frac{b}{E} \right)^{2} + c
+\label{eq:ECAL_Resolution}
+\end{equation}
+
+The parameters a, b and c represent the stochastic term, the noise term and the
+constant term respectively. \\
+
+The stochastic term, $\frac{a}{\sqrt{E}}$, is related to the uncertainty in the 
+number of photons detected. The number of photons for a given energy 
+electromagnetic shower follows a Poisson distribution. So if N photons are 
+detected, the uncertainty is $\sqrt{N}$. And the energy is proportional to the 
+number of photons, hence the $\sqrt{E}$ dependence of this term. \\
+
+The noise term, $\frac{b}{E}$, is 
+
+\section{Hadronic Calorimeter}
+
+The Hadronic Calorimeter (HCAL) is designed to measure the energy of hadronic
+particles. The HCAL must provide good containment and good energy resolution. 
+Non-Gaussian tails in the missing energy measurement must be minimised. \\
+
+The HCAL is a sampling calorimeter with brass absorbers and plastic scintilator
+tiles. Brass was chosen because it is has a short interaction length allowing
+good containment with the limited amount space inside the magnet. Also it is
+easy to manufacture and non-magnetic. The plastic scintillator technology
+consists of plastic tiles with embedded fibres. The photodectors are 
+multi-channel hybrid photodiodes (HPDs). \\
+
+The hadron barrel (HB) covers the region $-1.4 < \eta < 1.4$ and contains 2304
+towers with a segmentation of $\Delta\eta\times\Delta\phi = 0.087\times0.087$.
+The hadron outer (HO) contains extra scintillators to improve the missing energy
+resolution of the calorimeter. It lies outside the HB and covers the region 
+$-1.26 < \eta < 1.26$. The hadron endcap (HE) contains 14 towers and covers the
+range $1.3 < |\eta| < 3.0$. The region of $\eta$ between 3 and 5 is provided by
+the hadron forward (HF) which consists of steel absorbers and quartz fibre
+scintillators. \\
+
+The jet energy resolution and the missing energy resolution are the key
+indicators of performance for the HCAL. In QCD dijet events the missing energy
+resolution is given by Equation \ref{eq:MET_Resolution}.
+
+\begin{equation}
+\sigma\left( MET \right) \sim \sqrt{\left( \sum{\ET} \right)}
+\label{eq:MET_Resolution}
+\end{equation}
+
+HCAL noise comes in two types:
+
+\begin{itemize}
+\item HPD noise
+\item RBX noise
+\end{itemize}
+
+\section{Magnet}
+
+
+
+\section{Muon Chambers}
+
+\section{Trigger}

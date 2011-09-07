@@ -1,0 +1,44 @@
+\documentclass[a4paper]{report}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amssymb,amsmath}
+
+% The path(s) to the graphics files:
+\graphicspath{{images/}{generated/}}
+
+% Pre-defined commands to make the document neater.
+\input{aux/commands}
+
+% No indent whole document
+\setlength{\parindent}{0in}
+
+% Double space whole document
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\title{A Search for Supersymmetry in Photon and Jets Events from Proton-Proton
+Collisions at $\sqrt{s} = 7 \TeV$ with the CMS Detector}
+\author{Robin J.\ Nandi}
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+\include{chapters/Introduction}
+
+\include{chapters/Theory}
+
+\include{chapters/Detector}
+
+\include{chapters/SUSY_Search}
+
+\include{chapters/Statistics}
+
+\include{chapters/Results}
+
+\include{chapters/Conclusions}
+
+\end{document}

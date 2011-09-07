@@ -1,0 +1,134 @@
+\chapter{SUSY Search}
+
+\section{Introduction}
+
+Motivated by SUSY the search is based on missing energy. SUSY events have decay
+chains ending in the Lightest Supersymmetric Particle (LSP) which goes
+undetected and hence shows up as missing energy. In contrast QCD events, which
+are the dominant background, have only fake missing energy due to detector
+imperfections (e.g. dead cells). \\
+
+$\HT$, the scaler sum of the transverse momentum of all the objects in the 
+event, is used as a measure of the energy scale of the event.
+
+\section{Datasets and Trigger}
+
+The data recorded by CMS is split up into Primary Datasets based on the trigger
+requirements. As the luminosity has increased more stringent trigger
+requirements have been necessary to keep the data rate manageable.
+
+/PhotonHad/
+
+The run range 171106 
+
+Monte Carlo samples using Pythia 6 with Tune Z2 based on CTECQ6 pdfs (Rick
+Field). Pile up is simulated. GEANT is used for the detector simulation.
+
+Pile up and nVertices reweighting.
+
+\section{Event Selection}
+
+The event selection criteria are listed below. 
+
+\begin{itemize}
+\item $\HT > 400 \GeV$
+\item $\geq 2$ jets
+\item $\geq 1$ photon
+\end{itemize}
+
+There is a $\HT$ cut because strongly produced SUSY events have high $\HT$. The 
+value of this cut is motivated by the desire for the trigger to be fully 
+efficiency for the event selection. \\
+
+The $\geq 2$ jets cut is well motivated from the SUSY perspective: strongly
+produced SUSY events start with two squarks/gluinos each of which decay to a 
+quark/gluon (which forms a jet in the detector) and the next SUSY particle in 
+the mass hierarchy. Parameter points with high gluino mass tend to have only 2 
+jets while those with high squark mass tend to have at least 4 jets. \\
+
+In strongly produced Gauge Mediated SUSY Breaking the Next-to-Lightest SUSY 
+Particle (NLSP) is the neutralino ($\tilde{\chi}^{0}$) which decays to a photon and 
+a gravitino. So at least two photons are expected in each SUSY event. However, 
+due to the high activity in these events, photons often fall inside the cone of
+a jet and so only one photon is reconstructed. Hence the $\geq 1$ photon cut. \\
+
+\subsection{Photon Selection}
+
+Fake photons from QCD come from jets and so tend to have plenty of activity in
+the surrounding detectors. In contrast, prompt photons tend to be isolated with
+little activity in the surrounding detectors. Isolation is one of the variables
+used to select photons because of its background rejection power. There are
+three independent isolation measures based on the ECAL, the HCAL and the
+tracker. \\
+
+Fake photons from jets also tend to have a hadronic component as well as an
+electromagnetic component while prompt photons are purely electromagnetic. \\ 
+
+Photons are detected by an electromagnetic shower in the ECAL. Prompt photons
+can be distinguished from fakes by the shower shape. \\
+
+Photons are distinguished from electrons by the tracker. Electrons, being
+charged particles, ionise in the silicon tracker and so leave a track. Photons
+do not. \\ 
+
+Based on these considerations, there are six variables used for the photon 
+selection:
+
+\begin{itemize}
+\item ECAL isolation
+\item HCAL isolation
+\item Track isolation
+\item H/E
+\item Shower Shape ($\sigma_{i\eta i\eta}$)
+\item Pixel Seed
+\end{itemize}
+
+ECAL isolation is defined as the sum of the energy deposited in the crystals of 
+the ECAL in a $\Delta R = 0.4$ circle around the photon. A smaller circle of 
+$\Delta R = 0.1$ around the photon is excluded from the isolation sum to avoid 
+counting the photon itself in the isolation. Also a strip along $\phi$ of width 
+$\Delta \eta = 0.04$ is excluded from the isolation sum to avoid including 
+bremstrahlung from electrons. \\
+
+HCAL isolation is defined as the sum of the energy deposited in the HCAL towers
+in a $\Delta R = 0.4$ circle around the photon position. A smaller circle of 
+$\Delta R = 0.1$ is excluded from the isolation sum to avoid counting 
+rear-leakage from high energy photons in the isolation. \\ 
+
+Track isolation is defined as the sum of the $p_{T}$ of tracks inside a cone of
+$\Delta R = 0.4$ around the photon and toward the primary vertex. A hollow cone 
+is used $\Delta R < 0.1$ is excluded from the isolation sum. \\
+
+H/E is the ratio of the hadronic energy deposited in the HCAL behind the photon
+to the photon energy. Jets faking photons are likely to have a significant 
+amount of hadronic energy while for prompt photons the amount of hadronic energy
+is likely to be small. \\
+
+The width of the shower in the $\eta$ direction is used as a measure of the
+shower shape. The $\eta$ direction rather than the $\phi$ direction is used 
+because bremstrahlung can cause electromagnetic showers to be spread out in 
+$\phi$. $\sigma_{\eta\eta}$ is the r.m.s width of the shower in the $\eta$ 
+direction. The variable used here is $\sigma_{i\eta i\eta}$, which calculates 
+the width in terms of number of crystals rather than $\eta$, is better because 
+it does not count the gaps between crystals (where there is no showering) in the
+width. \\
+
+A pixel seed is a track stub in the pixel detector that is the first step in
+track reconstruction. The photon selection requires that there is no pixel seed
+corresponding to the electromagnetic shower.
+
+\subsection{Jet Selection}
+
+\section{Backgrounds}
+
+\section{QCD Background Estimation}
+
+\section{Electroweak Background Estimation}
+
+\section{Photon Efficiency}
+
+\section{Electron/Photon Fake Rate}
+
+\section{GGM SUSY Scan}
+
+\section{Systematic Uncertainties}
