@@ -3,4 +3,4 @@ My Thesis
 To build: scons
 To clean: scons -c
 
-Written in Latex. Uses SCONS to build (http://www.scons.org/).
+Written in LATEX. Uses SCons to build (http://www.scons.org/).
