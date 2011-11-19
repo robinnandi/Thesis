@@ -2,38 +2,216 @@
 
 \section{Introduction}
 
-The Standard Model of particle physics has been proven to be remarkably 
-successful at describing nature. W/Z discovery, LEP data Z width, \\
+In this chapter a brief historical background of the Standard Model is given
+with some of the results that inform our current understanding. The role of
+symmetry in particle physics is discussed and the gauge structure of the
+Standard Model is examined. The motivation for new physics at the TeV scale is
+considered. A brief description of supersymmetry, a popular possible extension 
+to the Standard Model, is given and the ideas behind it are discussed.
 
-However, there are good reasons to expect that new physics will be discovered at
-the LHC. 
+\section{The Standard Model}
+
+The Standard Model of particle physics contains our theoretical knowledge of the
+fundamental particles and the forces between them. Table \ref{tab:particles}
+shows the fundamental particles and the force carriers according to our current
+knowledge. \\
+
+Historically the Standard Model was formed by trying to understand atomic
+spectra using relativistic quantum mechanics. In 1928 Dirac came up with the
+Dirac equation (Equation \ref{eq:dirac}) to describe fermions, which was the 
+first theory to deal with relativity and quantum mechanics. 
+
+\begin{equation}
+\left(i\gamma^{\mu}\partial_{\mu} - m\right)\psi = 0
+\label{eq:dirac}
+\end{equation}
+
+$\gamma^{\mu}$ are the 4 ($4\times4$) $\gamma$-matrices which satisfy the 
+commutation relation $\{\gamma^{\mu},\gamma^{\nu}\} = \eta^{\mu\nu}$. $\mu = 0, 1,
+2, 3$. m is the mass of the fermion. $\psi$ is a spinor describing the state of
+the fermion. \\
+
+The neutrino was postulated by Pauli in 1930 to explain the continuous electron 
+energy spectrum in $\beta$-decay. A 2 body decay would have a fixed energy
+rather than a continuous energy spectrum due to the need to satisfy conservation
+of momentum and conservation of energy. Pauli proposed that a third particle,
+not detected, was carrying some of the energy and momentum. \\
+
+Neutrinos were discovered by direct detection in 1956 by beta capture in a huge
+detector. \\
+
+Gell-Mann came up with the quark model to explain the ``zoo'' of particles which
+had been discovered. \\
+
+A beautiful experiment by C. S. Wu and collaborators showed that parity is
+violated in weak interactions. The beta decay of $Co^{60}$ was performed in a
+magnetic field. The  \\
+
+V-A structure \\
+
+Kaons and stangeness - CP violation. \\
+
+Matter/anti-matter asymmetry \\
+
+W/Z discovery \\
+
+neutrino oscillations \\
+
+top discovery \\
+
+\section{Gauge Symmetries}
+
+There is an important connection between symmetries and conservation laws
+discovered by Noether \cite{noether}.
+
+\begin{center}
+{\it ``For every symmetry of the theory there is a conserved quantity.''} \\
+\end{center}
+
+Invariance under translations in time and space give rise to energy and momentum
+conservation. Invariance uder rotatiion gives rise to conservation of angular
+momentum. Together with Lorentz invariance these transformations form the
+Poincare group. Describing symmetries in terms of group theory was developed by
+Galios in the 19th Century and was initially used to test the solvability of 
+polynomial equations \cite{galois}. These symmetries are all global symmetries
+meaning that the transformation is the same for all space-time points. \\
+
+Consider a Lagrangian with scalar field $\phi(x^{\mu})$, where $x^{\mu}$ is the
+space-time co-ordinate as in Equation \ref{eq:lagrangian}.
+
+\begin{equation}
+\script{L} = \script{L}(\phi, \partial_{\mu}\phi, x^{\mu})
+\label{eq:lagrangian}
+\end{equation}
+
+Suppose that this Lagrangian is invariant under the gauge transformation given
+in Equation \ref{eq:gauge}, where the phase is composed of the parameters 
+$\epsilon^{a}$ and the generators of the Lie group $T^{a}$. This is a gauge
+symmetry rather than a global symmetry since the phase depends on the space-time
+point. 
+
+\begin{equation} 
+\phi(x^{\mu})\rightarrow \phi(x^{\mu})e^{-i\epsilon^{a}T^{a}}
+\label{eq:gauge}
+\end{equation}
+
+Noether's theorem gives a powerful way of constructing theories based on 
+symmetry which underpins the structure of the standard model. The gauge
+symmetry of the Standard Model which is the gauge group $SU(3)\times 
+SU(2)\times U(1)$. \\
+
+SU(3) corresponds to QCD and $SU(2)\times U(1)$ corresponds to the electroweak
+sector. \\
+
+
 
 \section{Motivation for new physics at the TeV scale}
 
-There are three main motivations for expecting the discovery of new physics at 
+There are four main motivations for expecting the discovery of new physics at 
 the TeV scale.
 
 \begin{itemize}
 \item WW scattering
+\item New energy scale
 \item Hierarchy Problem
 \item Dark Matter candidates
 \end{itemize}
 
+\subsection{WW scattering}
+
 WW scattering (among other similar processes) has been observed at LEP, but
-there is no mechanism to support such an interaction within the Standard Model.
-The Higgs particle 
+no experimental confirmation of the mechanism that supports such an interation
+exists. The Higgs boson is one mechansim to mediate this interaction, but so far
+the Higgs has not been observed. Whatever the mechanism by which this
+interaction occurs it must be at the TeV energy scale. \\
+
+\subsection{New energy scale}
+
+This is simply the observation that we are exploring a higher energy scale than
+has previously been explored so we can expect to find new things. In the same
+way as when explorers explore a new land they can expect to find things they
+have not seen before.
+
+\subsection{Hierarchy Problem}
+
+The hierarchy problem is fundamentally a problem of scale. There are two
+fundamental energy scales in physics: the Electroweak scale ($\sim100\GeV$) and
+the Planck scale ($\sim10^{18}\GeV$), where gravity becomes as strong as the 
+gauge interactions. Certainly at the Planck scale the Standard Model will no
+longer hold because a quantum treatment of gravity is needed. The Electroweak 
+scale is well measured at colliders and the results form our current 
+understanding of particle physics. It could be that there is no new physics 
+between the two scales. If we reject such a possibility, then the Higgs mass is
+alarmingly sensitive to any new physics. \\
+
+When one-loop quantum corrections to the Higgs mass squared are calculated, 
+there is a quadratic divergence depending on the cut-off used to do the
+calculation. It is worth noting that the cut-off is not peculiar to QFT. In
+Newtonian gravity when we calculate the gravitational potential due to the sun
+we neglect the mass distribution of the sun and simply consider it as a point
+mass for distances much larger than the radius of the sun. The problem here
+arises because the corrections do not give a vanishing contribution. The Higgs
+mass squared is divergent. \\
+
+There are a number of different models for beyond the Standard Model physics 
+which seek to address this problem including supersymmetry, extra dimensions 
+and technicolor. In supersymmetry this is accomplished by introducing a symmetry
+between fermions and bosons. For every Standard Model particle there is a 
+supersymmetric partner which is a boson for fermions and a fermion for bosons. 
+The fermions give a -1 contribution to the Higgs mass correction while the 
+bosons give a +1 contribution exactly cancelling each other.
+
+\subsection{Dark Matter candidates}
+
+Only 5\% of the mass/energy in the universe is normal matter that we observe. 
+The remainder is made up of dark matter (25\%) and Dark Energy (70\%). Dark
+energy is an unknown that is introduced to explain the expansion of the
+universe. Dark matter is well known. \\
+
+The existence of dark matter is infered from its gravitational interaction with
+normal matter. Dark matter was postulated as missing mass by Fritz Zwicky in 
+1934 to account for the orbital velocities of galaxies in clusters. There have 
+since been other observations that have confirmed the existence of dark matter 
+including the rotational speed of galaxies and the bullet cluster. \\
+
+The bullet cluster provides the best evidence yet on the nature of dark matter. 
+It consists of two colliding clusters of galaxies. The visible matter (stars) 
+pass straight through slowed only by gravitation. The hot gas which represents 
+most of the normal matter is detected through X-rays. The hot gas slows more 
+than the stars due to its electromagnetic interactions. Another piece of
+information comes from gravitational lensing. In the absence of dark matter the
+gravitational lensing is expected to follow the normal matter (i.e. the X-ray 
+gas). However, the gravitational lensing is strongest in the separated regions
+around the visible matter. This provides support to the idea that most of the 
+mass of the galaxies is made up of collisionless dark matter. \\
+
+If dark matter interacts through the weak force, then it could be observed at
+the LHC. Dark matter may not interact weakly. Perhaps it interacts only 
+gravitationally. Additionally it may not show up at the TeV scale. I will simply
+make two statements which offer rather indirect support for the discovery of 
+possible dark matter candidates at the LHC. Firstly, TeV scale weakly 
+interacting masive particles give dark matter abundances in the universe at 
+about the experimentally observed level. Secondly, SUSY (which is one of the 
+popular theories of physics beyond the standard model) predicts a set of 
+supersymmetric particles the lightest of which could be a dark matter candidate.
 
 \section{Supersymmetry}
 
-Supersymmetry partners: fermion <-> boson
-maths of the symmetry
-solution to WW, hp, dm problems
+Supersymmetry proposes that for every particle there is a supersymmetric partner
+which is a boson for fermions and a fermion for bosons. Such a symmetry ensures
+cancellation of the divergence in the Higgs boson mass. We can write the
+operator Q which generates the supersymmetric transformations as Equation
+\ref{eq:susy_operator}.
 
-only possible additional symmetry without violating something serious
+\begin{equation}
+Q|\mbox{Boson}> = |\mbox{Fermion}> \hspace{10} Q|\mbox{Fermion}> = |\mbox{Boson}>
+\label{eq:susy_operator}
+\end{equation}
 
-SUSY breaking
-
-Gauge Mediated
+The possible forms of symmetries are highly restricted by the Coleman-Mandula 
+theorem \cite{coleman}. Due to the existence of chiral fermions the generators Q
+and $Q^{\dagger}$ must satisfy the anti-commutation and commutation relations 
+given in Equation \ref{eq:anticommutation}.
 
 \section{Strong production Gauge Mediated SUSY breaking}
 

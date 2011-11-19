@@ -2,7 +2,141 @@
 
 \section{Introduction}
 
+\section{Backgrounds}
+
+QCD is the laregest background. QCD events are balanced. Any missing transverse
+energy comes from detector imperfections. There are three different components 
+to the QCD background:
+
+\begin{itemize}
+\item {\bf Fakes from jets ($\pi^{0}\rightarrow\gamma\gamma$):} $\pi^{0}$s are
+one of the main constituents of jets. The two photons from a high energy 
+$\pi^{0}$ can easily be mistaken for a single photon. Most $\pi^{0}$s in jets
+will be non-isolated due to the surronding HCAL energy and tracks. However
+there is a distribution of isolation and given the large cross section of QCD, 
+some of these events will end up in the isolated tail.
+\item {\bf Prompt $\gamma$+jet:} In these events the photon comes directly from
+the parton hard scattering. The other jet can come from gluon radiation or
+jet fragmentation. These events contain prompt photons which tend to be isolated
+and have good shower shape. The $\pT$ of the photons is distributed around half
+the $\HT$ of the event.
+\item {\bf QCD jets with ISR/FSR:} A QCD jets event where an initial state quark
+or final state quark radiates a photon. These events also contain prompt photons
+which tend to be isolated and have good shower shape. The cross section of this 
+process falls with the $\pT$ of the photon. 
+\end{itemize}
+
+The Electroweak background is small in comparison to the QCD background.
+Electroweak processes can contribute real $\MET$ by the neutrino which is not
+detected by CMS. The cross section of electroweak processes is much lower than
+that of QCD and this rules out any background due to fakes from jets. There are
+two possible sources of photons: $W\rightarrow e\nu$ where the electron has been
+misidentied as a photon or $\gamma Z\rightarrow\gamma\nu\nu$ which has a real
+photon. \\
+
+The $t\bar{t}$ background has real photons and real $\MET$, but it is negligible 
+due to the low cross section. The $t\bar{t}$ background is estimated using Monte
+Carlo.
+
 \section{QCD Background}
+\label{sec:QCD_Background}
+
+All three sources of QCD background have fake $\MET$ due to detector effects.
+Fake $\MET$ can come from the HCAL resolution or from severe mismeasurements
+such as dead ECAL Trigger Towers or poor HCAL response. \\
+
+ECAL Trigger Towers are $5\times5$ arrays of crystals in the ECAL with the
+photodetectors behind them and the electronics to trigger and read out the data. 
+There are $82\times72$ trigger towers in the ECAL barrel. Some of these Trigger
+Towers are dead i.e. there is no data coming from them. This means that any
+objects going down a dead Trigger Tower will be missed causing fake $\MET$. The 
+number of dead Trigger Towers may vary from run to run as those with a problem 
+are masked and those which have been fixed are unmasked. Some ECAL Trigger 
+Towers have long-term problems. There are about XX dead ECAL TTs: YY of these 
+have trigger information available. Figure \ref{fig:Dead_ECAL_TTs} shows a map 
+of ECAL Trigger Towers. \\
+
+Poor HCAL response is another cause of large fake $\MET$. Sometimes a jet is
+reconstructed with a much lower $\pT$ than it actually has. Such mismeasurements
+are extremely pathelogical and not at all well understood. These are not
+correlated with any specific region of the detector. \\
+
+The core resolution is approximately Gaussian in x and y components of $\MET$ 
+while the severe mismeasurements contribute a non-Gaussian tail to the $\MET$ 
+distribution. Both components scale up with $\HT$. The core resolution scales as
+$\sim\sqrt{\HT}$ while the tails increase because higher $\HT$ events contain 
+higher $\pT$ objects which give larger $\MET$ when missed. \\
+
+Any background estimation method needs to be able to estimate these detector 
+effects. If the Monte Carlo were to be used we would be relying on its ability 
+to correctly model all the causes of fake $\MET$. Not just the core resolution 
+but also the $\MET$ tail with severe mismeasurements. Using a control sample 
+from data gives a perfect simulation of the CMS detector. The problem is reduced
+to finding a control sample with the same kinematic properties as the selected 
+sample rather than trying to simulate the most extreme elements of detector
+response. \\
+
+A control sample is defined to contain events which pass all the selection 
+criteria except for the isolation. This control sample is used to estimate the
+$\MET$ shape of the QCD background in each $\HT$ bin. The absolute number of
+events is obtained by normalising the $\MET$ distribution to the number of
+events with $\MET < 50 \GeV$. \\
+
+The assumption in this method is that the control sample has the same $\MET$
+distribution as the selected sample in each $\HT$ bin. The control sample is
+very similar to the selected sample. It has the same objects with the same
+kinematic cuts. All events contain at least one photon with good shower shape.
+The only difference is that in the control sample the photon is non-isolated
+while in the selected sample it happens to be isolated. Although they contain
+the three sources of QCD background in different proportions, in both cases the 
+source of $\MET$ is the same: detector effects. So we can expect them to have 
+the same $\MET$ distributions. \\
+
+The background estimation is shown to work in Monte Carlo and in data using a 
+sideband region. Figure \ref{fig:Regions} shows the regions used for the
+background estimation. The (non-isolated) control sample is used to estimate the 
+background in the (isolated) selected sample. The sideband region is used to
+check that the background estimation works i.e. the non-isolated and isolated 
+samples have the same $\MET$ distribution. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Regions.pdf}
+\end{center}
+\caption{A graphic showing the layout of the regions used for the QCD background
+estimation. The control sample is used to estimate the $\MET$ distribution in
+the selected sample. The sideband region is used to check that the background
+estimation works.}
+\label{fig:Regions}
+\end{figure}
+
+Figure \ref{fig:Bkgd_Est_MC} shows the background estimation and the number of
+selected events in bins of $\HT$ and $\MET$ for the Monte Carlo. \\
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{mc_QCD.pdf}
+\includegraphics[width=0.5\textwidth]{mc_Data.pdf}
+\caption{The background estimation (left) and number of selected events (right) 
+in bins of $\HT$ and $\MET$ in the Monte Carlo to check that the background
+estimation method works.}
+\label{fig:Bkgd_Est_MC}
+\end{figure}
+
+Figure \ref{fig:Bkgd_Est_Sideband} shows the estimation of the number of
+isolated events in bins of $\HT$ and $\MET$ using the non-isolated sample in the
+sideband region from data compared to the true number of events. \\
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{sb_QCD.pdf}
+\includegraphics[width=0.5\textwidth]{sb_Data.pdf}
+\caption{The estimation of the number of isolated events (left) using the
+non-isolated events in the sideband region from data compared to the true number
+(right).}
+\label{fig:Bkgd_Est_Sideband}
+\end{figure}
+
+A systematic error on the assumption is taken as half the difference between the
+estimated number of events and true number of events in Monte Carlo.
 
 \section{Electroweak Background}
 
@@ -117,4 +251,307 @@ Combining the systematic errors above with the statistical error yields a final
 data-MC efficiency scale factor of $\epsilon_{e}^{data}/\epsilon_{e}^{MC} =
 0.953\pm0.038$.
 
-\section{Jet Energy Systematic Uncertainties}
+\section{Jet Energy Scale}
+
+Jets are reconstructed from energy deposits in the calorimeters. $\pT$ and
+$\eta$ dependent jet energy corrections are applied to the raw calorimeter 
+energy to get the jet energy. Any variation in these corrections would change 
+the jet $\pT$, the $\HT$ and the $\MET$. \\
+
+The appropriate jet energy corrections are determined from $\gamma$+jet events
+in data. The photon is well measured and the event is balanced (within the
+$\MET$ resolution). Details of the procedure to determine the jet energy 
+corrections and their uncertainties are given in \cite{jec}. This corresponds to
+$\sim 3\%$ uncertainty on jets above $50\GeV$ and $\sim 5\%$ uncertainty on 
+smaller jets and unclustered energy. Figure \ref{fig:JEC_vs_pT_And_Eta} shows 
+the jet energy correction factors as a fucntion of jet $\pT$ for jets with 
+($|\eta| = 1.0$) and as a function of $\eta$ for jets with $\pT = 200 \GeV$ (the
+core of the jet distribution). \\
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{JEC_vs_pT.pdf}
+\includegraphics[width=0.5\textwidth]{JEC_vs_Eta.pdf}
+\caption{The jet energy correction factor as a function of $\pT$ with $\eta =
+1.0$ (left) and as a function of $\eta$ with $\pT = 200 \GeV$ (right). Three
+diferent jet reconstructions are shown: CALO, JPT and PF. PF jets are used in
+this analysis. The bands indicate the corresponding uncertainties.}
+\label{fig:JEC_vs_pT_And_Eta}
+\end{figure}
+
+Figure \ref{fig:JES_Uncertainty_vs_Jet_pT} shows the total jet energy scale 
+uncertainty against jet $\pT$ for central jets. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{JES_Uncertainty_vs_Jet_pT.pdf}
+\end{center}
+\caption{The total jet energy scale uncertainty as a function of $\pT$ for
+central jets. Three diferent jet reconstructions are shown: CALO, JPT and PF. 
+PF jets are used in this analysis.}
+\label{fig:JES_Uncertainty_vs_Jet_pT}
+\end{figure}
+
+The jet energy scale uncertainties have no impact on the background estimation
+because that is determined through a data-driven method. However the effect on
+the number of expected signal events needs to be evaluated. \\
+
+The $\pT$ of all the jets is modified upward and downward according to the jet 
+energy uncertainties before applying the event selection. The $\MET$ can be 
+expressed as Equation \ref{eq:MET}.
+
+\begin{equation}
+\MET = -\Sigma \mbox{ jets} - \mbox{photon} - \mbox{unclustered energy}
+\label{eq:MET}
+\end{equation}
+
+The $\MET$ is modified to take account of the jet energy correction
+uncertainties by the following procedure. 
+
+\begin{itemize}
+\item Add the photon to the $\MET$ (i.e. remove it from consideration).
+\item Add the jets also to get the unclustered energy.
+\item Modify the unclustered energy by 5\%.
+\item Subtract the jets scaled according to the jet energy correction 
+uncertainties.
+\item Subtract the photon to get the modified $\MET$.
+\end{itemize}
+
+Figure \ref{fig:JES_Jet_pT} shows the leading jet $\pT$ distribution with a one 
+sigma upward variation and a one sigma downward variation in jet energy scale. 
+Figure \ref{fig:JES_MET_And_HT} shows how the variation in jet energy scale 
+affects the $\MET$ and $\HT$ distributions. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{JES_Jet_pT.pdf}
+\end{center}
+\caption{The leading jet $\pT$ distribution in signal events with a one sigma
+upward variation (red) and one sigma downward variation (blue) in jet energy
+scale.}
+\label{fig:JES_Jet_pT}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{JES_MET.pdf}
+\includegraphics[width=0.5\textwidth]{JES_HT.pdf}
+\caption{The $\MET$ distribution (left) and $\HT$ distribution (right) in signal
+events with a one sigma upward variaton (red) and one sigma downward variation
+(blue) in jet energy scale.}
+\label{fig:JES_MET_And_HT}
+\end{figure}
+
+The important result is how the variation in jet energy scale affects the signal
+efficiency in each ($\HT$, $\MET$) bin. Figure \ref{fig:JES_Numbers} shows these
+numbers. The jet energy scale uncertainties are correlated across all 
+($\HT$,$\MET$) bins.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{SUSY_150_720_1120_JES.pdf}
+\end{center}
+\caption{The percentage change in the signal efficiency when the jet energy
+scale is varied by $\pm1\sigma$, where $\sigma$ is the jet energy scale
+uncertainty.}
+\label{fig:JES_Numbers}
+\end{figure}
+
+\section{Jet Energy Resolution}
+
+The jet $\pT$ resolution is determined using two different methods: 
+
+\begin{itemize}
+\item {\bf Di-jet asymmetry:} This method uses balanced di-jet events which are 
+abundant in data and considers $\pT$ conservation. An asymmetry variable is 
+constructed from the $\pT$ of the two jets:
+\begin{equation}
+A = \frac{\pT^{1} - \pT^{2}}{\pT^{1} + \pT^{2}}
+\end{equation}
+The variance of the asymmetry variable can be expressed as:
+\begin{equation}
+\sigma_{A}^{2} = \left(\frac{\partial A}{\partial
+\pT^{1}}\right)^{2}\sigma_{\pT^{1}}^{2} + \left(\frac{\partial A}{\partial
+\pT^{2}}\right)^{2}\sigma_{\pT^{2}}^{2}
+\end{equation}
+For jets which lie in the same $\eta$ bin and the same $\pT$ bin, the $\pT$'s
+are the same and the reslutions are the same so there is an expression for the
+fractional $\pT$ resolution in terms of the variance in the asymmetry.
+\begin{equation}
+\frac{\sigma_{\pT}}{\pT} = \sqrt{2}\sigma_{A}
+\end{equation}  
+The asymmetry and the variance in the asymmetry are quantities that can be 
+measured in data.
+\item {\bf $\gamma$/Z+jet balance:} This method uses $\gamma$+jet or Z+jet
+events from data and uses the $\gamma$ or Z as a well measured reference object
+to which the jet $\pT$ can be compared. In balanced events the $\gamma$/Z has 
+the same $\pT$ as the jet. The ratio, R, of the jet $\pT$ relative to the 
+$\gamma$/Z $\pT$ in bins of $\gamma$/Z $\pT$ gives the jet $\pT$ resolution. 
+\begin{equation}
+R = \frac{\pT^{jet}}{\pT^{\gamma/Z}}
+\end{equation}
+\end{itemize}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{Jet_pT_Resolution.pdf}
+\end{center}
+\caption{The jet energy resolution measured from data for jets with $|\eta| <
+0.5$ (black points) compared to MC (red line). The yellow band gives the
+systematic uncertainty. Reproduced from \cite{jec}.}
+\label{fig:Jet_pT_Resolution}
+\end{figure}
+
+Further details on the jet $\pT$ resolution measurement and determination of the
+associated uncertainty can be found in \cite{jec}. The jet $\pT$ resolution as a
+function of jet $\pT$ and for $|\eta| < 0.5$ is shown in Figure
+\ref{fig:Jet_pT_Resolution}. The figure also shows that MC agrees well with the
+data as far as jet enrgy resolution is concerned. For the SUSY events the 
+``true'' jet energy comes from the generator level in the MC. The jet energy 
+resolution is determined by comparing the reconstructed jet energy with the 
+generator level jet energy. This gives a jet $\pT$ resolution similar to that 
+measured in \cite{jec}. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{Resolution.pdf}
+\end{center}
+\caption{The jet $\pT$ resolution compared to generator level jets (grey) and
+the same distribution after an upward (red) and downward (blue) 
+variation of 50\% in the jet $\pT$ resolution.}
+\label{fig:Resolution}
+\end{figure}
+
+The resolution is varied upward and downward by 50\%, which correspond to the 
+uncertainty on the forward jets but is conservative for the central jets. The
+variation in resolution is made by changing $\frac{\pT^{reco} -
+\pT^{gen}}{\pT^{gen}}$ by 50\% for each jet. Figure \ref{fig:Resolution}
+shows the jet energy reolution with an upward and a downward variation. \\
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{JER_HT.pdf}
+\includegraphics[width=0.5\textwidth]{JER_MET.pdf}
+\caption{The effect of an upward (red) and a downward (blue) variation
+of the jet $\pT$ resolution on the $\HT$ and $\MET$ distributions.}
+\label{fig:JER}
+\end{figure}
+
+Figure \ref{fig:JER} shows the effect of the variation in resolution on the
+$\HT$ and $\MET$ distributions. The important result is how the variation in jet
+energy scale affects the signal efficiency in each ($\HT$, $\MET$) bin. Figure 
+\ref{fig:JES_Numbers} shows these numbers. The jet energy scale uncertainties 
+are correlated across all ($\HT$,$\MET$) bins.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{SUSY_150_720_1120_JER.pdf}
+\end{center}
+\caption{The percentage change in the signal efficiency when the jet $\pT$
+resolution is varied by $\pm1\sigma$, where $\sigma$ is the jet $\pT$ resolution 
+uncertainty.}
+\label{fig:JER_Numbers}
+\end{figure}
+
+\section{Pile-up}
+
+Pile-up is where there are multiple interations per bunch crossing. Pile-up
+affects the number of signal events in several ways:
+
+\begin{itemize}
+\item The $\HT$ increases due to jets from other interactions in the same bunch
+crossing.
+\item The $\MET$ distribution is broadened by the introduction of more jets.
+\item Reduces the photon isolation efficiency since there is more surrounding
+activity which can populate the isolation cone.
+\item Can lead to the wrong primary vertex being associated with the photon
+which would affect the reconstructed $\pT$.
+\end{itemize}
+
+The systematic uncertainty relating to pile-up is evaluated by changing the
+smearing by 1\% in either direction.
+
+\section{Signal Cross-Section}
+
+Write how the cross-section is calculated. \\
+
+There is a theoretical uncertainty on the signal cross-section due to the
+uncertainty on the PDF distributions. Figure \ref{fig:xsec_unc} shows the
+percentage uncertainty on the cross-section for each parameter point in the
+mSquark vs mGluino plane.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{Cross_Section_Uncertainty.pdf}
+\end{center}
+\caption{The percentage uncertainty on the signal cross-section based on PDF
+uncertainties for each parameter point in the mSquark vs mGluino plane. 
+Reproduced from \cite{ra3}.}
+\label{fig:xsec_unc}
+\end{figure}
+
+\section{Integrated Luminosity}
+
+There are a number of different ways of measuring the LHC luminosity. The method
+used for early data was to use LHC beam parameters. The luminosity is given by:
+
+\begin{equation}
+L = \frac{N^{2}n_{b}f}{A_{eff}}
+\label{eq:lumi}
+\end{equation}
+
+where N is the number of particles in each of the colliding bunches, $n_{b}$ is
+the number of bunches, f is the revolution frequency of the beams and $A_{eff}$
+is the effective transverse area in which the collisions occur. \\
+
+The revolution frequency and the number of bunches are known precisely (to $\sim
+1\%$) from measurements of the beam current. The limiting uncertainty for the
+luminosity measurement is that of $A_{eff}$. The beam sizes must be controlled 
+to 20-30\% for safe operation of the LHC. $A_{eff}$ is measured using van der 
+Meer scans of the transverse beam profile \cite{vdm_scans}. Assuming a gaussian
+transverse beam profile, $A_{eff}$ can be calculated as $A_{eff} = 
+4\pi\sigma_{x}\sigma_{y}$. The uncertainty on the integrated luminosity 
+measurement for this method is $10\%$. \\
+
+The measurement can be improved using TOTEM and W/Z leptonic decays as standard
+candles. TOTEM is a forward detector 240m from the interaction point designed to
+measure the total proton-proton cross-section. By monitoring the cross-section
+over time the integrated luminosity can be estimated. There are still acceptance
+and PDF uncertainties associated with the cross-section measurement but these 
+give a much smaller error on the integrated luminosity. The uncertainty from
+this method is $4\%$.
+
+\section{Summary of Systematics}
+
+Table \ref{tab:Systematics_Summary} shows a summary of all the systematic
+uncertainties for the backgrounds and the signal. For simplicity the systematic
+uncertainties for only the most significant bin in terms of the limit setting 
+($\HT$, $\MET$) = (700+, 200+) are shown.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+{\bf Source of Systematic Uncertainty} & {\bf QCD} & {\bf EWK} & {\bf SUSY} \\
+\hline
+QCD Background Estimation & 5\% & - & - \\
+\hline
+e/$\gamma$ Misidentification & - & 30\% & - \\
+\hline
+Photon Efficiency & - & 3.8\% & 3.8\% \\
+\hline
+Jet Energy Scale & - & & 10\% \\
+\hline
+Jet Energy Resolution & - & & \\
+\hline
+Pile-up & - & & \\
+\hline
+Signal Cross-Section & - & - & 20\% \\
+\hline
+$W\rightarrow e\nu$ Cross-Section & - &  & - \\
+\hline
+Integrated Luminosity & - & 5\% & 5\% \\
+\hline
+\end{tabular}
+\end{center}
+\caption{A summary of the systematic uncertainties and how they affect the
+expected number of events in the signal and each of the backgrounds.}
+\label{tab:Systematics_Summary}
+\end{table}
