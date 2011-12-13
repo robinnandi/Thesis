@@ -1,0 +1,1356 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  12 DEC 2011 19:21
+entering extended mode
+ %&-line parsing enabled.
+**thesis.tex
+(/Users/rjn/Thesis/thesis.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, romanian, rus
+sian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish, ukenglis
+h, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2008/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/07/16 v0.04k Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen105
+))
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip11
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks17
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks18
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/Users/rjn/Thesis/aux/commands.tex) (/Users/rjn/Thesis/thesis.aux
+(/Users/rjn/Thesis/chapters/Theory.aux)
+(/Users/rjn/Thesis/chapters/Detector.aux)
+(/Users/rjn/Thesis/chapters/Data_Trigger_And_Event_Selection.aux)
+(/Users/rjn/Thesis/chapters/Background_Estimation.aux)
+(/Users/rjn/Thesis/chapters/Signal_Prediction_And_Systematics.aux)
+(/Users/rjn/Thesis/chapters/Limit_Setting_And_Results.aux)
+(/Users/rjn/Thesis/chapters/Conclusions_And_Further_Work.aux)
+(/Users/rjn/Thesis/chapters/Monte_Carlo_Samples.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen115
+\MPnumerator=\count105
+\everyMPtoPDFconversion=\toks22
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+) [1
+
+{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(/Users/rjn/Thesis/thesis.toc [1
+
+] [2])
+\tf@toc=\write3
+\openout3 = `thesis.toc'.
+
+ [3]
+\openout2 = `chapters/Theory.aux'.
+
+
+(/Users/rjn/Thesis/chapters/Theory.tex
+Chapter 1.
+
+LaTeX Warning: Reference `tab:particles' on page 4 undefined on input line 15.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
+
+ []
+
+[4
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+LaTeX Warning: Citation `noether' on page 5 undefined on input line 65.
+
+[5]
+
+LaTeX Warning: Citation `galois' on page 6 undefined on input line 76.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--78
+
+ []
+
+! Undefined control sequence.
+l.83 \script
+            {L} = \script{L}(\phi, \partial_{\mu}\phi, x^{\mu})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.83 \script{L} = \script
+                         {L}(\phi, \partial_{\mu}\phi, x^{\mu})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
+
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--146
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 147--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--187
+
+ []
+
+[8]
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.207 ...ox{Boson}> = |\mbox{Fermion}> \hspace{10}
+                                                   Q|\mbox{Fermion}> = |\mbo...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+LaTeX Warning: Citation `coleman' on page 9 undefined on input line 212.
+
+
+LaTeX Warning: Reference `eq:anticommutation' on page 9 undefined on input line
+ 214.
+
+[9]) [10]
+\openout2 = `chapters/Detector.aux'.
+
+ (/Users/rjn/Thesis/chapters/Detector.tex
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--18
+
+ []
+
+<images/LHC.pdf, id=49, 327.01482pt x 216.38913pt>
+File: images/LHC.pdf Graphic file (type pdf)
+ <use images/LHC.pdf>
+
+LaTeX Warning: Citation `physics_tdr_1' on page 11 undefined on input line 23.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--31
+
+ []
+
+<images/CMS.pdf, id=50, 418.19003pt x 302.70148pt>
+File: images/CMS.pdf Graphic file (type pdf)
+ <use images/CMS.pdf>
+
+LaTeX Warning: Citation `physics_tdr_1' on page 11 undefined on input line 36.
+
+
+LaTeX Warning: Citation `physics_tdr_1' on page 11 undefined on input line 36.
+
+[11
+
+
+
+] [12 </Users/rjn/Thesis/images/LHC.pdf> </Users/rjn/Thesis/images/CMS.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
+
+ []
+
+<images/Pixel.pdf, id=136, 382.93556pt x 226.11436pt>
+File: images/Pixel.pdf Graphic file (type pdf)
+ <use images/Pixel.pdf>
+
+LaTeX Warning: Citation `physics_tdr_1' on page 13 undefined on input line 53.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
+
+ []
+
+[13 </Users/rjn/Thesis/images/Pixel.pdf>]
+
+LaTeX Warning: Reference `fig:Silicon_Strip_Tracker.pdf' on page 14 undefined o
+n input line 71.
+
+<images/Silicon_Strip_Tracker.pdf, id=172, 413.32733pt x 172.62492pt>
+File: images/Silicon_Strip_Tracker.pdf Graphic file (type pdf)
+
+<use images/Silicon_Strip_Tracker.pdf>
+
+LaTeX Warning: Citation `physics_tdr_1' on page 14 undefined on input line 78.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+
+ []
+
+<images/ECAL.pdf, id=173, 318.50511pt x 161.68394pt>
+File: images/ECAL.pdf Graphic file (type pdf)
+ <use images/ECAL.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 95--102
+
+ []
+
+[14 </Users/rjn/Thesis/images/Silicon_Strip_Tracker.pdf>]
+<images/EM_Shower.pdf, id=237, 335.5245pt x 193.29134pt>
+File: images/EM_Shower.pdf Graphic file (type pdf)
+
+<use images/EM_Shower.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 111--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--128
+
+ []
+
+[15 </Users/rjn/Thesis/images/ECAL.pdf> </Users/rjn/Thesis/images/EM_Shower.pdf
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--138
+
+ []
+
+
+LaTeX Warning: Reference `fig:ECAL_Barrel' on page 16 undefined on input line 1
+41.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
+
+ []
+
+
+LaTeX Warning: Citation `test_beam' on page 17 undefined on input line 181.
+
+<images/ECAL_Energy_Resolution.pdf, id=330, 341.65543pt x 249.25793pt>
+File: images/ECAL_Energy_Resolution.pdf Graphic file (type pdf)
+
+<use images/ECAL_Energy_Resolution.pdf>
+
+LaTeX Warning: Citation `test_beam' on page 17 undefined on input line 190.
+
+
+LaTeX Warning: Citation `test_beam' on page 17 undefined on input line 190.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--213
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 214--221
+
+ []
+
+<images/Hadronic_Shower.pdf, id=335, 230.97704pt x 210.31071pt>
+File: images/Hadronic_Shower.pdf Graphic file (type pdf)
+
+<use images/Hadronic_Shower.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+[18 </Users/rjn/Thesis/images/ECAL_Energy_Resolution.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
+
+ []
+
+[19 </Users/rjn/Thesis/images/Hadronic_Shower.pdf>]
+! Undefined control sequence.
+l.284 ...b s^{-1})$ the event rate is $\sim 1 \MHz
+                                                  $.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--293
+
+ []
+
+<images/Cross_Sections.pdf, id=454, 222.46733pt x 278.38817pt>
+File: images/Cross_Sections.pdf Graphic file (type pdf)
+
+<use images/Cross_Sections.pdf> [20] [21 </Users/rjn/Thesis/images/Cross_Sectio
+ns.pdf>]
+
+LaTeX Warning: File `CMS_Data_Centres.pdf' not found on input line 332.
+
+
+! Package graphics Error: File `CMS_Data_Centres.pdf' not found.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 ...s[width=\textwidth]{CMS_Data_Centres.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `grid' on page 22 undefined on input line 335.
+
+
+LaTeX Warning: Citation `grid' on page 22 undefined on input line 335.
+
+) [22] [23]
+\openout2 = `chapters/Data_Trigger_And_Event_Selection.aux'.
+
+ (/Users/rjn/Thesis/chapters/Data_Trigger_And_Event_Selection.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
+
+ []
+
+[24
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
+
+ []
+
+<images/Integrated_Luminosity.png, id=539, 520.344pt x 390.258pt>
+File: images/Integrated_Luminosity.png Graphic file (type png)
+
+<use images/Integrated_Luminosity.png>
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
+ []
+
+[25 </Users/rjn/Thesis/images/Integrated_Luminosity.png>]
+
+LaTeX Warning: Citation `pythia6' on page 26 undefined on input line 64.
+
+
+LaTeX Warning: Citation `madgraph' on page 26 undefined on input line 65.
+
+
+LaTeX Warning: Citation `tuneZ2' on page 26 undefined on input line 66.
+
+
+LaTeX Warning: Citation `geant' on page 26 undefined on input line 66.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+<images/nVertices-Data.pdf, id=545, 569.12625pt x 558.085pt>
+File: images/nVertices-Data.pdf Graphic file (type pdf)
+
+<use images/nVertices-Data.pdf>
+<images/nVertices-MC.pdf, id=546, 569.12625pt x 558.085pt>
+File: images/nVertices-MC.pdf Graphic file (type pdf)
+
+<use images/nVertices-MC.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 78--81
+[][] [] 
+ []
+
+<images/nVertices-MC-reweighted.pdf, id=547, 569.12625pt x 558.085pt>
+File: images/nVertices-MC-reweighted.pdf Graphic file (type pdf)
+
+<use images/nVertices-MC-reweighted.pdf>
+Overfull \hbox (13.68988pt too wide) in paragraph at lines 97--105
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
+
+ []
+
+[26] [27 </Users/rjn/Thesis/images/nVertices-Data.pdf, page is rotated 90 degre
+es> </Users/rjn/Thesis/images/nVertices-MC.pdf, page is rotated 90 degrees> </U
+sers/rjn/Thesis/images/nVertices-MC-reweighted.pdf, page is rotated 90 degrees>
+] <images/HT_all.pdf, id=683, 569.12625pt x 385.44pt>
+File: images/HT_all.pdf Graphic file (type pdf)
+ <use images/HT_all.pdf>
+<images/pfMET_all.pdf, id=684, 569.12625pt x 385.44pt>
+File: images/pfMET_all.pdf Graphic file (type pdf)
+
+<use images/pfMET_all.pdf>
+<images/HT_all_ratio.pdf, id=685, 569.12625pt x 385.44pt>
+File: images/HT_all_ratio.pdf Graphic file (type pdf)
+
+<use images/HT_all_ratio.pdf>
+<images/pfMET_all_ratio.pdf, id=686, 569.12625pt x 385.44pt>
+File: images/pfMET_all_ratio.pdf Graphic file (type pdf)
+
+<use images/pfMET_all_ratio.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 119--124
+[][] []
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 119--124
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+
+ []
+
+[28 </Users/rjn/Thesis/images/HT_all.pdf, page is rotated 90 degrees> </Users/r
+jn/Thesis/images/pfMET_all.pdf, page is rotated 90 degrees> </Users/rjn/Thesis/
+images/HT_all_ratio.pdf, page is rotated 90 degrees> </Users/rjn/Thesis/images/
+pfMET_all_ratio.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--184
+
+ []
+
+<images/Trigger_vs_Run_Number.pdf, id=862, 569.12625pt x 138.5175pt>
+File: images/Trigger_vs_Run_Number.pdf Graphic file (type pdf)
+
+<use images/Trigger_vs_Run_Number.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+
+ []
+
+[29 </Users/rjn/Thesis/images/Trigger_vs_Run_Number.pdf>]
+<images/Trigger_Efficiency_vs_HT_zoomed.pdf, id=870, 569.12625pt x 555.07375pt>
+File: images/Trigger_Efficiency_vs_HT_zoomed.pdf Graphic file (type pdf)
+<use images/Trigger_Efficiency_vs_HT_zoomed.pdf>
+<images/Trigger_Efficiency_vs_PhotonPt.pdf, id=871, 569.12625pt x 555.07375pt>
+File: images/Trigger_Efficiency_vs_PhotonPt.pdf Graphic file (type pdf)
+
+<use images/Trigger_Efficiency_vs_PhotonPt.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 218--221
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--232
+
+ []
+
+[30 </Users/rjn/Thesis/images/Trigger_Efficiency_vs_HT_zoomed.pdf, page is rota
+ted 90 degrees> </Users/rjn/Thesis/images/Trigger_Efficiency_vs_PhotonPt.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+
+Overfull \hbox (2.82468pt too wide) in paragraph at lines 239--242
+[]\OT1/cmr/m/n/10 Photons are dis-tin-guished from elec-trons by the tracker. E
+lec-trons, be-ing charged
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--266
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
+
+ []
+
+
+LaTeX Warning: Citation `pf' on page 32 undefined on input line 320.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
+
+ []
+
+[32] <images/Jet_Threshold.pdf, id=928, 569.12625pt x 555.07375pt>
+File: images/Jet_Threshold.pdf Graphic file (type pdf)
+
+<use images/Jet_Threshold.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 339--346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--352
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 353--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--377
+
+ []
+
+[34 </Users/rjn/Thesis/images/Jet_Threshold.pdf>] [35]
+
+LaTeX Warning: Reference `fig:spikes' on page 36 undefined on input line 420.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--431
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--443
+
+ []
+
+[36] <images/MET_Threshold.pdf, id=951, 569.12625pt x 555.07375pt>
+File: images/MET_Threshold.pdf Graphic file (type pdf)
+
+<use images/MET_Threshold.pdf>) [37 </Users/rjn/Thesis/images/MET_Threshold.pdf
+>]
+\openout2 = `chapters/Background_Estimation.aux'.
+
+ (/Users/rjn/Thesis/chapters/Background_Estimation.tex
+Chapter 4.
+[38
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 31--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
+
+ []
+
+
+LaTeX Warning: Reference `fig:Dead_ECAL_TTs' on page 39 undefined on input line
+ 59.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+<images/Regions.pdf, id=973, 569.12625pt x 555.07375pt>
+File: images/Regions.pdf Graphic file (type pdf)
+
+<use images/Regions.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+
+LaTeX Warning: File `mc_QCD.pdf' not found on input line 120.
+
+
+! Package graphics Error: File `mc_QCD.pdf' not found.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...graphics[width=0.5\textwidth]{mc_QCD.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/mc_Data.pdf, id=974, 569.12625pt x 555.07375pt>
+File: images/mc_Data.pdf Graphic file (type pdf)
+
+<use images/mc_Data.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 120--124
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
+
+ []
+
+[41 </Users/rjn/Thesis/images/Regions.pdf, page is rotated 90 degrees>]
+<images/sb_QCD.pdf, id=1021, 569.12625pt x 555.07375pt>
+File: images/sb_QCD.pdf Graphic file (type pdf)
+
+<use images/sb_QCD.pdf>
+<images/sb_Data.pdf, id=1022, 569.12625pt x 555.07375pt>
+File: images/sb_Data.pdf Graphic file (type pdf)
+
+<use images/sb_Data.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 133--137
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
+
+ []
+
+
+Overfull \hbox (4.14977pt too wide) in paragraph at lines 151--153
+[]\OT1/cmr/m/n/10 The $\OML/cmm/m/it/10 W \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 e
+^^W$ \OT1/cmr/m/n/10 back-ground is es-ti-mated by mea-sur-ing the elec-tron/ph
+oton misiden-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+
+ []
+
+[42 </Users/rjn/Thesis/images/mc_Data.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--176
+
+ []
+
+<images/Zee_Fit.pdf, id=1070, 463.16988pt x 160.4682pt>
+File: images/Zee_Fit.pdf Graphic file (type pdf)
+
+<use images/Zee_Fit.pdf> [43 </Users/rjn/Thesis/images/sb_QCD.pdf, page is rota
+ted 90 degrees> </Users/rjn/Thesis/images/sb_Data.pdf, page is rotated 90 degre
+es>]) [44 </Users/rjn/Thesis/images/Zee_Fit.pdf>]
+\openout2 = `chapters/Signal_Prediction_And_Systematics.aux'.
+
+
+(/Users/rjn/Thesis/chapters/Signal_Prediction_And_Systematics.tex
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--16
+
+ []
+
+[45
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
+
+ []
+
+
+LaTeX Warning: Citation `jec' on page 47 undefined on input line 79.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--85
+
+ []
+
+<images/JEC_vs_pT.pdf, id=1289, 208.06071pt x 201.83676pt>
+File: images/JEC_vs_pT.pdf Graphic file (type pdf)
+
+<use images/JEC_vs_pT.pdf>
+<images/JEC_vs_Eta.pdf, id=1290, 212.50641pt x 204.50423pt>
+File: images/JEC_vs_Eta.pdf Graphic file (type pdf)
+
+<use images/JEC_vs_Eta.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 87--92
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+
+ []
+
+<images/JES_Uncertainty_vs_Jet_pT.pdf, id=1291, 204.50423pt x 200.05843pt>
+File: images/JES_Uncertainty_vs_Jet_pT.pdf Graphic file (type pdf)
+
+<use images/JES_Uncertainty_vs_Jet_pT.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
+
+ []
+
+[47] [48 </Users/rjn/Thesis/images/JEC_vs_pT.pdf> </Users/rjn/Thesis/images/JEC
+_vs_Eta.pdf> </Users/rjn/Thesis/images/JES_Uncertainty_vs_Jet_pT.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
+
+ []
+
+<images/JES_Jet_pT.pdf, id=1524, 569.12625pt x 555.07375pt>
+File: images/JES_Jet_pT.pdf Graphic file (type pdf)
+
+<use images/JES_Jet_pT.pdf>
+<images/JES_MET.pdf, id=1525, 569.12625pt x 555.07375pt>
+File: images/JES_MET.pdf Graphic file (type pdf)
+
+<use images/JES_MET.pdf>
+<images/JES_HT.pdf, id=1526, 569.12625pt x 555.07375pt>
+File: images/JES_HT.pdf Graphic file (type pdf)
+
+<use images/JES_HT.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 150--154
+[][] [] 
+ []
+
+<images/SUSY_150_720_1120_JES.pdf, id=1527, 569.12625pt x 555.07375pt>
+File: images/SUSY_150_720_1120_JES.pdf Graphic file (type pdf)
+
+<use images/SUSY_150_720_1120_JES.pdf> [49 </Users/rjn/Thesis/images/JES_Jet_pT
+.pdf, page is rotated 90 degrees>] [50 </Users/rjn/Thesis/images/JES_MET.pdf, p
+age is rotated 90 degrees> </Users/rjn/Thesis/images/JES_HT.pdf, page is rotate
+d 90 degrees>]
+<images/Jet_pT_Resolution.pdf, id=1664, 198.15399pt x 199.36964pt>
+File: images/Jet_pT_Resolution.pdf Graphic file (type pdf)
+
+<use images/Jet_pT_Resolution.pdf>
+
+LaTeX Warning: Citation `jec' on page 51 undefined on input line 214.
+
+
+LaTeX Warning: Citation `jec' on page 51 undefined on input line 214.
+
+
+LaTeX Warning: Citation `jec' on page 51 undefined on input line 219.
+
+
+LaTeX Warning: Citation `jec' on page 51 undefined on input line 226.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--227
+
+ []
+
+[51 </Users/rjn/Thesis/images/SUSY_150_720_1120_JES.pdf, page is rotated 90 deg
+rees>] [52 </Users/rjn/Thesis/images/Jet_pT_Resolution.pdf>]
+<images/Resolution.pdf, id=1799, 569.12625pt x 555.07375pt>
+File: images/Resolution.pdf Graphic file (type pdf)
+
+<use images/Resolution.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 238--243
+
+ []
+
+<images/JER_HT.pdf, id=1800, 569.12625pt x 555.07375pt>
+File: images/JER_HT.pdf Graphic file (type pdf)
+
+<use images/JER_HT.pdf>
+<images/JER_MET.pdf, id=1801, 569.12625pt x 555.07375pt>
+File: images/JER_MET.pdf Graphic file (type pdf)
+
+<use images/JER_MET.pdf>
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 245--248
+[][] [] 
+ []
+
+<images/SUSY_150_720_1120_JER.pdf, id=1802, 569.12625pt x 555.07375pt>
+File: images/SUSY_150_720_1120_JER.pdf Graphic file (type pdf)
+
+<use images/SUSY_150_720_1120_JER.pdf> [53 </Users/rjn/Thesis/images/Resolution
+.pdf>] [54 </Users/rjn/Thesis/images/JER_HT.pdf> </Users/rjn/Thesis/images/JER_
+MET.pdf> </Users/rjn/Thesis/images/SUSY_150_720_1120_JER.pdf, page is rotated 9
+0 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--294
+
+ []
+
+<images/puHT.pdf, id=1869, 569.12625pt x 555.07375pt>
+File: images/puHT.pdf Graphic file (type pdf)
+ <use images/puHT.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 304--313
+
+ []
+
+<images/puMET.pdf, id=1870, 569.12625pt x 555.07375pt>
+File: images/puMET.pdf Graphic file (type pdf)
+ <use images/puMET.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 324--342
+
+ []
+
+[55] [56 </Users/rjn/Thesis/images/puHT.pdf, page is rotated 90 degrees>]
+[57 </Users/rjn/Thesis/images/puMET.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+<images/Cross_Section_Uncertainty.pdf, id=1966, 224.89873pt x 139.8019pt>
+File: images/Cross_Section_Uncertainty.pdf Graphic file (type pdf)
+
+<use images/Cross_Section_Uncertainty.pdf>
+
+LaTeX Warning: Citation `ra3' on page 58 undefined on input line 360.
+
+
+LaTeX Warning: Citation `ra3' on page 58 undefined on input line 360.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--377
+
+ []
+
+[58 </Users/rjn/Thesis/images/Cross_Section_Uncertainty.pdf>]
+
+LaTeX Warning: Citation `vdm_scans' on page 59 undefined on input line 382.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--386
+
+ []
+
+) [59] [60]
+\openout2 = `chapters/Limit_Setting_And_Results.aux'.
+
+ (/Users/rjn/Thesis/chapters/Limit_Setting_And_Results.tex
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
+
+ []
+
+[61
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
+
+[62] [63]
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
+
+ []
+
+<images/Confidence_Belt.pdf, id=2021, 235.83969pt x 182.50494pt>
+File: images/Confidence_Belt.pdf Graphic file (type pdf)
+
+<use images/Confidence_Belt.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
+
+ []
+
+[65 </Users/rjn/Thesis/images/Confidence_Belt.pdf>]) [66]
+\openout2 = `chapters/Conclusions_And_Further_Work.aux'.
+
+
+(/Users/rjn/Thesis/chapters/Conclusions_And_Further_Work.tex
+Chapter 7.
+) [67
+
+
+
+]
+No file thesis.bbl.
+\openout2 = `chapters/Monte_Carlo_Samples.aux'.
+
+(/Users/rjn/Thesis/chapters/Monte_Carlo_Samples.tex
+Appendix A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+[68
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+) [69] (/Users/rjn/Thesis/thesis.aux (/Users/rjn/Thesis/chapters/Theory.aux)
+(/Users/rjn/Thesis/chapters/Detector.aux)
+(/Users/rjn/Thesis/chapters/Data_Trigger_And_Event_Selection.aux)
+(/Users/rjn/Thesis/chapters/Background_Estimation.aux)
+(/Users/rjn/Thesis/chapters/Signal_Prediction_And_Systematics.aux)
+(/Users/rjn/Thesis/chapters/Limit_Setting_And_Results.aux)
+(/Users/rjn/Thesis/chapters/Conclusions_And_Further_Work.aux)
+(/Users/rjn/Thesis/chapters/Monte_Carlo_Samples.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2331 strings out of 493886
+ 33538 string characters out of 1151098
+ 81533 words of memory out of 3000000
+ 5480 multiletter control sequences out of 10000+50000
+ 16934 words of font info for 64 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 27i,10n,26p,588b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
+ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
+ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbxti10.pfb></usr/local/texlive/200
+8/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/local/texlive/2008/texmf-d
+ist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/texlive/2008/texmf-dist/fonts
+/type1/bluesky/cm/cmmi12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bl
+uesky/cm/cmmi5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/c
+mmi7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi8.pfb><
+/usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmib10.pfb></usr/loc
+al/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></usr/local/texlive
+/2008/texmf-dist/fonts/type1/bluesky/cm/cmr12.pfb></usr/local/texlive/2008/texm
+f-dist/fonts/type1/bluesky/cm/cmr17.pfb></usr/local/texlive/2008/texmf-dist/fon
+ts/type1/bluesky/cm/cmr5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bl
+uesky/cm/cmr7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cm
+r8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsl12.pfb></
+usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmssbx10.pfb></usr/loc
+al/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/local/texliv
+e/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy5.pfb></usr/local/texlive/2008/tex
+mf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texlive/2008/texmf-dist/fo
+nts/type1/bluesky/cm/cmsy8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/
+bluesky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/c
+m/cmtt10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/public/cmex/fmex7.
+pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb>
+</usr/local/texlive/2008/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></us
+r/local/texlive/2008/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/
+texlive/2008/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive
+/2008/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2008/
+texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2008/texmf-d
+ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2008/texmf-dist/fon
+ts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2008/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/
+palatino/uplri8a.pfb>
+Output written on thesis.pdf (70 pages, 3862803 bytes).
+PDF statistics:
+ 2212 PDF objects out of 2487 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+
