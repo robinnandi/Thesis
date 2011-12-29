@@ -63,8 +63,15 @@ Something about primary vertex resolution and reconstruction.
 \section{Silicon Strip Tracker}
 
 The silicon strip tracker is designed to measure the trajectory of charged 
-particles to determine the momenta from the curvature in the magnetic field. It 
-is made from strips of silicon which charged particles ionise. \\
+particles. It is made from strips of silicon which charged particles ionise. The
+technology is the pn junction with a reverse bias voltage applied, which creates
+a depletion region. Charged particles ionise inside the depleted region creating
+electron hole pairs which travel to the electrodes where they form a signal. 
+Silicon is used because of it produces fast, radiation hard electronics and good
+resolution. \\
+  
+The momentum of a particle is measured from the curvature of the track in the
+magnetic field (Figure \ref{fig:curvature}). \\ 
 
 The silicon strip tracker is made up of 4 sub-detectors: the Tracker Inner 
 Barrel (TIB), the Tracker Outer Barrel (TOB), the Tracker Endcap (TEC) and the
@@ -76,6 +83,15 @@ layout of the tracker.
 \label{fig:Silicon_Strip_Tracker}
 \caption{The layout of the silicon strip tracker. Reproduced from 
 \cite{physics_tdr_1}.}
+\end{figure}
+
+The transverse momentum resolution of the tracker is shown for muons of $p_{T} =
+1, 10 and 100 \GeV$ in Figure \ref{fig:tracker_resolution}.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Tracker_Resolution.pdf}
+\label{fig:tracker_resolution}
+\caption{The layout of the s.}
 \end{figure}
 
 \section{Electromagnetic Calorimeter}
