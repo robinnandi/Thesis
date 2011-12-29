@@ -21,25 +21,16 @@ knowledge. \\
 \begin{center}
 \includegraphics[width=0.6\textwidth]{particles.png}
 \end{center}
-\caption{The fundametal particles according to our current knowledge.}
+\caption{The fundametal particles according to the Standard Model.}
+\label{fig:particles}
 \end{figure}
 
 Historically the Standard Model was formed by trying to understand atomic
-spectra using relativistic quantum mechanics. In 1928 Dirac came up with the
-Dirac equation (Equation \ref{eq:dirac}) to describe fermions, which was the 
-first theory to deal with relativity and quantum mechanics. 
-
-\begin{equation}
-\left(i\gamma^{\mu}\partial_{\mu} - m\right)\psi = 0
-\label{eq:dirac}
-\end{equation}
-
-$\gamma^{\mu}$ $\mu = 0, 1, 2, 3$ are the $4\times4$ $\gamma$-matrices which 
-satisfy the commutation relation $\{\gamma^{\mu},\gamma^{\nu}\} = \eta^{\mu\nu}$. 
-m is the mass of the fermion. $\psi$ is a spinor describing the state of the 
-fermion. Later QED a theory of the interactions of light with matter was developed 
-by Richard Feynman (among others) which explained the Lamb shift in Hydrogen and 
-made very precise predictions about the magnetic moment of the electron. \\
+spectra. In 1928 Dirac came up with the Dirac equation to describe fermions, 
+which was the first theory to deal with relativity and quantum mechanics. Later 
+QED a theory of the interactions of light with matter was developed by Richard 
+Feynman (among others) which explained the Lamb shift in Hydrogen and made a 
+very precise prediction for the magnetic moment of the electron. \\
 
 The neutrino was postulated by Pauli in 1930 to explain the continuous electron 
 energy spectrum in $\beta$-decay. A 2 body decay would have a fixed energy
@@ -92,11 +83,22 @@ Galios in the 19th Century and was initially used to test the solvability of
 polynomial equations \cite{galois}. These symmetries are all global symmetries
 meaning that the transformation is the same for all space-time points. \\
 
-Consider a Lagrangian with scalar field $\phi(x^{\mu})$, where $x^{\mu}$ is the
+A theory can be described by a Lagrangian which is equal to the kinetic energy
+minus the potential energy. The equations of motion of such a theory can be
+derived by minimising the action (Equation \ref{eq:action}). The resulting
+equations are known as the Euler-Lagrange equations. 
+
+\begin{equation}
+S = \int L d^{4}x^{\mu}
+\label{eq:action}
+\end{equation}
+
+Consider a Lagrangian with N scalar fields ${\bf \phi}(x^{\mu}) =
+\left(\phi_{1}(x^{\mu})...\phi_{N}(x^{\mu}))\right$, where $x^{\mu}$ is the
 space-time co-ordinate as in Equation \ref{eq:lagrangian}.
 
 \begin{equation}
-\script{L} = \script{L}(\phi, \partial_{\mu}\phi, x^{\mu})
+\script{L} = \script{L}({\bf \phi}, \partial_{\mu}{\bf \phi}, x^{\mu})
 \label{eq:lagrangian}
 \end{equation}
 
@@ -119,7 +121,43 @@ SU(2)\times U(1)$. \\
 SU(3) corresponds to QCD and $SU(2)\times U(1)$ corresponds to the electroweak
 sector. \\
 
+Much of the structure of the Standard Model can be understood by considering the
+gauge groups. SU(3) has 8 generators corresponding to the 8 gluons force
+carriers of QCD. The bosonic sector of the electroweak force is a mixing of
+SU(2) weak isospin and U(1) hypercharge. SU(2) has 3 generators while U(1) has 1
+generator. These comprise the 4 generators of electroweak theory: the photon
+($\gamma$), $W^{+}$, $W^{-}$ and $Z^{0}$. \\
 
+The QED Lagrangian for EM interactions of electrons can be written as Equation 
+\ref{eq:qed}.
+
+\begin{equation}
+L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{e}\gamma^{\mu}D_{\mu}e -
+m_{e}\bar{e}e
+\label{eq:qed}
+\end{equation} 
+
+The first term represents the free EM field. $F_{\mu\nu} = \partial_{\mu}A_{\nu}
+- \partial_{\nu}A_{\mu}$, where $A_{\mu}$ is the EM vector potential. The second
+ term reresents the electron kinetic energy and the interaction between electron
+and photon. $D_{\mu}$ is the covariant derivative (i.e. it remains the same
+under the gauge transformation). The third term represents the mass of the
+electron. This lagrangian is invariant under the U(1) gauge transformation: $e
+\rightarrow e^{-ie}e$. \\
+
+The mass term for the electron is allowed by gauge invariance, but a mass term for 
+the photon is forbidden. Also photon self-interactions are forbidden by gauge 
+invariance. The constraints set by gauge invariance tell us a lot about the
+nature of the electromagentic interaction. The photon is a massless particle which 
+interacts with electrons, but not with itself. The electromagnetic force has 
+infinite range. \\
+
+Electromagnetism is part of the electroweak force, which consists of SU(2) weak
+isospin and U(1) hypercharge. The electroweak lagrangain can be written as
+Equation \ref{eq:ew}. \\
+
+\begin{equation}
+\end{equation}  
 
 \section{Motivation for new physics at the TeV scale}
 
@@ -135,9 +173,8 @@ the TeV scale.
 
 \subsection{WW scattering}
 
-WW scattering (among other similar processes) has been observed at LEP, but
-no experimental confirmation of the mechanism that supports such an interation
-exists. The Higgs boson is one mechansim to mediate this interaction, but so far
+WW scattering (among other similar processes) has been observed at LEP and the
+cross-section has been measured. The Higgs boson is one mechansim to mediate this interaction, but so far
 the Higgs has not been observed. Whatever the mechanism by which this
 interaction occurs it must be at the TeV energy scale. \\
 
