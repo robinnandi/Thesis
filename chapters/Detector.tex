@@ -1,4 +1,4 @@
-\chapter{Detector}
+\chapter{Detector and Reconstruction}
 
 \section{Introduction}
 
@@ -388,4 +388,16 @@ there is no pixel seed corresponding to the electromagnetic shower.
 
 \section{Jet Reconstruction}
 
-Jets are reconstructed using the anti-KT algorithm with a cone size of 0.5.
+Jets are collimated bunches of stable hadrons originating from partons (quarks
+and gluons) after fragmentation and hadronisation. Jets are reconstructed using 
+the anti-KT algorithm with a cone size of 0.5. The anti-KT algorihtm a
+sequential clustering algorithm which is IR safe and produces circular
+cone-shaped jets. The anti-KT algorithm is used because it has a higher 
+efficiency, lower fake rate and is less sensitive to pile-up than the other 
+algorithms. \\
+
+The reconstruction uses so-called ``particle flow'' objects (including photons, 
+charged hadrons and neutral hadrons) as input. The philosophy of the particle 
+flow reconstruction is to have a complete and consistent event hypothesis. All 
+components of the detector are used in the reconstruction. Particle flow jets 
+are better than other jet reconstructions because they 
