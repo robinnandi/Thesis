@@ -224,67 +224,6 @@ relative to a lower threshold trigger.}
 
 \section{Photon Selection}
 
-Fake photons from QCD come from jets and so tend to have plenty of activity in
-the surrounding detectors. In contrast, prompt photons tend to be isolated with
-little surrounding activity. Isolation is one of the variables used to select 
-photons because of its background rejection power. There are three independent 
-isolation measures based on the ECAL, the HCAL and the tracker. \\
-
-Fake photons from jets also tend to have a hadronic component as well as an
-electromagnetic component while prompt photons are purely electromagnetic. \\ 
-
-Photons are detected by an electromagnetic shower in the ECAL. Prompt photons
-can be distinguished from fakes by the shower shape. \\
-
-Photons are distinguished from electrons by the tracker. Electrons, being
-charged particles, ionise in the silicon tracker and so leave a track. Photons
-do not. \\ 
-
-Based on these considerations, there are six variables used for the photon 
-selection:
-
-\begin{itemize}
-\item ECAL isolation
-\item HCAL isolation
-\item Track isolation
-\item H/E
-\item Shower Shape ($\sigma_{i\eta i\eta}$)
-\item Pixel Seed
-\end{itemize}
-
-ECAL isolation is defined as the sum of the energy deposited in the crystals of 
-the ECAL in a $\Delta R = 0.4$ circle around the photon. A smaller circle of 
-$\Delta R = 0.1$ around the photon is excluded from the isolation sum to avoid 
-counting the photon itself in the isolation. Also a strip along $\phi$ of width 
-$\Delta \eta = 0.04$ is excluded from the isolation sum to avoid including 
-bremstrahlung from electrons. \\
-
-HCAL isolation is defined as the sum of the energy deposited in the HCAL towers
-in a $\Delta R = 0.4$ circle around the photon position. A smaller circle of 
-$\Delta R = 0.1$ is excluded from the isolation sum to avoid counting 
-rear-leakage from high energy photons in the isolation. \\ 
-
-Track isolation is defined as the sum of the $p_{T}$ of tracks inside a cone of
-$\Delta R = 0.4$ around the photon and toward the primary vertex. A hollow cone 
-is used $\Delta R < 0.1$ is excluded from the isolation sum. \\
-
-H/E is the ratio of the hadronic energy deposited in the HCAL behind the photon
-to the photon energy. Jets faking photons are likely to have a significant 
-amount of hadronic energy while for prompt photons the amount of hadronic energy
-is likely to be small. \\
-
-The width of the shower in the $\eta$ direction is used as a measure of the
-shower shape. The $\eta$ direction rather than the $\phi$ direction is used 
-because bremstrahlung can cause electromagnetic showers to be spread out in 
-$\phi$. $\sigma_{\eta\eta}$ is the r.m.s width of the shower in the $\eta$ 
-direction. The variable used here is $\sigma_{i\eta i\eta}$, which calculates 
-the width in terms of number of crystals rather than $\eta$, is better because 
-it does not count the gaps between crystals (where there is no showering) in the
-width. \\
-
-A pixel seed is a track stub in the pixel detector that is the first step in
-track reconstruction. The photon selection requires that there is no pixel seed
-corresponding to the electromagnetic shower. \\
 
 Based on these variables there are two cuts sets considered here, labelled  RA3
 and EGM. These are defined in Table \ref{tab:photoncuts}. RA3 is used in the 

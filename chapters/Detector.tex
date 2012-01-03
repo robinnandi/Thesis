@@ -18,9 +18,9 @@ LHC. \\
 
 \begin{figure}
 \includegraphics[width=\textwidth]{LHC.pdf}
-\label{fig:LHC}
 \caption{A diagram of the LHC accelerator complex. Reproduced from
 \cite{physics_tdr_1}.}
+\label{fig:LHC}
 \end{figure}
 
 The CMS detector is one of the four LHC experiments. It was designed to explore 
@@ -31,9 +31,9 @@ Cessy in France. Figure \ref{fig:CMS} shows the layout of the CMS detector. \\
 
 \begin{figure}
 \includegraphics[width=\textwidth]{CMS.pdf}
-\label{fig:CMS}
 \caption{A view of the layers inside the CMS detector. Reproduced from
 \cite{physics_tdr_1}.}
+\label{fig:CMS}
 \end{figure}
 
 In the following sections each component of the CMS detector is described 
@@ -49,8 +49,8 @@ either side at $|z| = 34.5\cm$ and $46.5\cm$. \\
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Pixel.pdf}
-\label{fig:Pixel}
 \caption{A diagram of the pixel detector. Reproduced from \cite{physics_tdr_1}.}
+\label{fig:Pixel}
 \end{figure}
 
 The purpose of the pixel detector is to give good primary vertex resolution and
@@ -67,7 +67,7 @@ particles. It is made from strips of silicon which charged particles ionise. The
 technology is the pn junction with a reverse bias voltage applied, which creates
 a depletion region. Charged particles ionise inside the depleted region creating
 electron hole pairs which travel to the electrodes where they form a signal. 
-Silicon is used because of it produces fast, radiation hard electronics and good
+Silicon is used because it produces fast, radiation hard electronics and good
 resolution. \\
   
 The momentum of a particle is measured from the curvature of the track in the
@@ -75,23 +75,24 @@ magnetic field (Figure \ref{fig:curvature}). \\
 
 The silicon strip tracker is made up of 4 sub-detectors: the Tracker Inner 
 Barrel (TIB), the Tracker Outer Barrel (TOB), the Tracker Endcap (TEC) and the
-Tracker Inner Disks (TID). Figure \ref{fig:Silicon_Strip_Tracker.pdf} shows the 
-layout of the tracker.
+Tracker Inner Disks (TID). Figure \ref{fig:Silicon_Strip_Tracker} shows the 
+layout of the tracker. \\
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Silicon_Strip_Tracker.pdf}
-\label{fig:Silicon_Strip_Tracker}
 \caption{The layout of the silicon strip tracker. Reproduced from 
 \cite{physics_tdr_1}.}
+\label{fig:Silicon_Strip_Tracker}
 \end{figure}
 
-The transverse momentum resolution of the tracker is shown for muons of $p_{T} =
-1, 10 and 100 \GeV$ in Figure \ref{fig:tracker_resolution}.
+The resolution of the tracker is shown for muons of $p_{T} = 1$, 10 and 100 
+$\GeV$ in Figure \ref{fig:tracker_resolution}.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Tracker_Resolution.pdf}
+\caption{The resolution of the tracker as a function of $\eta$ for muons of
+$p_{T} = 1$, 10 and 100 $\GeV$.}
 \label{fig:tracker_resolution}
-\caption{The layout of the s.}
 \end{figure}
 
 \section{Electromagnetic Calorimeter}
@@ -249,32 +250,6 @@ hadronic shower. \\
 The jet energy resolution and the missing transverse energy resolution are the 
 key indicators of the performance of the HCAL. \\
 
-%In QCD dijet events, which have only fake missing tranvrese energy, the missing 
-%transverse energy resolution is given by Equation \ref{eq:MET_Resolution}. 
-%Severe mismeasurement of jets can also give fake missing transverse energy which
-%contributes non-gaussian tails to the missing transverse energy resolution.
-%
-%\begin{equation}
-%\sigma\left( MET \right) \sim \sqrt{\left( \sum{\ET} \right)}
-%\label{eq:MET_Resolution}
-%\end{equation}
-%
-%HCAL noise comes in three types:
-%
-%\begin{itemize}
-%\item {\bf HPD noise:} Misallignment between the HPD electric field and the
-%external magnetic field can lower the flashover voltage of the HPD resulting in
-%occasional cascades where all or most of the 18 channels within the HPD report
-%large energy deposits.
-%\item {\bf RBX noise:} The source of this noise is not understood, but its
-%behaviour is similar to HPD noise. In the case of RBX noise, all or most of the
-%72 channels of an RBX report large energies.
-%\item {\bf PMT Window noise:} Charged particles occasionally hit an HF PMT
-%window directly instead of interacting with the quartz fibres. This results in a
-%large energy deposit in either a long or a short fibre without an appreciable
-%deposit in the other short/long partner.
-%\end{itemize}
-
 \section{Superconducting Solenoid Magnet}
 
 The superconducting solenoid generates a uniform 3.8T magnetic field. The 
@@ -291,8 +266,7 @@ to within 5\% and has been mapped with a precision better than 0.1\%.
 \section{Muon System}
 
 The purpose of the muon system is the identification and triggering of muons. It
-also provides a momentum measurement of the muons, but that is mainly done by the 
-tracker. \\
+also provides a momentum measurement of the muons. \\
 
 \section{Trigger}
 
@@ -326,7 +300,7 @@ reconstruction facilities.
 
 \section{CMS Computing Model}
 
-CMS has produced O(10PB) of data and the quantity is growing. No single computer
+CMS has produced O(100PB) of data and the quantity is growing. No single computer
 centre is capable of handling such a large quantity of data. The CMS computing
 model involves a network of data centres across the world (Figure 
 \ref{fig:CMS_Data_Centres}) in a hierarchy of Tiers. 
@@ -353,4 +327,65 @@ and Tier 2 (blue dots) data centres. Reproduced from \cite{grid}.}
 
 \section{Photon Reconstruction}
 
+Photons make electromagnetic showers in the ECAL. Electromagnetic showers are 
+reconstructed from the energy deposits in the ECAL crystals. The clustering 
+algorithm starts with the energy deposits in single crystals and groups these 
+together starting with the highest energy crystal. A strip 5 crystals wide in 
+the $\eta$ direction and with dynamic $\phi$ length is used to contain the 
+energy in the cluster or clusters. To incorporate bremstrahlung from electrons, 
+the strip can be extended in the $\phi$ direction. A detailed description of the
+superclustering algorithm is given here \cite{supercluster}. \\ 
+
+Fake photons from QCD come from jets and so tend to have plenty of activity in
+the surrounding detectors. In contrast, prompt photons tend to be isolated with
+little surrounding activity. Isolation is one of the variables used to select 
+photons because of its background rejection power. There are three independent 
+isolation measures based on the ECAL, the HCAL and the tracker. \\
+
+Fake photons from jets also tend to have a hadronic component as well as an
+electromagnetic component while prompt photons are purely electromagnetic.
+Electromagnetic showers have a particular shower shape. Prompt photons can be 
+distinguished from fakes by the shower shape. Photons are distinguished from 
+electrons by the tracker. Electrons, being charged particles, ionise in the 
+silicon tracker and so leave a track. Photons do not. \\ 
+
+Based on these considerations, there are six variables used for the photon 
+selection:
+
+\begin{itemize}
+\item {\bf ECAL isolation} is defined as the sum of the energy deposited in the
+crystals of the ECAL in a $\Delta R = 0.4$ circle around the photon. A smaller 
+circle of $\Delta R = 0.1$ around the photon is excluded from the isolation sum 
+to avoid counting the photon itself in the isolation. Also a strip along $\phi$ 
+of width $\Delta \eta = 0.04$ is excluded from the isolation sum to avoid 
+including bremstrahlung from electrons.
+\item {\bf HCAL isolation} is defined as the sum of the energy deposited in the 
+HCAL towers in a $\Delta R = 0.4$ circle around the photon position. A smaller 
+circle of $\Delta R = 0.1$ is excluded from the isolation sum to avoid counting 
+rear-leakage from high energy photons in the isolation.
+\item {\bf Track isolation} is defined as the sum of the $p_{T}$ of tracks 
+inside a cone of $\Delta R = 0.4$ around the photon and toward the primary 
+vertex. A hollow cone is used $\Delta R < 0.1$ is excluded from the isolation 
+sum.
+\item {\bf H/E} is the ratio of the hadronic energy deposited in the HCAL behind
+the photon to the photon energy. Jets faking photons are likely to have a 
+significant amount of hadronic energy while for prompt photons the amount of 
+hadronic energy is likely to be small.
+\item {\bf Shower Shape ($\sigma_{i\eta i\eta}$)}. The width of the shower in 
+the $\eta$ direction is used as a measure of the shower shape. The $\eta$ 
+direction rather than the $\phi$ direction is used because bremstrahlung can 
+cause electromagnetic showers to be spread out in $\phi$. $\sigma_{\eta\eta}$ is
+the r.m.s width of the shower in the $\eta$ direction. The variable used here is
+$\sigma_{i\eta i\eta}$, which calculates the width in terms of number of 
+crystals in the $\eta$ direction rather than $\eta$ itself. This is better 
+because it does not count the gaps between crystals (where there is no 
+showering) in the width and it is not distorted by the geometry of the detector 
+in the end-cap region.
+\item {\bf Pixel Seed}. A pixel seed is a track stub in the pixel detector that 
+is the first step in track reconstruction. The photon selection requires that 
+there is no pixel seed corresponding to the electromagnetic shower.
+\end{itemize}
+
 \section{Jet Reconstruction}
+
+Jets are reconstructed using the anti-KT algorithm with a cone size of 0.5.
