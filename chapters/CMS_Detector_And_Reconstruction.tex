@@ -58,7 +58,22 @@ to initiate track reconstruction. The pixel size is $100\times150\um$. The
 spatial resolution is about $10\um$ for the (r,$\phi$) measurement and about 
 $20\um$ for the z measurement. \\
 
-Something about primary vertex resolution and reconstruction.
+The primary vertex is found by clustering selected tracks in z. A fit is
+performed based on a weight assigned to each track which is between 0 and 1
+depending on the compatibility with the vertex \cite{primary_vertex}. \\
+
+The primary vertex resolution depends strongly on the number of tracks in the
+fit. Figure \ref{fig:primary_vertex} shows the primary vertex resolution as a
+function of the number of tracks for various average track $\pT$ ranges.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{primary_vertex_resolution.pdf}
+\end{center}
+\caption{The Primary Vertex resolution as a function of the number of tracks for
+various average track $\pT$ ranges. Reproduced from \cite{primary_vertex}.}
+\label{fig:primary_vertex}
+\end{figure}
 
 \section{Silicon Strip Tracker}
 
@@ -70,8 +85,27 @@ electron hole pairs which travel to the electrodes where they form a signal.
 Silicon is used because it produces fast, radiation hard electronics and good
 resolution. \\
   
-The momentum of a particle is measured from the curvature of the track in the
-magnetic field (Figure \ref{fig:curvature}). \\ 
+The transverse momentum of a particle is measured from the curvature of the 
+track in the magnetic field by Equation \ref{eq:pt_measurement}, where $\pT$ is
+the transverse momentum in $\GeV$, B is the magnetic field in Tesla and r is the
+radius of curvature in metres. Only the hits are measured directly. The 
+``sagitta'' or distance s in Figure \ref{fig:curvature} is deduced and the 
+transverse momentum is calculated from this. Since s is inversely proportional 
+to $\pT$, the resolution is worse at higher $\pT$.
+
+\begin{equation}
+\pT = 0.3Br
+\label{eq:pt_measurement}
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.3\textwidth]{Curvature.pdf}
+\end{center}
+\caption{Diagram illustrating how the transverse momentum is calculated from the
+curvature of the track in the magnetic field.}
+\label{fig:curvature}
+\end{figure}
 
 The silicon strip tracker is made up of 4 sub-detectors: the Tracker Inner 
 Barrel (TIB), the Tracker Outer Barrel (TOB), the Tracker Endcap (TEC) and the
@@ -155,13 +189,13 @@ enivonment in which they operate. \\
 
 In the EB the length of the crystals is $23\cm$ (26 $X_{0}$) and the 
 cross-section is $0.0147\times0.0147$ in $\eta$-$\phi$ or about 
-$22\mm\times22\mm$ at the front face. Figure \ref{fig:ECAL_Barrel} shows the
-layout of crystals in the EB. The crystals are angled at $3^{o}$ with
-respect to the interaction point. To minimise the risk of particles escaping 
-down the cracks between the crystals. The ECAL is divided into regions called 
-Trigger Towers (TTs) for which trigger primitives (crystal energy sums) used by 
-the trigger are calculated. There are $85\times72$ TTs in the EB each consisting
-of 5x5 arrays of crystals. \\
+$22\mm\times22\mm$ at the front face. Figure \ref{fig:ECAL} shows the layout 
+of crystals in the EB. The crystals are angled at $3^{o}$ with respect to the 
+interaction point. To minimise the risk of particles escaping down the cracks 
+between the crystals. The ECAL is divided into regions called Trigger Towers 
+(TTs) for which trigger primitives (crystal energy sums) used by the trigger 
+are calculated. There are $85\times72$ TTs in the EB each consisting of 5x5 
+arrays of crystals. \\
 
 In the EE the length of the crystals is $22\cm$ (25$X_{0}$). Due to the geometry
 of the detector the granularity in $\eta$-$\phi$ varies across the EE. \\
@@ -248,7 +282,19 @@ Figure \ref{fig:hadronic_shower} shows a diagram of the development of a
 hadronic shower. \\
 
 The jet energy resolution and the missing transverse energy resolution are the 
-key indicators of the performance of the HCAL. \\
+key indicators of the performance of the HCAL. Figure \ref{fig:jetmet} shows the
+jet transverse energy resolution and the missing transverse energy resolution
+\cite{jet_resolution, met_resolution}.
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{jet_resolution.pdf}
+\includegraphics[width=0.5\textwidth]{met_resolution.pdf}
+\caption{Performance measures for the HCAL: (a) the jet $\pT$ resolution as a 
+function of jet $\pT$ for various different jet reconstructions and (b) the 
+$\MET$ resolution as a function of Sum $\ET$ for different $\MET$
+reconstructions. Reproduced from \cite{jet_resolution, met_resolution}.}
+\label{fig:jetmet}
+\end{figure}
 
 \section{Superconducting Solenoid Magnet}
 
@@ -269,12 +315,28 @@ better than 0.1\% \cite{field_uniformity}.
 The purpose of the muon system is the identification and triggering of muons. It
 also provides a momentum measurement of the muons. \\
 
-Description of the muon detector.
+The muon system has a barrel region in the pseudorapidity range $\eta < 1.2$ and
+two endcaps with $1.2 < \eta < 2.4$. Standard drift tube chambers are used in
+the barrel and cathode strip chambers in the endcaps. The muon ionises the gas 
+as it passes through the chamber. The resolution increases with the $\pT$ of the
+muon since the straighter the track the more difficult it is to accurately 
+determine the curvature. Also the resolution is worse in the endcaps where the
+fake rate is higher and the magnetic field is less uniform. Figure
+\ref{fig:muon_resolution} shows the muon $\pT$ resolution as a function of muon
+$\pT$.
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{muon_res_barrel.pdf}
+\includegraphics[width=0.5\textwidth]{muon_res_endcap.pdf}
+\caption{The muon $\pT$ resolution as a function of muon $\pT$ for (a) $\eta <
+0.8$ and (b) $1.2 < \eta < 2.4$. Reproduced from \cite{muon_resolution}.}
+\label{fig:muon_resolurion}
+\end{figure}
 
 \section{Trigger}
 
 With a soft QCD cross-section of $\sim1\mb$ and a luminosity of
-$10^{33}\cm^{-1}s^{-1}$ $(1\invnb s^{-1})$ the event rate is $\sim 1 \MHz$. 
+$10^{33}\cm^{-1}s^{-1}$ $(1\invnb s^{-1})$ the event rate is $\sim 1$ MHz. 
 However, most of these are uninteresting soft QCD events. Intresting events such
 as W/Z production, Higgs production or SUSY events have much smaller 
 cross-sections. Figure \ref{fig:cross_sections} shows the cross sections of
@@ -336,7 +398,7 @@ algorithm starts with the energy deposits in single crystals and groups these
 together starting with the highest energy crystal. A strip 5 crystals wide in 
 the $\eta$ direction and with dynamic $\phi$ length is used to contain the 
 energy in the cluster or clusters. To incorporate bremstrahlung from electrons, 
-the strip can be extended in the $\phi$ direction. A detailed description of the
+the strip can be extended in the $\phi$ direction. A description of the
 superclustering algorithm is given here \cite{supercluster}. \\ 
 
 Fake photons from QCD come from jets and so tend to have plenty of activity in
@@ -393,7 +455,7 @@ there is no pixel seed corresponding to the electromagnetic shower.
 
 Jets are collimated bunches of stable hadrons originating from partons (quarks
 and gluons) after fragmentation and hadronisation. Jets are reconstructed using 
-the anti-KT algorithm with a cone size of 0.5. The anti-KT algorihtm a
+the anti-KT algorithm with a cone size of 0.5. The anti-KT algorihtm is a
 sequential clustering algorithm which is IR safe and produces circular
 cone-shaped jets. The anti-KT algorithm is used because it has a higher 
 efficiency, lower fake rate and is less sensitive to pile-up than the other 
@@ -403,4 +465,5 @@ The reconstruction uses so-called ``particle flow'' objects (including photons,
 charged hadrons and neutral hadrons) as input. The philosophy of the particle 
 flow reconstruction is to have a complete and consistent event hypothesis. All 
 components of the detector are used in the reconstruction. Particle flow jets 
-are better than other jet reconstructions because they 
+have better resolution than other jet reconstructions (see Figure
+\ref{fig:jetmet}).
