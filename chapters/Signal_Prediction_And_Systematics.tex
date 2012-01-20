@@ -285,9 +285,10 @@ uncertainty.}
 
 \section{Pile-up}
 
-Pile-up is where there are multiple interations per bunch crossing. Some of the
-effects of pile-up are avoided by requiring that the two jets and the photon
-come from the same primary vertex as they must in the SUSY event hypothesis. 
+Pile-up is where there are multiple interations per bunch crossing. 
+%Some of the
+%effects of pile-up are avoided by requiring that the two jets and the photon
+%come from the same primary vertex as they must in the SUSY event hypothesis. 
 Pile-up affects the number of signal events in several ways:
 
 \begin{itemize}
@@ -303,9 +304,20 @@ Most of the pile-up events will be soft QCD with low $\pT$ jets approximately
 parallel to the beam-line. These do not have a huge effect on the $\HT$ since 
 the $\HT$ is a sum of high $\pT$ jets. The effect of pile-up on the $\HT$ is 
 evaluated by looking at the HT distribution in MC QCD events with and without 
-pile-up. A shift of $x$ is applied to the no pile-up $\HT$ distribution 
-to match the pile-up $\HT$ distribution. Figure \ref{fig:puHT} shows the $\HT$ 
-distribution with a $\pm 1$ sigma variation in the shift. \\
+pile-up. A shift of $7.0\pm0.8$ is applied to the no pile-up $\HT$ distribution 
+to match the pile-up $\HT$ distribution (Figure \ref{fig:meanht_vs_htshift}). 
+Figure \ref{fig:puHT} shows the $\HT$ distribution with a $\pm 1$ sigma 
+variation in the shift. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{meanht_vs_htshift.pdf}
+\end{center}
+\caption{The mean $\HT$ as a function of $\HT$ shift (red) with one sigma band 
+(yellow) in QCD events with a similar $\HT$ to the signal. The mean $\HT$ with 
+pile-up is shown in black.}
+\label{fig:meanht_vs_htshift}
+\end{figure}
 
 \begin{figure}
 \begin{center}
@@ -322,17 +334,27 @@ $\HT$ and balanced so will have only a little effect on the $\MET$. The $\MET$
 distribution is smeared to account for pile-up. To determine the amount of
 smearing necessary a QCD sample with similar $\HT$ and no pile-up is smeared
 until the shape agrees with the $\MET$ distribution with pile-up. Figure 
-\ref{fig:puMET} shows the average $\MET$ in QCD events without pile-up as a 
-function of the $\MET$ smearing. From the plot a $\MET$ smearing of 
-$2.9\pm0.8\%$ is applied to account for pile-up. \\
+\ref{fig:meanmet_vs_metsmearing} shows the average $\MET$ in QCD events without 
+pile-up as a function of the $\MET$ smearing. From the plot a $\MET$ smearing of 
+$2.9\pm0.8\%$ is applied to account for pile-up. Figure \ref{fig:puMET} shows the 
+$\MET$ distribution with a $\pm 1$ sigma variation in the shift. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{meanmet_vs_metsmearing.pdf}
+\end{center}
+\caption{The mean $\MET$ as a function of $\MET$ smearing (red) with one sigma
+band (yellow) in QCD events with a similar $\HT$ to the signal. The mean $\MET$ 
+with pile-up is shown in black.}
+\label{fig:meanmet_vs_metsmearing}
+\end{figure}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{puMET.pdf}
 \end{center}
-\caption{The mean $\MET$ as a function of $\MET$ smearing (red) with one sigma
-band (yellow) in QCD events with a similar $\HT$ to the signal. The mean $\MET$ 
-with pile-up is shown in black.}
+\caption{The correction to the $\MET$ distribution to account for pile-up. The
+$\pm 1$ sigma variations are shown in red and blue respectively.}
 \label{fig:puMET}
 \end{figure}
 
@@ -340,22 +362,36 @@ The photon isolation efficiency is particularly affected by pile-up because
 activity from other events in the same bunch crossing can populate the isolation
 cone. To quantify this effect QCD MC events with a similar $\HT$ were used to
 determine the photon efficiency in MC as a function of the number of primary
-vertices. Taking the distribution of number of primary vertices from data, the
-efficiency expected under pile-up can be calculated. This method assumes that
-SUSY photons have a similar behaviour under pile-up to QCD photons. This
-assumption is reasonable beacause the pile-up affects mainly the isolation
-through extra surrounding activity which is a property of the event rather than
-the photon. It also assumes that the $\HT$ distribution of the QCD sample is a
-good model of the $\HT$ in the SUSY sample. To quantify this effect two MC QCD
-samples of slighty different $\HT$, both similar to the SUSY $\HT$
-distribtution, are used and half the difference beteewn the two efficiency
-corrections is taken as the systematic error. This method also relies on MC
-modelling the photon efficiency in pile-up well. This can be checked by looking
-at Zee events in data. The efficiency requires only a small correction between
-data and MC which is relatively stable with respect to pile-up. The efficiency
-correction due to pile-up is found to be $0.83\pm0.01(stat.)\pm(syst.)$. \\
+vertices. Figure \ref{fig:Efficiency_vs_nVertices} shows the relative efficiency
+as a function of the number of primary vertices. Taking the distribution of 
+number of primary vertices from data, the efficiency expected under pile-up can 
+be calculated. This method assumes that SUSY photons have a similar behaviour 
+under pile-up to QCD photons. This assumption is reasonable beacause the pile-up 
+affects mainly the isolation through extra surrounding activity which is a 
+property of the event rather than the photon. This method also relies on MC 
+modelling the photon efficiency in pile-up well. This can be checked by looking 
+at Zee events in data. The efficiency requires only a small correction between 
+data and MC which is relatively stable with respect to pile-up (Figure 
+\ref{fig:EffCorr_vs_nPV}). The efficiency correction due to pile-up is found to 
+be $0.83\pm0.01(stat.)\pm0.01(syst.)$. \\
 
-The 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{Efficiency_vs_nVertices.pdf}
+\end{center}
+\caption{The relative photon efficiency as a function of the number of primary 
+vertices.}
+\label{fig:Efficiency_vs_nVertices}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{EffCorr_vs_nPV.pdf}
+\end{center}
+\caption{The efficiency correction between data and MC as a function of the
+number of primary vertices.}
+\label{fig:EffCorr_vs_nPV}
+\end{figure}
 
 \section{Signal Cross-Section}
 
@@ -430,7 +466,11 @@ Jet Energy Scale & - & & 5\% \\
 \hline
 Jet Energy Resolution & - & & 1\% \\
 \hline
-Pile-up & - & & \\
+Pile-up: HT shift & - & & \\
+\hline
+Pile-up: MET scaling & - & & \\
+\hline
+Pile-up: photon efficiency & - & & \\
 \hline
 Signal Cross-Section & - & - & 20\% \\
 \hline
