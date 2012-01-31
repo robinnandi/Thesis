@@ -353,13 +353,22 @@ two properties which characterise ECAL spikes: topology and timing. ECAL spikes
 tend to be single crystal enrgy deposits in the ECAL which are often not vetoed 
 by the shower shape variable. Some spikes are in time with the rest of the event 
 and some are out of time. The energy varies from a few $\MeV$ to a few $\TeV$. A 
-cut of $e1/e4 < 0.96$ is made on all photons in the standard reconstrucion to 
-avoid ECAL Spikes. e1/e4 is the ``Swiss Cross'' variable in which the highest
-energy crystal in a 3x3 array is divided by the four adjacent crystals. This is
-illustrated by Figure \ref{fig:spikes} along with another variable e2/e9. To cut 
-out remaining spikes, events containing a photon with $e2/e9 > 0.96$ or $|t| > 
-5\ns$ are vetoed. t is the time of the signal in the seed crystal.
+cut of $1 - e4/e1 < 0.96$ is made to avoid ECAL Spikes. 1 - e4/e1 is the ``Swiss 
+Cross'' variable in which e1 is the highest energy crystal in a 3x3 array and e4 
+is the energy of the four adjacent crystals. Additional spikes with significant
+energy in two adjacent crystals remained. These residual spikes are vetoed by
+requiring $e2/e9 < 0.96$ and $|t| < 5\ns$, t is the timing of the signal. This 
+is illustrated by Figure \ref{fig:spikes}.
 \end{itemize}
+
+\begin{figure}
+\begin{center}
+\includegraphics[\textwidth]{spikes.pdf}
+\end{center}
+\caption{A plot of e2/e9 vs seed time to show how double crystal ECAL spikes are
+vetoed.}
+\label{fig:spikes}
+\end{figure}
 
 $\HT$, the scalar sum of the transverse momentum of all the objects in the 
 event, is used as a measure of the energy scale of the event. There is a $\HT$ 

@@ -108,19 +108,13 @@ L_{s+b} = \prod_{i=1}^{N}
 A confidence interval is calculated based on a test statistic. This can be the 
 likelihood for the signal + background hypothesis. However this can be misleading
 if the background hypothesis doesn't fit either. A more common approach is to 
-use the likelihood ratio (Equation \ref{eq:Simple_Likelihood_Ratio}) or the profile
-likelihood ratio (Equation \ref{eq:Profile_Likelihood_Ratio}), where 
+use the likelihood ratio (Equation \ref{eq:Likelihood_Ratio}), where 
 $\boldsymbol\theta$ is the vector of parameters and $\hat{\boldsymbol\theta}$
 is the vector of parameter values which maximises the likelihood. 
 
 \begin{equation}
--2\log\Lambda_{simple} = -2\log\frac{L_{s+b}(\boldsymbol\theta)}{L_{b}(\boldsymbol\theta)}
-\label{eq:Simple_Likelihood_Ratio}
-\end{equation}
-
-\begin{equation}
--2\log\Lambda_{profile} = -2\log\frac{L_{s+b}(\boldsymbol\theta)}{L_{s+b}(\hat{\boldsymbol\theta})}
-\label{eq:Profile_Likelihood_Ratio}
+-2\log\Lambda_{profile} = -2\log\frac{L_{s+b}(\boldsymbol\theta)}{L_{b}(\hat{\boldsymbol\theta})}
+\label{eq:Likelihood_Ratio}
 \end{equation}
 
 For ease of calculation the negative log likelihood is used instead of the likelihood.
