@@ -2,23 +2,43 @@
 
 \section{Introduction}
 
-The predicted number of signal events is found by applying the selection cuts to
-the signal MC. Corrections need to be made relating to the difference between
-the photon efficiency in data and MC and to account for pile-up. In addition to
-these corrections uncertainties on the signal prediction need to be determined.
-These include statistical errors and systematic errors. Given that 10,000 events
-are available for each signal point, the statistical error is small. It is the
-systematic error on which attention must be focussed. \\
+The predicted number of signal events, s, is given by Equation
+\ref{eq:Number_of_signal_events}.
 
-Many pieces of information goes into the calculation of the signal prediction 
-and each of these pieces of information has an uncertainty associated with it. 
-To evaluate the systematic error the key components need to be established: 
-those that if varied within their uncertainties could cause a significant 
-difference in the signal prediction. Cuts are made on jets, photons, HT and MET.
-For the jet and HT cuts the jet energy scale and jet energy resolution are the
-major sources of uncertainty. For the photons the main sources of uncertainty
-are the photon efficiency and the pile-up. Both the HT and MET distributions are
-also affected by pile-up.
+\begin{equation}
+s = \epsilon \sigma L
+\label{eq:Number_of_signal_events}
+\end{equation}
+
+where $\epsilon$ is the efficiency $\times$ acceptance for the event selection,
+$\sigma$ is the cross section and $L$ is the integrated luminosity. \\
+
+The signal cross section comes from theoretical calculations. 441 different
+signal models are considered with different values for squark mass and gluino 
+mass. The squark mass and gluino mass each take 21 values from 400 $\GeV$ to 
+2000 $\GeV$ in intervals of 80 $\GeV$. The cross section is x-y pb depending on 
+the parameter values. The largest uncertainty in the signal prediction comes 
+from the cross section (10--60\%). \\
+
+The integrated luminosity comes from LHC measurements of the beam. 1.1 $\invfb$
+of data is used in this analysis. The uncertainty on the integrated luminosity
+is about 5\%. \\
+
+The efficiency $\times$ acceptance for the signal is found by applying the 
+selection cuts to the signal MC. Corrections need to be made relating to the 
+difference between the photon efficiency in data and MC and to account for 
+pile-up. In addition to these corrections uncertainties on the signal prediction
+need to be determined. These include statistical errors and systematic errors. 
+Given that 10,000 events are available for each signal point, the statistical 
+error is small. It is the systematic error on which attention must be focussed. 
+\\
+
+Cuts are made on jets, photons, $\HT$ and $\MET$. The major sources of
+uncertainty for the jet and $\HT$ cuts are the jet energy scale and jet energy 
+resolution. For the photons the main sources of uncertainty come from the photon
+efficiency correction for the differences between data and MC and from pile-up
+which affects the photon isolation efficiency. Both the $\HT$ and $\MET$ 
+distributions are also affected by pile-up, but this is a small effect.
 
 \section{Photon Efficiency}
 
@@ -26,11 +46,11 @@ The photon efficiency needs to be determined to calculate the signal efficiency.
 The photon efficiency could be found using the MC, but that relies heavily on
 the correct modelling of the shower shape, isolation and other variables which
 may not be well modelled in the MC. The photon efficiency should be measured
-from data. In the absence of any pure photon sample in the data, electrons from 
-$Z\rightarrow ee$ events are used. This relies on the similarity in detector 
-response between electrons and photons. A scale factor to correct the MC photon
-efficiency to the real photon efficiency in data is obtained using the
-electrons (Equation \ref{eq:Scale_Factor}). \\
+from data. In the absence of a suitable pure photon sample in the data, 
+electrons from $Z\rightarrow ee$ events are used. This relies on the similarity 
+in detector response between electrons and photons. A scale factor to correct 
+the MC photon efficiency to the real photon efficiency in data is obtained using 
+the electrons (Equation \ref{eq:Scale_Factor}). \\
 
 \begin{equation}
 \epsilon_{\gamma}^{data} = \frac{\epsilon_{e}^{data}}{\epsilon_{\gamma}^{MC}}
@@ -57,6 +77,8 @@ to be sure that it is an electron. Another electron (probe) with looser
 requirements is located such that the invariant mass of the two electrons lies 
 in the Z peak. \\
 
+% detail on tag and probe
+
 The scale factor is found to be $\epsilon_{e}^{data}/\epsilon_{e}^{MC} =
 0.953\pm 0.014(stat.)$ for events with at least one jet. Four possible sources
 of systematic uncertainty on this number were considered. \\
@@ -78,6 +100,7 @@ distribution of primary vertices in the data peaks. The difference between the
 scale factors in the two samples, 0.024, was taken as a systematic error on the 
 scale factor. \\
 
+% plot
 {\bf }
 
 Combining the systematic errors above with the statistical error yields a final
