@@ -56,23 +56,16 @@ angular distribution of electrons was measured. An asymmetry in the distribution
 between $\theta$ and $180^{\circ} - \theta$ (where $\theta$ is the angle between 
 the electron momentum and the orientation of the parent nucleus) was observed
 providing unequivocal proof that parity is not conserved in beta decay. This is
-represented in the Standard Model by the presence of chiral fermions and the V-A 
+represented in the Standard Model by the presence of chiral fermions in the
 structure of the weak interaction. \\
 
 Electroweak theory was introduced by Glashow, Salam and Weinberg who proposed
 that the electromagnetic force and the weak force are parts of the same theory. 
 The $W^{\pm}$ and $Z^{0}$ bosons were predicted to have have masses in the ratio
-$\frac{m_{W}}{m_{Z}} = \cos{\theta_{W}}$, where $\theta_{W}$ is the
-Weinberg angle. The $W^{\pm}$ and $Z^{0}$ bosons were discovered by the UA1 and 
+$\frac{m_{W}}{m_{Z}} = \cos{\theta_{W}}$, where $\theta_{W}$ is the weak mixing 
+angle. The $W^{\pm}$ and $Z^{0}$ bosons were discovered by the UA1 and 
 UA2 experiments at CERN. Carlo Rubbia and Simon van der Meer won the Nobel Prize
 for Physics in 1983 for their decisive contributions toward the discovery. \\
-
-The Stanfrod Linear Accelerator (SLAC) and the Hadron Electron Ring Accelerator
-(HERA) made ep collisions to probe the structure of the proton. The structure 
-functions of the proton were found to be independent of the momentum transfer 
-indicating that the proton is made up of asymptotically free partons. This is
-known as bjorken scaling. The structure functions depend only on one variable, 
-x, the fraction of the proton momentum carried by the parton. \\
 
 The Large Electron Positron Collider (LEP) made $e^{+}e^{-}$ collisions to
 search for new physics and make precision electroweak measurements. The
@@ -100,20 +93,19 @@ meaning that the transformation is the same for all space-time points. \\
 
 A theory can be described by a Lagrangian which is equal to the kinetic energy
 minus the potential energy. The equations of motion of such a theory can be
-derived by minimising the action (Equation \ref{eq:action}). The resulting
-equations are known as the Euler-Lagrange equations. 
+derived by minimising the action (Equation \ref{eq:action}).
 
 \begin{equation}
 S = \int L d^{4}x^{\mu}
 \label{eq:action}
 \end{equation}
 
-Consider a Lagrangian with N scalar fields ${\mathbf \phi}(x^{\mu}) =
+Consider a Lagrangian with N scalar fields $\mathbf{\phi}(x^{\mu}) =
 \left(\phi_{1}(x^{\mu}),...,\phi_{N}(x^{\mu})\right)$, where $x^{\mu}$ is the
 space-time co-ordinate as in Equation \ref{eq:lagrangian}.
 
 \begin{equation}
-L = L({\mathbf \phi}, \partial_{\mu}{\mathbf \phi}, x^{\mu})
+L = L(\mathbf{\phi}, \partial_{\mu}\mathbf{\phi}, x^{\mu})
 \label{eq:lagrangian}
 \end{equation}
 
@@ -168,7 +160,7 @@ nature of the electromagentic interaction. The photon is a massless particle whi
 interacts with electrons, but not with itself. The electromagnetic force has 
 infinite range. \\
 
-\subsection{Electroweak Symmetry Breaking}
+\subsection{The Electroweak Sector}
 
 The electroweak force consists of SU(2) weak isospin and U(1) hypercharge. Table 
 \ref{tab:ewk} defines the symbols for the groups, the corresponding fields and 
@@ -191,10 +183,8 @@ groups. $a = 1, 2, 3$ and $\sigma^{a}$ are the Pauli matrices.}
 \end{table}
 
 Consider a scalar field doublet, $\phi$, with respect to SU(2) with U(1) 
-hypercharge $Y = \frac{1}{2}$. \\
-
-The bosonic sector of the electroweak lagrangain can be written as Equation 
-\ref{eq:ew}.
+hypercharge $Y = \frac{1}{2}$. The bosonic sector of the electroweak lagrangain 
+can be written as:
 
 \begin{equation}
 L = -\frac{1}{4}F_{\mu\nu}^{a}F_{\mu\nu}^{a}
@@ -205,7 +195,7 @@ L = -\frac{1}{4}F_{\mu\nu}^{a}F_{\mu\nu}^{a}
 
 where
 \begin{eqnarray}
-F_{\mu\nu} &=& \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu} +
+F_{\mu\nu}^{a} &=& \partial_{\mu}A_{\nu}^{a} - \partial_{\nu}A_{\mu}^{a} +
 g\epsilon^{abc}A_{\mu}^{b}A_{\nu}^{c} \\
 G_{\mu\nu} &=& \partial_{\mu}B_{\nu} - \partial_{\nu}B_{\mu} \\
 D_{\mu}\phi &=& \partial_{\mu}\phi - i\frac{g}{2}\sigma^{a}A_{\mu}^{a}\phi -
@@ -213,7 +203,8 @@ i\frac{g^{\prime}}{2}B_{\mu}\phi
 \end{eqnarray}
 
 There is a continuum of ground states giving equivalent physics, one of which
-must be chosen by nature. Arbitrarily choose:
+must be chosen by nature. This is known as symmetry breaking. Arbitrarily 
+choose:
 
 \begin{equation}
 A_{\mu} = 0 \hspace{2cm} B_{\mu} = 0 \hspace{2cm} \phi_{0} =
@@ -270,6 +261,15 @@ A_{\mu} &=& \frac{1}{\sqrt{g^{2} + g^{\prime 2}}}(gB_{\mu} -
 g^{\prime}A_{\mu}^{3}) = \sin\theta_{W}A_{\mu}^{3} + \cos\theta_{W}B_{\mu}
 \end{eqnarray}
 
+$Z_{\mu}$ and $A_{\mu}$ are rotations of the original fields with angle
+$\theta_{W}$ which satisfies Equation \ref{eq:thetaw}.
+
+\begin{equation}
+\cos\theta_{W} = \frac{g}{\sqrt{g^{2} + g^{\prime 2}}} \hspace{2cm}
+\sin\theta_{W} = \frac{g^{\prime}}{\sqrt{g^{2} + g^{\prime 2}}}
+\label{eq:thetaw}
+\end{equation}
+
 $Z_{\mu}$ and $A_{\mu}$ are determined by the necessity that the covariant
 derivative, $D_{\mu}\phi$, does not contain $A_{\mu}$ -- it must be invariant
 under the electromagnetic gauge transformation. To quadratic order the
@@ -284,8 +284,15 @@ m_{W}^{2}W_{\mu}^{+}W_{\mu}^{-} \\
 +\frac{1}{2}(\partial_{\mu}\chi)^{2} - \frac{m_{\chi}^{2}}{2}\chi^{2}
 \end{eqnarray}
 
+where
+\begin{eqnarray}
+\mathcal{W}_{\mu\nu}^{\pm} &=& \partial_{\mu}W_{\nu}^{\pm} -
+\partial_{\nu}W_{\mu}^{\pm} \\
+\mathcal{Z}_{\mu\nu} &=& \partial_{\mu}Z_{\nu} - \partial_{\nu}Z_{\mu}
+\end{eqnarray}
+
 The physical fields can be seen from the lagrangian and are summarised in Table
-\ref{tab:physical}.
+\ref{tab:physical}. \\
 
 \begin{table}
 \begin{center}
@@ -304,19 +311,132 @@ $\chi$ & $m_{\chi} = \sqrt{2\lambda}v$ & Higgs \\
 \label{tab:physical}
 \end{table} 
 
+The electroweak theory of Glashow, Salam and Weinberg predicted mixing between
+the electromagnetic and weak forces and the existence of $W^{\pm}$ and $Z^{0}$ 
+bosons with masses in the ratio given by Equation \ref{eq:masses}. 
+
+\begin{equation}
+\frac{m_{W}}{m_{Z}} = \cos\theta_{W}
+\label{eq:masses}
+\end{equation}
+
+The electric charge is connected to the weak mixing angle by:
+
+\begin{equation}
+e = g\sin\theta_{W}
+\end{equation}
+
+The existence of the $W^{\pm}$ and $Z^{0}$ bosons was confirmed experimentally 
+by the UA1 and UA2 experiments in CERN. The masses were measured to be:
+
+\begin{equation}
+m_{W} = 80.4\pm \GeV \hspace{2cm} m_{Z} = 91.2\pm \GeV
+\end{equation}
+
+The weak mixing angle, $\theta_{W}$, was measured independently to satisfy 
+$\sin\theta_{W} = 0.23$ in good agreement with the predictions of the
+electroweak theory. \\
+
+Both leptons and quarks feel the weak interaction. The $W^{\pm}$ interact only
+with left-handed fermions. Handedness (or chirality) is the eigenvalue of the 
+$\gamma^{5}$ matrix. It corresponds to the helicity (the projection of the spin 
+onto the direction of motion) in the relativistic limit $m << E$. \\
+
+The left handed components form SU(2) doublets while the right handed components
+are singlets under SU(2) as in Equation \ref{eq:leptons} for leptons and
+Equation \ref{eq:quarks} for quarks.
+
+\begin{equation}
+E_{L} = \left(\begin{array}{c}e\\\nu_{e}\end{array}\right)_{L} \hspace{1cm} e_{R}
+\label{eq:leptons}
+\end{equation}
+
+\begin{equation}
+Q_{L} = \left(\begin{array}{c}u\\\bar{d}\end{array}\right)_{L} \hspace{1cm}
+u_{R} \hspace{1cm} \bar{d}_{R}
+\label{eq:quarks}
+\end{equation}
+
+The Yukawa couplings are:
+
+\begin{equation}
+L_{\mbox{Y}} = -y_{e}\bar{E}_{L}\phi e_{R} - y_{d}\bar{Q}_{L}\phi d_{R} -
+y_{u}\bar{Q}_{L}\phi^{*} u_{R} + h.c.
+\label{eq:yukawa}
+\end{equation}
+
+Quark mixing.
+
 \subsection{Quantum Chromodynamics (QCD)}
+
+SU(3) is the symmetry group of the strong force. Particles which interact via
+the strong force carry colour charge. Quarks come in 3 colours denoted r, g and 
+b. There are 8 gluons which correspond to the 8 generators of SU(3). Gluons 
+carry colour charge and so interact with each other. This is required by gauge 
+invariance due to the non-abelian nature of SU(3). \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{gluons.png}
+\end{center}
+\caption{Gluon self-interactions occur because gluons carry colour charge. This
+is required by gauge invariance due to the non-abelian nature of SU(3).}
+\end{figure}
+
+The Hadron Electron Ring Accelerator (HERA) made electron proton collisions to
+determine the structure of the proton. Deep inelastic scattering in the ZEUS and
+H1 detectors revealed that the structure functions of the proton are independent
+of the momentum transfer, $Q^{2}$, and dependent only on $x = 
+\frac{Q^{2}}{2p.q}$. This is called bjorken scaling and lead to the parton model 
+in which the proton is made of partons which carry a fraction, $x$, of the 
+proton momentum. Figure \ref{fig:dis} shows the independence of the 
+cross-section with $Q^{2}$ over 5 orders of magnitude. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{DIS-QCD.png}
+\end{center}
+\caption{The structure functions of the proton are independent of $Q^{2}$ over 5
+orders of magnitude.}
+\label{fig:dis}
+\end{figure}
+
+The Parton Density Functions (PDFs) are the probability distribution for the
+fraction of the proton momentum carried by each parton. The PDFs need to be
+known to make reliable Monte Carlo simulations and cross-section predictions for 
+the LHC. Figure \ref{pdfs} shows the parton density functions measured by H1 and
+ZEUS. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{PDFs.pdf}
+\end{center}
+\caption{The Parton Density Functions (PDFs) measured by H1 and ZEUS.}
+\label{fig:dis}
+\end{figure}
+
+The coupling strength of the strong force varies with energy. Figure
+\ref{fig:coupling} shows the variation in coupling strength of the strong, weak
+and electromagnetic force as a function of energy. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{coupling2.pdf}
+\end{center}
+\caption{The coupling strengths of the electromagnetic force, the weak force and
+the strong force as a function of energy.}
+\label{fig:coupling}
+\end{figure}
+
+The strong force is strong at low energies where quarks exist only in colourless 
+bound states. This is known as confinement. At high energies the strong force
+becomes weaker as the partons behave as free particles. This is known as
+asymptotic freedom.  
 
 \section{Motivation for new physics at the TeV scale}
 
-There are four main motivations for expecting the discovery of new physics at 
-the TeV scale.
-
-\begin{itemize}
-\item WW scattering
-\item New energy scale
-\item Hierarchy Problem
-\item Dark Matter candidates
-\end{itemize}
+The motivations for expecting the discovery of new physics at the TeV scale are
+considered.
 
 \subsection{WW scattering}
 
@@ -393,12 +513,12 @@ mass of the galaxies is made up of collisionless dark matter. \\
 If dark matter interacts through the weak force, then it could be observed at
 the LHC. Dark matter may not interact weakly. Perhaps it interacts only 
 gravitationally. Additionally it may not show up at the TeV scale. I will simply
-make two statements which offer rather indirect support for the discovery of 
-possible dark matter candidates at the LHC. Firstly, TeV scale weakly 
-interacting masive particles give dark matter abundances in the universe at 
-about the experimentally observed level. Secondly, SUSY (which is one of the 
-popular theories of physics beyond the standard model) predicts a set of 
-supersymmetric particles the lightest of which could be a dark matter candidate.
+make two statements which offer some support for the discovery of possible dark 
+matter candidates at the LHC. Firstly, TeV scale weakly interacting masive 
+particles give dark matter abundances in the universe at about the 
+experimentally observed level. Secondly, SUSY (which is one of the popular 
+theories of physics beyond the standard model) predicts a set of supersymmetric 
+particles the lightest of which could be a dark matter candidate.
 
 \section{Supersymmetry}
 
@@ -413,26 +533,12 @@ Q|\mbox{Boson}> = |\mbox{Fermion}> \hspace{10pt} Q|\mbox{Fermion}> = |\mbox{Boso
 \label{eq:susy_operator}
 \end{equation}
 
-The possible forms of symmetries are highly restricted by the Coleman-Mandula 
-theorem \cite{coleman}. Due to the existence of chiral fermions the generators Q
-and $Q^{\dagger}$ must satisfy the anti-commutation and commutation relations 
-given in Equations \ref{eq:anticommutation1} -- \ref{eq:anticommutation3}.
-
-\begin{eqnarray}
-&\{Q,Q^{\dagger}\} = P^{\mu}
-\label{eq:anticommutation1} \\
-&\{Q,Q\} = \{Q^{\dagger},Q^{\dagger}\} = 0
-\label{eq:anticommutation2} \\
-&[P^{\mu},Q] = [P^{\mu},Q^{\dagger}] = 0
-\label{eq:anticommutation3}
-\end{eqnarray}
-
 A straightforward implementation of supersymmetry would predict a whole new set
 of particles with the same mass and same interactions as the Standard Model
 particles. Since we do not observe these particles SUSY, if it exists, must be 
 broken. The superpartners can then be at a higher mass scale. There are various
 different schemes for SUSY breaking (ref). Here only Gauge Mediated SUSY 
-Breaking (GMSB) is considered. \\
+Breaking (GMSB) is considered.
 
 \section{Strong production Gauge Mediated SUSY breaking}
 

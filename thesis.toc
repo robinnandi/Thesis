@@ -1,0 +1,60 @@
+\contentsline {chapter}{\numberline {1}Theory}{4}
+\contentsline {section}{\numberline {1.1}Introduction}{4}
+\contentsline {section}{\numberline {1.2}The Standard Model}{4}
+\contentsline {section}{\numberline {1.3}Gauge Symmetries of the Standard Model}{6}
+\contentsline {subsection}{\numberline {1.3.1}Quantum Electrodynamics (QED)}{7}
+\contentsline {subsection}{\numberline {1.3.2}The Electroweak Sector}{8}
+\contentsline {subsection}{\numberline {1.3.3}Quantum Chromodynamics (QCD)}{12}
+\contentsline {section}{\numberline {1.4}Motivation for new physics at the TeV scale}{15}
+\contentsline {subsection}{\numberline {1.4.1}WW scattering}{15}
+\contentsline {subsection}{\numberline {1.4.2}New energy scale}{16}
+\contentsline {subsection}{\numberline {1.4.3}Hierarchy Problem}{16}
+\contentsline {subsection}{\numberline {1.4.4}Dark Matter candidates}{17}
+\contentsline {section}{\numberline {1.5}Supersymmetry}{18}
+\contentsline {section}{\numberline {1.6}Strong production Gauge Mediated SUSY breaking}{18}
+\contentsline {chapter}{\numberline {2}CMS Detector and Reconstruction}{20}
+\contentsline {section}{\numberline {2.1}Introduction}{20}
+\contentsline {section}{\numberline {2.2}Pixel Detector}{21}
+\contentsline {section}{\numberline {2.3}Silicon Strip Tracker}{24}
+\contentsline {section}{\numberline {2.4}Electromagnetic Calorimeter}{25}
+\contentsline {section}{\numberline {2.5}Hadronic Calorimeter}{29}
+\contentsline {section}{\numberline {2.6}Superconducting Solenoid Magnet}{31}
+\contentsline {section}{\numberline {2.7}Muon System}{32}
+\contentsline {section}{\numberline {2.8}Trigger}{33}
+\contentsline {section}{\numberline {2.9}CMS Computing Model}{34}
+\contentsline {section}{\numberline {2.10}Photon Reconstruction}{34}
+\contentsline {section}{\numberline {2.11}Jet Reconstruction}{37}
+\contentsline {chapter}{\numberline {3}Data, Trigger and Event Selection}{38}
+\contentsline {section}{\numberline {3.1}Data}{38}
+\contentsline {section}{\numberline {3.2}Monte Carlo Samples}{40}
+\contentsline {section}{\numberline {3.3}Trigger}{42}
+\contentsline {section}{\numberline {3.4}Photon Selection}{44}
+\contentsline {section}{\numberline {3.5}Jet Selection}{44}
+\contentsline {section}{\numberline {3.6}Missing Transverse Energy}{47}
+\contentsline {section}{\numberline {3.7}Event Selection}{48}
+\contentsline {chapter}{\numberline {4}Background Estimation}{52}
+\contentsline {section}{\numberline {4.1}Introduction}{52}
+\contentsline {section}{\numberline {4.2}QCD Background}{53}
+\contentsline {section}{\numberline {4.3}Electroweak and $t\mathaccentV {bar}016{t}$ Backgrounds}{58}
+\contentsline {section}{\numberline {4.4}Conclusions}{58}
+\contentsline {chapter}{\numberline {5}Signal Prediction and Systematics}{59}
+\contentsline {section}{\numberline {5.1}Introduction}{59}
+\contentsline {section}{\numberline {5.2}Photon Efficiency Correction}{60}
+\contentsline {section}{\numberline {5.3}Jet Energy Scale}{62}
+\contentsline {section}{\numberline {5.4}Jet Energy Resolution}{66}
+\contentsline {section}{\numberline {5.5}Pile-up}{70}
+\contentsline {section}{\numberline {5.6}Signal Cross-Section}{77}
+\contentsline {section}{\numberline {5.7}Integrated Luminosity}{77}
+\contentsline {section}{\numberline {5.8}Summary of Systematics}{79}
+\contentsline {chapter}{\numberline {6}Limit Setting and Results}{80}
+\contentsline {section}{\numberline {6.1}Introduction}{80}
+\contentsline {section}{\numberline {6.2}Likelihood Function}{81}
+\contentsline {section}{\numberline {6.3}Systematic Uncertainties}{82}
+\contentsline {section}{\numberline {6.4}Test Statistic}{82}
+\contentsline {section}{\numberline {6.5}Confidence Intervals}{83}
+\contentsline {subsection}{\numberline {6.5.1}Wilks Theorem}{83}
+\contentsline {subsection}{\numberline {6.5.2}Neyman Construction}{83}
+\contentsline {subsection}{\numberline {6.5.3}CLs: MC toys with hypothesis testing}{84}
+\contentsline {section}{\numberline {6.6}Expected and Observed Limit}{84}
+\contentsline {chapter}{\numberline {7}Conclusions and Further Work}{86}
+\contentsline {chapter}{References}{87}

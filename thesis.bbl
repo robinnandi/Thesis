@@ -1,0 +1,117 @@
+\begin{thebibliography}{10}
+
+\bibitem{grid}
+The worldwide lhc computing grid.
+\newblock URL: http://lcg.web.cern.ch/lcg/.
+
+\bibitem{galois}
+1998.
+
+\bibitem{test_beam}
+2002.
+
+\bibitem{physics_tdr_1}
+The~CMS Collaboration.
+\newblock {\em CMS Physics Technical Design Report Volume 1: Detector
+  Performance and Software}.
+\newblock CERN, 2006.
+
+\bibitem{muon_resolution}
+The~CMS Collaboration.
+\newblock The cms experiment at the cern large hadron collider.
+\newblock {\em JISNT 3}, 2008.
+\newblock S08003.
+
+\bibitem{field_uniformity}
+The~CMS Collaboration.
+\newblock Precise mapping of the magnetic field in the cms barrel yoke using
+  cosmic rays.
+\newblock 2009.
+\newblock CMS PAPER CFT-09-015.
+
+\bibitem{jec}
+The~CMS Collaboration.
+\newblock Determination of jet energy calibration and transverse momentum
+  resolution in cms.
+\newblock 2010.
+\newblock CMS PAS JME-10-011.
+
+\bibitem{spikes}
+The~CMS Collaboration.
+\newblock Electromagnetic calorimeter commissioning and ﬁrst results with
+  7tev data.
+\newblock 2010.
+\newblock CMS NOTE 2010/012.
+
+\bibitem{jet_resolution}
+The~CMS Collaboration.
+\newblock Met resolution vs. sumet in minimum bias 7 tev events.
+\newblock 2010.
+\newblock CMS PAS JME-10-003.
+
+\bibitem{met_resolution}
+The~CMS Collaboration.
+\newblock Met resolution vs. sumet in minimum bias 7 tev events.
+\newblock 2010.
+\newblock CMS AN AN-10-142.
+
+\bibitem{supercluster}
+The~CMS Collaboration.
+\newblock A review of clustering algoritms and energy corrections in the
+  electromagnetic calorimeter.
+\newblock 2010.
+\newblock CMS IN 2010/008.
+
+\bibitem{ra3}
+The~CMS Collaboration.
+\newblock Search for general gauge mediated supersymmetry with two photons and
+  missing transverse energy.
+\newblock 2010.
+\newblock CMS NOTE AN-11-289.
+
+\bibitem{primary_vertex}
+The~CMS Collaboration.
+\newblock Tracking and vertexing results from first collisions.
+\newblock 2010.
+\newblock CMS PAS TRK-10-001.
+
+\bibitem{field_measurement}
+V.~I.~Klyukhin et. al.
+\newblock Measurement of the cms magnetic field.
+\newblock {\em IEEE Trans. on applied Superc. 18}, page 395, 2008.
+\newblock No 2.
+
+\bibitem{madgraph}
+Leslie Lamport.
+\newblock {\LaTeX \rm:} {A} document preparation system.
+\newblock 1986.
+
+\bibitem{vdm_scans}
+S.~Van~Der Meer.
+\newblock icalibration of the eﬀective beam height in the isr.
+\newblock {\em ISR-PO/68-31}, 1968.
+
+\bibitem{noether}
+E.~Noether.
+\newblock Invariante variationsprobleme.
+\newblock {\em Nachr. v. d. Ges. d. Wiss. zu Göttingen}, 1918.
+
+\bibitem{tuneZ2}
+Oren Patashnik.
+\newblock Designing bibtex styles.
+\newblock January 1988.
+\newblock The part of BibTeX's documentation that's not meant for general
+  users.
+
+\bibitem{geant}
+Oren Patashnik.
+\newblock {Using BibTeX}.
+\newblock January 1988.
+\newblock Documentation for general BibTeX users.
+
+\bibitem{pythia6}
+S.Mrenna T.~Sjostrand and P.~Skands.
+\newblock Pythia 6.4 physics and manual.
+\newblock {\em JHEP05}, 2006.
+
+\end{thebibliography}
