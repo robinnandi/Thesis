@@ -138,7 +138,7 @@ good energy resolution and good containment of the electromagnetic shower. \\
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{ECAL.pdf}
+\includegraphics[width=\textwidth]{ECAL.pdf}
 \end{center}
 \caption{A diagram of the layout of the ECAL.}
 \label{fig:ECAL}
@@ -392,7 +392,7 @@ and Tier 2 (blue dots) data centres. Reproduced from \cite{grid}.}
 \end{figure}
 
 \section{Photon Reconstruction}
-\ref{sec:photon_recontruction}
+\label{sec:photon_recontruction}
 
 Photons make electromagnetic showers in the ECAL. Electromagnetic showers are 
 reconstructed from the energy deposits in the ECAL crystals. The clustering 
@@ -456,16 +456,25 @@ there is no pixel seed corresponding to the electromagnetic shower.
 \section{Jet Reconstruction}
 
 Jets are collimated bunches of stable hadrons originating from partons (quarks
-and gluons) after fragmentation and hadronisation. Jets are reconstructed using 
-the anti-KT algorithm with a cone size of 0.5. The anti-KT algorihtm is a
-sequential clustering algorithm which is IR safe and produces circular
-cone-shaped jets. The anti-KT algorithm is used because it has a higher 
-efficiency, lower fake rate and is less sensitive to pile-up than the other 
-algorithms. \\
+and gluons) after fragmentation and hadronisation. Jets are reconstructed based 
+on energy deposits in the detector using the Anti-KT jet algorithm with a cone 
+size of $\Delta R = 0.5$. The Anti-KT jet algorithm is a clustering, cone 
+algorithm which does not suffer from the problem of infra red and collinear 
+divergences. \\
 
-The reconstruction uses so-called ``particle flow'' objects (including photons, 
-charged hadrons and neutral hadrons) as input. The philosophy of the particle 
-flow reconstruction is to have a complete and consistent event hypothesis. All 
-components of the detector are used in the reconstruction. Particle flow jets 
-have better resolution than other jet reconstructions (see Figure
-\ref{fig:jetmet}).
+Under the anti-KT algorithm energy deposits are clustered together within a cone
+according to their distance from each other. The ``distance'', $d_{ij}$, between 
+objects (energy deposits/particles) is defined by Equation \ref{eq:distance}.
+
+\begin{equation}
+d_{ij} = min(p_{T1}^{-2}, p_{T2}^{-2})\frac{\Delta_{ij}}{R}
+\label{eq:distance}
+\end{equation}
+
+$\Delta_{ij} = \sqrt{\Delta \eta^{2} + \Delta \phi^{2}}$ and R is the radius of
+the cone. \\
+
+The Anti-KT algorithm is the most widely used within CMS because it has higher 
+efficiency than the other algorithms (ref). Figure. \\
+
+

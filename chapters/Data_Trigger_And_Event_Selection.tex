@@ -224,9 +224,9 @@ relative to a lower threshold trigger.}
 
 Photons are selected based on variables such as isolation and shower shape which
 are designed to select prompt photons over fakes from jets. The photon 
-reconstruction is described in detail in Section 
-\ref{sec:photon_reconstruction}. The cut values on each of the photon selection 
-varaibles are listed in Table \ref{tab:photoncuts}. 
+reconstruction is described in detail in Section \ref{sec:photon_recontruction}. 
+The cut values on each of the photon selection varaibles are listed in Table 
+\ref{tab:photoncuts}. 
 
 \begin{table}
 \begin{center}
@@ -251,24 +251,6 @@ No Pixel Seed & True \\
 \end{table}
 
 \section{Jet Selection}
-
-Jets are reconstructed based on energy deposits in the detector using the 
-Anti-KT jet algorithm with a cone size of $\Delta R = 0.5$. The Anti-KT jet
-algorithm is a clustering, cone algorithm which does not suffer from the problem
-of infra red and collinear divergences. The Anti-KT algorithm is the most widely
-used within CMS because it has higher efficiency than the other algorithms. \\
-
-Under the anti-KT algorithm energy deposits are clustered together within a cone
-according to their distance from each other. The ``distance'', $d_{ij}$, between 
-objects (energy deposits/particles) is defined by Equation \ref{eq:distance}.
-
-\begin{equation}
-d_{ij} = min(p_{T1}^{-2}, p_{T2}^{-2})\frac{\Delta_{ij}}{R}
-\label{eq:distance}
-\end{equation}
-
-$\Delta_{ij} = \sqrt{\Delta \eta^{2} + \Delta \phi^{2}}$ and R is the radius of
-the cone. \\
 
 Two jets with $\pT > 80 \GeV$ and $|\eta| < 2.5$ are required. The $\eta$
 threshold corresponds to the tracker boundary. The $\pT$ threshold should be

@@ -160,6 +160,16 @@ nature of the electromagentic interaction. The photon is a massless particle whi
 interacts with electrons, but not with itself. The electromagnetic force has 
 infinite range. \\
 
+QED has been tested to very high precision. The magnetic moment of the
+electron, $-\frac{g\mu_{B}S}{h}$, has $g = 2$ according to Dirac's theory, 
+however QED predicts quantum corrections which give: 
+
+\begin{equation}
+g - 2 = 0.00115965218073(28)
+\end{equation}
+
+Precision measurements have tested QED to be accurate to 1 part in $10^{9}$.
+
 \subsection{The Electroweak Sector}
 
 The electroweak force consists of SU(2) weak isospin and U(1) hypercharge. Table 
@@ -340,7 +350,10 @@ electroweak theory. \\
 Both leptons and quarks feel the weak interaction. The $W^{\pm}$ interact only
 with left-handed fermions. Handedness (or chirality) is the eigenvalue of the 
 $\gamma^{5}$ matrix. It corresponds to the helicity (the projection of the spin 
-onto the direction of motion) in the relativistic limit $m << E$. \\
+onto the direction of motion) in the relativistic limit $m << E$. The left
+handed and right handed components of a fermion $\psi$ can be projected out
+using the operators $\frac{1}{2}(1 + \gamma^{5})$ and $\frac{1}{2}(1 - 
+\gamma^{5})$. \\
 
 The left handed components form SU(2) doublets while the right handed components
 are singlets under SU(2) as in Equation \ref{eq:leptons} for leptons and
@@ -404,7 +417,7 @@ orders of magnitude.}
 The Parton Density Functions (PDFs) are the probability distribution for the
 fraction of the proton momentum carried by each parton. The PDFs need to be
 known to make reliable Monte Carlo simulations and cross-section predictions for 
-the LHC. Figure \ref{pdfs} shows the parton density functions measured by H1 and
+the LHC. Figure \ref{fig:pdfs} shows the parton density functions measured by H1 and
 ZEUS. \\
 
 \begin{figure}
@@ -412,12 +425,15 @@ ZEUS. \\
 \includegraphics[width=0.8\textwidth]{PDFs.pdf}
 \end{center}
 \caption{The Parton Density Functions (PDFs) measured by H1 and ZEUS.}
-\label{fig:dis}
+\label{fig:pdfs}
 \end{figure}
 
-The coupling strength of the strong force varies with energy. Figure
-\ref{fig:coupling} shows the variation in coupling strength of the strong, weak
-and electromagnetic force as a function of energy. \\
+The coupling strength of the strong force varies with energy. The strong force 
+is strong at low energies where quarks exist only in colourless bound states. 
+This is known as confinement. At high energies the strong force becomes weaker 
+as the partons behave as free particles. This is known as asymptotic freedom. 
+Figure \ref{fig:coupling} shows the variation in coupling strength of the 
+strong, weak and electromagnetic force as a function of energy.
 
 \begin{figure}
 \begin{center}
@@ -427,11 +443,6 @@ and electromagnetic force as a function of energy. \\
 the strong force as a function of energy.}
 \label{fig:coupling}
 \end{figure}
-
-The strong force is strong at low energies where quarks exist only in colourless 
-bound states. This is known as confinement. At high energies the strong force
-becomes weaker as the partons behave as free particles. This is known as
-asymptotic freedom.  
 
 \section{Motivation for new physics at the TeV scale}
 
@@ -466,25 +477,42 @@ gauge interactions. Certainly at the Planck scale the Standard Model will no
 longer hold because a quantum treatment of gravity is needed. The Electroweak 
 scale is well measured at colliders and the results form our current 
 understanding of particle physics. It could be that there is no new physics 
-between the two scales. If we reject such a possibility, then the Higgs mass is
-alarmingly sensitive to any new physics. \\
+between the two scales. Rejecting such a possibility means that the Higgs mass 
+is alarmingly sensitive to any new physics. \\
 
-When one-loop quantum corrections to the Higgs mass squared are calculated, 
-there is a quadratic divergence depending on the cut-off used to do the
-calculation. It is worth noting that the cut-off is not peculiar to QFT. In
-Newtonian gravity when we calculate the gravitational potential due to the sun
-we neglect the mass distribution of the sun and simply consider it as a point
-mass for distances much larger than the radius of the sun. The problem here
-arises because the corrections do not give a vanishing contribution. The Higgs
-mass squared is divergent. \\
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{higgs_loop.pdf}
+\end{center}
+\caption{Loop corrections to the Higgs mass squared $m_{H}^{2}$ from (a) a 
+fermion f with mass $m_{f}$ and (b) a scalar S with mass $m_{S}$.}
+\label{fig:higgs_loop}
+\end{figure}
 
-There are a number of different models for beyond the Standard Model physics 
-which seek to address this problem including supersymmetry, extra dimensions 
-and technicolor. In supersymmetry this is accomplished by introducing a symmetry
-between fermions and bosons. For every Standard Model particle there is a 
-supersymmetric partner which is a boson for fermions and a fermion for bosons. 
-The fermions give a -1 contribution to the Higgs mass correction while the 
-bosons give a +1 contribution exactly cancelling each other.
+The one-loop quantum correction to the Higgs mass squared in Figure 
+\ref{fig:higgs_loop}(a) with a fermion coupling $-\lambda_{f}\phi\bar{f}f$ and 
+a cut-off energy $\Lambda$ is given by Equation \ref{eq:fermion_correction}.
+
+\begin{equation}
+\Delta m_{H}^{2} = -\frac{|\lambda_{f}|^{2}}{8\pi^{2}}\Lambda^{2} + ...
+\label{eq:fermion_correction}
+\end{equation}
+
+For a scalar coupling $-\lambda_{S}|\phi|^{2}|S|^{2}$ and a cut-off $\Lambda$ 
+the one-loop quantum correction to $m_{H}^{2}$ from Figure 
+\ref{fig:higgs_loop}(b) is given by Equation \ref{eq:scalar_correction}.
+
+\begin{equation}
+\Delta m_{H}^{2} = \frac{\lambda_{S}}{16\pi^{2}}\Lambda^{2} + ...
+\label{eq:scalar_correction}
+\end{equation}
+
+The one-loop quantum corrections to $m_{H}^{2}$ are quadratically divergent
+depending on the cut-off used to do the calculation. In supersymmetry this
+problem is solved by introducing a symmetry between fermions and bosons. For 
+every Standard Model particle there is a supersymmetric partner which is a boson 
+for fermions and a fermion for bosons. The fermions give a -1 contribution to 
+$m_{H}^{2}$ while the bosons give a +1 contribution cancelling each other.
 
 \subsection{Dark Matter candidates}
 
@@ -524,8 +552,8 @@ particles the lightest of which could be a dark matter candidate.
 
 Supersymmetry proposes that for every particle there is a supersymmetric partner
 which is a boson for fermions and a fermion for bosons \cite{primer}. Such a 
-symmetry ensures cancellation of the divergence in the Higgs boson mass. We can 
-write the operator Q which generates the supersymmetric transformations as 
+symmetry ensures cancellation of the divergence in the Higgs boson mass. The 
+operator Q which generates the supersymmetric transformations can be written as 
 Equation \ref{eq:susy_operator}.
 
 \begin{equation}
@@ -533,14 +561,40 @@ Q|\mbox{Boson}> = |\mbox{Fermion}> \hspace{10pt} Q|\mbox{Fermion}> = |\mbox{Boso
 \label{eq:susy_operator}
 \end{equation}
 
+The forms of additional symmetries to the Poincare group are highly restricted
+by the Coleman Mandula theorem \cite{coleman}. Supersymmetry is one of the few
+possible symmetry extensions. \\ 
+
 A straightforward implementation of supersymmetry would predict a whole new set
 of particles with the same mass and same interactions as the Standard Model
 particles. Since we do not observe these particles SUSY, if it exists, must be 
 broken. The superpartners can then be at a higher mass scale. There are various
 different schemes for SUSY breaking (ref). Here only Gauge Mediated SUSY 
-Breaking (GMSB) is considered.
+Breaking (GMSB) is considered. \\
 
-\section{Strong production Gauge Mediated SUSY breaking}
+Another symmetry R-parity ($R_{P}$), defined in Equation \ref{eq:rparity}, is 
+often introduced to SUSY models to preserve lepton number and baryon number. 
+$R_{P}$ is +1 for Standard Model particles and -1 for supersymmetric partners.
+
+\begin{equation}
+R_{P} = (-1)^{3B-3L+2S}
+\label{eq:rparity}
+\end{equation}
+
+If R-parity is conserved, there are two important consequences:
+
+\begin{itemize}
+\item At colliders supersymmetric partners can only be produced in pairs.
+\item The lightest supersymmetric particle (LSP) is stable.
+\end{itemize}
+
+The first point ensures that a supersymmetric particle always decays into 
+another supersymmetric particle and that there are always two decay chains of 
+supersymmetric particles in each supersymmetric event. The second point means 
+that SUSY events contain missing energy since the LSP is not detected. The LSP 
+also provides a possible dark matter candidate.
+
+\section{Gauge Mediated SUSY breaking}
 
 Squark and gluino production GMSB has a low production cross section at low
 centre of mass energy. It was inaccesible at the Tevatron ($\sqrt{s} = 

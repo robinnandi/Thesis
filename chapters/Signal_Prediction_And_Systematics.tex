@@ -16,9 +16,10 @@ $\sigma$ is the cross section and $L$ is the integrated luminosity. \\
 The signal cross section comes from theoretical calculations. 441 different
 signal models are considered with different values for squark mass and gluino 
 mass. The squark mass and gluino mass each take 21 values from 400 $\GeV$ to 
-2000 $\GeV$ in intervals of 80 $\GeV$. The cross section is x-y pb depending on 
-the parameter values. The largest uncertainty in the signal prediction comes 
-from the cross section (10--60\%). \\
+2000 $\GeV$ in intervals of 80 $\GeV$. The cross section is $\sim 0.01 pb$ 
+in the region close to exclusion depending on the squark and gluino masses. The 
+largest uncertainty in the signal prediction comes from the cross section 
+($\sim 20\%$). \\
 
 The integrated luminosity comes from LHC measurements of the beam. 1.1 $\invfb$
 of data is used in this analysis. The uncertainty on the integrated luminosity
@@ -36,9 +37,9 @@ error is small. It is the systematic error on which attention must be focussed.
 Cuts are made on jets, photons, $\HT$ and $\MET$. The major sources of
 uncertainty for the jet and $\HT$ cuts are the jet energy scale and jet energy 
 resolution. For the photons the main sources of uncertainty come from the photon
-efficiency correction for the differences between data and MC and from pile-up
-which affects the photon isolation efficiency. Both the $\HT$ and $\MET$ 
-distributions are also affected by pile-up, but this is a small effect.
+efficiency correction and from pile-up which affects the photon isolation 
+efficiency. Both the $\HT$ and $\MET$ distributions are also affected by 
+pile-up, but this is a small effect.
 
 \section{Photon Efficiency Correction}
 
@@ -115,14 +116,13 @@ energy to get the jet energy. Any variation in these corrections would change
 the jet $\pT$, the $\HT$ and the $\MET$. \\
 
 The appropriate jet energy corrections are determined from $\gamma$+jet events
-in data. The photon is well measured and the event is balanced (within the
-$\MET$ resolution). Details of the procedure to determine the jet energy 
-corrections and their uncertainties are given in \cite{jec}. This corresponds to
-$\sim 3\%$ uncertainty on jets above $50\GeV$ and $\sim 5\%$ uncertainty on 
-smaller jets and unclustered energy. Figure \ref{fig:JEC_vs_pT_And_Eta} shows 
+in data. The photon is used as a reference object because its energy is well 
+measured by the ECAL. The response $\frac{p_{T}^{jet}}{p_{T}^{\gamma}}$
+is measured in bins of jet $p_{T}$ and $\eta$ to get the jet energy corrections. 
+Details of the procedure to determine the jet energy corrections and their 
+uncertainties are given in \cite{jec}. Figure \ref{fig:JEC_vs_pT_And_Eta} shows 
 the jet energy correction factors as a fucntion of jet $\pT$ for jets with 
-($|\eta| = 1.0$) and as a function of $\eta$ for jets with $\pT = 200 \GeV$ (the
-core of the jet distribution). \\
+$|\eta| = 1.0$ and as a function of $\eta$ for jets with $\pT = 200 \GeV$. \\
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{JEC_vs_pT.pdf}
@@ -134,8 +134,9 @@ this analysis. The bands indicate the corresponding uncertainties.}
 \label{fig:JEC_vs_pT_And_Eta}
 \end{figure}
 
-Figure \ref{fig:JES_Uncertainty_vs_Jet_pT} shows the total jet energy scale 
-uncertainty against jet $\pT$ for central jets. \\
+The uncertainty is $\sim 2\%$ on jets above $50\GeV$ and $\sim 5\%$ on smaller 
+jets and unclustered energy. Figure \ref{fig:JES_Uncertainty_vs_Jet_pT} shows 
+the total jet energy scale uncertainty against jet $\pT$ for central jets. \\
 
 \begin{figure}
 \begin{center}
@@ -146,10 +147,6 @@ central jets. Three diferent jet reconstructions are shown: CALO, JPT and PF.
 PF jets are used in this analysis.}
 \label{fig:JES_Uncertainty_vs_Jet_pT}
 \end{figure}
-
-The jet energy scale uncertainties have no impact on the background estimation
-because that is determined through a data-driven method. However the effect on
-the number of expected signal events needs to be evaluated. \\
 
 The $\pT$ of all the jets is modified upward and downward according to the jet 
 energy uncertainties before applying the event selection. The $\MET$ can be 
@@ -197,19 +194,22 @@ events with a one sigma upward variaton (red) and one sigma downward variation
 \end{figure}
 
 The important result is how the variation in jet energy scale affects the signal
-efficiency in each ($\HT$, $\MET$) bin. Figure \ref{fig:JES_Numbers} shows these
-numbers. The jet energy scale uncertainties are correlated across all 
-($\HT$,$\MET$) bins.
+efficiency. The signal efficiency is $0.382\pm0.017$ when the jet energy scale
+is varied within its uncertainty. This means the uncertainty on the signal
+efficiency from the jet energy scale is 4.4\%.
+% in each ($\HT$, $\MET$) bin. Figure \ref{fig:JES_Numbers} shows these
+%numbers. The jet energy scale uncertainties are correlated across all 
+%($\HT$,$\MET$) bins.
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_JES.pdf}
-\end{center}
-\caption{The percentage change in the signal efficiency when the jet energy
-scale is varied by $\pm1\sigma$, where $\sigma$ is the jet energy scale
-uncertainty.}
-\label{fig:JES_Numbers}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_JES.pdf}
+%\end{center}
+%\caption{The percentage change in the signal efficiency when the jet energy
+%scale is varied by $\pm1\sigma$, where $\sigma$ is the jet energy scale
+%%uncertainty.}
+%\label{fig:JES_Numbers}
+%\end{figure}
 
 \section{Jet Energy Resolution}
 
@@ -293,7 +293,7 @@ of the jet $\pT$ resolution on the $\HT$ and $\MET$ distributions.}
 Figure \ref{fig:JER} shows the effect of the variation in resolution on the
 $\HT$ and $\MET$ distributions. The important result is how the variation in jet
 energy scale affects the signal efficiency in each ($\HT$, $\MET$) bin. Figure 
-\ref{fig:JES_Numbers} shows these numbers. The jet energy scale uncertainties 
+\ref{fig:JER_Numbers} shows these numbers. The jet energy scale uncertainties 
 are correlated across all ($\HT$,$\MET$) bins.
 
 \begin{figure}
@@ -445,27 +445,62 @@ efficiency under pile-up is varied within its uncertainty.}
 
 \section{Signal Cross-Section}
 
-Write how the cross-section is calculated. \\
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{QCDFactorization.png}
+\end{center}
+\caption{In proton collisions the cross-section must be factorised into the 
+individual parton cross-sections.}
+\label{fig:QCDFactorization}
+\end{figure}
 
-There is a theoretical uncertainty on the signal cross-section due to the
-uncertainty on the PDF distributions. Figure \ref{fig:xsec_unc} shows the
-percentage uncertainty on the cross-section for each parameter point in the
-mSquark vs mGluino plane.
+To calculate the cross-section for $p + p \rightarrow X$, the parton collision 
+$a + b \rightarrow X$ must first be considered (Figure 
+\ref{fig:QCDFactorization}). The cross-section for partons $a$ and $b$ with 
+momentum fractions $x_{1}$ and $x_{2}$ is calculated. To get the cross-section 
+from protons the parton density functions must be folded in and the possible 
+partons must be summed over as in Equation \ref{eq:xsec_factorisation}.
+
+\begin{equation}
+\sigma(s) =
+\Sigma_{a,b}\int_{0}^{1}dx_{1}\int_{0}^{1}dx_{2}f_{a}(x_{1},Q^{2})f_{b}(x_{2},Q^{2})\sigma_{ab}(\hat{s})
+\label{eq:xsec_factorisation}
+\end{equation}
+
+The cross-section for the parton process $a + b \rightarrow X$ is an infinte sum
+over terms corresponding to processes with extra vertices and radiations as in
+Equation \ref{eq:xsec_series}. The terms get smaller as more vertices are 
+introduced. To do the calculation the series must be cut off at some order. Here
+the series is cut off at Next to Leading Order (NLO).
+
+\begin{equation}
+\sigma = \sigma_{LO} + \sigma_{NLO} + ...
+\label{eq:xsec_series}
+\end{equation}
+
+There are two major sources of uncertainty on the signal cross-section:
+
+\begin{itemize} 
+\item The uncertainties on the PDFs.
+\item The uncertainty from higher order terms.
+\end{itemize}
+
+Figure \ref{fig:xsec_unc} shows the cross-section and total percentage 
+uncertainty for each parameter point in the mSquark vs mGluino plane.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{Cross_Section_Uncertainty.pdf}
+\includegraphics[width=\textwidth]{Signal_Cross_Section.pdf}
 \end{center}
-\caption{The percentage uncertainty on the signal cross-section based on PDF
-uncertainties for each parameter point in the mSquark vs mGluino plane. 
-Reproduced from \cite{ra3}.}
+\caption{The cross-section and total percentage uncertainty for each parameter 
+point in the mSquark vs mGluino plane. Reproduced from \cite{ra3}.}
 \label{fig:xsec_unc}
 \end{figure}
 
 \section{Integrated Luminosity}
 
-There are a number of different ways of measuring the LHC luminosity. The method
-used for early data was to use LHC beam parameters. The luminosity is given by:
+The LHC beam luminosity can be measured from the beam parameters as in Equation
+\ref{eq:lumi}.
 
 \begin{equation}
 L = \frac{N^{2}n_{b}f}{A_{eff}}
@@ -483,15 +518,7 @@ to 20-30\% for safe operation of the LHC. $A_{eff}$ is measured using van der
 Meer scans of the transverse beam profile \cite{vdm_scans}. Assuming a gaussian
 transverse beam profile, $A_{eff}$ can be calculated as $A_{eff} = 
 4\pi\sigma_{x}\sigma_{y}$. The uncertainty on the integrated luminosity 
-measurement for this method is $10\%$. \\
-
-The measurement can be improved using TOTEM and W/Z leptonic decays as standard
-candles. TOTEM is a forward detector 240m from the interaction point designed to
-measure the total proton-proton cross-section. By monitoring the cross-section
-over time the integrated luminosity can be estimated. There are still acceptance
-and PDF uncertainties associated with the cross-section measurement but these 
-give a much smaller error on the integrated luminosity. The uncertainty from
-this method is $4\%$.
+measurement for this method is $5\%$. \\
 
 \section{Summary of Systematics}
 
