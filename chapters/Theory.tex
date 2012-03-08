@@ -160,15 +160,25 @@ nature of the electromagentic interaction. The photon is a massless particle whi
 interacts with electrons, but not with itself. The electromagnetic force has 
 infinite range. \\
 
-QED has been tested to very high precision. The magnetic moment of the
-electron, $-\frac{g\mu_{B}S}{h}$, has $g = 2$ according to Dirac's theory, 
-however QED predicts quantum corrections which give: 
+QED has been tested to very high precision. Consider the magnetic moment of the
+electron given by Equation \ref{eq:emagmom}.
 
 \begin{equation}
-g - 2 = 0.00115965218073(28)
+\vec{\mu} = -\frac{g\mu_{B}\vec{S}}{\hbar}
+\label{eq:emagmom}
 \end{equation}
 
-Precision measurements have tested QED to be accurate to 1 part in $10^{9}$.
+where $\mu_B$ is the Bohr magneton, $\hbar$ is the Planck constant, $\vec{S}$ is
+the electron spin and $g$ is a constant factor. \\
+
+According to Dirac's theory $g = 2$, however QED predicts quantum corrections to
+this value. The QED prediction agrees with the experimentally measured value 
+\cite{qed} to more than 10 significant figures:
+
+\begin{equation}
+\frac{g - 2}{2} = 0.00115965218073(28)
+\end{equation}
+
 
 \subsection{The Electroweak Sector}
 
@@ -352,8 +362,8 @@ with left-handed fermions. Handedness (or chirality) is the eigenvalue of the
 $\gamma^{5}$ matrix. It corresponds to the helicity (the projection of the spin 
 onto the direction of motion) in the relativistic limit $m << E$. The left
 handed and right handed components of a fermion $\psi$ can be projected out
-using the operators $\frac{1}{2}(1 + \gamma^{5})$ and $\frac{1}{2}(1 - 
-\gamma^{5})$. \\
+using the operators $\frac{1}{2}(1 - \gamma^{5})$ and $\frac{1}{2}(1 + 
+\gamma^{5})$ respectively. \\
 
 The left handed components form SU(2) doublets while the right handed components
 are singlets under SU(2) as in Equation \ref{eq:leptons} for leptons and
@@ -370,15 +380,42 @@ u_{R} \hspace{1cm} \bar{d}_{R}
 \label{eq:quarks}
 \end{equation}
 
-The Yukawa couplings are:
+The quark couplings are:
 
 \begin{equation}
-L_{\mbox{Y}} = -y_{e}\bar{E}_{L}\phi e_{R} - y_{d}\bar{Q}_{L}\phi d_{R} -
-y_{u}\bar{Q}_{L}\phi^{*} u_{R} + h.c.
+L_{quark} = \displaystyle\sum\limits_{p=1}^3 \left( \left(\bar{Q}_{p}\right)_{L}
+i\gamma^{\mu}D_{L}^{\mu} \left(Q_{p}\right)_{L} + \left(\bar{u}_{p}\right)_{R} 
+i\gamma^{\mu}D_{R}^{\mu} \left(u_{p}\right)_{R} + \left(\bar{d}_{p}\right)_{R} 
+i\gamma^{\mu}D_{R}^{\mu} \left(d_{p}\right)_{R} \right)
 \label{eq:yukawa}
 \end{equation}
 
-Quark mixing.
+where p is an index over the three generations. \\
+
+The three generation are not separate but interact with each other through
+flavour changing charged currents. These interactions are described by the CKM 
+(Cabbibo, Kobayashi, Maskawa) matrix (Equation \ref{eq:ckm}). For example, the 
+top decays almost exclusively to the b quark ($t\rightarrow bW^{+}$) as in 
+Figure \ref{fig:topdecay} since $|V_{tb}| \approx 1$.
+
+\begin{equation}
+CKM = \left( 
+\begin{array}{ccc}
+V_{ud} & V_{us} & V_{ub} \\
+V_{cd} & V_{cs} & V_{cb} \\
+V_{td} & V_{ts} & V_{tb} 
+\end{array} 
+\right) 
+\label{eq:ckm}
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{topdecay.pdf}
+\end{center}
+\caption{An illustration of top decay via flavour changing neutral current.}
+\label{fig:topdecay}
+\end{figure}
 
 \subsection{Quantum Chromodynamics (QCD)}
 
@@ -437,10 +474,10 @@ strong, weak and electromagnetic force as a function of energy.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{coupling2.pdf}
+\includegraphics[width=0.8\textwidth]{coupling2.jpg}
 \end{center}
 \caption{The coupling strengths of the electromagnetic force, the weak force and
-the strong force as a function of energy.}
+the strong force as a function of energy. Reproduced from \cite{nobel_2004}.}
 \label{fig:coupling}
 \end{figure}
 
@@ -456,10 +493,7 @@ Electron Positron (LEP) collider and the cross-section has been measured.
 Without additional couplings the interaction violates unitarity. The Higgs boson 
 is one mechansim to mediate this interaction, but so far the Higgs has not been 
 observed. Whatever the mechanism by which this interaction occurs it must be at 
-the TeV energy scale. \\
-
-Consider the scattering of logitudinally polarized W bosons: $W_{L}W_{L} 
-\rightarrow W_{L}W_{L}$.
+the TeV energy scale to avoid violating unitarity.
 
 \subsection{New energy scale}
 
@@ -550,11 +584,11 @@ particles the lightest of which could be a dark matter candidate.
 
 \section{Supersymmetry}
 
-Supersymmetry proposes that for every particle there is a supersymmetric partner
-which is a boson for fermions and a fermion for bosons \cite{primer}. Such a 
-symmetry ensures cancellation of the divergence in the Higgs boson mass. The 
-operator Q which generates the supersymmetric transformations can be written as 
-Equation \ref{eq:susy_operator}.
+Supersymmetry (SUSY) proposes that for every particle there is a supersymmetric 
+partner which is a boson for fermions and a fermion for bosons \cite{primer}. 
+Such a symmetry ensures cancellation of the divergence in the Higgs boson mass. 
+The operator Q which generates the supersymmetric transformations can be written 
+as Equation \ref{eq:susy_operator}.
 
 \begin{equation}
 Q|\mbox{Boson}> = |\mbox{Fermion}> \hspace{10pt} Q|\mbox{Fermion}> = |\mbox{Boson}>
@@ -565,19 +599,31 @@ The forms of additional symmetries to the Poincare group are highly restricted
 by the Coleman Mandula theorem \cite{coleman}. Supersymmetry is one of the few
 possible symmetry extensions. \\ 
 
+The Standard Model particles and their SUSY partners form supermultiplets as in
+Equation \ref{eq:supermultiplets}. Since the particles within the
+supermultiplets must maintain the gauge symmetries of the Standard Model, Q must 
+commute with the internal symmetries of the Standard Model.
+
+\begin{equation}
+\left(\begin{array}{c}fermion\\sfermion\end{array}\right) \hspace{1cm}
+\left(\begin{array}{c}gauge\hspace{3pt}boson\\gaugino\end{array}\right) \hspace{1cm}
+\left(\begin{array}{c}graviton\\gravitino\end{array}\right)
+\label{eq:supermultiplets}
+\end{equation}
+
 A straightforward implementation of supersymmetry would predict a whole new set
 of particles with the same mass and same interactions as the Standard Model
 particles. Since we do not observe these particles SUSY, if it exists, must be 
 broken. The superpartners can then be at a higher mass scale. There are various
-different schemes for SUSY breaking (ref). Here only Gauge Mediated SUSY 
-Breaking (GMSB) is considered. \\
+different schemes for SUSY breaking \cite{atchinson}. Here only Gauge Mediated 
+SUSY Breaking (GMSB) is considered. \\
 
 Another symmetry R-parity ($R_{P}$), defined in Equation \ref{eq:rparity}, is 
 often introduced to SUSY models to preserve lepton number and baryon number. 
 $R_{P}$ is +1 for Standard Model particles and -1 for supersymmetric partners.
 
 \begin{equation}
-R_{P} = (-1)^{3B-3L+2S}
+R_{P} = (-1)^{3B+L+2S}
 \label{eq:rparity}
 \end{equation}
 
@@ -594,34 +640,54 @@ supersymmetric particles in each supersymmetric event. The second point means
 that SUSY events contain missing energy since the LSP is not detected. The LSP 
 also provides a possible dark matter candidate.
 
-\section{Gauge Mediated SUSY breaking}
+\section{Gauge Mediated SUSY breaking (GMSB)}
 
-Squark and gluino production GMSB has a low production cross section at low
-centre of mass energy. It was inaccesible at the Tevatron ($\sqrt{s} = 
-1.96\TeV$). However CDF and D0 were able to place limits on electroweak 
-production GMSB. At the LHC, the higher centre of mass energy ($\sqrt{s} = 
-7\TeV$) means that strong production GMSB is accesible. \\
+Under GMSB the messenger particles between the visible sector (Standard Model
+and SUSY particles) and the hidden sector (responsible for the SUSY breaking)
+are gauge particles. In the Minimal Supersymmetric Standard Model (MSSM) there 
+are 6 parameters describing GMSB:
 
-squark mass vs gluino mass phase space \\ 
+\begin{itemize}
+\item $\Lambda$ -- the SUSY beaking scale. 
+\item $M_{m}$ -- the mass scale of the messengers.
+\item $N_{5}$ -- the number of messengers.
+\item $\tan\beta$ -- the ratio of the higgs vacuum expectation values.
+\item $\mbox{sign}(\mu)$ -- the sign of the higgsino mass term.
+\item $C_{grav}$ -- the scale factor of the gravitino coupling.
+\end{itemize}
 
-Strong production GMSB events must contain at least two jets from the two
-squarks/gluions. Assuming R-parity conservation, the decays of the squark and
-gluino are fixed. Squarks decay to a quark and the next particle in the SUSY mass
-hierarchy ($\tilde{q}\rightarrow q\tilde{X}$) resulting in one jet. Gluinos decay 
-to a quark anti-quark pair and the next particle in the SUSY mass hierarchy
-($\tilde{g}\rightarrow q\bar{q}\tilde{X}$) resulting in two jets. Thus the mass
-of the squark relative to the gluino indicates how many jets we expect from the
-SUSY events. With a high squark mass the gluinos are produced more and so 4 jets
-are expected, but with a high gluino mass the squarks are produced more and so
-only 2 jets are expected. \\
+SUSY events contain real Missing Transverse Energy ($\MET$) from the Lightest 
+Supersymmetric Particle (LSP). In GMSB models with $N_{5} = 1$ and low
+$\tan\beta$, the LSP is the gravitino ($\tilde{G}$) and the Next Lightest 
+Supersymmetric Particle (NLSP) is the lightest neutralino 
+($\tilde{\chi}_{1}^{0}$). The Neutralino decays into a photon and a gravitino 
+$\tilde{\chi}_{1}^{0}\rightarrow\gamma\tilde{G}$. Since the two photons come from 
+separate decay chains there is little correlation betweeen the two: they do not 
+have a particular invariant mass nor a particular angular separation. \\
 
-SUSY events contain real $\MET$ from the Lightest Supersymmetric Particle (LSP).
-In GMSB, the lightest SUSY particle is the Gravitino ($\tilde{G}$) and the Next
-Lightest Supersymmetric Particle (NLSP) is the Neutralino ($\tilde{\chi}^{0}$).
-The Neutralino decays into a photon and a Gravitino $\tilde{\chi}^{0}\rightarrow
-\gamma\tilde{G}$. Since the two photons and the two Gravitinos (sources of 
-$\MET$) come from separate decay chains there is no special relationship
-betweeen the two. They do not have a particular invariant mass nor a particular
-angular separation. The $\MET$ distribution is very broad and the photons are
-independent.
+At lower $\sqrt{s}$, for example at LEP ($200\GeV$) and at the Tevatron
+($500\GeV$), the GMSB cross section is lower and the dominant production 
+mechanism is electroweak production through a W or a Z. The signature for 
+electroweak production GMSB is $\gamma\gamma + \MET$. ALEPH \cite{aleph} at LEP 
+($e^{+}e^{-}$ collider) and D0 \cite{d0} and CDF \cite{cdf} at the Tevatron 
+($p\bar{p}$ collider) have published limits on electroweak production GMSB. \\
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{susy_decay_chain.pdf}
+\end{center}
+\caption{An example of a strong production SUSY decay chain. Reproduced from
+\cite{gmsb_at_lhc}.}
+\label{fig:susydecay}
+\end{figure}
+
+At the LHC energy ($7\TeV$) the cross section is higher and strong production is 
+dominant. Figure \ref{fig:susydecay} shows an example of a strong production SUSY 
+decay chain. Strong production events must contain at least two jets from the 
+two squarks/gluions. Squarks decay to a quark and the next particle in the SUSY 
+mass hierarchy ($\tilde{q}\rightarrow q\tilde{X}$) resulting in one jet. Gluinos 
+decay to a quark anti-quark pair and the next particle in the SUSY mass 
+hierarchy ($\tilde{g}\rightarrow q\bar{q}\tilde{X}$) resulting in two jets. The 
+only previous limits on strong production GMSB come from ATLAS \cite{atlas} and 
+CMS \cite{ra3} at the LHC. \\
 

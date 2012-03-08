@@ -4,28 +4,6 @@
 
 The Standard Model backgrounds to the search are estimated. \\
 
-QCD is the largest background. QCD events are balanced. Any missing transverse
-energy comes from detector imperfections. There are three different components 
-to the QCD background:
-
-\begin{itemize}
-\item {\bf Fakes from jets ($\pi^{0}\rightarrow\gamma\gamma$):} $\pi^{0}$s are
-one of the main constituents of jets. The two photons from a high energy 
-$\pi^{0}$ can easily be mistaken for a single photon. Most $\pi^{0}$s in jets
-will be non-isolated due to the surronding HCAL energy and tracks. However
-there is a distribution of isolation and given the large cross section of QCD, 
-some of these events will end up in the isolated tail.
-\item {\bf Prompt $\gamma$+jet:} In these events the photon comes directly from
-the parton hard scattering. The other jet can come from gluon radiation or
-jet fragmentation. These events contain prompt photons which tend to be isolated
-and have good shower shape. The $\pT$ of the photons is distributed around half
-the $\HT$ of the event.
-\item {\bf QCD jets with ISR/FSR:} A QCD jets event where an initial state quark
-or final state quark radiates a photon. These events also contain prompt photons
-which tend to be isolated and have good shower shape. The cross section of this 
-process falls with the $\pT$ of the photon. 
-\end{itemize}
-
 The Electroweak background is small in comparison to the QCD background.
 Electroweak processes can contribute real $\MET$ by the neutrino which is not
 detected by CMS. The cross section of electroweak processes is much lower than
@@ -41,29 +19,48 @@ Carlo.
 \section{QCD Background}
 \label{sec:QCD_Background}
 
-All three sources of QCD background have fake $\MET$ due to detector effects.
-Fake $\MET$ can come from the HCAL resolution or from severe mismeasurements
-such as dead ECAL Trigger Towers or poor HCAL response. \\
+The largest background comes from QCD processes. There are three different 
+components to the QCD background:
 
-ECAL Trigger Towers are $5\times5$ arrays of crystals in the ECAL with the
-photodetectors behind them and the electronics to trigger and read out the data. 
-There are $82\times72$ trigger towers in the ECAL barrel. Some of these Trigger
-Towers are dead i.e. there is no data coming from them. This means that any
-objects going down a dead Trigger Tower will be missed causing fake $\MET$. The 
-number of dead Trigger Towers may vary from run to run as those with a problem 
-are masked and those which have been fixed are unmasked. Some ECAL Trigger 
-Towers have long-term problems. There are about XX dead ECAL TTs: YY of these 
-have trigger information available. Figure \ref{fig:Dead_ECAL_TTs} shows a map 
-of ECAL Trigger Towers. \\
+\begin{itemize}
+\item {\bf Fakes from jets ($\pi^{0}\rightarrow\gamma\gamma$):} $\pi^{0}$s are
+one of the main constituents of jets. The two photons from a high energy 
+$\pi^{0}$ can easily be mistaken for a single photon. Most $\pi^{0}$s will be 
+non-isolated due to the surronding jet. However there is a distribution of 
+isolation and given the large cross section of QCD, some of these events will 
+end up in the isolated tail.
+\item {\bf Prompt $\gamma$+jet:} In these events the photon comes directly from
+the parton hard scattering. The other jet can come from gluon radiation or
+jet fragmentation. These events contain prompt photons which tend to be isolated
+and have good shower shape. The $\pT$ of the photons is distributed around half
+the $\HT$ of the event.
+\item {\bf QCD jets with ISR/FSR:} A QCD jets event where an initial state quark
+or final state quark radiates a photon. These events also contain prompt photons
+which tend to be isolated and have good shower shape. The cross section of this 
+process falls with the $\pT$ of the photon. 
+\end{itemize}
+
+QCD events are balanced in the transverse plane. All three sources of QCD 
+background have only fake $\MET$. Fake $\MET$ can come from the HCAL resolution, 
+severe mismeasurements such as dead ECAL Trigger Towers, poor HCAL response or 
+from fluctuations inherent in the hadronic showering process. \\
+
+ECAL Trigger Towers are groups of ECAL crystals used for triggering and readout.
+Some of the trigger towers are dead (i.e. there is no data coming from them).
+Any object going down a dead trigger tower will be missed causing fake $\MET$.
+There are also individual dead cells. Figure \ref{fig:Dead_ECAL_TTs} shows a map 
+of the ECAL barrel with the dead regions marked. \\
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=\textwidth]{Ecal_Dead_TTs.pdf}
 \end{center}
-\caption{A map of the ECAL barrel showing the dead trigger towers. Reproduced
-from \cite{spikes}.}
+\caption{A map of the ECAL barrel showing the dead regions. Reproduced from 
+\cite{spikes}.}
 \label{fig:Dead_ECAL_TTs}
 \end{figure}
+
+There are also resolution effects which can cause fake
 
 Poor HCAL response is another cause of large fake $\MET$. Sometimes a jet is
 reconstructed with a much lower $\pT$ than it actually has. Such mismeasurements
