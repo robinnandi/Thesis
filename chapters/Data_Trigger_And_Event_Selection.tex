@@ -2,12 +2,13 @@
 
 \section{Data}
 
-Since March 2011 CMS has been taking proton-proton collisions data at $7 \TeV$ 
-centre of mass energy. A higher centre of mass energy increases the production 
-cross-section of certain processes, for example stong production SUSY, and also 
-enables the production of more massive particles. It should be noted that the 
-important energy is not the centre of mass energy of the proton collision, but 
-that of the parton collision which is $\sim 1 \TeV$ on average. \\
+Since March 2011 CMS has been taking proton-proton collisions data at $7
+\unit{TeV}$ centre of mass energy. A higher centre of mass energy increases the 
+production cross-section of certain processes, for example stong production 
+SUSY, and also enables the production of more massive particles. It should be 
+noted that the important energy is not the centre of mass energy of the proton 
+collision, but that of the parton collision which is $\sim 1 \unit{TeV}$ on 
+average. \\
 
 The luminosity has increased over time. As the integrated luminosity 
 increases more data are available to improve the significance of 
@@ -15,7 +16,7 @@ observations and the accuracy of measurements. The luminosity has been increased
 by increasing the intensity of the beams and the number of bunches. Increasing 
 the intensity of the beams leads to more interactions per bunch crossing -- an 
 effect called pile-up. During the period when this data was taken the luminosity
-was $\sim 10^{33} \cm^{-2}\s^{-1}$. \\
+was $\sim 10^{33} \unit{cm^{-2}s^{-1}}$. \\
 
 Figure \ref{fig:intlumi} shows the integrated luminosity recorded by CMS over 
 time until September 2011. \\
@@ -24,13 +25,13 @@ time until September 2011. \\
 \begin{center}
 \includegraphics[width=\textwidth]{Integrated_Luminosity.png}
 \caption{The integrated luminosity vs time delivered to (red) and recorded by
-(blue) CMS during stable beams at $\sqrt{s} = 7 \TeV$.}
+(blue) CMS during stable beams at $\sqrt{s} = 7 \unit{TeV}$.}
 \end{center}
 \label{fig:intlumi}
 \end{figure}
 
-This analysis uses $1.1 \invfb$ of data at $\sqrt{s} = 7 \TeV$ taken from March 
-to June 2011. This corresponds to the data set used for the International
+This analysis uses $1.1 \unit{fb^{-1}}$ of data at $\sqrt{s} = 7 \unit{TeV}$ taken from 
+March to June 2011. This corresponds to the data set used for the International
 Europhysics Conference in High Energy Physics in July 2011. Only data certified 
 by the physics validation team is included in the data set. The data set
 contains the following:
@@ -135,8 +136,9 @@ largely data-driven the dependence of the result on Monte Carlo is limited. \\
 
 \section{Trigger}
 
-With a soft QCD cross-section of $\sim1\mb$ and a luminosity of $\sim 
-10^{33}\cm^{-1}s^{-1}$ $(1\invnb s^{-1})$ the event rate is $\sim 10^{6} \Hz$. 
+With a soft QCD cross-section of $\sim1\unit{mb}$ and a luminosity of $\sim 
+10^{33}\unit{cm^{-1}s^{-1}}$ $(1\unit{nb^{-1}s^{-1}})$ the event rate is $\sim
+10^{6} \unit{Hz}$. 
 Most of these are uninteresting events and the DAQ bandwidth limits the rate at 
 which data can be read out. The goal of the trigger is to select the interesting 
 events to read out. \\
@@ -145,31 +147,31 @@ There are two components to the trigger: Level 1 and HLT. The Level 1 trigger
 sits in a cavern next to the CMS detector. It takes ``trigger primitives'' such
 as crystal energy sums calculated by on-detector hardware which are transferred 
 by optical link from the CMS detector. The goal is to reduce the rate to $\sim 
-10\kHz$. Those events which pass the Level 1 trigger are fully read out and
+10\unit{Hz}$. Those events which pass the Level 1 trigger are fully read out and
 unpacked by the HLT. The HLT is run on a farm of computers in a room above the 
 CMS detector. It reconstructs physics objects and makes decisions based on the 
-presence and quality of these to further reduce the rate to $\sim 200\Hz$. \\
+presence and quality of these to further reduce the rate to $\sim 200\unit{Hz}$. \\
 
 Based on the properties of strong production GMSB, a photon + $\HT$ trigger 
 is ideal for this search. Table \ref{tab:Triggers} shows a list of all the 
 photon + $\HT$ triggers in the 2011 data with the corresponding L1 seed and the
-rate at $10^{33}\cm^{-2}\s^{-1}$. \\
+rate at $10^{33}\unit{cm^{-2}s^{-1}}$. \\
 
 \begin{table}
 \begin{center}
 \begin{tabular}{|l|c|c|}
 \hline
- & L1 seed & Rate at $10^{33}\cm^{-2}\s^{-1}$ \\
+ & L1 seed & Rate at $10^{33}\unit{cm^{-2}s^{-1}}$ \\
 \hline
 HLT\_Photon60\_CaloIdL\_HT200 & L1\_SingleEG20 & (pre-scaled) \\
 HLT\_Photon70\_CaloIdL\_HT200 & L1\_SingleEG20 & (pre-scaled) \\
-HLT\_Photon70\_CaloIdL\_HT300 & L1\_SingleEG20 & $4\Hz$ \\
-HLT\_Photon70\_CaloIdL\_HT350 & L1\_SingleEG20 & $2.5\Hz$ \\
+HLT\_Photon70\_CaloIdL\_HT300 & L1\_SingleEG20 & $4\unit{Hz}$ \\
+HLT\_Photon70\_CaloIdL\_HT350 & L1\_SingleEG20 & $2.5\unit{Hz}$ \\
 \hline
 \end{tabular}
 \end{center}
 \caption{A table of the photon and $\HT$ triggers available in the 2011 data
-along with the corresponding L1 seed and rate at $10^{33}\cm^{-2}\s^{-1}$.}
+along with the corresponding L1 seed and rate at $10^{33}\unit{cm^{-2}s^{-1}}$.}
 \label{tab:Triggers}
 \end{table}
 
@@ -252,7 +254,7 @@ No Pixel Seed & True \\
 
 \section{Jet Selection}
 
-Two jets with $\pT > 80 \GeV$ and $|\eta| < 2.5$ are required. The $\eta$
+Two jets with $\pT > 80 \unit{GeV}$ and $|\eta| < 2.5$ are required. The $\eta$
 threshold corresponds to the tracker boundary. The $\pT$ threshold should be
 chosen as high as possible to reject background, but with the signal efficiency
 close to 100\%. Figure \ref{fig:Jet_Threshold} shows the signal efficiency and 
@@ -292,12 +294,12 @@ negative sum of the transverse energies of all the energy deposits (Equation
 \ref{eq:met}). \\
 
 \begin{equation}
-\bfET = E\sin{\theta}\cos{\phi}\bfx + E\sin{\theta}\sin{\phi}\bfy
+\overrightarrow{\ET} = E\sin{\theta}\cos{\phi}\vec{x} + E\sin{\theta}\sin{\phi}\vec{y}
 \label{eq:et}
 \end{equation}
 
 \begin{equation}
-\bfMET = - \Sigma \bfET
+\overrightarrow{\MET} = - \Sigma \overrightarrow{\ET} \unit{cm}
 \label{eq:met}
 \end{equation}
 
@@ -313,16 +315,17 @@ The event selection criteria are listed below.
 
 \begin{itemize}
 \item Noise Cleaning
-\item $\HT > 400 \GeV$
+\item $\HT > 400 \unit{GeV}$
 \item $\geq 2$ jets
 \item $\geq 1$ photon
-\item $\MET > 50 \GeV$
+\item $\MET > 50 \unit{GeV}$
 \end{itemize}
 
 Threee types of noise cleaning are applied to the events. 
 \begin{itemize}
 \item {\bf Primary Vertex Selection:} Events are required to have at least one
-Primary Vertex with $|z| < 24\cm$, $\mbox{nDOF} > 4$ and $\rho < 2\cm$.
+Primary Vertex with $|z| < 24\unit{cm}$, $\mbox{nDOF} > 4$ and $\rho <
+2\unit{cm}$.
 \item {\bf HCAL Noise Filter:} There are three types of HCAL noise: HPD noise, 
 RBX noise and PMT window noise. HPD noise comes from the hybrid photodiodes in
 the HB, HE and HO. Misallignment between the HPD electric field and the external
@@ -345,12 +348,12 @@ deposit in the ECAL. ECAL spikes lead to fake photons and fake MET. There are
 two properties which characterise ECAL spikes: topology and timing. ECAL spikes 
 tend to be single crystal enrgy deposits in the ECAL which are often not vetoed 
 by the shower shape variable. Some spikes are in time with the rest of the event 
-and some are out of time. The energy varies from a few $\MeV$ to a few $\TeV$. A 
+and some are out of time. The energy varies from a few MeV to a few TeV. A 
 cut of $1 - e4/e1 < 0.96$ is made to avoid ECAL Spikes. 1 - e4/e1 is the ``Swiss 
 Cross'' variable in which e1 is the highest energy crystal in a 3x3 array and e4 
 is the energy of the four adjacent crystals. Additional spikes with significant
 energy in two adjacent crystals remained. These residual spikes are vetoed by
-requiring $e2/e9 < 0.96$ and $|t| < 5\ns$, t is the timing of the signal. This 
+requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the timing of the signal. This 
 is illustrated by Figure \ref{fig:spikes}.
 \end{itemize}
 
@@ -368,7 +371,7 @@ event, is used as a measure of the energy scale of the event. There is a $\HT$
 cut because strongly produced SUSY events have high $\HT$. The value of this cut
 is motivated by the desire for the trigger to be fully efficiency for the event
 selection. Figure \ref{fig:Trigger_Efficiency} shows that the trigger becomes
-fully efficient in HT at around $400\GeV$. \\
+fully efficient in HT at around $400\unit{GeV}$. \\
 
 The $\geq 2$ jets cut is well motivated from the SUSY perspective: strongly
 produced SUSY events start with two squarks/gluinos each of which decay to a 
