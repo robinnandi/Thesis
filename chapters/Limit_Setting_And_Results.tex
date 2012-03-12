@@ -36,23 +36,19 @@ interval with the Profile Likelihood as a test statistic.
 
 \section{Likelihood Function}
 
-We are looking for a signal in N bins, labelled i = 1..N.
-
 Let: 
 \begin{itemize}
-\item $b_{i}$ = Estimated number of background events in bin i;
-\item $s_{i}$ = Number of expected signal events in bin i according to a
-specific SUSY model;
-\item $n_{i}$ = Number of events observed in bin i;
+\item $b$ = Estimated number of background events;
+\item $s$ = Number of expected signal events according to a specific SUSY model;
+\item $n$ = Number of events observed.
 \end{itemize}
 
-Considering only the statistical error on the number of observed events given an
-expected number of events, which follows a Poisson distribution, the likelihood 
-for the background only hypothesis is given by Equation 
-\ref{eq:Poisson_Likelihood_BackgroundOnly}.
+Considering only the statistical error on the expected number of events, which 
+follows a Poisson distribution, the likelihood for the background only 
+hypothesis is given by Equation \ref{eq:Poisson_Likelihood_BackgroundOnly}.
 
 \begin{equation}
-L_{b} = \prod_{i=1}^{N} p(n_{i}|b_{i}) = \prod_{i=1}^{N} \frac{b_{i}^{n_{i}}e^{-b_{i}}}{n_{i}!} 
+L_{b} = p(n|b) = \frac{b^{n}e^{-b}}{n!} 
 \label{eq:Poisson_Likelihood_BackgroundOnly}
 \end{equation}
 
@@ -60,27 +56,16 @@ And for the signal plus background hypothesis the likelihood is given by Equatio
 \ref{eq:Poisson_Likelihood_SignalPlusBackground}.
 
 \begin{equation}
-L_{s+b} = \prod_{i=1}^{N} p(n_{i}|s_{i}+b_{i}) = \prod_{i=1}^{N}
-\frac{\left(s_{i}+b_{i}\right)^{n_{i}}e^{-\left(s_{i}+b_{i}\right)}}{n_{i}!} 
+L_{s+b} = p(n|s+b) = \frac{(s+b)^{n}e^{-(s+b)}}{n!} 
 \label{eq:Poisson_Likelihood_SignalPlusBackground}
 \end{equation}
 
-The number of signal events is obtained by applying the selection to the signal
-Monte Carlo. It depends on the signal efficiency times acceptance $\epsilon_{i}$, 
-the cross section $\sigma$ and the integrated luminosity $\intlumi$ 
-as in Equation \ref{eq:Signal}.
-
-\begin{equation}
-s_{i} = \epsilon_{i} \cdot \left(\intlumi\right) \cdot \sigma 
-\label{eq:Signal}
-\end{equation} 
-
-The likelihood for the signal plus background hypothesis can now be written as 
+Using Equation \ref{eq:Number_of_signal_events} for the number of signal events, 
+the likelihood for the signal plus background hypothesis can now be written as 
 Equation \ref{eq:SignalPlusBackground_Rewritten}.
 
 \begin{equation}
-L_{s+b} = \prod_{i=1}^{N}
-\frac{\left(\epsilon_{i} \cdot \left(\intlumi\right) \cdot \sigma+b_{i}\right)^{n_{i}}e^{-\left(\epsilon_{i} \cdot \left(\intlumi\right) \cdot \sigma+b_{i}\right)}}{n_{i}!} 
+L_{s+b} = \frac{(\epsilon \sigma L + b)^{n} e^{-(\epsilon \sigma L + b)}}{n!} 
 \label{eq:SignalPlusBackground_Rewritten}
 \end{equation}
 

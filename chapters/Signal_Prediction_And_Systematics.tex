@@ -90,8 +90,8 @@ similarly efficient for electrons and photons. However, one can imagine that
 there may be a slight difference between the two e.g. because of bremsstrahlung.
 To check this effect the MC electron efficiency from $Z\rightarrow ee$ events
 was compared with the MC photon efficiency from $\gamma$+jet events. Half the
-difference between the two results, 0.5\%, was taken as a systematic error on
-the scale factor. \\
+difference between the two results, 0.5\unit{\%}, was taken as a systematic 
+error on the scale factor. \\
 
 {\bf Pile-up:} The MC may not accurately model the data in a high pile-up
 environment. To estimate the size of this effect the scale factor was calculated
@@ -165,7 +165,7 @@ uncertainties by the following procedure.
 \begin{itemize}
 \item Add the photon to the $\MET$ (i.e. remove it from consideration).
 \item Add the jets also to get the unclustered energy.
-\item Modify the unclustered energy by 5\%.
+\item Modify the unclustered energy by $5\unit{\%}$.
 \item Subtract the jets scaled according to the jet energy correction 
 uncertainties.
 \item Subtract the photon to get the modified $\MET$.
@@ -198,7 +198,7 @@ events with a one sigma upward variaton (red) and one sigma downward variation
 The important result is how the variation in jet energy scale affects the signal
 efficiency. The signal efficiency is $0.382\pm0.017$ when the jet energy scale
 is varied within its uncertainty. This means the uncertainty on the signal
-efficiency from the jet energy scale is 4.4\%.
+efficiency from the jet energy scale is 4.4\unit{\%}.
 % in each ($\HT$, $\MET$) bin. Figure \ref{fig:JES_Numbers} shows these
 %numbers. The jet energy scale uncertainties are correlated across all 
 %($\HT$,$\MET$) bins.
@@ -274,14 +274,14 @@ measured in \cite{jec}. \\
 \end{center}
 \caption{The jet $\pT$ resolution compared to generator level jets (grey) and
 the same distribution after an upward (red) and downward (blue) 
-variation of 50\% in the jet $\pT$ resolution.}
+variation of 50\unit{\%} in the jet $\pT$ resolution.}
 \label{fig:Resolution}
 \end{figure}
 
-The resolution is varied upward and downward by 50\%, which correspond to the 
-uncertainty on the forward jets but is conservative for the central jets. The
-variation in resolution is made by changing $\frac{\pT^{reco} -
-\pT^{gen}}{\pT^{gen}}$ by 50\% for each jet. Figure \ref{fig:Resolution}
+The resolution is varied upward and downward by 50\unit{\%}, which correspond to 
+the uncertainty on the forward jets but is conservative for the central jets. 
+The variation in resolution is made by changing $\frac{\pT^{reco} -
+\pT^{gen}}{\pT^{gen}}$ by 50\unit{\%} for each jet. Figure \ref{fig:Resolution}
 shows the jet energy reolution with an upward and a downward variation. \\
 
 \begin{figure}
@@ -293,20 +293,21 @@ of the jet $\pT$ resolution on the $\HT$ and $\MET$ distributions.}
 \end{figure}
 
 Figure \ref{fig:JER} shows the effect of the variation in resolution on the
-$\HT$ and $\MET$ distributions. The important result is how the variation in jet
-energy scale affects the signal efficiency in each ($\HT$, $\MET$) bin. Figure 
-\ref{fig:JER_Numbers} shows these numbers. The jet energy scale uncertainties 
-are correlated across all ($\HT$,$\MET$) bins.
+$\HT$ and $\MET$ distributions. The important result is how the variation in jet 
+energy resolution affects the signal efficiency. The signal efficiency is 
+$0.382\pm0.005$ when the jet energy resolution is varied within its uncertainty. 
+This means the uncertainty on the signal efficiency from the jet energy
+resolution is 1.2\unit{\%}.
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_JER.pdf}
-\end{center}
-\caption{The percentage change in the signal efficiency when the jet $\pT$
-resolution is varied by $\pm1\sigma$, where $\sigma$ is the jet $\pT$ resolution 
-uncertainty.}
-\label{fig:JER_Numbers}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_JER.pdf}
+%\end{center}
+%\caption{The percentage change in the signal efficiency when the jet $\pT$
+%resolution is varied by $\pm1\sigma$, where $\sigma$ is the jet $\pT$ resolution 
+%uncertainty.}
+%\label{fig:JER_Numbers}
+%\end{figure}
 
 \section{Pile-up}
 
@@ -353,14 +354,14 @@ $\pm 1$ sigma variations are shown in red and blue respectively.}
 \label{fig:puHT}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_htPU.pdf}
-\end{center}
-\caption{The percentage change in the signal efficiency when the $H_{T}$ shift
-to account for pile-up is varied within its uncertainty.} 
-\label{fig:puHT_Numbers}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_htPU.pdf}
+%\end{center}
+%\caption{The percentage change in the signal efficiency when the $H_{T}$ shift
+%to account for pile-up is varied within its uncertainty.} 
+%\label{fig:puHT_Numbers}
+%\end{figure}
 
 The $\MET$ distribution is broadened by the introduction of more jets from other
 interactions in the same bunch crossing. The pile-up events will mostly be low
@@ -370,8 +371,8 @@ smearing necessary a QCD sample with similar $\HT$ and no pile-up is smeared
 until the shape agrees with the $\MET$ distribution with pile-up. Figure 
 \ref{fig:meanmet_vs_metsmearing} shows the average $\MET$ in QCD events without 
 pile-up as a function of the $\MET$ smearing. From the plot a $\MET$ smearing of 
-$2.9\pm0.8\%$ is applied to account for pile-up. Figure \ref{fig:puMET} shows the 
-$\MET$ distribution with a $\pm 1$ sigma variation in the shift. \\
+$2.9\pm0.8\unit{\%}$ is applied to account for pile-up. Figure \ref{fig:puMET} 
+shows the $\MET$ distribution with a $\pm 1$ sigma variation in the shift. \\
 
 \begin{figure}
 \begin{center}
@@ -392,14 +393,14 @@ $\pm 1$ sigma variations are shown in red and blue respectively.}
 \label{fig:puMET}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_metPU.pdf}
-\end{center}
-\caption{The percentage change in the signal efficiency when the $ME_{T}$
-smearing to account for pile-up is varied within its uncertainty.} 
-\label{fig:puMET_Numbers}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_metPU.pdf}
+%\end{center}
+%\caption{The percentage change in the signal efficiency when the $ME_{T}$
+%smearing to account for pile-up is varied within its uncertainty.} 
+%\label{fig:puMET_Numbers}
+%\end{figure}
 
 The photon isolation efficiency is particularly affected by pile-up because
 activity from other events in the same bunch crossing can populate the isolation
@@ -436,14 +437,14 @@ number of primary vertices.}
 \label{fig:EffCorr_vs_nPV}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_phoeff.pdf}
-\end{center}
-\caption{The percentage change in the signal efficiency when the photon
-efficiency under pile-up is varied within its uncertainty.} 
-\label{fig:phoeff_Numbers}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.7\textwidth]{SUSY_150_1040_1200_phoeff.pdf}
+%\end{center}
+%\caption{The percentage change in the signal efficiency when the photon
+%efficiency under pile-up is varied within its uncertainty.} 
+%\label{fig:phoeff_Numbers}
+%\end{figure}
 
 \section{Signal Cross-Section}
 
@@ -465,7 +466,7 @@ partons must be summed over as in Equation \ref{eq:xsec_factorisation}.
 
 \begin{equation}
 \sigma(s) =
-\Sigma_{a,b}\int_{0}^{1}dx_{1}\int_{0}^{1}dx_{2}f_{a}(x_{1},Q^{2})f_{b}(x_{2},Q^{2})\sigma_{ab}(\hat{s})
+\displaystyle\sum\limits_{a,b}\int_{0}^{1}dx_{1}\int_{0}^{1}dx_{2}f_{a}(x_{1},Q^{2})f_{b}(x_{2},Q^{2})\sigma_{ab}(\hat{s})
 \label{eq:xsec_factorisation}
 \end{equation}
 
@@ -514,13 +515,13 @@ the number of bunches, f is the revolution frequency of the beams and $A_{eff}$
 is the effective transverse area in which the collisions occur. \\
 
 The revolution frequency and the number of bunches are known precisely (to $\sim
-1\%$) from measurements of the beam current. The limiting uncertainty for the
-luminosity measurement is that of $A_{eff}$. The beam sizes must be controlled 
-to 20-30\% for safe operation of the LHC. $A_{eff}$ is measured using van der 
-Meer scans of the transverse beam profile \cite{vdm_scans}. Assuming a gaussian
-transverse beam profile, $A_{eff}$ can be calculated as $A_{eff} = 
-4\pi\sigma_{x}\sigma_{y}$. The uncertainty on the integrated luminosity 
-measurement for this method is $5\%$. \\
+1\unit{\%}$) from measurements of the beam current. The limiting uncertainty for 
+the luminosity measurement is that of $A_{eff}$. The beam sizes must be 
+controlled to $20-30\unit{\%}$ for safe operation of the LHC. $A_{eff}$ is 
+measured using van der Meer scans of the transverse beam profile 
+\cite{vdm_scans}. Assuming a gaussian transverse beam profile, $A_{eff}$ can be 
+calculated as $A_{eff} = 4\pi\sigma_{x}\sigma_{y}$. The uncertainty on the 
+integrated luminosity measurement for this method is $5\unit{\%}$. \\
 
 \section{Summary of Systematics}
 
@@ -535,27 +536,27 @@ uncertainties for only the most significant bin in terms of the limit setting
 \hline
 {\bf Source of Systematic Uncertainty} & {\bf QCD} & {\bf EWK} & {\bf SUSY} \\
 \hline
-QCD Background Estimation & 5\% & - & - \\
+QCD Background Estimation & $5\unit{\%}$ & - & - \\
 \hline
-e/$\gamma$ Misidentification & - & 30\% & - \\
+e/$\gamma$ Misidentification & - & $30\unit{\%}$ & - \\
 \hline
 $W\rightarrow e\nu$ Cross-Section & - &  & - \\
 \hline
-Photon Efficiency & - & 3.8\% & 3.8\% \\
+Photon Efficiency & - & $3.8\unit{\%}$ & $3.8\unit{\%}$ \\
 \hline
-Jet Energy Scale & - & & 4.4\% \\
+Jet Energy Scale & - & & $4.4\unit{\%}$ \\
 \hline
-Jet Energy Resolution & - & & 0.1\% \\
+Jet Energy Resolution & - & & $1.2\unit{\%}$ \\
 \hline
-Pile-up: HT shift & - & & 0.1\% \\
+Pile-up: HT shift & - & & $0.1\unit{\%}$ \\
 \hline
-Pile-up: MET smearing & - & & 0.0\% \\
+Pile-up: MET smearing & - & & $0.1\unit{\%}$ \\
 \hline
-Pile-up: photon efficiency & - & & 2.4\% \\
+Pile-up: photon efficiency & - & & $2.4\unit{\%}$ \\
 \hline
-Signal Cross-Section & - & - & 20\% \\
+Signal Cross-Section & - & - & $20\unit{\%}$ \\
 \hline
-Integrated Luminosity & - & 5\% & 5\% \\
+Integrated Luminosity & - & $5\unit{\%}$ & $5\unit{\%}$ \\
 \hline
 \end{tabular}
 \end{center}
