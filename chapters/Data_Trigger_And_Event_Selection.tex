@@ -66,9 +66,11 @@ Pile-up is simulated in the Monte Carlo samples however the MC does not
 reproduce the vertex mutiplicity distribution seen in the data. To correctly
 simulate pile-up the MC is re-weighted to reproduce the number of vertices
 distribution seen in the data. Figure \ref{fig:nVertices} shows the distribution
-of number of vertices in the data and MC. Figure \ref{fig:reweighted} shows the
-number of vertices distribution in the MC after reweighting compared to the data
-to show that the correct distribution has been produced. Table \ref{tab:factors}
+of number of vertices in the data and MC. 
+%Figure \ref{fig:reweighted} shows the
+%number of vertices distribution in the MC after reweighting compared to the data
+%to show that the correct distribution has been produced. 
+Table \ref{tab:factors}
 gives the re-weighting factors for each number of vertices. \\
 
 \begin{figure}
@@ -79,14 +81,14 @@ gives the re-weighting factors for each number of vertices. \\
 \label{fig:nVertices}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.5\textwidth]{nVertices-MC-reweighted.pdf}
-\end{center}
-\caption{The distribution of number of vertices in the MC after reweighting
-(blue) compared to the data (black).}
-\label{fig:reweighted}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.5\textwidth]{nVertices-MC-reweighted.pdf}
+%\end{center}
+%\caption{The distribution of number of vertices in the MC after reweighting
+%(blue) compared to the data (black).}
+%\label{fig:reweighted}
+%\end{figure}
 
 \begin{table}
 \begin{center}
@@ -105,10 +107,14 @@ number of vertices distribution in the data.}
 \label{tab:factors}
 \end{table}
 
-Figure \ref{fig:Data_vs_MC} shows plots of a few key variables to show how
-accurately the Monte Carlo models the data. The Monte Carlo prediction is
-good for $\HT$, but the $\MET$ distribution is not accurately predicted by the 
-Monte Carlo. \\
+Figure \ref{fig:Data_vs_MC} shows plots of two variables, $\HT$ and $\MET$,  to 
+show how accurately the Monte Carlo models the data. $\HT$ is a measure of the 
+energy scale of the event. SUSY events have high $\HT$. $\MET$ is the missing
+transverse energy which is the used to distinguish SUSY events from the
+background. These variables are defined properly in Sections
+\ref{sec:Missing_Transverse_Energy} and \ref{sec:Event_Selection}. The Monte 
+Carlo prediction is good for $\HT$, but the $\MET$ distribution is broader in 
+the data than the Monte Carlo. \\
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{HT_all.pdf}
@@ -132,7 +138,7 @@ the Monte Carlo models the data. Ratio plots of data/MC are shown below.}
 %\end{figure}
 
 Since the background estimation (see Section \ref{sec:QCD_Background}) is 
-largely data-driven the dependence of the result on Monte Carlo is limited. \\
+largely data-driven the dependence of the result on Monte Carlo is limited.
 
 \section{Trigger}
 
@@ -232,18 +238,15 @@ The cut values on each of the photon selection varaibles are listed in Table
 
 \begin{table}
 \begin{center}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|}
+\hline
+Variable & Cut value \\
 \hline
 ECAL isolation & $4.2 + 0.006\pT$ \\
-\hline
 HCAL isolation & $2.2 + 0.0025\pT$ \\
-\hline
 Track isolation & $2.0 + 0.001\pT$ \\
-\hline
 H/E & 0.05 \\
-\hline
-Shower Shape & 0.013 \\
-\hline
+Shower Shape & 0.012 (EB), 0.030 (EE) \\
 No Pixel Seed & True \\
 \hline
 \end{tabular}
@@ -270,6 +273,7 @@ rejection (blue) as a function of the jet $\pT$ threshold.}
 \end{figure}
 
 \section{Missing Transverse Energy}
+\label{sec:Missing_Transverse_Energy}
 
 By conservation of momentum, the sum of the momenta of all the final state
 particles in a collision is equal to the sum of the momenta of all the inital
@@ -310,6 +314,7 @@ missing transverse energy. In contrast, QCD events (which are the dominant
 background) have only fake missing energy due to detector imperfections. \\
 
 \section{Event Selection}
+\label{sec:Event_Selection}
 
 The event selection criteria are listed below. 
 
