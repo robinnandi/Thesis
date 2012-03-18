@@ -20,11 +20,12 @@ Latin letters (e.g. a, i) are used for all other index requirements. \\
 
 Following Einstein's summation convention repeated indices are summed over. For 
 example, the component of the spin $s_{a}$ in the direction of the momentum 
-$p_{a}$ is written $s_{a}p_{a}$ (Equation \ref{eq:latinsum}).
+$p_{a}$, known as the helicity, can be written as in Equation \ref{eq:latinsum}.
 
 \begin{eqnarray}
-s_{a}p_{a} &=& s_{1}p_{1} + s_{2}p_{2} + s_{3}p_{3} \nonumber \\
-&=& \vec{s}\cdot\vec{p}
+\frac{s_{a}p_{a}}{\sqrt{p_{a}p_{a}}} &=& \frac{s_{1}p_{1} + s_{2}p_{2} + s_{3}p_{3}}
+{\sqrt{p_{1}p_{1} + p_{2}p_{2} + p_{3}p_{3}}} \nonumber \\
+&=& \frac{\vec{s}\cdot\vec{p}}{|\vec{p}|}
 \label{eq:latinsum}
 \end{eqnarray}
 
@@ -71,13 +72,70 @@ y = \frac{1}{2}\ln\frac{E + |p_{z}|}{E - |p_{z}|}
 \end{equation}
 
 Cylindrical co-ordinates ($\rho$, $z$, $\phi$) are used to describe radius from 
-the beampipe and position of primary vertices from the interaction point.
+the beampipe and position of primary vertices from the interaction point. \\
 
-\section{Structure of this Thesis}
+{\bf Abbreviations} \\
 
+Abbreviations defined as they are introduced. The more comonly used
+abbreviations are listed here:
 
+\begin{itemize}
+\item CMS: Compact Muon Solenoid -- the detector which took the proton-proton
+collisions data used in this thesis.
+\item ECAL: Electromagnetic Calorimeter -- the part of the CMS detector which 
+measures the energy of electrons and photons.
+\item HCAL: Hadronic Calorimeter -- the part of the CMS detector which measures
+the energy of hadronic particles.
+\item SUSY: Supersymmetry -- a theory which predicts a symmetry between bosons
+and fermions. 
+\item GMSB: Gauge Mediated SUSY Breaking -- the mechanism of SUSY breaking
+considered in this thesis. It predicts events with photons, jets and missing
+transverse energy.
+\item CL: Confidence Level -- call the probability of a deviation being caused
+by a statistical fluctuation, p. A confidence level of $\alpha$ means the value 
+of p at which the null hypothesis is rejected is $1-\alpha$.
+\end{itemize}
+
+\section{Outline of this thesis}
+
+This thesis looks at the exclusion of Gauge Mediated SUSY Breaking (GMSB) in
+events with photons, jets and missing transverse energy from proton-proton
+collisions data at centre-of-mass energy $\sqrt{s}=7\unit{TeV}$ taken by the
+Compact Muon Solenoid (CMS) detector. \\
+
+The theory of the standard model of particle physics is outlined placing
+emphasis on the structure of the theory and giving the key experimental results
+that support the theories. The brief outline of the standard model is not
+complete: it simply gives an overview of particle physics. Problems with the
+standard model and reasons to expect to find new physics at the TeV scale are
+considered. SUSY is introduced as a possible extension to the standard model
+which solves the problem of the higgs mass divergence. The particular flavour of
+SUSY considered in this thesis, GMSB, is introduced along with its parameters.
+Previous results on the exclusion of GMSB from LEP, Tevatron and LHC are
+mentioned. \\
+
+The CMS detector is described focussing particularly on those aspects which are
+relevant to this thesis. The key performance measures for each component of the
+detector are given. Justifications have been made for design choices and the 
+implications for this analysis have been given to put the information in 
+context. The trigger and computing model which are important aspects of the data
+taking and analysis are also described. The reconstruction of photons and jets,
+the main physics objects used in this analysis, are detailed along with the
+selection variables associated with these physics objects. \\
+
+The event selection is geared towards the GMSB models 
 
 \section{Other Work}
+
+In a collaboration the size of CMS, no one's work is independent. Everyone
+relies on the work of others for the detector operation, the data taking, the
+trigger, the object reconstruction, the jet energy corrections etc. With the
+exception of these obvious examples, almost all the work presented in this 
+thesis is my own including the event selection, the background estimation, the
+signal prediction, the determination of systematic uncertainties and the limit
+setting. The only exceptions are the cross-section calculations and 
+corresponding uncertainties in Section \ref{sec:xsec} and the photon efficiency
+correction in Section \ref{sec:phoeff}.
 
 I spent the first six months of my Ph.D. attending lectures on particle physics 
 and doing problem sheets and training exercises. Following this I went to CERN

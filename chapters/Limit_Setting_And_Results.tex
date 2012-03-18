@@ -5,36 +5,36 @@
 Once the event selection and background estimation procedure have been defined
 and the data has been collected one needs to determine the limit on the cross
 section of a possible SUSY signal (according to a specific model) or, if a 
-discovery has been made, the significance of that discovery. \\
-
-In the present case no discovery has been made so a limit on the cross section
-must be found. There are various statistical procedures for doing this and no 
-consensus on the best method. If all methods give similar results, then it does
-not matter which method is used. \\
+discovery has been made, the significance of that discovery. In the present case 
+no discovery has been made so a limit on the cross section must be found. There 
+are various statistical procedures for doing this and no consensus on the best 
+method. In this thesis the CLs method, which is widely used in the field of 
+particle physics. \\
 
 A likelihood function must be defined. The likelihood is the probability of 
 observing the data given a model. This encompasses the statistical uncertainties
-and the background model as well as the systematic uncertainties associated
-with the detector (e.g. luminosity measurement and jet energy scale uncertainty)
-which affect the number of signal events expected. \\
-
-Parameters in the likelihood should include the parameter of interest on which 
-we wish to set a limit -- the cross section in this case -- in addition to
-other unknowns associated with systematic uncertainties. \\
+on the expected number of events as well as the systematic uncertainties 
+associated with the background estimation and signal prediction (e.g. luminosity 
+measurement and jet energy scale uncertainty). Parameters in the likelihood 
+include the parameter of interest on which we wish to set a limit -- the amount
+of signal in this case -- in addition to nuicanse parameters associated with 
+the systematic uncertainties. \\
 
 The goal is to find a confidence interval for the parameter of interest based
-on the likelihood. This tells us an upper limit on the cross section of a
- possible SUSY signal at a given confidence level. \\
-
-Three methods are used here for limit setting:
-\begin{itemize}
-\item Profile Likelihood using Wilks Theorem to find the confidence interval.
-\item Feldman Cousins Method: using Neyman Construction to get the confidence 
-interval with the Profile Likelihood as a test statistic.
-\item CLs with MC toys using the Profile Likelihood.
-\end{itemize}
+on the likelihood. This gives an upper limit on the size of a possible SUSY 
+signal at a given confidence level. An exclusion plot with the expected limit
+and the observed limit is given for the GMSB models considered here in squark 
+mass vs gluino mass parameter space. The exclusion plot for another CMS analysis
+looking at the same SUSY models is shown for comparison.
 
 \section{Likelihood Function}
+
+The likelihood function is the probability of observing the data given the
+model. There is a statistical component to the likelihood based on the number of
+events we can expect given a model prediction. The statistical component follows
+a poisson distribution. There are also systematic uncertainties based on how 
+well we know the signal and background predictions. These contribute a gaussian
+component to the likelihood. \\
 
 Let: 
 \begin{itemize}
@@ -43,8 +43,8 @@ Let:
 \item $n$ = Number of events observed.
 \end{itemize}
 
-Considering only the statistical error on the expected number of events, which 
-follows a Poisson distribution, the likelihood for the background only 
+Considering only the statistical uncertainty on the expected number of events, 
+which follows a Poisson distribution, the likelihood for the background only 
 hypothesis is given by Equation \ref{eq:Poisson_Likelihood_BackgroundOnly}.
 
 \begin{equation}
@@ -60,108 +60,138 @@ L_{s+b} = p(n|s+b) = \frac{(s+b)^{n}e^{-(s+b)}}{n!}
 \label{eq:Poisson_Likelihood_SignalPlusBackground}
 \end{equation}
 
-Using Equation \ref{eq:Number_of_signal_events} for the number of signal events, 
-the likelihood for the signal plus background hypothesis can now be written as 
-Equation \ref{eq:SignalPlusBackground_Rewritten}.
+The number of signal events can be written as:
+\begin{equation}
+s = f\epsilon\sigma L
+\label{eq:fsig}
+\end{equation}
+
+This is the same as Equation \ref{eq:Number_of_signal_events} for the number of 
+signal events, except that a signal strength factor, $f$, has been added. $f$ is 
+the parameter of interest on which we are seeking to set a limit. The likelihood 
+for the signal plus background hypothesis can now be written as Equation 
+\ref{eq:SignalPlusBackground_Rewritten}. 
 
 \begin{equation}
-L_{s+b} = \frac{(\epsilon \sigma L + b)^{n} e^{-(\epsilon \sigma L + b)}}{n!} 
+L_{s+b}(f) = \frac{(f\epsilon \sigma L + b)^{n} e^{-(f\epsilon \sigma L + b)}}{n!} 
 \label{eq:SignalPlusBackground_Rewritten}
 \end{equation}
 
-\section{Systematic Uncertainties}
+This deals with the statistical uncertainties. Systematic uncertainties are 
+introduced to the likelihood by allowing the parameters in the likelihood ($b$,
+$\epsilon$, $\sigma$ and $L$) to vary according the their uncertainties. These
+parameters are called nuisace parameters. To implement this, gaussian terms are 
+added to the likelihood with mean equal to the estimated value and sigma equal 
+to the uncertainty. This allows them to vary away from their estimated value, 
+but the gaussian constrains them according to their uncertainty by paying a 
+penalty in the likelihood. For example, the integrated luminosity was measured 
+to be $1.100\pm0.044 \unit{fb^{-1}}$ so a gaussian term with mean 1.100 and 
+sigma 0.044 is added to the likelihood. Equation \ref{eq:Full_Likelihood} shows 
+the full likelihood function, including nuisance parameters. 
 
-Consider M sources of systematic uncertainty: $\sigma_{j}$, j = 1..M. Systematic
-uncertainties can be introduced to the likelihood as nuisance parameters 
-$\theta_{j}$ upon which $b_{i}$ and $s_{i}$ depend. Gaussian terms are added to 
-the likelihood to constrain their values. For example if the integrated 
-luminosity was measured to be $1.1 \unit{fb^{-1}}$ with an error of 4\unit{\%}, a Gaussian term 
-with mean 1100 and sigma 44 would be added to the likelihood. Thus the central
-value of the luminosity is allowed to fluctuate constrained by the Gaussian.
-Equation \ref{eq:Full_Likelihood} shows the full likelihood function, including 
-nuisance parameters. 
-
-\begin{equation}
-L_{s+b} = \prod_{i=1}^{N}
-\frac{\left(\epsilon_{i} \cdot \left(\intlumi\right) \cdot \sigma+b_{i}\right)^{n_{i}}e^{-\left(\epsilon_{i} \cdot \left(\intlumi\right) \cdot \sigma+b_{i}\right)}}{n_{i}!} 
-\cdot \prod_{j=1}^{M} \frac{1}{\sqrt{2\pi}\sigma_{j}}e^{-\frac{1}{2}\left(\frac{\theta_{j} - \mu_{j}}{\sigma_{j}}\right)^{2}} 
+\begin{eqnarray}
+L_{s+b}(f; \theta_{b}, \theta_{\epsilon}, \theta_{\sigma}, \theta_{L}) &=&
+\frac{(\theta_{\epsilon}\theta_{\sigma}\theta_{L}+\theta_{b})^{n}e^{-(\theta_{\epsilon}\theta_{\sigma}\theta_{L}+\theta_{b})}}{n!}
+\nonumber \\
+&\cdot&
+\frac{1}{\sqrt{2\pi}\sigma_{b}}e^{-\frac{1}{2}\left(\frac{\theta_{b}-b}{\sigma_{b}}\right)^{2}}
+\nonumber \\
+&\cdot&
+\frac{1}{\sqrt{2\pi}\sigma_{\epsilon}}e^{-\frac{1}{2}\left(\frac{\theta_{\epsilon}-\epsilon}{\sigma_{\epsilon}}\right)^{2}}
+\nonumber \\
+&\cdot&
+\frac{1}{\sqrt{2\pi}\sigma_{\sigma}}e^{-\frac{1}{2}\left(\frac{\theta_{\sigma}-\sigma}{\sigma_{\sigma}}\right)^{2}}
+\nonumber \\
+&\cdot& 
+\frac{1}{\sqrt{2\pi}\sigma_{L}}e^{-\frac{1}{2}\left(\frac{\theta_{L}-L}{\sigma_{L}}\right)^{2}} 
 \label{eq:Full_Likelihood}
-\end{equation}
+\end{eqnarray}
 
-\section{Test Statistic}
+The likelihood is used in the CLs method to find the upper limit on the
+parameter of interest, $f$.
 
-A confidence interval is calculated based on a test statistic. This can be the 
-likelihood for the signal + background hypothesis. However this can be misleading
-if the background hypothesis doesn't fit either. A more common approach is to 
-use the likelihood ratio (Equation \ref{eq:Likelihood_Ratio}), where 
-$\boldsymbol\theta$ is the vector of parameters and $\hat{\boldsymbol\theta}$
-is the vector of parameter values which maximises the likelihood. 
+\section{CLs}
 
+The CLs method is used to determine the confidence interval for the parameter of
+interest, $f$. The method is widely used within particle physics: it was used at
+LEP for ... \cite{cls_lep}, at the Tevatron for ... \cite{cls_tevatron} and at
+LHC for ... \cite{cls_lhc}. \\
+
+The procedure for finding the confidence interval using CLs is:
+
+\begin{itemize}
+\item Construct a likelihood function. Equation \ref{eq:Full_Likelihood} in this 
+case.
+\item Construct a test statistic $q_{f}$ for performing a hypothesis test. There 
+are various possible choises for the this, here the profile likelihood ratio is
+used (Equation \ref{eq:Test_Statistic}).
 \begin{equation}
--2\log\Lambda_{profile} = -2\log\frac{L_{s+b}(\boldsymbol\theta)}{L_{b}(\hat{\boldsymbol\theta})}
-\label{eq:Likelihood_Ratio}
+q_{f} =
+\frac{L_{s+b}(f;\hat{\boldsymbol\theta})}{L_{b}(\hat{f};\hat{\boldsymbol\theta})}
+\label{eq:Test_Statistic}
 \end{equation}
-
-For ease of calculation the negative log likelihood is used instead of the likelihood.
-Both the likelihood and the negative log likelihood  must have an optimum at the same 
-value whatever the form of the likelihood function since the logarithm is a monotonic 
-function.
-
-\section{Confidence Intervals}
-
-\subsection{Wilks Theorem}
-
-Wilks Theorem states that the negative log profile likelihood ratio is 
-asymptotically distributed as a $\chi^{2}$ with N degrees of freedom, where N is
-the number of parameters of interest. 
-
-\subsection{Neyman Construction}
-
-Consider a pdf $f\left(x;\theta\right)$ where $\theta$ is the unknown parameter 
-we are trying to estimate: the cross section in our case. We wish to construct a
-confidence interval for $\theta$. \\
-
-Step through possible values of $\theta$. For each value of $\theta$ find a range 
-$\left(x_{1},x_{2}\right)$ such that a fraction $1 - \alpha$ of the $x$ 
-distribution lies within the range, see Equation \ref{eq:Neyman_Interval}. 
-$1 - \alpha$ is the confidence level.
-
+Sometimes the denominator has $f = 0$ rather than $\hat{f}$ and sometimes the
+nuisance parameters are not profiled. It does not matter much which definition
+is used, the test statistic should be larger for more favoured values of $f$.  
+\item Step through the possible values of the parameter of interest, $f$.
+\item Consider two hypotheses: the signal + background hypothesis and the
+background only hypothesis. For each hypothesis generate pseudo data according 
+to the likelihood. Call the generated data ``MC toys''.
+\item Calculate the the p-values:
+\begin{eqnarray}
+\alpha &=& P(q_f \geq q_f^{obs}|\mbox{signal + background}) \label{eq:alpha} \\
+1-\beta &=& P(q_f \geq q_f^{obs}|\mbox{background only}) \label{eq:1minusbeta}
+\end{eqnarray}
+These are the fraction of MC toys for which the test statistic is greater than
+the observed value given the signal + background hypothesis (Equation
+\ref{eq:alpha}) and given the background hypothesis (Equation 
+\ref{eq:1minusbeta}).
+\item Construct CLs as a ratio of p-values (Equation \ref{eq:CLs}). This cannot 
+be interpreted as a p-value itself. It gives an idea of how much more probable 
+to observe the data given the signal + background hypothesis than the background 
+only hypothesis.
 \begin{equation}
-\int_{x_{1}}^{x_{2}} f\left(x;\theta\right) = 1 - \alpha
-\label{eq:Neyman_Interval}
-\end{equation} 
+CLs = \frac{\alpha}{1-\beta}
+\label{eq:CLs}
+\end{equation}
+\item Those values of $f$ for which $CLs < \nu$ are excluded at a confidence
+level (CL) of $1-\nu$. Here the CL is taken to be 95\%. The upper limit on $f$ 
+at 95\% CL is the value of $f$ for which $CLs = 0.05$.
+\end{itemize}
 
-Figure \ref{fig:Confidence_Belt} shows the ranges $\left(x_{1},x_{2}\right)$ as
-horizontal line segments on the $\left(x,\theta\right)$ plane for each possible 
-value of $\theta$. \\
+The CLs method is used to calculate the upper limit on $f$ for each point in the
+parameter space. Figure \ref{fig:limit} shows the upper limit on $f$ in the
+squark mass vs gluino mass plane for the 441 points in the grid.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{Confidence_Belt.pdf}
-\caption{The ranges $\left(x_{1},x_{2}\right)$ as horizontal lines in the 
-$\left(x,\theta\right)$ plane for each possible value of $\theta$. A
-confidence belt is marked out the vertical height of which gives the
-confidence interval for each possible measurement value.}
-\label{fig:Confidence_Belt}
+\includegraphics[width=0.8\textwidth]{ExpectedLimit.pdf}
 \end{center}
+\caption{The expected upper limit on $f$ in the squark mass vs gluino mass plane 
+using the CLs method. }
+\label{fig:limit}
 \end{figure}
 
-Upon measurement of $x$ as having value $x_{0}$ we draw a vertical line on the 
-$\left(x,\theta\right)$ plane (Figure \ref{fig:Confidence_Belt}) at $x = x_{0}$.
-Under the Neyman Construction the confidence interval for $\theta$ is defined by
-the values of $\theta$ where the vertical line intersects the horizontal ranges 
-$\left(x_{1},x_{2}\right)$. \\
+\section{Interpolation and Smoothing}
 
-The Neyman Construction is not a unique procedure: it does not specify how the 
-ranges $\left(x_{1},x_{2}\right)$ which contain $1 - \alpha$ of the pdf should
-be found. A rule for ordering the $x$ values (test statistic) is required. \\
+The grid of SUSY parameter points is rather coarse giving a jagged exclusion
+line. To make a smooth limit an interpolation is performed between the points 
+on the grid to make a finer grid with more points in the parameter space. The 
+upper limit on $f$ is taken to vary linearly between points on the grid. Figure
+\ref{fig:interpolation} shows the finer grid after linear interpolation between
+the points. The resulting exclusion line is still slightly jagged due to the
+finite number of points in the interpolation. To smooth the line each point
+along the line is replaced by a mobing average which is the mean of the closest 
+five points.
 
-In the Feldman Cousins method the ordering principle is the likelihood ratio -- 
-motivated by the Neyman-Pearson lemma. When nuisance parameters are involved the
-profile likelihood ratio is the natural generalisation.
-
-\subsection{CLs: MC toys with hypothesis testing}
-
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{ExpectedLimit_HighRes.pdf}
+\end{center}
+\caption{The expected upper limit on $f$ in the squark mass vs gluino mass plane 
+after a liner interploation between the points. }
+\label{fig:interpolation}
+\end{figure}
 
 \section{Expected and Observed Limit}
 
@@ -171,9 +201,21 @@ of the above methods using the pseudo data as if it were data. \\
 
 Many sets of pseudo data are generated and a limit on the cross section of a 
 possible SUSY signal is calculated for each. An expected limit can be drawn on 
-the SUSY parameter space by linking those parameter points for which the cross 
-section can be excluded at 95\% confidence level in half of the pseudo 
-experiments -- the median of excluded cross section across all pseudo 
-experiments. $1 \sigma$ and $2 \sigma$ bands, lines linking the parameter points
-where the cross section is excluded for 67\% and 95\% of the pseudo experiments 
-respectively, are also drawn.
+the SUSY parameter space by linking those parameter points for which the signal 
+can be excluded at 95\% confidence level in half of the pseudo experiments. The 
+$1 \sigma$ band, a line linking the parameter points where the signal is 
+excluded for 67\% of the pseudo experiments is also drawn. \\
+
+Figure \ref{fig:finallimit} shows the final limit plot at 95\% CL with the
+expected limit, the $\pm1$ sigma band and the observed exclusion limit. The
+exclusion limit from another CMS analysis \cite{ra3} looking at the same signal 
+model is also shown for comparison.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graph.pdf}
+\end{center}
+\caption{The expected upper limit on $f$ in the squark mass vs gluino mass plane 
+after a liner interploation between the points. }
+\label{fig:finallimit}
+\end{figure}
