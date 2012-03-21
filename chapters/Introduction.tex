@@ -1,5 +1,28 @@
 \chapter{Introduction}
 
+The Large Hadron Collider (LHC) was built to explore the TeV energy scale with
+proton-proton collisions to increase our understanding of particle physics. Two 
+general purpose detectors at the LHC, the Compact Muon Solenoid (CMS) and A 
+Toroidal LHC AparatuS (ATLAS), were designed specifically to explore the TeV 
+energy scale. The main focus of the analysis at these experiments in terms of 
+new physics has been to search for the Higgs boson, which is predicted by the 
+electroweak theory in the Standard Model (SM) but has not been observed, and 
+Supersymmetry (SUSY) which is a theory of new physics beyond the SM which seeks 
+to solve the hierarchy problem. \\
+
+SUSY is a theory with many parameters and many possible experimental signatures
+depending on the value of these parameters. This thesis searches for a 
+restricted set of SUSY models in the data based on the experimental signature of 
+$\gamma + \mbox{jets} + \MET$ and puts a limit on the presence of these models. 
+The exclusion limit is compared with the results of other analyses looking at 
+the same models. \\ 
+
+This introductory section sets out the units and conventions used in this thesis 
+which are standard in particle physics. An outline of the thesis is given to 
+give the reader an indication of what is coming and to put it in context. The 
+work done by the author during his Ph.D. is specified. This final section of the
+introduction is written in the first person.
+
 \section{Units and Conventions}
 
 {\bf Special Relativity} \\
@@ -80,8 +103,12 @@ Abbreviations defined as they are introduced. The more comonly used
 abbreviations are listed here:
 
 \begin{itemize}
+\item LHC: Large Hadron Collider -- the machine which collides protons at
+$7\unit{TeV}$ centre-of-mass energy.
 \item CMS: Compact Muon Solenoid -- the detector which took the proton-proton
 collisions data used in this thesis.
+\item SM: Standard Model -- the current theory of particle physics which
+describes the properties and interactions of the fundamental particles.
 \item ECAL: Electromagnetic Calorimeter -- the part of the CMS detector which 
 measures the energy of electrons and photons.
 \item HCAL: Hadronic Calorimeter -- the part of the CMS detector which measures
@@ -123,7 +150,33 @@ taking and analysis are also described. The reconstruction of photons and jets,
 the main physics objects used in this analysis, are detailed along with the
 selection variables associated with these physics objects. \\
 
-The event selection is geared towards the GMSB models 
+The data and the issues with the data and triggers are described. The trigger
+efficeincy is evaluated with respect to a lower threshold trigger this motivates
+the selection cuts to ensure that the trigger is fully efficient. The Monte 
+Carlo samples are examined and compared to the data to establish what the Monte
+Carlo models well and what it does not. The event selection is motivated by the 
+signature of GMSB, $\gamma+\mbox{jets}+\MET$. The cleaning cuts and 
+pre-selection applied to the data are given and explained. The object selection 
+cuts are listed and the event varibles used to search for GMSB are examined. \\
+
+The background to the search comes mainly from QCD processes which have fake
+$\MET$ due to the detector resolution. The sources of background are listed 
+and their properties and relative sizes are examined. The QCD background is
+estimated using a control sample from data and checked using the Monte Carlo.
+The systematic error is evaluated using the Monte Carlo. There are other
+backgrounds from electroweak processes, but these are insignificant. They are
+estimated using the Monte Carlo. \\
+
+The prediction of the number of signal events is made and all the sources of
+systematic uncertainty are considered. A grid of signal samples are considered
+each with different parameter values. The signal efficiency for each parameter
+point on the grid is determined by applying the event selection to Monte Carlo 
+samples. The sources of systematic uncertainty are investigated and their effect
+on the signal prediction is evaluated. \\
+
+The CLs method is used to determine what level of signal can be excluded at 95\%
+confidence level. An exclusion plot in GMSB parameter space is given based on
+this analysis and compared with other analyses looking at the same signal.
 
 \section{Other Work}
 
@@ -135,7 +188,7 @@ thesis is my own including the event selection, the background estimation, the
 signal prediction, the determination of systematic uncertainties and the limit
 setting. The only exceptions are the cross-section calculations and 
 corresponding uncertainties in Section \ref{sec:xsec} and the photon efficiency
-correction in Section \ref{sec:phoeff}.
+correction in Section \ref{sec:phoeff}. \\
 
 I spent the first six months of my Ph.D. attending lectures on particle physics 
 and doing problem sheets and training exercises. Following this I went to CERN
@@ -163,9 +216,6 @@ For the final six months I returned to Imperial College to write up my thesis.
 \\
 
 There are two big projects which I have worked on during my Ph.D., but which are
-not contained within the main part of this thesis. I will mention them briefly
-here. They are the work on ECAL spikes and Ersatz $\MET$ mentioned above. \\
-
-{\bf ECAL spikes} \\
-
-{\bf Ersatz $\MET$} \\
+not contained within the main part of this thesis. They are the work on ECAL 
+spikes and Ersatz $\MET$ mentioned above. The work I did on these in contained
+in Appendix \ref{} and Appendix \ref{}.

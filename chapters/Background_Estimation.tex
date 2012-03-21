@@ -116,33 +116,111 @@ estimation works.}
 \label{fig:Regions}
 \end{figure}
 
-Figure \ref{fig:Bkgd_Est_MC} shows the background estimation and the number of
-selected events in bins of $\HT$ and $\MET$ for the Monte Carlo. \\
+To assess how well the background estimation technique works, the $\MET$
+distribution of the selected events is compared to the prediction of the 
+$\MET$ distribution using the control sample. This is done using the MC and the
+sideband region to give two independent checks each with different qualities.
+The check of the background estimation using the MC shows how well the technique
+works in principle. It has the advantage that it is probing a kinematically
+identical regoin to the data, but the disadvantage that the MC does not
+accurately reproduce the $\MET$ distribution in data. The check of the 
+background estimation technique using the sideband region in data uses a 
+kinematically similar, but not idential region. It has the advantage that being 
+from data it reliably reproduces the detector idosyncracies which cause the fake 
+$\MET$. \\
+
+Figure \ref{fig:Bkgd_Est_MC} shows the $\MET$ distribution in the MC for the 
+selected events compared to the prediction of the $\MET$ distribution using the 
+control sample. The data are split bins of $\HT$: $400-500\unit{GeV}$, 
+$500-600\unit{GeV}$, $600-700\unit{GeV}$ and $700\unit{GeV}+$. The ratio of the 
+number of events in the selected sample to the number of events predicted using 
+the control sample. A straight line is fitted to the ratio plot to give a 
+quantatative measure of the performance of the background estimation. The 
+important number to compare is the number of events in the search bin
+($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$), which is predicted to be 
+$0.17\pm0.04$ using the control sample in the MC. The true value in the MC is 
+$0.24\pm0.06$. \\
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{mc_pred.pdf}
-\includegraphics[width=0.5\textwidth]{mc_obs.pdf}
+\includegraphics[width=0.5\textwidth]{mc_pfMET_1.pdf}
+\includegraphics[width=0.5\textwidth]{mc_pfMET_1_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{mc_pfMET_2.pdf}
+\includegraphics[width=0.5\textwidth]{mc_pfMET_2_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{mc_pfMET_3.pdf}
+\includegraphics[width=0.5\textwidth]{mc_pfMET_3_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{mc_pfMET_4.pdf}
+\includegraphics[width=0.5\textwidth]{mc_pfMET_4_ratio.pdf}\\
 \caption{The background estimation (left) and number of selected events (right) 
 in bins of $\HT$ and $\MET$ in the Monte Carlo to check that the background
 estimation method works.}
 \label{fig:Bkgd_Est_MC}
 \end{figure}
 
-Figure \ref{fig:Bkgd_Est_Sideband} shows the estimation of the number of
-isolated events in bins of $\HT$ and $\MET$ using the non-isolated sample in the
-sideband region from data compared to the true number of events. \\
+Figure \ref{fig:Bkgd_Est_Sideband} shows the predicted and observed $\MET$ 
+distribution in the sideband region. The number of events in the search bin for
+the sideband region is predicted to be $0.09\pm0.04$ compared to an observation of
+0. The prediction is consistent with the observed number of events. \\
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{sb_pred.pdf}
-\includegraphics[width=0.5\textwidth]{sb_obs.pdf}
+\includegraphics[width=0.5\textwidth]{sb_pfMET_1.pdf}
+\includegraphics[width=0.5\textwidth]{sb_pfMET_1_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{sb_pfMET_2.pdf}
+\includegraphics[width=0.5\textwidth]{sb_pfMET_2_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{sb_pfMET_3.pdf}
+\includegraphics[width=0.5\textwidth]{sb_pfMET_3_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{sb_pfMET_4.pdf}
+\includegraphics[width=0.5\textwidth]{sb_pfMET_4_ratio.pdf}\\
 \caption{The estimation of the number of isolated events (left) using the
 non-isolated events in the sideband region from data compared to the true number
 (right).}
 \label{fig:Bkgd_Est_Sideband}
 \end{figure}
 
-A systematic error on the assumption is taken as half the difference between the
-estimated number of events and true number of events in Monte Carlo.
+Now that background estimation procedure has been shown to work using the MC and
+using the sideband region, it can be used on the data to make the background
+estimation for this search. Figure \ref{fig:Bkgd_Est} shows the $\MET$
+distribution of the background estimation in bins of $\HT$. This data is
+included in a table in Appendix ... The important number for this search is the
+estimated number of background events in the ($\HT>700\unit{GeV}$, 
+$\MET>200\unit{GeV}$) bin because that is the most significant bin in terms of
+the limit placed on the GMSB cross-section. The estimated number of backgound
+events in this bin along with its statistical uncertainty is $7.7\pm2.1$. \\
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{pfMET_1.pdf}
+\includegraphics[width=0.5\textwidth]{pfMET_1_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{pfMET_2.pdf}
+\includegraphics[width=0.5\textwidth]{pfMET_2_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{pfMET_3.pdf}
+\includegraphics[width=0.5\textwidth]{pfMET_3_ratio.pdf}\\
+\includegraphics[width=0.5\textwidth]{pfMET_4.pdf}
+\includegraphics[width=0.5\textwidth]{pfMET_4_ratio.pdf}\\
+\caption{The estimation of the number of isolated events (left) using the
+non-isolated events in the sideband region from data compared to the true number
+(right).}
+\label{fig:Bkgd_Est}
+\end{figure}
+
+The systematic uncertainty on the background estimation comes from the assumption 
+that the control sample accurately estimates the number of selected events. Due
+to the small number of events in the sideband region, the MC alone is used to
+determine the systematic uncertainty. The uncertainty has two components: the
+uncertainty due to a systematic difference between the estimation and the truth 
+in the MC, $\sigma_{\delta}$, and an uncertainty in the values of the estimation 
+and the truth due to the statistics of the MC, $\sigma_{stat}$. These two 
+components are added in quadrature to get the systematic uncertainty assigned to 
+the background estimation (Equation \ref{eq:syst}).
+
+\begin{equation}
+\sigma_{total} = \sqrt{\sigma_{\delta}^{2} + \sigma_{stat}^{2}}
+\label{eq:syst}
+\end{equation}
+
+The value of $\sigma_{\delta}$ is 29\unit{\%} and the value of $\sigma_{stat}$
+is 25\unit{\%}. Thus the total systematic uncertainty on the background 
+estimation is 38\unit{\%}. The estimate of the number of background events 
+including statistical and systematic uncertainties is 
+$7.7\pm2.1(stat.)\pm2.7(syst.)$.
 
 \section{Electroweak and $t\bar{t}$ Backgrounds}
 

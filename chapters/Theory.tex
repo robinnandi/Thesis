@@ -49,10 +49,10 @@ masses: u, d, c, s, t, b. Each flavour of quark comes in three different colors.
 Quarks carry color charge and form an SU(3) color triplet. Quarks are not 
 observed as free particles, but only in colorless bound states. \\
 
-A beautiful experiment by C. S. Wu and collaborators showed that parity is
-violated in weak interactions. The beta decay of $\mbox{Co}^{60}$ was performed 
-in a magnetic field and at low temperature to polarise the nuclei and the 
-angular distribution of electrons was measured. An asymmetry in the distribution
+An experiment by C. S. Wu and collaborators showed that parity is violated in 
+weak interactions. The beta decay of $\mbox{Co}^{60}$ was performed in a 
+magnetic field and at low temperature to polarise the nuclei and the angular 
+distribution of electrons was measured. An asymmetry in the distribution 
 between $\theta$ and $180^{\circ} - \theta$ (where $\theta$ is the angle between 
 the electron momentum and the orientation of the parent nucleus) was observed
 providing unequivocal proof that parity is not conserved in beta decay. This is
@@ -133,7 +133,7 @@ The QED Lagrangian for electromagnetic interactions of electrons can be written
 as Equation \ref{eq:qed}.
 
 \begin{equation}
-L = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{\psi}\gamma^{\mu}D_{\mu}\psi
+L = -\frac{1}{4}F_{\mu\nu}F_{\mu\nu} + \bar{\psi}\gamma_{\mu}D_{\mu}\psi
 - m_{e}\bar{\psi}\psi
 \label{eq:qed}
 \end{equation} 
@@ -142,10 +142,10 @@ The first term represents the free electromagnetic field. $F_{\mu\nu} =
 \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}$, where $A_{\mu}$ is the 
 electromagnetic vector potential. The second term reresents the electron kinetic 
 energy and the interaction between electron and photon. $D_{\mu} = 
-\partial_{\mu} - ieA_{\mu}$ is the covariant derivative (i.e. it remains the 
-same under the gauge transformation). The third term represents the mass of the 
-electron. This lagrangian is invariant under the U(1) gauge transformation given 
-by Equation \ref{eq:transformations}.
+\partial_{\mu} - ieA_{\mu}$ is the covariant derivative (i.e. it transforms in 
+the same way as $\psi$ under the gauge transformation). The third term 
+represents the mass of the electron. This lagrangian is invariant under the U(1) 
+gauge transformation given by Equation \ref{eq:transformations}.
 
 \begin{eqnarray}
 \psi &\rightarrow& e^{-i\alpha(x)}\psi \\
@@ -182,9 +182,9 @@ this value. The QED prediction agrees with the experimentally measured value
 
 \subsection{The Electroweak Sector}
 
-The electroweak force consists of SU(2) weak isospin and U(1) hypercharge. Table 
-\ref{tab:ewk} defines the symbols for the groups, the corresponding fields and 
-the generators. \\
+The symmetries of the electroweak interaction are SU(2) weak isospin and U(1) 
+hypercharge. Table \ref{tab:ewk} defines the symbols for the groups, the 
+corresponding fields and the generators. \\
 
 \begin{table}
 \begin{center}
@@ -202,9 +202,9 @@ groups. $a = 1, 2, 3$ and $\sigma^{a}$ are the Pauli matrices.}
 \label{tab:ewk}
 \end{table}
 
-Consider a scalar field doublet, $\phi$, with respect to SU(2) with U(1) 
-hypercharge $Y = \frac{1}{2}$. The bosonic sector of the electroweak lagrangain 
-can be written as:
+Consider a scalar field, $\phi$, which is a doublet with respect to SU(2) and 
+with U(1) hypercharge $Y = \frac{1}{2}$. The bosonic sector of the electroweak 
+lagrangain can be written as:
 
 \begin{equation}
 L = -\frac{1}{4}F_{\mu\nu}^{a}F_{\mu\nu}^{a}
@@ -331,9 +331,9 @@ $\chi$ & $m_{\chi} = \sqrt{2\lambda}v$ & Higgs \\
 \label{tab:physical}
 \end{table} 
 
-The electroweak theory of Glashow, Salam and Weinberg predicted mixing between
-the electromagnetic and weak forces and the existence of $W^{\pm}$ and $Z^{0}$ 
-bosons with masses in the ratio given by Equation \ref{eq:masses}. 
+Thus electroweak theory predicts mixing between the electromagnetic and weak 
+forces and the existence of $W^{\pm}$ and $Z^{0}$ bosons with masses in the 
+ratio given by Equation \ref{eq:masses}. 
 
 \begin{equation}
 \frac{m_{W}}{m_{Z}} = \cos\theta_{W}
@@ -359,11 +359,12 @@ electroweak theory. \\
 
 Both leptons and quarks feel the weak interaction. The $W^{\pm}$ interact only
 with left-handed fermions. Handedness (or chirality) is the eigenvalue of the 
-$\gamma^{5}$ matrix. It corresponds to the helicity (the projection of the spin 
-onto the direction of motion) in the relativistic limit $m << E$. The left
-handed and right handed components of a fermion $\psi$ can be projected out
-using the operators $\frac{1}{2}(1 - \gamma^{5})$ and $\frac{1}{2}(1 + 
-\gamma^{5})$ respectively. \\
+$\gamma^{5}$ matrix ($\gamma^{5} = i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$
+where $\gamma^{\mu}$ are the gamma matrices of the Dirac equation). It 
+corresponds to the helicity (the projection of the spin onto the direction of 
+motion) in the relativistic limit $m << E$. The left-handed and right-handed 
+components of a fermion $\psi$ can be projected out using the operators 
+$\frac{1}{2}(1 - \gamma^{5})$ and $\frac{1}{2}(1 + \gamma^{5})$ respectively. \\
 
 The left handed components form SU(2) doublets while the right handed components
 are singlets under SU(2) as in Equation \ref{eq:leptons} for leptons and
@@ -422,25 +423,25 @@ V_{td} & V_{ts} & V_{tb}
 SU(3) is the symmetry group of the strong force. Particles which interact via
 the strong force carry colour charge. Quarks come in 3 colours denoted r, g and 
 b. There are 8 gluons which correspond to the 8 generators of SU(3). Gluons 
-carry colour charge and so interact with each other. This is required by gauge 
-invariance due to the non-abelian nature of SU(3). \\
+carry colour charge and so interact with each other. This is required due to 
+the non-abelian nature of SU(3). \\
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{gluons.png}
 \end{center}
 \caption{Gluon self-interactions occur because gluons carry colour charge. This
-is required by gauge invariance due to the non-abelian nature of SU(3).}
+is required due to the non-abelian nature of SU(3).}
 \end{figure}
 
 The Hadron Electron Ring Accelerator (HERA) made electron proton collisions to
 determine the structure of the proton. Deep inelastic scattering in the ZEUS and
 H1 detectors revealed that the structure functions of the proton are independent
-of the momentum transfer, $Q^{2}$, and dependent only on $x = 
-\frac{Q^{2}}{2p.q}$. This is called bjorken scaling and lead to the parton model 
-in which the proton is made of partons which carry a fraction, $x$, of the 
-proton momentum. Figure \ref{fig:dis} shows the independence of the 
-cross-section with $Q^{2}$ over 5 orders of magnitude. \\
+of the momentum transfer, $Q$, and dependent only on $x = \frac{Q^{2}}{2p.q}$. 
+This is called bjorken scaling and lead to the parton model in which the proton 
+is made of partons which carry a fraction, $x$, of the proton momentum. Figure 
+\ref{fig:dis} shows the independence of the cross-section with $Q^{2}$ over 5 
+orders of magnitude. \\
 
 \begin{figure}
 \begin{center}
@@ -563,7 +564,7 @@ rotational speed of galaxies and the bullet cluster. \\
 
 The bullet cluster provides the best evidence yet on the nature of dark matter. 
 It consists of two colliding clusters of galaxies. The visible matter (stars) 
-pass straight through slowed only by gravitation. The hot gas which represents 
+pass straight through slowed only by gravitation. The hot gas that represents 
 most of the normal matter is detected through X-rays. The hot gas slows more 
 than the stars due to its electromagnetic interactions. Another piece of
 information comes from gravitational lensing. In the absence of dark matter the
@@ -574,13 +575,13 @@ mass of the galaxies is made up of collisionless dark matter. \\
 
 If dark matter interacts through the weak force, then it could be observed at
 the LHC. Dark matter may not interact weakly. Perhaps it interacts only 
-gravitationally. Additionally it may not show up at the TeV scale. I will simply
-make two statements which offer some support for the discovery of possible dark 
-matter candidates at the LHC. Firstly, TeV scale weakly interacting masive 
-particles give dark matter abundances in the universe at about the 
-experimentally observed level. Secondly, SUSY (which is one of the popular 
-theories of physics beyond the standard model) predicts a set of supersymmetric 
-particles the lightest of which could be a dark matter candidate.
+gravitationally. Additionally it may not show up at the TeV scale. There are two
+at least two reasons supporting the discovery of possible dark matter candidates 
+at the LHC. Firstly, TeV scale weakly interacting masive particles give dark 
+matter abundances in the universe at about the experimentally observed level. 
+Secondly, SUSY (which is one of the popular theories of physics beyond the 
+standard model) predicts a set of supersymmetric particles the lightest of which 
+could be a dark matter candidate.
 
 \section{Supersymmetry}
 
@@ -656,21 +657,22 @@ are 6 parameters describing GMSB:
 \item $C_{grav}$ -- the scale factor of the gravitino coupling.
 \end{itemize}
 
-SUSY events contain real Missing Transverse Energy ($\MET$) from the Lightest 
+SUSY events contain real missing transverse energy ($\MET$) from the Lightest 
 Supersymmetric Particle (LSP). In GMSB models with $N_{5} = 1$ and low
 $\tan\beta$, the LSP is the gravitino ($\tilde{G}$) and the Next Lightest 
 Supersymmetric Particle (NLSP) is the lightest neutralino 
 ($\tilde{\chi}_{1}^{0}$). The Neutralino decays into a photon and a gravitino 
-$\tilde{\chi}_{1}^{0}\rightarrow\gamma\tilde{G}$. Since the two photons come from 
-separate decay chains there is little correlation betweeen the two: they do not 
-have a particular invariant mass nor a particular angular separation. \\
+$\tilde{\chi}_{1}^{0}\rightarrow\gamma\tilde{G}$. Since the two photons come 
+from separate decay chains there is little correlation betweeen the two: they do 
+not have a particular invariant mass nor a particular angular separation. \\
 
-At lower $\sqrt{s}$, for example at LEP ($200\unit{GeV}$) and at the Tevatron
-($500\unit{GeV}$), the GMSB cross section is lower and the dominant production 
-mechanism is electroweak production through a W or a Z. The signature for 
-electroweak production GMSB is $\gamma\gamma + \MET$. ALEPH \cite{aleph} at LEP 
-($e^{+}e^{-}$ collider) and D0 \cite{d0} and CDF \cite{cdf} at the Tevatron 
-($p\bar{p}$ collider) have published limits on electroweak production GMSB. \\
+At lower centre-of-mass energies, for example at LEP ($200\unit{GeV}$) and at 
+the Tevatron ($1.96\unit{TeV}$), the GMSB cross section is lower and the 
+dominant production mechanism is electroweak production through a W or a Z. The 
+signature for electroweak production GMSB is $\gamma\gamma + \MET$. ALEPH 
+\cite{aleph} at LEP ($e^{+}e^{-}$ collider) and D0 \cite{d0} and CDF \cite{cdf} 
+at the Tevatron ($p\bar{p}$ collider) have published limits on electroweak 
+production GMSB. \\
 
 \begin{figure}
 \begin{center}
@@ -691,3 +693,12 @@ particle in the SUSY mass hierarchy ($\tilde{g}\rightarrow q\bar{q}\tilde{X}$)
 resulting in two jets. The only previous limits on strong production GMSB come 
 from ATLAS \cite{atlas} and CMS \cite{ra3} at the LHC. \\
 
+\section{Conclusion}
+
+The Standard Model has been described with particular emphasis on the gauge
+structure of the theory. Experimental results that back up the theories have
+been given. The motivations for expecting the discovery of new physics at the
+TeV scale have been examined. Supersymmetry (SUSY) and in particluar Gauge
+Mediated SUSY Breaking (GMSB) have been introduced. Previous limits on GMSB, the
+flavour of SUSY considered in this thesis, have been mentioned.
+been mentioned
