@@ -340,11 +340,9 @@ large energy deposits. RBX noise is when all or most of the 72 channels in a
 Readout Box report large energies. The origin of this noise is cross-over in the
 electronics where a signal causes an induced signal in neighbouring wires.
 PMT window noise comes from charged particles occasionally hit an HF PMT window 
-directly instead of interacting with the quartz fibres. This results in a large 
-energy deposit in either a long or a short fibre without an appreciable deposit 
-in the other short/long partner. The HCAL noise filter removes HCAL noise by 
-vetoing on variables related to pulse shape, timing, hit multiplicity and number
-of zero ADC counts.
+directly instead of interacting with the quartz fibres. The HCAL noise filter 
+removes HCAL noise by vetoing on variables related to pulse shape, timing, hit 
+multiplicity and number of zero ADC counts.
 \item {\bf ECAL Spike Cleaning:} ECAL Spikes are isolated energy deposits in 
 the ECAL which do not come from EM showers. The origin of ECAL spikes is pions
 going directly into the depleted region of the photodetector (without
@@ -356,10 +354,9 @@ by the shower shape variable. Some spikes are in time with the rest of the event
 and some are out of time. The energy varies from a few MeV to a few TeV. A 
 cut of $1 - e4/e1 < 0.96$ is made to avoid ECAL Spikes. 1 - e4/e1 is the ``Swiss 
 Cross'' variable in which e1 is the highest energy crystal in a 3x3 array and e4 
-is the energy of the four adjacent crystals. Additional spikes with significant
-energy in two adjacent crystals remained. These residual spikes are vetoed by
-requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the timing of the signal. This 
-is illustrated by Figure \ref{fig:spikes}.
+is the energy of the four adjacent crystals. Remaining spikes are vetoed by
+requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the timing of the signal. 
+This is illustrated by Figure \ref{fig:spikes}.
 \end{itemize}
 
 \begin{figure}
@@ -403,3 +400,27 @@ and the background rejection as a function of $\MET$ cut.
 function of $\MET$ cut.}
 \label{fig:met_threshold}
 \end{figure}
+
+The total number of events passing the selection in bins of $\HT$ and $\MET$ is
+given in Table \ref{tab:events}.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$\MET\downarrow | \HT\rightarrow$ & $400-500\unit{GeV}$ & $500-600\unit{GeV}$ 
+& $600-700\unit{GeV}$ & $700\unit{GeV}+$ \\ 
+\hline
+$50-100\unit{GeV}$ & 835 & 591 & 398 & 609 \\
+\hline
+$100-150\unit{GeV}$ & 35 & 30 & 26 & 44 \\
+\hline
+$150-200\unit{GeV}$ & 5 & 5 & 2 & 7 \\
+\hline
+$200\unit{GeV}+$ & 9 & 4 & 4 & 7 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{The number of events passing the selection in bins of $\HT$ and $\MET$.}
+\label{tab:events}
+\end{table}

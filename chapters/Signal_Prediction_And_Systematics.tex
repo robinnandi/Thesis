@@ -39,7 +39,12 @@ uncertainty for the jet and $\HT$ cuts are the jet energy scale and jet energy
 resolution. For the photons the main sources of uncertainty come from the photon
 efficiency correction and from pile-up which affects the photon isolation 
 efficiency. Both the $\HT$ and $\MET$ distributions are also affected by 
-pile-up, but this is a small effect.
+pile-up, but this is a small effect. \\
+
+The numbers and plots relating to the systematic uncertainties presented in this 
+section use a signal parameter point close to exclusion with squark mass 
+$1200\unit{GeV}$ and gluino mass $1200\unit{GeV}$. The systematic uncertainties
+are also determined for all the other parameter points in the same way.
 
 \section{Photon Efficiency Correction}
 \label{sec:phoeff}
@@ -301,12 +306,16 @@ surrounding activity which can populate the isolation cone.
 
 Most of the pile-up events will be soft QCD with low $\pT$ jets approximately 
 parallel to the beam-line. These do not have a huge effect on the $\HT$ since 
-the $\HT$ is a sum of high $\pT$ jets. The effect of pile-up on the $\HT$ is 
-evaluated by looking at the HT distribution in MC QCD events with and without 
-pile-up. A shift of $7.0\pm0.8$ is applied to the no pile-up $\HT$ distribution 
-to match the pile-up $\HT$ distribution (Figure \ref{fig:meanht_vs_htshift}). 
-Figure \ref{fig:puHT} shows the $\HT$ distribution with a $\pm 1$ sigma 
-variation in the shift. \\
+the $\HT$ is a sum of high $\pT$ jets. Since the signal MC does not have pile-up
+simulated, the effect of pile-up on the $\HT$ is evaluated by looking at the
+$\HT$ distribution in MC QCD events with and without pile-up. A shift of 
+$7.0\pm0.8$ is applied to the no pile-up $\HT$ distribution to match the pile-up 
+$\HT$ distribution (Figure \ref{fig:meanht_vs_htshift}). Figure \ref{fig:puHT} 
+shows the $\HT$ distribution with a $\pm 1$ sigma variation in the shift. The
+important number is how this affects the signal efficiency in the
+($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin. With a $\pm1\sigma$ variation
+in the $\HT$ shift the signal efficiency is $0.3821\pm0.0003$, an uncertainty of
+$0.1\unit{\%}$. \\
 
 \begin{figure}
 \begin{center}
@@ -327,16 +336,20 @@ $\pm 1$ sigma variations are shown in red and blue respectively.}
 \label{fig:puHT}
 \end{figure}
 
-The $\MET$ distribution is broadened by the introduction of more jets from other
-interactions in the same bunch crossing. The pile-up events will mostly be low
-$\HT$ and balanced so will have only a little effect on the $\MET$. The $\MET$
-distribution is smeared to account for pile-up. To determine the amount of
-smearing necessary a QCD sample with similar $\HT$ and no pile-up is smeared
-until the shape agrees with the $\MET$ distribution with pile-up. Figure 
-\ref{fig:meanmet_vs_metsmearing} shows the average $\MET$ in QCD events without 
-pile-up as a function of the $\MET$ smearing. From the plot a $\MET$ smearing of 
-$2.9\pm0.8\unit{\%}$ is applied to account for pile-up. Figure \ref{fig:puMET} 
-shows the $\MET$ distribution with a $\pm 1$ sigma variation in the shift. \\
+The $\MET$ distribution is broadened by the introduction of more jets and
+underlying event activity from other interactions in the same bunch crossing. 
+The pile-up events will mostly be low $\HT$ and balanced so will have only a 
+little effect on the $\MET$. The $\MET$ distribution is smeared to account for 
+pile-up. To determine the amount of smearing necessary a QCD sample with similar 
+$\HT$ and no pile-up is smeared until the shape agrees with the $\MET$ 
+distribution with pile-up. Figure \ref{fig:meanmet_vs_metsmearing} shows the 
+average $\MET$ in QCD events without pile-up as a function of the $\MET$ 
+smearing. From the plot a $\MET$ smearing of $5.6\pm1.0\unit{GeV}$ is applied to 
+account for pile-up. Figure \ref{fig:puMET} shows the $\MET$ distribution with a 
+$\pm 1$ sigma variation in the shift. The important number is the uncertainty in
+the signal efficiency due to the uncertainty in the $\MET$ smearing to account
+for pile-up, which is found to be $0.3821\pm0.0004$. This corresponds to an
+uncertainty of $0.1\unit{\%}$.\\
 
 \begin{figure}
 \begin{center}
@@ -372,7 +385,8 @@ modelling the photon efficiency in pile-up well. This can be checked by looking
 at Zee events in data. The efficiency requires only a small correction between 
 data and MC which is relatively stable with respect to pile-up (Figure 
 \ref{fig:EffCorr_vs_nPV}). The efficiency correction due to pile-up is found to 
-be $0.83\pm0.01(stat.)\pm0.01(syst.)$. \\
+be $0.83\pm0.01(stat.)\pm0.01(syst.)$. This produces an uncertainty of
+$3.8\unit{\%}$ on the signal efficiency.
 
 \begin{figure}
 \begin{center}
@@ -473,37 +487,34 @@ integrated luminosity measurement for this method is $5\unit{\%}$. \\
 \section{Summary of Systematics}
 
 Table \ref{tab:Systematics_Summary} shows a summary of all the systematic
-uncertainties for the backgrounds and the signal. For simplicity the systematic
-uncertainties for only the most significant bin in terms of the limit setting 
-($\HT$, $\MET$) = (700+, 200+) are shown.
+uncertainties for the backgrounds and the signal. These are the uncertainties on
+the number of events in the ($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin. A
+GMSB parameter point close to exclusion with squark mass $1200\unit{GeV}$ and 
+gluino mass $1200\unit{GeV}$ is used for the signal uncertainties.
 
 \begin{table}
 \begin{center}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline
-{\bf Source of Systematic Uncertainty} & {\bf QCD} & {\bf EWK} & {\bf SUSY} \\
+{\bf Source of Systematic Uncertainty} & {\bf QCD} & {\bf SUSY} \\
 \hline
-QCD Background Estimation & $38\unit{\%}$ & - & - \\
+QCD Background Estimation & $38\unit{\%}$ & - \\
 \hline
-e/$\gamma$ Misidentification & - & $30\unit{\%}$ & - \\
+Photon Efficiency & - & $3.8\unit{\%}$ \\
 \hline
-$W\rightarrow e\nu$ Cross-Section & - &  & - \\
+Jet Energy Scale & - & $4.4\unit{\%}$ \\
 \hline
-Photon Efficiency & - & $3.8\unit{\%}$ & $3.8\unit{\%}$ \\
+Jet Energy Resolution & - & $1.2\unit{\%}$ \\
 \hline
-Jet Energy Scale & - & & $4.4\unit{\%}$ \\
+Pile-up: HT shift & - & $0.1\unit{\%}$ \\
 \hline
-Jet Energy Resolution & - & & $1.2\unit{\%}$ \\
+Pile-up: MET smearing & - & $0.1\unit{\%}$ \\
 \hline
-Pile-up: HT shift & - & & $0.1\unit{\%}$ \\
+Pile-up: photon efficiency & - & $2.4\unit{\%}$ \\
 \hline
-Pile-up: MET smearing & - & & $0.1\unit{\%}$ \\
+Signal Cross-Section & - & $20\unit{\%}$ \\
 \hline
-Pile-up: photon efficiency & - & & $2.4\unit{\%}$ \\
-\hline
-Signal Cross-Section & - & - & $20\unit{\%}$ \\
-\hline
-Integrated Luminosity & - & $5\unit{\%}$ & $5\unit{\%}$ \\
+Integrated Luminosity & - & $5\unit{\%}$ \\
 \hline
 \end{tabular}
 \end{center}
