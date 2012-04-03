@@ -140,18 +140,27 @@ in this analysis. The bands indicate the corresponding uncertainties.}
 \end{figure}
 
 The uncertainty is $\sim 2 \unit{\%}$ on jets above $50 \unit{GeV}$ and $\sim 5 
-\unit{\%}$ on smaller jets and unclustered energy. Figure 
-\ref{fig:JES_Uncertainty_vs_Jet_pT} shows the total jet energy scale uncertainty 
-against jet $\pT$ for central jets. \\
+\unit{\%}$ on smaller jets and unclustered energy. Figure \ref{fig:JES_Unc_pT} 
+shows the jet energy scale uncertainty against jet $\pT$ for central jets and 
+Figure \ref{fig:JES_Unc_Eta} shows the jet energy scale uncertainty against jet
+$\eta$ for $100\unit{GeV}$ jets. \\
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{JES_Uncertainty_vs_Jet_pT.pdf}
+\includegraphics[width=0.7\textwidth]{JES_Unc_pT.pdf}
 \end{center}
-\caption{The total jet energy scale uncertainty as a function of $\pT$ for
-central jets. Three diferent jet reconstructions are shown: CALO, JPT and PF. 
-PF jets are used in this analysis.}
-\label{fig:JES_Uncertainty_vs_Jet_pT}
+\caption{The jet energy scale uncertainty as a function of $\pT$ for
+central jets ($|\eta| < 0.3$).}
+\label{fig:JES_Unc_pT}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{JES_Unc_Eta.pdf}
+\end{center}
+\caption{The jet energy scale uncertainty as a function of $\eta$ for
+$100\unit{GeV}$ jets.}
+\label{fig:JES_Unc_Eta}
 \end{figure}
 
 The $\pT$ of all the jets is modified upward and downward according to the jet 
@@ -241,18 +250,18 @@ R = \frac{\pT^{jet}}{\pT^{\gamma/Z}}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{Jet_pT_Resolution.pdf}
+\includegraphics[width=0.7\textwidth]{jet_res.pdf}
 \end{center}
 \caption{The jet energy resolution measured from data for jets with $|\eta| <
 0.5$ (black points) compared to MC (red line). The yellow band gives the
 systematic uncertainty. Reproduced from \cite{jec}.}
-\label{fig:Jet_pT_Resolution}
+\label{fig:jet_res}
 \end{figure}
 
 Further details on the jet $\pT$ resolution measurement and determination of the
 associated uncertainty can be found in \cite{jec}. The jet $\pT$ resolution as a
 function of jet $\pT$ and for $|\eta| < 0.5$ is shown in Figure
-\ref{fig:Jet_pT_Resolution}. The figure also shows that MC agrees well with the
+\ref{fig:jet_res}. The figure also shows that MC agrees well with the
 data as far as jet enrgy resolution is concerned. For the SUSY events the 
 ``true'' jet energy comes from the generator level in the MC. The jet energy 
 resolution is determined by comparing the reconstructed jet energy with the 
@@ -261,7 +270,7 @@ measured in \cite{jec}. \\
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{Resolution.pdf}
+\includegraphics[width=0.7\textwidth]{Jet_Pt_Resolution.pdf}
 \end{center}
 \caption{The jet $\pT$ resolution compared to generator level jets (grey) and
 the same distribution after an upward (red) and downward (blue) 
@@ -310,30 +319,18 @@ the $\HT$ is a sum of high $\pT$ jets. Since the signal MC does not have pile-up
 simulated, the effect of pile-up on the $\HT$ is evaluated by looking at the
 $\HT$ distribution in MC QCD events with and without pile-up. A shift of 
 $7.0\pm0.8$ is applied to the no pile-up $\HT$ distribution to match the pile-up 
-$\HT$ distribution (Figure \ref{fig:meanht_vs_htshift}). Figure \ref{fig:puHT} 
-shows the $\HT$ distribution with a $\pm 1$ sigma variation in the shift. The
-important number is how this affects the signal efficiency in the
-($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin. With a $\pm1\sigma$ variation
+$\HT$ distribution (Figure \ref{fig:Pile_Up_HT}). With a $\pm1\sigma$ variation
 in the $\HT$ shift the signal efficiency is $0.3821\pm0.0003$, an uncertainty of
 $0.1\unit{\%}$. \\
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{meanht_vs_htshift.pdf}
+\includegraphics[width=0.7\textwidth]{Pile_Up_HT.pdf}
 \end{center}
 \caption{The mean $\HT$ as a function of $\HT$ shift (red) with one sigma band 
 (yellow) in QCD events with a similar $\HT$ to the signal. The mean $\HT$ with 
 pile-up is shown in black.}
-\label{fig:meanht_vs_htshift}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{puHT.pdf}
-\end{center}
-\caption{The correction to the $\HT$ distribution to account for pile-up. The
-$\pm 1$ sigma variations are shown in red and blue respectively.}
-\label{fig:puHT}
+\label{fig:Pile_Up_HT}
 \end{figure}
 
 The $\MET$ distribution is broadened by the introduction of more jets and
@@ -342,32 +339,22 @@ The pile-up events will mostly be low $\HT$ and balanced so will have only a
 little effect on the $\MET$. The $\MET$ distribution is smeared to account for 
 pile-up. To determine the amount of smearing necessary a QCD sample with similar 
 $\HT$ and no pile-up is smeared until the shape agrees with the $\MET$ 
-distribution with pile-up. Figure \ref{fig:meanmet_vs_metsmearing} shows the 
+distribution with pile-up. Figure \ref{fig:Pile_Up_MET} shows the 
 average $\MET$ in QCD events without pile-up as a function of the $\MET$ 
 smearing. From the plot a $\MET$ smearing of $5.6\pm1.0\unit{GeV}$ is applied to 
-account for pile-up. Figure \ref{fig:puMET} shows the $\MET$ distribution with a 
-$\pm 1$ sigma variation in the shift. The important number is the uncertainty in
+account for pile-up. The important number is the uncertainty in
 the signal efficiency due to the uncertainty in the $\MET$ smearing to account
 for pile-up, which is found to be $0.3821\pm0.0004$. This corresponds to an
 uncertainty of $0.1\unit{\%}$.\\
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{meanmet_vs_metsmearing.pdf}
+\includegraphics[width=0.7\textwidth]{Pile_Up_MET.pdf}
 \end{center}
 \caption{The mean $\MET$ as a function of $\MET$ smearing (red) with one sigma
 band (yellow) in QCD events with a similar $\HT$ to the signal. The mean $\MET$ 
 with pile-up is shown in black.}
-\label{fig:meanmet_vs_metsmearing}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{puMET.pdf}
-\end{center}
-\caption{The correction to the $\MET$ distribution to account for pile-up. The
-$\pm 1$ sigma variations are shown in red and blue respectively.}
-\label{fig:puMET}
+\label{fig:Pile_Up_MET}
 \end{figure}
 
 The photon isolation efficiency is particularly affected by pile-up because
