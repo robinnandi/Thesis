@@ -17,7 +17,7 @@ on the expected number of events as well as the systematic uncertainties
 associated with the background estimation and signal prediction (e.g. luminosity 
 measurement and jet energy scale uncertainty). Parameters in the likelihood 
 include the parameter of interest on which we wish to set a limit -- the amount
-of signal in this case -- in addition to nuicanse parameters associated with 
+of signal in this case -- in addition to nuisance parameters associated with 
 the systematic uncertainties. \\
 
 The goal is to find a confidence interval for the parameter of interest based
@@ -77,17 +77,17 @@ L_{s+b}(f) = \frac{(f\epsilon \sigma L + b)^{n} e^{-(f\epsilon \sigma L + b)}}{n
 \label{eq:SignalPlusBackground_Rewritten}
 \end{equation}
 
-This deals with the statistical uncertainties. Systematic uncertainties are 
-introduced to the likelihood by allowing the parameters in the likelihood ($b$,
-$\epsilon$, $\sigma$ and $L$) to vary according the their uncertainties. These
-parameters are called nuisace parameters. To implement this, gaussian terms are 
-added to the likelihood with mean equal to the estimated value and sigma equal 
-to the uncertainty. This allows them to vary away from their estimated value, 
-but the gaussian constrains them according to their uncertainty by paying a 
-penalty in the likelihood. For example, the integrated luminosity was measured 
-to be $1.100\pm0.044 \unit{fb^{-1}}$ so a gaussian term with mean 1.100 and 
-sigma 0.044 is added to the likelihood. Equation \ref{eq:Full_Likelihood} shows 
-the full likelihood function, including nuisance parameters. 
+Systematic uncertainties are introduced to the likelihood by allowing the 
+parameters in the likelihood ($b$, $\epsilon$, $\sigma$ and $L$) to vary 
+according the their uncertainties. These parameters are called nuisance 
+parameters. To implement this, gaussian terms are added to the likelihood with 
+mean equal to the estimated value and sigma equal to the uncertainty. This 
+allows them to vary away from their estimated value, but the gaussian constrains 
+them according to their uncertainty by paying a penalty in the likelihood. For 
+example, the integrated luminosity was measured to be $1.100\pm0.044 
+\unit{fb^{-1}}$ so a gaussian term with mean 1.100 and sigma 0.044 is added to 
+the likelihood. Equation \ref{eq:Full_Likelihood} shows the full likelihood 
+function, including nuisance parameters. 
 
 \begin{eqnarray}
 L_{s+b}(f; \theta_{b}, \theta_{\epsilon}, \theta_{\sigma}, \theta_{L}) &=&
@@ -127,20 +127,17 @@ are various possible choises for the this, here the profile likelihood ratio is
 used (Equation \ref{eq:Test_Statistic}).
 \begin{equation}
 q_{f} =
-\frac{L_{s+b}(f;\hat{\boldsymbol\theta})}{L_{b}(\hat{f};\hat{\boldsymbol\theta})}
+\frac{L_{s+b}(f;\hat{\boldsymbol\theta})}{L_{b}(0;\hat{\boldsymbol\theta})}
 \label{eq:Test_Statistic}
 \end{equation}
-Sometimes the denominator has $f = 0$ rather than $\hat{f}$ and sometimes the
-nuisance parameters are not profiled. It does not matter much which definition
-is used, the test statistic should be larger for more favoured values of $f$.  
 \item Step through the possible values of the parameter of interest, $f$.
 \item Consider two hypotheses: the signal + background hypothesis and the
 background only hypothesis. For each hypothesis generate pseudo data according 
 to the likelihood. Call the generated data ``MC toys''.
 \item Calculate the the p-values:
 \begin{eqnarray}
-\alpha &=& P(q_f \geq q_f^{obs}|\mbox{signal + background}) \label{eq:alpha} \\
-1-\beta &=& P(q_f \geq q_f^{obs}|\mbox{background only}) \label{eq:1minusbeta}
+CLsb &=& P(q_f \geq q_f^{obs}|\mbox{signal + background}) \label{eq:alpha} \\
+CLb &=& P(q_f \geq q_f^{obs}|\mbox{background only}) \label{eq:1minusbeta}
 \end{eqnarray}
 These are the fraction of MC toys for which the test statistic is greater than
 the observed value given the signal + background hypothesis (Equation
@@ -151,7 +148,7 @@ be interpreted as a p-value itself. It gives an idea of how much more probable
 to observe the data given the signal + background hypothesis than the background 
 only hypothesis.
 \begin{equation}
-CLs = \frac{\alpha}{1-\beta}
+CLs = \frac{CLsb}{CLb}
 \label{eq:CLs}
 \end{equation}
 \item Those values of $f$ for which $CLs < \nu$ are excluded at a confidence
@@ -181,7 +178,7 @@ upper limit on $f$ is taken to vary linearly between points on the grid. Figure
 \ref{fig:interpolation} shows the finer grid after linear interpolation between
 the points. The resulting exclusion line is still slightly jagged due to the
 finite number of points in the interpolation. To smooth the line each point
-along the line is replaced by a mobing average which is the mean of the closest 
+along the line is replaced by a moving average which is the mean of the closest 
 five points.
 
 \begin{figure}
@@ -189,7 +186,7 @@ five points.
 \includegraphics[width=0.8\textwidth]{ExpectedLimit_HighRes.pdf}
 \end{center}
 \caption{The expected upper limit on $f$ in the squark mass vs gluino mass plane 
-after a liner interploation between the points. }
+after a linear interploation between the points. }
 \label{fig:interpolation}
 \end{figure}
 

@@ -10,13 +10,13 @@ noted that the important energy is not the centre of mass energy of the proton
 collision, but that of the parton collision which is $\sim 1 \unit{TeV}$ on 
 average. \\
 
-The luminosity has increased over time. As the integrated luminosity 
-increases more data are available to improve the significance of 
-observations and the accuracy of measurements. The luminosity has been increased
-by increasing the intensity of the beams and the number of bunches. Increasing 
-the intensity of the beams leads to more interactions per bunch crossing -- an 
-effect called pile-up. During the period when this data was taken the luminosity
-was $\sim 10^{33} \unit{cm^{-2}s^{-1}}$. \\
+The instantaneous luminosity has increased over time. As the integrated 
+luminosity increases more data are available to improve the significance of 
+observations and the accuracy of measurements. The instantaneous luminosity has 
+been increased by increasing the intensity of the beams and the number of 
+bunches. Increasing the intensity of the beams leads to more interactions per 
+bunch crossing -- an effect called pile-up. During the period when this data was 
+taken the luminosity was $\sim 10^{33} \unit{cm^{-2}s^{-1}}$. \\
 
 Figure \ref{fig:intlumi} shows the integrated luminosity recorded by CMS over 
 time until September 2011. \\
@@ -31,47 +31,32 @@ time until September 2011. \\
 \end{figure}
 
 This analysis uses $1.1 \unit{fb^{-1}}$ of data at $\sqrt{s} = 7 \unit{TeV}$ taken from 
-March to June 2011. This corresponds to the data set used for the International
-Europhysics Conference in High Energy Physics in July 2011. Only data certified 
-by the physics validation team is included in the data set. The data set
-contains the following:
+March to June 2011. This corresponds to the data set used for the results
+presented at the International Europhysics Conference in High Energy Physics in 
+July 2011. Only data certified by the physics validation team is included in the 
+data set. \\
 
-\begin{itemize}
-\item /PhotonHad/Run2011A-May10ReReco-v1/AOD %(Run 160404 - 163817) 
-\item /PhotonHad/Run2011A-PromptReco-v4/AOD %(Run 165071 - 168437)
-\item /PhotonHad/Run2011A-PromptReco-v5/AOD %(Run 170053 - 171106)
-\end{itemize}
-
-The data is split into Primary Datasets each with different trigger
-requirements. PhotonHad is one such Primary Dataset. \\
-
-%Re-processing of the data is performed periodically to ensure that data
-%reconstructed using a much older version of the software is not analysed
-%together with the most recent data reconstructed with the latest software
-%version. The May10ReReco above is one such re-processing. 
 The software version used to reconstruct the data is CMSSW\_4\_2\_3\_patch2. 
 CMSSW is the standard CMS reconstruction software. The reconstruction involves 
-building jets, electrons, photons and other physics objects form the raw energy 
+building jets, electrons, photons and other physics objects from the raw energy 
 deposits in the detector.
 
 \section{Monte Carlo Samples}
 \label{sec:Monte_Carlo_Samples}
 
-The Monte Carlo samples used in this analysis are listed in Appendix A. The 
-Monte Carlo samples are generated using Pythia 6 \cite{pythia6} or Madgraph
-\cite{madgraph} with Tune Z2 (based on CTECQ6 parton distribution functions 
-\cite{tuneZ2}). GEANT \cite{geant} is used for the detector simulation. \\
+Event generation using Monte Carlo techniques overlayed with detector simulation
+are used to obtain simulated data with which to compare to observations and
+validate analysis methods. Monte Carlo samples are generated using Pythia 6 
+\cite{pythia6} or Madgraph \cite{madgraph} with Tune Z2 (based on CTECQ6 parton 
+distribution functions \cite{tuneZ2}). GEANT \cite{geant} is used for the 
+detector simulation. \\
 
 Pile-up is simulated in the Monte Carlo samples however the MC does not
 reproduce the vertex mutiplicity distribution seen in the data. To correctly
 simulate pile-up the MC is re-weighted to reproduce the number of vertices
 distribution seen in the data. Figure \ref{fig:nVertices} shows the distribution
-of number of vertices in the data and MC. 
-%Figure \ref{fig:reweighted} shows the
-%number of vertices distribution in the MC after reweighting compared to the data
-%to show that the correct distribution has been produced. 
-Table \ref{tab:factors}
-gives the re-weighting factors for each number of vertices. \\
+of number of vertices in the data and MC. Table \ref{tab:factors} gives the 
+re-weighting factors for each number of vertices. \\
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{nVertices_Data.pdf}
@@ -80,15 +65,6 @@ gives the re-weighting factors for each number of vertices. \\
 (right).}
 \label{fig:nVertices}
 \end{figure}
-
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=0.5\textwidth]{nVertices-MC-reweighted.pdf}
-%\end{center}
-%\caption{The distribution of number of vertices in the MC after reweighting
-%(blue) compared to the data (black).}
-%\label{fig:reweighted}
-%\end{figure}
 
 \begin{table}
 \begin{center}
@@ -278,14 +254,8 @@ particles in a collision is equal to the sum of the momenta of all the inital
 state particles. The initial longitudinal momentum of the colliding partons is
 unknown since the fraction of the proton momentum that each parton carries is
 unknown for any individual event. However, the initial transverse momentum is
-known to be zero so the final transverse momentum must also be to zero. \\
-
-Events with small missing transverse energy are to be expected because the 
-detectors are not perfect: they have a finite resolution. In addition to this
-there is a resolution from fluctuations inherent in the hadronic shower. Missing
-transverse energy from these source are expected to be gaussian distributed in x
-and y. Large missing transverse energy can come from undetected particles e.g. 
-neutrinos or detector imperfections e.g. dead cells. \\
+known to be close to zero so the final transverse momentum must also be close to 
+zero. \\
 
 The missing transverse energy is calculated using the sum of the transverse
 momentum of the reconstructed particles. For high energy photons and jets, the 
@@ -304,6 +274,13 @@ negative sum of the transverse energies of all the energy deposits (Equation
 \overrightarrow{\MET} = - \sum \overrightarrow{\ET}
 \label{eq:met}
 \end{equation}
+
+Events with small missing transverse energy are to be expected because the 
+detectors are not perfect: they have a non-zero resolution. In addition to this
+there can be $\MET$ from fluctuations inherent in the hadronic shower. Missing
+transverse energy from these sources is expected to be gaussian distributed in x
+and y. Large missing transverse energy can also come from undetected particles 
+e.g. neutrinos or detector imperfections e.g. dead cells. \\
 
 Motivated by SUSY, this search is based on missing energy. In R-parity
 conserving SUSY models events have decay chains ending in the Lightest 
@@ -331,7 +308,7 @@ Primary Vertex with $|z| < 24\unit{cm}$, $\mbox{nDOF} > 4$ and $\rho <
 2\unit{cm}$.
 \item {\bf HCAL Noise Filter:} There are three types of HCAL noise: HPD noise, 
 RBX noise and PMT window noise. HPD noise comes from the hybrid photodiodes in
-the HB, HE and HO. Misallignment between the HPD electric field and the external
+the HB, HE and HO. Misalignment between the HPD electric field and the external
 magnetic field can lower the flashover voltage of the HPD resulting in 
 occasional cascades where all or most of the 18 channels within the HPD report
 large energy deposits. RBX noise is when all or most of the 72 channels in a
@@ -348,13 +325,16 @@ interacting in the ECAL) making it look like there is a significant energy
 deposit in the ECAL. ECAL spikes lead to fake photons and fake MET. There are 
 two properties which characterise ECAL spikes: topology and timing. ECAL spikes 
 tend to be single crystal enrgy deposits in the ECAL which are often not vetoed 
-by the shower shape variable. Some spikes are in time with the rest of the event 
-and some are out of time. The energy varies from a few MeV to a few TeV. A 
-cut of $1 - e4/e1 < 0.96$ is made to avoid ECAL Spikes. 1 - e4/e1 is the ``Swiss 
-Cross'' variable in which e1 is the highest energy crystal in a 3x3 array and e4 
-is the energy of the four adjacent crystals. Remaining spikes are vetoed by
-requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the timing of the signal. 
-This is illustrated by Figure \ref{fig:spikes}.
+by the shower shape variable. Some spikes occur at the same time as the bunch
+crossing while some occur between bunch crossings. The energy varies from a few 
+MeV to a few TeV. A cut of $1 - e4/e1 < 0.96$ is made to avoid ECAL Spikes. 1 - 
+e4/e1 is the ``Swiss Cross'' variable in which e1 is the highest energy crystal 
+in a 3x3 array and e4 is the energy of the four adjacent crystals. Remaining 
+spikes are vetoed by requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the 
+timing of the signal. e2 is the energy of the highest energy crystal plus the
+energy of the highest energy adjacent crystal in a 3x3 array. e9 is the total
+energy of all the crystals in the 3x3 array. This is illustrated by Figure 
+\ref{fig:spikes}.
 \end{itemize}
 
 \begin{figure}
@@ -367,11 +347,12 @@ vetoed.}
 \end{figure}
 
 $\HT$, the scalar sum of the transverse momentum of all the objects in the 
-event, is used as a measure of the energy scale of the event. There is a $\HT$ 
-cut because strongly produced SUSY events have high $\HT$. The value of this cut
-is motivated by the desire for the trigger to be fully efficiency for the event
-selection. Figure \ref{fig:Trigger_Efficiency} shows that the trigger becomes
-fully efficient in HT at around $400\unit{GeV}$. \\
+event, is used as a measure of the energy scale of the event. Strongly produced 
+SUSY events have high $\HT$ because high mass particles are produced (squarks
+and gluinos) which decay hadronically. The value of this cut is motivated by the 
+desire for the trigger to be fully efficiency for the event selection. Figure 
+\ref{fig:Trigger_Efficiency} shows that the trigger becomes fully efficient in
+$\HT$ at around $400\unit{GeV}$. \\
 
 The $\geq 2$ jets cut is well motivated from the SUSY perspective: strongly
 produced SUSY events start with two squarks/gluinos each of which decay to a 
@@ -381,9 +362,9 @@ jets while those with high squark mass tend to have at least 4 jets. \\
 
 In strongly produced Gauge Mediated SUSY Breaking the Next-to-Lightest SUSY 
 Particle (NLSP) is the neutralino ($\tilde{\chi}^{0}$) which decays to a photon 
-and a gravitino. At least two photons are expected in each SUSY event. However, 
-due to the high activity in these events, photons often fall inside the cone of
-a jet and so only one photon is reconstructed. Hence the $\geq 1$ photon cut. \\
+and a gravitino. At least two photons are expected in each event. However, due 
+to the high activity in these events, photons often fall inside the cone of a 
+jet and so only one photon is reconstructed. Hence the $\geq 1$ photon cut. \\
 
 The search is done in bins of $\MET$ and $\HT$, but an initial $\MET$ cut is
 made to avoid the low $\MET$ bins where there is no sensitivity due to the huge

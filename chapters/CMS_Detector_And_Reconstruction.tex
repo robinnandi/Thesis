@@ -23,9 +23,9 @@ them into the LHC. \\
 \label{fig:LHC}
 \end{figure}
 
-The CMS detector is one of the four general purpose LHC experiments. It was 
-designed to explore O(TeV) energy proton-proton collisions for indications of 
-physics beyond the Standard Model. The CMS detector is $21.6\unit{m}$ long and
+The CMS detector is one of two general purpose LHC experiments. It was designed 
+to explore O(TeV) energy proton-proton collisions for indications of physics 
+beyond the Standard Model. The CMS detector is $21.6\unit{m}$ long and 
 $14.6\unit{m}$ in diameter and has a total weight of 13 500 tonnes. It is 
 located at Point 5 on the LHC ring near Cessy in France. Figure \ref{fig:CMS} 
 shows the layout of the CMS detector. \\
@@ -84,8 +84,7 @@ particles. It is made from strips of silicon which charged particles ionise. The
 technology is the pn junction with a reverse bias voltage applied, which creates
 a depletion region. Charged particles ionise inside the depleted region creating
 electron hole pairs which travel to the electrodes where they form a signal. 
-Silicon is used because it produces fast, radiation hard electronics and good
-resolution. \\
+Silicon is used because ... \\
   
 The transverse momentum of a particle is measured from the curvature of the 
 track in the magnetic field by Equation \ref{eq:pt_measurement}, where $\pT$ is
@@ -169,15 +168,14 @@ electrons/photons reach a critical energy, $E_{c}$, where no more particles are
 produced as the dominant energy losses are through Compton scattering and
 photoelectric effect for photons and ionisation for electrons. \\
 
-The calorimeter measures the energy. have a heavy material that initiates the shower and a scintillation
-material which converts it to a light signal. Sampling calorimeters are in
-layers with layers of heavy material to initiate the shower and layers of
-scintillator to sample the shower. In homogeneous calorimeters the heavy
-material and the scintillator are one and the same. Materials have two
-characteristic lengths which describe the shape of EM showers. Radiation length
-is the length over which an electron or photon's energy is reduced to 1/e of
-it's initial energy. Moliere radius describes the lateral size of the shower; it
-is the radius which contains 90\% of the energy of the shower. \\  
+Sampling calorimeters have layers of heavy material to initiate the shower and 
+layers of scintillator to sample the shower. In homogeneous calorimeters the 
+heavy material and the scintillator are one and the same. Materials used for
+electromagnetic calorimeters have two characteristic lengths which describe the 
+shape of EM showers. Radiation length is the length over which an electron's 
+energy is reduced to 1/e of its initial energy. Moliere radius describes the 
+lateral size of the shower; it is the radius which contains 90\% of the energy 
+of the shower. \\  
 
 The EB and EE are homogeneous calorimeters made of lead tungstate ($PbWO_{4}$)
 crystals. This material was chosen because of its short radiation length ($X_{0}
@@ -187,7 +185,7 @@ maximum at $420-430\unit{nm}$. The light is detected by Avalanche Photodiodes
 (APDs) in the EB and Vacuum Phototriodes (VPTs) in the EE. The choice of 
 photodetectors was based on the requirement of adequate electronic gain given 
 the low light yield of the crystals, operation in the magnetic field and 
-radiation tolerence for the enivonment in which they operate. \\
+radiation tolerence for the environment in which they operate. \\
 
 In the EB the length of the crystals is $23\unit{cm}$ (26 $X_{0}$) and the 
 cross-section is $0.0147\times0.0147$ in $\eta$-$\phi$ or about 
@@ -195,7 +193,7 @@ $22\unit{mm}\times22\unit{mm}$ at the front face. Figure \ref{fig:ECAL} shows
 the layout of crystals in the EB. The crystals are angled at $3^{o}$ with 
 respect to the interaction point. To minimise the risk of particles escaping 
 down the cracks between the crystals. The ECAL is divided into regions called 
-Trigger Towers (TTs) for which trigger primitives (crystal energy sums) used by 
+trigger towers (TTs) for which trigger primitives (crystal energy sums) used by 
 the trigger are calculated. There are $85\times72$ TTs in the EB each consisting 
 of 5x5 arrays of crystals. \\
 
@@ -203,9 +201,10 @@ In the EE the length of the crystals is $22\unit{cm}$ ($25X_{0}$). Due to the
 geometry of the detector the granularity in $\eta$-$\phi$ varies across the EE. 
 \\
 
-The ES is a sampling calorimeter made of lead to initiate the shower and
-silicon strip sensors to sample the shower. It has a depth of $20\unit{cm}$ 
-($3X_{0}$). \\
+The ES is a sampling calorimeter placed in front of the end-caps. Its purpose is
+to distinguish between isolated photons and $\pi^{0}$s which are a major
+background to the $H\rightarrow \gamma\gamma$ search. It is made of lead and
+silicon strip sensors and has a depth of $20\unit{cm}$ ($3X_{0}$). \\
 
 The energy resolution, $\sigma$, has been parameterised as a function of energy 
 in Equation \ref{eq:ECAL_Resolution}. 
@@ -221,8 +220,8 @@ constant term respectively. \\
 
 The stochastic term, $S$, is related to the uncertainty in the number of photons 
 detected. The number of photons for a given energy electromagnetic shower 
-follows a Poisson distribution. So if N photons are detected, the uncertainty is 
-$\sqrt{N}$. And the energy is proportional to the number of photons, hence the 
+follows a Poisson distribution. So if n photons are detected, the uncertainty is 
+$\sqrt{n}$. And the energy is proportional to the number of photons, hence the 
 $\sqrt{E}$ dependence of this term. \\
 
 The noise term, $N$, is not energy dependent. The noise is about $20\unit{MeV}$ 
@@ -256,7 +255,7 @@ Hadron Barrel (HB), the Hadron Outer (HO), the Hadron Endcap (HE) and the Hadron
 Forward (HF). The HB covers the region $|\eta| < 1.4$ and contains towers with a 
 granularity of $\Delta\eta\times\Delta\phi = 0.087\times0.087$. The HB is 
 constrained radially to be between the ECAL outer surface (at r = 1.77m) and the
-inner surface of the solenoid (at r = 2.95m). This constarins the amount of 
+inner surface of the solenoid (at r = 2.95m). This constrains the amount of 
 material that can be put in to absorb the hadronic showers. For this reason the 
 HO lies outside the HB and the magnet in the region $|\eta| < 1.26$ and contains
 extra scintillators to catch energy leakage from high energy jets. The HE covers
@@ -360,13 +359,13 @@ energy.}
 \label{fig:cross_sections}
 \end{figure}
 
-There are two components to the trigger: Level 1 and HLT. Level 1 consists of
-on-detector hardware and the goal is to reduce the rate to $\sim 10\unit{kHz}$ to
-satisfy the constraint set by the DAQ bandwidth. The HLT is run on a farm of 
-computers in a room above the CMS detector. It reconstructs physics objects 
-and makes decisions based on the presence and quality of these to further reduce
-the rate to $\sim 100\unit{Hz}$ to satisfy the constraint set by the storage and 
-reconstruction facilities.
+There are two components to the trigger: Level 1 and Higher Level Trigger (HLT). 
+Level 1 consists of on-detector hardware and the goal is to reduce the rate to 
+$\sim 10\unit{kHz}$ to satisfy the constraint set by the DAQ bandwidth. The HLT 
+is run on a farm of computers in a room above the CMS detector. It reconstructs 
+physics objects and makes decisions based on the presence and quality of these 
+to further reduce the rate to $\sim 100\unit{Hz}$ to satisfy the constraint set 
+by the storage and reconstruction facilities.
 
 \section{CMS Computing Model}
 
@@ -398,14 +397,15 @@ and Tier 2 (blue dots) data centres. Reproduced from \cite{grid}.}
 \section{Photon Reconstruction}
 \label{sec:photon_recontruction}
 
-Photons make electromagnetic showers in the ECAL. Electromagnetic showers are 
-reconstructed from the energy deposits in the ECAL crystals. The clustering 
-algorithm starts with the energy deposits in single crystals and groups these 
-together starting with the highest energy crystal. A strip 5 crystals wide in 
-the $\eta$ direction and with dynamic $\phi$ length is used to contain the 
-energy in the cluster or clusters. To incorporate bremstrahlung from electrons, 
-the strip can be extended in the $\phi$ direction. A description of the
-superclustering algorithm is given here \cite{supercluster}. \\ 
+Photons and electrons make electromagnetic showers in the ECAL. Electromagnetic 
+showers are reconstructed from the energy deposits in the ECAL crystals. The 
+clustering algorithm starts with the energy deposits in single crystals and 
+groups these together starting with the highest energy crystal. A strip 5 
+crystals wide in the $\eta$ direction and with dynamic $\phi$ length is used to 
+contain the energy in the cluster or clusters. To incorporate bremstrahlung from 
+electrons and converted photons, the strip can be extended in the $\phi$ 
+direction. A description of the superclustering algorithm is given here 
+\cite{supercluster}. \\ 
 
 Fake photons from QCD come from jets and so tend to have plenty of activity in
 the surrounding detectors. In contrast, prompt photons tend to be isolated with
@@ -418,19 +418,20 @@ electromagnetic component while prompt photons are purely electromagnetic.
 Electromagnetic showers have a particular shower shape. Prompt photons can be 
 distinguished from fakes by the shower shape. Photons are distinguished from 
 electrons by the tracker. Electrons, being charged particles, ionise in the 
-silicon tracker and so leave a track. Photons do not. \\ 
+silicon tracker and so leave a track while photons do not. \\ 
 
 Based on these considerations, there are six variables used for the photon 
 selection:
 
 \begin{itemize}
 \item {\bf ECAL isolation} is defined as the sum of the energy deposited in the
-crystals of the ECAL in a $\Delta R = 0.4$ circle around the photon. A smaller 
-circle of $\Delta R = 0.1$ around the photon is excluded from the isolation sum 
-to avoid counting the photon itself in the isolation. Also a strip along $\phi$ 
-of width $\Delta \eta = 0.04$ is excluded from the isolation sum to avoid 
-including bremstrahlung from electrons. Figure \ref{fig:ECAL_Isolation} shows a
-plot of the ECAL isolation of photon candidates for a SUSY model and the QCD 
+crystals of the ECAL in a circle $\Delta R = \sqrt{\Delta\eta^{2} + 
+\Delta\phi^{2}} = 0.4$ circle around the photon. A smaller circle of $\Delta R = 
+0.1$ around the photon is excluded from the isolation sum to avoid counting the 
+photon itself in the isolation. Also a strip along $\phi$ of width $\Delta \eta 
+= 0.04$ is excluded from the isolation sum to avoid including bremstrahlung from 
+electrons and photon conversions. Figure \ref{fig:ECAL_Isolation} shows a plot 
+of the ECAL isolation of photon candidates for a SUSY model and the QCD 
 background along with the cut value used in this analysis.
 
 \begin{figure}
@@ -450,7 +451,6 @@ rear-leakage from high energy photons in the isolation. Figure
 for a SUSY model and the QCD background along with the cut value used in this 
 analysis.
 
-
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{HCAL_Isolation.pdf}
@@ -462,11 +462,10 @@ background along with the cut value used in this analysis.}
 
 \item {\bf Track isolation} is defined as the sum of the $p_{T}$ of tracks 
 inside a cone of $\Delta R = 0.4$ around the photon and toward the primary 
-vertex. A hollow cone is used $\Delta R < 0.1$ is excluded from the isolation 
+vertex. A smaller cone of $\Delta R < 0.1$ is excluded from the isolation 
 sum. Figure \ref{fig:Track_Isolation} shows a plot of the track isolation of
 photon candidates for a SUSY model and the QCD background along with the cut 
 value used in this analysis.
-
 
 \begin{figure}
 \begin{center}
@@ -495,14 +494,14 @@ along with the cut value used in this analysis.}
 
 \item {\bf Shower Shape ($\sigma_{i\eta i\eta}$)}. The width of the shower in 
 the $\eta$ direction is used as a measure of the shower shape. The $\eta$ 
-direction rather than the $\phi$ direction is used because bremstrahlung can 
-cause electromagnetic showers to be spread out in $\phi$. $\sigma_{\eta\eta}$ is
-the r.m.s width of the shower in the $\eta$ direction. The variable used here is
-$\sigma_{i\eta i\eta}$, which calculates the width in terms of number of 
-crystals in the $\eta$ direction rather than $\eta$ itself. This is better 
-because it does not count the gaps between crystals (where there is no 
-showering) in the width and it is not distorted by the geometry of the detector 
-in the end-cap region. Figures \ref{fig:SigmaIetaIeta_EB} and
+direction rather than the $\phi$ direction is used because the magnetic field 
+can cause electromagnetic showers to be spread out in $\phi$. 
+$\sigma_{\eta\eta}$ is the r.m.s width of the shower in the $\eta$ direction. 
+The variable used here is $\sigma_{i\eta i\eta}$, which calculates the width in 
+terms of number of crystals in the $\eta$ direction rather than $\eta$ itself. 
+This is better because it does not count the gaps between crystals (where there 
+is no showering) in the width and it is not distorted by the geometry of the 
+detector in the end-cap region. Figures \ref{fig:SigmaIetaIeta_EB} and
 \ref{fig:SigmaIetaIeta_EE} show plots of the shower shape of photon candidates 
 in the ECAL barrel and ECAL end-cap respectively. The distributions are shown 
 for a SUSY model and the QCD background along with the cut value used in this 

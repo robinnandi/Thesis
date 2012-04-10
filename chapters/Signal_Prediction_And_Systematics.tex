@@ -52,12 +52,12 @@ are also determined for all the other parameter points in the same way.
 The photon efficiency needs to be determined to calculate the signal efficiency.
 The photon efficiency could be found using the MC, but that relies heavily on
 the correct modelling of the shower shape, isolation and other variables which
-may not be well modelled in the MC. The photon efficiency should be measured
-from data. In the absence of a suitable pure photon sample in the data, 
-electrons from $Z\rightarrow ee$ events are used. This relies on the similarity 
-in detector response between electrons and photons. A scale factor to correct 
-the MC photon efficiency to the real photon efficiency in data is obtained using 
-the electrons (Equation \ref{eq:Scale_Factor}). \\
+may not be well modelled in the MC. The photon efficiency is measured from data. 
+In the absence of a suitable pure photon sample in the data, electrons from 
+$Z\rightarrow ee$ events are used. This relies on the similarity in detector 
+response between electrons and photons. A scale factor to correct the MC photon 
+efficiency to the real photon efficiency in data is obtained using the electrons 
+(Equation \ref{eq:Scale_Factor}). \\
 
 \begin{equation}
 \epsilon_{\gamma}^{data} = \frac{\epsilon_{e}^{data}}{\epsilon_{\gamma}^{MC}}
@@ -77,14 +77,12 @@ events in MC that satisfy the photon selection.
 
 The selection critrea for electrons are the same as those for photons except 
 that electrons have a track. The distribution in photon or electron 
-identification variables is the similar for isolated photons and electrons. 
-Using $Z\rightarrow ee$ events in data, the tag-and-probe method is used to find
-the electron efficiency. One electron (tag) is selected with stringent criteria 
-to be sure that it is an electron. Another electron (probe) with looser 
+identification variables is similar for isolated photons and electrons. Using 
+$Z\rightarrow ee$ events in data, the tag-and-probe method is used to find the 
+electron efficiency. One electron (tag) is selected with stringent criteria to 
+be sure that it is an electron. Another electron (probe) with looser 
 requirements is located such that the invariant mass of the two electrons lies 
 in the Z peak. \\
-
-% detail on tag and probe
 
 The scale factor is found to be $\epsilon_{e}^{data}/\epsilon_{e}^{MC} =
 0.953\pm 0.014(stat.)$ for events with at least one jet. Four possible sources
@@ -262,7 +260,7 @@ Further details on the jet $\pT$ resolution measurement and determination of the
 associated uncertainty can be found in \cite{jec}. The jet $\pT$ resolution as a
 function of jet $\pT$ and for $|\eta| < 0.5$ is shown in Figure
 \ref{fig:jet_res}. The figure also shows that MC agrees well with the
-data as far as jet enrgy resolution is concerned. For the SUSY events the 
+data as far as jet energy resolution is concerned. For the SUSY events the 
 ``true'' jet energy comes from the generator level in the MC. The jet energy 
 resolution is determined by comparing the reconstructed jet energy with the 
 generator level jet energy. This gives a jet $\pT$ resolution similar to that 
@@ -361,19 +359,20 @@ The photon isolation efficiency is particularly affected by pile-up because
 activity from other events in the same bunch crossing can populate the isolation
 cone. To quantify this effect QCD MC events with a similar $\HT$ were used to
 determine the photon efficiency in MC as a function of the number of primary
-vertices. Figure \ref{fig:Efficiency_vs_nVertices} shows the relative efficiency
-as a function of the number of primary vertices. Taking the distribution of 
-number of primary vertices from data, the efficiency expected under pile-up can 
-be calculated. This method assumes that SUSY photons have a similar behaviour 
-under pile-up to QCD photons. This assumption is reasonable beacause the pile-up 
-affects mainly the isolation through extra surrounding activity which is a 
-property of the event rather than the photon. This method also relies on MC 
-modelling the photon efficiency in pile-up well. This can be checked by looking 
-at Zee events in data. The efficiency requires only a small correction between 
-data and MC which is relatively stable with respect to pile-up (Figure 
-\ref{fig:EffCorr_vs_nPV}). The efficiency correction due to pile-up is found to 
-be $0.83\pm0.01(stat.)\pm0.01(syst.)$. This produces an uncertainty of
-$3.8\unit{\%}$ on the signal efficiency.
+vertices. Figure \ref{fig:Efficiency_vs_nVertices} shows the photon efficiency
+as a fraction of the photon efficiency for one primary vertex as a function of 
+the number of primary vertices. Taking the distribution of number of primary 
+vertices from data, the efficiency expected under pile-up can be calculated. 
+This method assumes that SUSY photons have a similar behaviour under pile-up to 
+QCD photons. This assumption is reasonable beacause the pile-up affects mainly 
+the isolation through extra surrounding activity which is a property of the 
+event rather than the photon. This method also relies on MC modelling the 
+photon efficiency in pile-up well. This can be checked by looking at
+$Z\rightarrow ee$ events in data. The efficiency requires only a small 
+correction between data and MC which is relatively stable with respect to 
+pile-up (Figure \ref{fig:EffCorr_vs_nPV}). The efficiency correction due to 
+pile-up is found to be $0.83\pm0.01(stat.)\pm0.01(syst.)$. This produces an 
+uncertainty of $3.8\unit{\%}$ on the signal efficiency.
 
 \begin{figure}
 \begin{center}
