@@ -100,37 +100,10 @@ the Monte Carlo models the data.}
 \label{fig:Data_vs_MC}
 \end{figure}
 
-%\begin{figure}
-%\includegraphics[width=0.5\textwidth]{PhotonPt_all.pdf}
-%\includegraphics[width=0.5\textwidth]{Jet1Pt_all.pdf}
-%\includegraphics[width=0.5\textwidth]{PhotonPt_all_ratio.pdf}
-%\includegraphics[width=0.5\textwidth]{Jet1Pt_all_ratio.pdf}
-%\caption{Plots of photon $\pT$ and leading jet $\pT$ in data and Monte Carlo to
-%show how accurately the Monte Carlo models the data. Ratio plots of data/MC are
-%shown below.}
-%\label{fig:Data_vs_MC}
-%\end{figure}
-
 Since the background estimation (see Section \ref{sec:QCD_Background}) is 
 largely data-driven the dependence of the result on Monte Carlo is limited.
 
 \section{Trigger}
-
-With a soft QCD cross-section of $\sim1\unit{mb}$ and a luminosity of $\sim 
-10^{33}\unit{cm^{-1}s^{-1}}$ $(1\unit{nb^{-1}s^{-1}})$ the event rate is $\sim
-10^{6} \unit{Hz}$. 
-Most of these are uninteresting events and the DAQ bandwidth limits the rate at 
-which data can be read out. The goal of the trigger is to select the interesting 
-events to read out. \\
-
-There are two components to the trigger: Level 1 and HLT. The Level 1 trigger
-sits in a cavern next to the CMS detector. It takes ``trigger primitives'' such
-as crystal energy sums calculated by on-detector hardware which are transferred 
-by optical link from the CMS detector. The goal is to reduce the rate to $\sim 
-10\unit{Hz}$. Those events which pass the Level 1 trigger are fully read out and
-unpacked by the HLT. The HLT is run on a farm of computers in a room above the 
-CMS detector. It reconstructs physics objects and makes decisions based on the 
-presence and quality of these to further reduce the rate to $\sim 200\unit{Hz}$. \\
 
 Based on the properties of strong production GMSB, a photon + $\HT$ trigger 
 is ideal for this search. Table \ref{tab:Triggers} shows a list of all the 
@@ -157,8 +130,8 @@ along with the corresponding L1 seed and rate at $10^{33}\unit{cm^{-2}s^{-1}}$.}
 
 As the luminosity has increased more stringent trigger requirements have been 
 necessary to keep the data rate manageable. If the rate of a trigger becomes too
-high, the trigger must be pre-scaled. This means that only every nth event which
-fires the trigger is read out where n is the prescale factor. Figure 
+high, the trigger must be pre-scaled. This means that only every $n^{th}$ event 
+which fires the trigger is read out where $n$ is the prescale factor. Figure 
 \ref{fig:Trigger_vs_Run_Number} shows the run ranges over which the various 
 photon and jet triggers are in the trigger menu and when they become pre-scaled.
 \\
@@ -174,20 +147,11 @@ when they are pre-scaled.}
 
 The efficiency of a trigger is evaluated with respect to a lower threshold
 trigger. Data ranges are selected such that the two triggers are both in the
-menu and both unprescaled. The triggers, A and B, are identical except that B 
-has a higher threshold in variable x than A. To find out the efficiency of B:
-
-\begin{enumerate}
-\item Select events that pass A.
-\item Plot the distribution of x to get histogram h\_A.
-\item Select events that also pass B.
-\item Plot the distribution of x in these events to get histogram h\_B.
-\item Divide h\_B by h\_A, bin-by-bin to get the efficiency vs x.
-\end{enumerate}
-
-In this case the variable x is $\HT$ or photon $\pT$. The efficiency curve tells
-us where to put the off-line cut in x such that the trigger is fully efficient.
-\\
+menu and the higher threshold trigger is unprescaled. To evaluate the trigger
+efficiency as a function of $\HT$ the $\HT$ distribution of events passing both
+triggers is divided by the $\HT$ distribution of events passing the lower
+threshold trigger. The efficiency curve tells us where to put the off-line cut 
+in $\HT$ such that the trigger is fully efficient. \\
 
 The efficiency is determined over the run ranges where the trigger overlaps with
 one of a lower threshold (see Figure \ref{fig:Trigger_vs_Run_Number}). Figure 

@@ -190,11 +190,13 @@ In the EB the length of the crystals is $23\unit{cm}$ (26 $X_{0}$) and the
 cross-section is $0.0147\times0.0147$ in $\eta$-$\phi$ or about 
 $22\unit{mm}\times22\unit{mm}$ at the front face. Figure \ref{fig:ECAL} shows 
 the layout of crystals in the EB. The crystals are angled at $3^{o}$ with 
-respect to the interaction point. To minimise the risk of particles escaping 
-down the cracks between the crystals. The ECAL is divided into regions called 
-trigger towers (TTs) for which trigger primitives (crystal energy sums) used by 
-the trigger are calculated. There are $85\times72$ TTs in the EB each consisting 
-of 5x5 arrays of crystals. \\
+respect to the interaction point to minimise the risk of particles escaping 
+down the cracks between the crystals. The crystals are tapered with the front 
+face smaller than the rear face. This has the advantage of tighter packing with
+fewer gaps and it focusses the scintillation light. The ECAL is divided into 
+regions called trigger towers (TTs) for which trigger primitives (crystal energy 
+sums) used by the trigger are calculated. There are $85\times72$ TTs in the EB 
+each consisting of 5x5 arrays of crystals. \\
 
 In the EE the length of the crystals is $22\unit{cm}$ ($25X_{0}$). Due to the 
 geometry of the detector the granularity in $\eta$-$\phi$ varies across the EE. 
@@ -223,11 +225,14 @@ follows a Poisson distribution. So if n photons are detected, the uncertainty is
 $\sqrt{n}$. And the energy is proportional to the number of photons, hence the 
 $\sqrt{E}$ dependence of this term. \\
 
-The noise term, $N$, is not energy dependent. The noise is about $20\unit{MeV}$ 
-per crystal, or $100\unit{MeV}$ per trigger tower. \\
+The noise term, $N$, comes from electronics noise in the photodetectors and
+pile-up. It is independent of energy. The noise from the VPTs in the end-cap is
+significantly higher than for the APDs in the barrel. The noise is about 
+$100\unit{MeV}$ as measured using the test beam. \\
 
 The constant term, $C$, contains those uncertainties which are proportional to
-energy such as inter-calibration uncertainties. \\
+energy. The dominant contributors are inter-calibration uncertainties and
+non-uniformity of the light collection. \\
 
 Figure \ref{fig:ECAL_Energy_Resolution} shows the energy resolution of the ECAL
 as a function of beam energy measured using the test beam \cite{test_beam}.
@@ -265,11 +270,12 @@ $\Delta\eta\times\Delta\phi = 0.350\times0.174$ at $\eta = 3.0$. The region $3 <
 
 The HCAL is a sampling calorimeter with brass absorbers and plastic scintilator
 tiles in the central and endcap regions and steel absorbers with quartz fibre 
-scintillators in the forward region. Brass has a short interaction length () 
-providing adequate containment within the limited space inside the magnet. Steel 
-is used in the forward region due to its greater radiation tolerence. The 
-scintillation light is detected by multi-channel hybrid photodiodes (HPDs) in 
-the central region and photomultiplier tubes (PMTs) in the forward region. \\
+scintillators in the forward region. Brass has a short interaction length
+($12\unit{cm}$) providing adequate containment within the limited space inside 
+the magnet. Steel is used in the forward region due to its greater radiation 
+tolerence. The scintillation light is detected by multi-channel hybrid 
+photodiodes (HPDs) in the central region and photomultiplier tubes (PMTs) in the 
+forward region. \\
 
 \begin{figure}
 \begin{center}
@@ -285,7 +291,9 @@ hadronic shower. \\
 The jet energy resolution and the missing transverse energy resolution are the 
 key indicators of the performance of the HCAL. Figure \ref{fig:jetmet} shows the
 jet transverse energy resolution and the missing transverse energy resolution
-\cite{jet_resolution, met_resolution}.
+\cite{jet_resolution, met_resolution}. The jet resolution for jets with $\pT >
+40\unit{GeV}$ is better than $10\unit{\%}$ and the $\MET$ resolution is between
+$5\unit{\%}$ and $10\unit{\%}$.
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{jet_resolution.pdf}
@@ -337,17 +345,15 @@ $\pT$.
 \section{Trigger}
 
 With a soft QCD cross-section of $\sim1\unit{mb}$ and a luminosity of
-$10^{33}\unit{cm^{-1}s^{-1}}$ 
-%($1\unit{nb^{-1}s^{-1}$) 
-the event rate is $\sim 1
-\unit{MHz}$. However, most of these are uninteresting soft QCD events. Intresting events such
-as W/Z production, Higgs production or SUSY events have much smaller 
-cross-sections. Figure \ref{fig:cross_sections} shows the cross sections of
-various processes. Also there is a technical limit on the rate at which data can
-be read out. The CMS data acquisition (DAQ) bandwidth limits the event rate to 
-$\sim 100\unit{kHz}$. Offline reconstruction and storage facilities further limit the
-rate to $\sim 100\unit{Hz}$. The goal of the trigger is to select the interesting 
-events to read out and process. \\
+$10^{33}\unit{cm^{-1}s^{-1}}$ ($1\unit{nb^{-1}s^{-1}}$) the event rate is $\sim 
+1\unit{MHz}$. However, most of these are uninteresting soft QCD events. 
+Intresting events such as W/Z production, Higgs production or SUSY events have 
+much smaller cross-sections. Figure \ref{fig:cross_sections} shows the 
+cross-sections of various processes. Also there is a technical limit on the rate 
+at which data can be read out. The CMS data acquisition (DAQ) bandwidth limits 
+the event rate to $\sim 100\unit{kHz}$. Offline reconstruction and storage 
+facilities further limit the rate to $\sim 100\unit{Hz}$. The goal of the 
+trigger is to select the interesting events to read out and process. \\
 
 \begin{figure}
 \begin{center}
@@ -359,12 +365,14 @@ energy.}
 \end{figure}
 
 There are two components to the trigger: Level 1 and Higher Level Trigger (HLT). 
-Level 1 consists of on-detector hardware and the goal is to reduce the rate to 
-$\sim 10\unit{kHz}$ to satisfy the constraint set by the DAQ bandwidth. The HLT 
-is run on a farm of computers in a room above the CMS detector. It reconstructs 
-physics objects and makes decisions based on the presence and quality of these 
-to further reduce the rate to $\sim 100\unit{Hz}$ to satisfy the constraint set 
-by the storage and reconstruction facilities.
+The aim of the Level 1 trigger is to reduce the rate to $\sim 10\unit{kHz}$ to 
+satisfy the constraint set by the DAQ bandwidth. It takes ``trigger primitives'' 
+such as crystal energy sums calculated by on-detector hardware which are 
+transferred by optical link from the CMS detector. The HLT is run on a farm of 
+computers in a room above the CMS detector. It reconstructs physics objects and 
+makes decisions based on the presence and quality of these to further reduce 
+the rate to $\sim 100\unit{Hz}$ to satisfy the constraint set by the storage and 
+reconstruction facilities.
 
 \section{CMS Computing Model}
 
@@ -531,14 +539,14 @@ there is no pixel seed corresponding to the electromagnetic shower.
 
 \section{Jet Reconstruction}
 
-Jets are collimated bunches of stable hadrons originating from partons (quarks
-and gluons) after fragmentation and hadronisation. Jets are reconstructed based 
-on energy deposits in the detector using the Anti-KT jet algorithm with a cone 
+Jets are collimated bunches of hadrons originating from partons (quarks and 
+gluons) after fragmentation and hadronisation. Jets are reconstructed based on 
+energy deposits in the detector using the Anti-KT jet algorithm with a cone 
 size of $\Delta R = 0.5$. The Anti-KT jet algorithm is a clustering, cone 
 algorithm which does not suffer from the problem of infra red and collinear 
-divergences. \\
+divergences \cite{antikt}. \\
 
-Under the anti-KT algorithm energy deposits are clustered together within a cone
+Under the Anti-KT algorithm energy deposits are clustered together within a cone
 according to their distance from each other. The ``distance'', $d_{ij}$, between 
 objects (energy deposits/particles) is defined by Equation \ref{eq:distance}.
 
@@ -550,5 +558,5 @@ d_{ij} = min(p_{T1}^{-2}, p_{T2}^{-2})\frac{\Delta_{ij}}{R}
 $\Delta_{ij} = \sqrt{\Delta \eta^{2} + \Delta \phi^{2}}$ and R is the radius of
 the cone. \\
 
-The Anti-KT algorithm is the most widely used within CMS because it has higher 
-efficiency than the other algorithms (ref). Figure.
+The Anti-KT algorithm is the most widely used within CMS because it has good
+energy resolution and good efficiency \cite{ak5best}.
