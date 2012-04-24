@@ -38,8 +38,8 @@ shows the layout of the CMS detector. \\
 \end{figure}
 
 In the following sections each component of the CMS detector is described 
-starting from the innermost and going to the outermost. The CMS trigger and the
-computing model are also described. 
+starting from the innermost (closest to the interaction point) and going to the 
+outermost. The CMS trigger and the computing model are also described. 
 
 \section{Pixel Detector}
 
@@ -72,8 +72,8 @@ function of the number of tracks for various average track $\pT$ ranges.
 \begin{center}
 \includegraphics[width=\textwidth]{primary_vertex_resolution.pdf}
 \end{center}
-\caption{The Primary Vertex resolution as a function of the number of tracks for
-various average track $\pT$ ranges. Reproduced from \cite{primary_vertex}.}
+\caption{The primary vertex resolution as a function of the number of tracks for
+various average track $\pT$ ranges (reproduced from \cite{primary_vertex}).}
 \label{fig:primary_vertex}
 \end{figure}
 
@@ -82,16 +82,17 @@ various average track $\pT$ ranges. Reproduced from \cite{primary_vertex}.}
 The silicon strip tracker is designed to measure the trajectory of charged 
 particles. It is made from strips of silicon which charged particles ionise. The
 technology is the pn junction with a reverse bias voltage applied, which creates
-a depletion region. Charged particles ionise inside the depleted region creating
-electron hole pairs which travel to the electrodes where they form a signal. \\
+a depletion region. Charged particles ionise the silicon in the depleted region 
+creating electron hole pairs which travel to the electrodes giving rise to a 
+signal. \\
   
 The transverse momentum of a particle is measured from the curvature of the 
 track in the magnetic field by Equation \ref{eq:pt_measurement}, where $\pT$ is
 the transverse momentum in GeV, B is the magnetic field in Tesla and r is the
 radius of curvature in metres. Only the hits are measured directly. The 
-``sagitta'' or distance s in Figure \ref{fig:curvature} is deduced and the 
-transverse momentum is calculated from this. Since s is inversely proportional 
-to $\pT$, the resolution is worse at higher $\pT$.
+length of the ``sagitta'', shown in Figure \ref{fig:curvature}, is deduced and 
+the transverse momentum is calculated from this. Since s is inversely 
+proportional to $\pT$, the resolution is worse at higher $\pT$.
 
 \begin{equation}
 \pT = 0.3Br
@@ -107,10 +108,10 @@ curvature of the track in the magnetic field.}
 \label{fig:curvature}
 \end{figure}
 
-The silicon strip tracker is made up of 4 sub-detectors: the Tracker Inner 
-Barrel (TIB), the Tracker Outer Barrel (TOB), the Tracker Endcap (TEC) and the
-Tracker Inner Disks (TID). Figure \ref{fig:Silicon_Strip_Tracker} shows the 
-layout of the tracker. \\
+The silicon strip tracker is sub-divided into four structural units. Figure 
+\ref{fig:Silicon_Strip_Tracker} shows the layout of the tracker. The resolution 
+of the tracker is shown for muons of $p_{T} = 1$, 10 and $100 \unit{GeV}$ in 
+Figure \ref{fig:tracker_resolution}.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Silicon_Strip_Tracker.pdf}
@@ -118,9 +119,6 @@ layout of the tracker. \\
 \cite{physics_tdr_1}.}
 \label{fig:Silicon_Strip_Tracker}
 \end{figure}
-
-The resolution of the tracker is shown for muons of $p_{T} = 1$, 10 and $100 
-\unit{GeV}$ in Figure \ref{fig:tracker_resolution}.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Tracker_Resolution.pdf}
@@ -131,9 +129,8 @@ $p_{T} = 1$, 10 and $100 \unit{GeV}$.}
 
 \section{Electromagnetic Calorimeter}
 
-The Electromagnetic Calorimeter (ECAL) is designed to measure the energy of
-electromagnetic showers from photons, electrons and $\pi^{0}$s. It must provide
-good energy resolution and good containment of the electromagnetic shower. \\
+The Electromagnetic Calorimeter (ECAL) measures the energy of electromagnetic 
+showers. \\
 
 \begin{figure}
 \begin{center}
@@ -159,17 +156,16 @@ Figure \ref{fig:ECAL} shows a diagram of the layout of the ECAL. \\
 \label{fig:em_shower}
 \end{figure}
 
-An electromagnetic shower progresses through two processes {\bf bremsstrahlung},
-where an electron or positron emits a photon, and {\bf pair production}, where a
+An electromagnetic shower progresses through two processes bremsstrahlung,
+where an electron or positron emits a photon, and pair production, where a
 photon converts to an electron and a positron. Figure \ref{fig:em_shower} shows
 how an electromagnetic shower progresses. The shower continues until the
-electrons/photons reach a critical energy, $E_{c}$, where no more particles are 
-produced as the dominant energy losses are through Compton scattering and
-photoelectric effect for photons and ionisation for electrons. \\
+electrons/photons reach a critical energy, $E_{c}$, where energy loss dominates
+over the production of new shower particles. \\
 
 Sampling calorimeters have layers of heavy material to initiate the shower and 
-layers of scintillator to sample the shower. In homogeneous calorimeters the 
-heavy material and the scintillator are one and the same. Materials used for
+active detector to sample the shower. In homogeneous calorimeters the 
+heavy material and the active detector are one and the same. Materials used for
 electromagnetic calorimeters have two characteristic lengths which describe the 
 shape of EM showers. Radiation length is the length over which an electron's 
 energy is reduced to 1/e of its initial energy. Moliere radius describes the 
@@ -179,15 +175,16 @@ of the shower. \\
 The EB and EE are homogeneous calorimeters made of lead tungstate ($PbWO_{4}$)
 crystals. This material was chosen because of its short radiation length ($X_{0}
 = 0.89\unit{cm}$) and short Moliere radius ($r_{m} = 2.2\unit{cm}$). The 
-crystals have a low light yield. The scintillation light is blue/green with a 
-maximum at $420-430\unit{nm}$. The light is detected by Avalanche Photodiodes 
-(APDs) in the EB and Vacuum Phototriodes (VPTs) in the EE. The choice of 
-photodetectors was based on the requirement of adequate electronic gain given 
-the low light yield of the crystals, operation in the magnetic field and 
-radiation tolerence for the environment in which they operate. \\
+crystals have a low light yield, but can withstand high levels of radiation. The 
+scintillation light is blue/green with a maximum at $420-430\unit{nm}$. The 
+light is detected by Avalanche Photodiodes (APDs) in the EB and Vacuum 
+Phototriodes (VPTs) in the EE. The choice of photodetectors was based on the 
+requirement of adequate electronic gain given the low light yield of the 
+crystals, operation in the magnetic field and the ability to tolerate the high 
+radiation environment particularly in the end-cap regions. \\
 
 In the EB the length of the crystals is $23\unit{cm}$ (26 $X_{0}$) and the 
-cross-section is $0.0147\times0.0147$ in $\eta$-$\phi$ or about 
+cross-section is $0.0174\times0.0174$ in $\eta$-$\phi$ or about 
 $22\unit{mm}\times22\unit{mm}$ at the front face. Figure \ref{fig:ECAL} shows 
 the layout of crystals in the EB. The crystals are angled at $3^{o}$ with 
 respect to the interaction point to minimise the risk of particles escaping 
@@ -202,10 +199,11 @@ In the EE the length of the crystals is $22\unit{cm}$ ($25X_{0}$). Due to the
 geometry of the detector the granularity in $\eta$-$\phi$ varies across the EE. 
 \\
 
-The ES is a sampling calorimeter placed in front of the end-caps. Its purpose is
-to distinguish between isolated photons and $\pi^{0}$s which are a major
-background to the $H\rightarrow \gamma\gamma$ search. It is made of lead and
-silicon strip sensors and has a depth of $20\unit{cm}$ ($3X_{0}$). \\
+The ES is a sampling device with two layers of active silicon sensors placed in 
+front of the end-caps. Its purpose is to distinguish between isolated photons 
+and $\pi^{0}$s which are a major background to the $H\rightarrow \gamma\gamma$ 
+search. It is made of lead and silicon strip sensors and has a depth of 
+$20\unit{cm}$ ($3X_{0}$). \\
 
 The energy resolution, $\sigma$, has been parameterised as a function of energy 
 in Equation \ref{eq:ECAL_Resolution}. 
@@ -254,6 +252,14 @@ The Hadronic Calorimeter (HCAL) measures the energy of hadronic showers and
 assits in the triggering and measurement of jets and missing transverse energy.
 \\
 
+The HCAL is a sampling calorimeter with brass absorbers and plastic scintilator
+tiles in the central and endcap regions and steel absorbers with quartz fibre 
+scintillators in the forward region. Brass has a short interaction length
+($12\unit{cm}$) providing adequate containment within the limited space inside 
+the magnet. Steel is used in the forward region. The scintillation light is 
+detected by multi-channel hybrid photodiodes (HPDs) in the central region and 
+photomultiplier tubes (PMTs) in the forward region. \\
+
 The HCAL covers the range $|\eta| < 5$ and consists of four subdetectors: the
 Hadron Barrel (HB), the Hadron Outer (HO), the Hadron Endcap (HE) and the Hadron
 Forward (HF). The HB covers the region $|\eta| < 1.4$ and contains towers with a 
@@ -267,15 +273,6 @@ the range $1.3 < |\eta| < 3.0$ with a granularity that varies with $\eta$ from
 $\Delta\eta\times\Delta\phi = 0.087\times0.087$ at $\eta = 1.3$ to 
 $\Delta\eta\times\Delta\phi = 0.350\times0.174$ at $\eta = 3.0$. The region $3 <
  |\eta| < 5$ is covered by the HF. \\
-
-The HCAL is a sampling calorimeter with brass absorbers and plastic scintilator
-tiles in the central and endcap regions and steel absorbers with quartz fibre 
-scintillators in the forward region. Brass has a short interaction length
-($12\unit{cm}$) providing adequate containment within the limited space inside 
-the magnet. Steel is used in the forward region due to its greater radiation 
-tolerence. The scintillation light is detected by multi-channel hybrid 
-photodiodes (HPDs) in the central region and photomultiplier tubes (PMTs) in the 
-forward region. \\
 
 \begin{figure}
 \begin{center}
@@ -307,12 +304,13 @@ reconstructions. Reproduced from \cite{jet_resolution, met_resolution}.}
 
 \section{Superconducting Solenoid Magnet}
 
-The superconducting solenoid generates a uniform 3.8T magnetic field. The 
-magnetic field is important for determining the charge of particles and for the 
-momentum measurement of charged particles, particularly low momentum charged 
-particles and muons. The solenoid is 12.5m in length and 6m in diameter. The flux 
-is returned through an iron yoke to provide a magnetic field which bends muons in 
-the opposite direction. The iron is in layers between the muon chambers. \\
+The superconducting solenoid generates a uniform 3.8T magnetic field in the
+tracking volume. The magnetic field is important for determining the charge of 
+particles and for the momentum measurement of charged particles, particularly 
+low momentum charged particles and muons. The solenoid is 12.5m in length and 6m 
+in diameter. The flux is returned through an iron yoke to provide a magnetic 
+field which bends muons in the opposite direction. The iron is in layers between 
+the muon chambers. \\
 
 The precision of the momentum measurements in the inner tracker relies on a
 homogeneous magnetic field. Within the tracker the magnetic field is homogeneous
@@ -321,16 +319,16 @@ better than 0.1\% \cite{field_uniformity}.
 
 \section{Muon System}
 
-The purpose of the muon system is the identification and triggering of muons. It
+The purpose of the muon system is identify muons and produce a muon trigger. It
 also provides a momentum measurement of the muons. \\
 
 The muon system has a barrel region in the pseudorapidity range $\eta < 1.2$ and
 two endcaps with $1.2 < \eta < 2.4$. Standard drift tube chambers are used in
 the barrel and cathode strip chambers in the endcaps. The muon ionises the gas 
-as it passes through the chamber. The resolution increases with the $\pT$ of the
+as it passes through the chamber. The resolution worsens with the $\pT$ of the
 muon since the straighter the track the more difficult it is to accurately 
-determine the curvature. Also the resolution is worse in the endcaps where the
-fake rate is higher and the magnetic field is less uniform. Figure
+determine the curvature. The resolution is worse in the endcaps where the fake 
+rate is higher and the magnetic field is less uniform. Figure 
 \ref{fig:muon_resolution} shows the muon $\pT$ resolution as a function of muon
 $\pT$.
 
@@ -347,7 +345,7 @@ $\pT$.
 With a soft QCD cross-section of $\sim1\unit{mb}$ and a luminosity of
 $10^{33}\unit{cm^{-1}s^{-1}}$ ($1\unit{nb^{-1}s^{-1}}$) the event rate is $\sim 
 1\unit{MHz}$. However, most of these are uninteresting soft QCD events. 
-Intresting events such as W/Z production, Higgs production or SUSY events have 
+Interesting events such as W/Z production, Higgs production or SUSY events have 
 much smaller cross-sections. Figure \ref{fig:cross_sections} shows the 
 cross-sections of various processes. Also there is a technical limit on the rate 
 at which data can be read out. The CMS data acquisition (DAQ) bandwidth limits 
@@ -365,7 +363,7 @@ energy.}
 \end{figure}
 
 There are two components to the trigger: Level 1 and Higher Level Trigger (HLT). 
-The aim of the Level 1 trigger is to reduce the rate to $\sim 10\unit{kHz}$ to 
+The aim of the Level 1 trigger is to reduce the rate to $\sim 100\unit{kHz}$ to 
 satisfy the constraint set by the DAQ bandwidth. It takes ``trigger primitives'' 
 such as crystal energy sums calculated by on-detector hardware which are 
 transferred by optical link from the CMS detector. The HLT is run on a farm of 
@@ -383,15 +381,15 @@ model involves a network of data centres across the world (Figure
 
 \begin{itemize}
 \item Tier 0 is the data centre at CERN which is directly connected to the
-experiment. It stores the RAW data and produces the first reconstruction which
+experiment. It stores the raw data and produces the first reconstruction which
 is subsequently transferred to Tier 1 sites. 
 \item Data from Tier 0 is distributed to 8 Tier 1 sites. Each Tier 1 site is 
-responsible for storing a second copy of the RAW and reconstructed data. A lot 
+responsible for storing a second copy of the raw and reconstructed data. A lot 
 of reprocessed data is also stored at the Tier 1 sites. 
 \item Data from the Tier 1 sites is transferred to 38 Tier 2 sites. These data
 centres store data for analysis by CMS physicists. Data at the Tier 2 sites is
-not complete and is not stored permanently, but is updated based on the
-requirements of the CMS collaboration. 
+not complete and is not stored permanently, but is updated according to the
+requirements of the ongoing analyses.
 \end{itemize}
 
 \begin{figure}
@@ -424,8 +422,8 @@ Fake photons from jets also tend to have a hadronic component as well as an
 electromagnetic component while prompt photons are purely electromagnetic.
 Electromagnetic showers have a particular shower shape. Prompt photons can be 
 distinguished from fakes by the shower shape. Photons are distinguished from 
-electrons by the tracker. Electrons, being charged particles, ionise in the 
-silicon tracker and so leave a track while photons do not. \\ 
+electrons by the tracker. Electrons, being charged particles, ionise the 
+silicon and so leave a track while photons do not. \\ 
 
 Based on these considerations, there are six variables used for the photon 
 selection:

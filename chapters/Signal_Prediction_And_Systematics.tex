@@ -13,13 +13,13 @@ s = \epsilon \sigma L
 where $\epsilon$ is the efficiency $\times$ acceptance for the event selection,
 $\sigma$ is the cross section and $L$ is the integrated luminosity. \\
 
-The signal cross section comes from theoretical calculations. 441 different
-signal models are considered with different values for squark mass and gluino 
-mass. The squark mass and gluino mass each take 21 values from $400 \unit{GeV}$ 
-to $2000 \unit{GeV}$ in intervals of $80 \unit{GeV}$. The cross section is $\sim 
-0.01 \unit{pb}$ in the region close to exclusion depending on the squark and 
-gluino masses. The largest uncertainty in the signal prediction comes from the 
-cross section ($\sim 20 \unit{\%}$). \\
+The signal cross section comes from theoretical calculations. A total of 441 
+different signal models are considered with different values for squark mass and 
+gluino mass. The squark mass and gluino mass each take 21 values from $400 
+\unit{GeV}$ to $2000 \unit{GeV}$ in intervals of $80 \unit{GeV}$. The cross 
+section is $\sim 0.01 \unit{pb}$ in the region close to exclusion depending on 
+the squark and gluino masses. The largest uncertainty in the signal prediction 
+comes from the cross section ($\sim 20 \unit{\%}$). \\
 
 The integrated luminosity comes from LHC measurements of the beam. 1.1
 $\unit{fb^{-1}}$ of data is used in this analysis. The uncertainty on the 
@@ -30,8 +30,8 @@ selection cuts to the signal MC. Corrections need to be made relating to the
 difference between the photon efficiency in data and MC and to account for 
 pile-up. In addition to these corrections uncertainties on the signal prediction
 need to be determined. These include statistical errors and systematic errors. 
-Given that 10,000 events are available for each signal point, the statistical 
-error is small. It is the systematic error on which attention must be focussed. 
+Since 10,000 events were used for each signal point, the statistical error is 
+small. It is the systematic error on which attention must be focussed. 
 \\
 
 Cuts are made on jets, photons, $\HT$ and $\MET$. The major sources of
@@ -42,9 +42,10 @@ efficiency. Both the $\HT$ and $\MET$ distributions are also affected by
 pile-up, but this is a small effect. \\
 
 The numbers and plots relating to the systematic uncertainties presented in this 
-section use a signal parameter point close to exclusion with squark mass 
-$1200\unit{GeV}$ and gluino mass $1200\unit{GeV}$. The systematic uncertainties
-are also determined for all the other parameter points in the same way.
+section use a signal parameter point close to the exclusion limit with squark 
+mass $1200\unit{GeV}$ and gluino mass $1200\unit{GeV}$. The systematic 
+uncertainties are also determined for all the other parameter points in the same 
+way.
 
 \section{Photon Efficiency Correction}
 \label{sec:phoeff}
@@ -60,7 +61,7 @@ efficiency to the real photon efficiency in data is obtained using the electrons
 (Equation \ref{eq:Scale_Factor}). \\
 
 \begin{equation}
-\epsilon_{\gamma}^{data} = \frac{\epsilon_{e}^{data}}{\epsilon_{\gamma}^{MC}}
+\epsilon_{\gamma}^{data} = \frac{\epsilon_{e}^{data}}{\epsilon_{e}^{MC}}
 \times \epsilon_{\gamma}^{MC}
 \label{eq:Scale_Factor}
 \end{equation}  
@@ -85,7 +86,7 @@ requirements is located such that the invariant mass of the two electrons lies
 in the Z peak. \\
 
 The scale factor is found to be $\epsilon_{e}^{data}/\epsilon_{e}^{MC} =
-0.953\pm 0.014(stat.)$ for events with at least one jet. Four possible sources
+0.953\pm 0.014(stat.)$ for events with at least one jet. Two possible sources
 of systematic uncertainty on this number were considered. \\
 
 {\bf Electrons and photons behave differently in MC:} Both electrons and photons
@@ -231,12 +232,11 @@ The variance of the asymmetry variable can be expressed as:
 \end{equation}
 For jets which lie in the same $\eta$ bin and the same $\pT$ bin, the $\pT$'s
 are the same and the reslutions are the same so there is an expression for the
-fractional $\pT$ resolution in terms of the variance in the asymmetry.
+fractional $\pT$ resolution in terms of the variance in the asymmetry which can
+be measured in the data:
 \begin{equation}
 \frac{\sigma_{\pT}}{\pT} = \sqrt{2}\sigma_{A}
 \end{equation}  
-The asymmetry and the variance in the asymmetry are quantities that can be 
-measured in data.
 \item {\bf $\gamma$/Z+jet balance:} This method uses $\gamma$+jet or Z+jet
 events from data and uses the $\gamma$ or Z as a well measured reference object
 to which the jet $\pT$ can be compared. In balanced events the $\gamma$/Z has 
@@ -312,14 +312,13 @@ underlying event activity.
 surrounding activity which can populate the isolation cone.
 \end{itemize}
 
-Most of the pile-up events will be soft QCD with low $\pT$ jets approximately 
-parallel to the beam-line. These do not have a huge effect on the $\HT$ since 
-the $\HT$ is a sum of high $\pT$ jets. Since the signal MC does not have pile-up
-simulated, the effect of pile-up on the $\HT$ is evaluated by looking at the
-$\HT$ distribution in MC QCD events with and without pile-up. A shift of 
-$7.0\pm0.8$ is applied to the no pile-up $\HT$ distribution to match the pile-up 
-$\HT$ distribution (Figure \ref{fig:Pile_Up_HT}). With a $\pm1\sigma$ variation
-in the $\HT$ shift the signal efficiency is $0.3821\pm0.0003$, an uncertainty of
+Most of the pile-up events are soft with, at most, low $\pT$ jets and do not
+contribute much to $\HT$. Since the signal MC does not have pile-up simulated, 
+the effect of pile-up on the $\HT$ is evaluated by looking at the $\HT$ 
+distribution in MC QCD events with and without pile-up. A shift of $7.0\pm0.8$ 
+is applied to the no pile-up $\HT$ distribution to match the pile-up $\HT$ 
+distribution (Figure \ref{fig:Pile_Up_HT}). With a $\pm1\sigma$ variation in 
+the $\HT$ shift the signal efficiency is $0.3821\pm0.0003$, an uncertainty of
 $0.1\unit{\%}$. \\
 
 \begin{figure}
@@ -361,19 +360,21 @@ activity from other events in the same bunch crossing can populate the isolation
 cone. To quantify this effect QCD MC events with a similar $\HT$ were used to
 determine the photon efficiency in MC as a function of the number of primary
 vertices. Figure \ref{fig:Efficiency_vs_nVertices} shows the photon efficiency
-as a fraction of the photon efficiency for one primary vertex as a function of 
-the number of primary vertices. Taking the distribution of number of primary 
-vertices from data, the efficiency expected under pile-up can be calculated. 
-This method assumes that SUSY photons have a similar behaviour under pile-up to 
-QCD photons. This assumption is reasonable beacause the pile-up affects mainly 
-the isolation through extra surrounding activity which is a property of the 
-event rather than the photon. This method also relies on MC modelling the 
-photon efficiency in pile-up well. This can be checked by looking at
-$Z\rightarrow ee$ events in data. The efficiency requires only a small 
-correction between data and MC which is relatively stable with respect to 
-pile-up (Figure \ref{fig:EffCorr_vs_nPV}). The efficiency correction due to 
-pile-up is found to be $0.83\pm0.01(stat.)\pm0.01(syst.)$. This produces an 
-uncertainty of $3.8\unit{\%}$ on the signal efficiency.
+as a function of the number of primary vertices. The efficiency is shown
+relative to the efficiency when there is only a single reconstructed primary
+vertex. Taking the distribution of number of primary vertices from data, the 
+efficiency expected in the presence of pile-up can be calculated. This method 
+assumes that photons in SUSY events have a similar behaviour in the presence of 
+pile-up to photons in QCD events. This assumption is reasonable beacause the 
+pile-up affects mainly the isolation through extra surrounding activity which is 
+a property of the event rather than the photon. This method also relies on MC 
+modelling the photon efficiency in pile-up well. This can be checked by looking 
+at $Z\rightarrow ee$ events in data. The efficiency requires only a small 
+correction between data and MC which is relatively stable with respect to the
+number of reconstructed primary vertices (Figure \ref{fig:EffCorr_vs_nPV}). The 
+efficiency correction due to pile-up is found to be 
+$0.83\pm0.01(stat.)\pm0.01(syst.)$. This produces an uncertainty of 
+$3.8\unit{\%}$ on the signal efficiency.
 
 \begin{figure}
 \begin{center}
@@ -443,8 +444,9 @@ uncertainty for each parameter point in the mSquark vs mGluino plane.
 \begin{center}
 \includegraphics[width=\textwidth]{Signal_Cross_Section.pdf}
 \end{center}
-\caption{The cross-section and total percentage uncertainty for each parameter 
-point in the mSquark vs mGluino plane. Reproduced from \cite{ra3}.}
+\caption{The cross-section (left) and total percentage uncertainty (right) for 
+each parameter point in the mSquark vs mGluino plane. Reproduced from 
+\cite{ra3}.}
 \label{fig:xsec_unc}
 \end{figure}
 
@@ -483,29 +485,34 @@ gluino mass $1200\unit{GeV}$ is used for the signal uncertainties.
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline
-{\bf Source of Systematic Uncertainty} & {\bf QCD} & {\bf SUSY} \\
+{\bf Source of Systematic Uncertainty} & {\bf Uncertainty} \\
 \hline
-QCD Background Estimation & $38\unit{\%}$ & - \\
 \hline
-Photon Efficiency & - & $3.8\unit{\%}$ \\
+Background Estimation & $38\unit{\%}$ \\
 \hline
-Jet Energy Scale & - & $4.4\unit{\%}$ \\
 \hline
-Jet Energy Resolution & - & $1.2\unit{\%}$ \\
+Photon Efficiency & $3.8\unit{\%}$ \\
 \hline
-Pile-up: HT shift & - & $0.1\unit{\%}$ \\
+Jet Energy Scale & $4.4\unit{\%}$ \\
 \hline
-Pile-up: MET smearing & - & $0.1\unit{\%}$ \\
+Jet Energy Resolution & $1.2\unit{\%}$ \\
 \hline
-Pile-up: photon efficiency & - & $2.4\unit{\%}$ \\
+Pile-up: HT shift & $0.1\unit{\%}$ \\
 \hline
-Signal Cross-Section & - & $20\unit{\%}$ \\
+Pile-up: MET smearing & $0.1\unit{\%}$ \\
 \hline
-Integrated Luminosity & - & $5\unit{\%}$ \\
+Pile-up: photon efficiency & $2.4\unit{\%}$ \\
 \hline
+Signal Cross-Section & $20\unit{\%}$ \\
+\hline
+Integrated Luminosity & $5\unit{\%}$ \\
+\hline
+\hline
+Total signal uncertainty & $22\unit{\%}$ \\
+\hline 
 \end{tabular}
 \end{center}
 \caption{A summary of the systematic uncertainties and how they affect the
-expected number of events in the signal and each of the backgrounds.}
+expected number of events in the signal and the background.}
 \label{tab:Systematics_Summary}
 \end{table}

@@ -2,21 +2,24 @@
 
 \section{Data}
 
-Since March 2011 CMS has been taking proton-proton collisions data at $7
-\unit{TeV}$ centre of mass energy. A higher centre of mass energy increases the 
-production cross-section of certain processes, for example stong production 
-SUSY, and also enables the production of more massive particles. It should be 
-noted that the important energy is not the centre of mass energy of the proton 
-collision, but that of the parton collision which is $\sim 1 \unit{TeV}$ on 
-average. \\
+The search for GMSB described in this thesis uses $1.1 \unit{fb^{-1}}$ of data 
+taken from March to June 2011. This corresponds to the data set used for the 
+results presented at the International Europhysics Conference in High Energy 
+Physics in July 2011. \\
 
-The instantaneous luminosity has increased over time. As the integrated 
-luminosity increases more data are available to improve the significance of 
-observations and the accuracy of measurements. The instantaneous luminosity has 
-been increased by increasing the intensity of the beams and the number of 
-bunches. Increasing the intensity of the beams leads to more interactions per 
-bunch crossing -- an effect called pile-up. During the period when this data was 
-taken the luminosity was $\sim 10^{33} \unit{cm^{-2}s^{-1}}$. \\
+The centre of mass energy of the proton-proton collisions is $7\unit{TeV}$ which
+makes the LHC the highest energy particle collider to date. A higher centre of 
+mass energy increases the production cross-section of certain processes, for 
+example stong production SUSY, and also enables the production of more massive 
+particles. It should be noted that the important energy is not the centre of 
+mass energy of the proton collision, but that of the parton collision which is 
+$\sim 1 \unit{TeV}$ on average. \\
+
+The instantaneous luminosity has increased over the data taking period by 
+increasing the intensity of the beams and the number of bunches. Increasing the 
+intensity of the beams leads to more interactions per bunch crossing -- an 
+effect called pile-up. During the period when this data was taken the luminosity 
+was $\sim 10^{33} \unit{cm^{-2}s^{-1}}$. \\
 
 Figure \ref{fig:intlumi} shows the integrated luminosity recorded by CMS over 
 time until September 2011. \\
@@ -30,16 +33,17 @@ time until September 2011. \\
 \label{fig:intlumi}
 \end{figure}
 
-This analysis uses $1.1 \unit{fb^{-1}}$ of data at $\sqrt{s} = 7 \unit{TeV}$ taken from 
-March to June 2011. This corresponds to the data set used for the results
-presented at the International Europhysics Conference in High Energy Physics in 
-July 2011. Only data certified by the physics validation team is included in the 
-data set. \\
+\section{$\HT$ and Missing Transverse Energy ($\MET$)}
 
-The software version used to reconstruct the data is CMSSW\_4\_2\_3\_patch2. 
-CMSSW is the standard CMS reconstruction software. The reconstruction involves 
-building jets, electrons, photons and other physics objects from the raw energy 
-deposits in the detector.
+$\HT$ and $\MET$ are two event variables used to search for GMSB in the data. \\ 
+
+$\HT$ is the scalar sum of the $\pT$ of all jets with $\pT > 40\unit{GeV}$.
+
+\begin{equation}
+\HT = \sum \pT^{jet}
+\end{equation}
+
+$\MET$ is 
 
 \section{Monte Carlo Samples}
 \label{sec:Monte_Carlo_Samples}
@@ -47,9 +51,8 @@ deposits in the detector.
 Event generation using Monte Carlo techniques overlayed with detector simulation
 are used to obtain simulated data with which to compare to observations and
 validate analysis methods. Monte Carlo samples are generated using Pythia 6 
-\cite{pythia6} or Madgraph \cite{madgraph} with Tune Z2 (based on CTECQ6 parton 
-distribution functions \cite{tuneZ2}). GEANT \cite{geant} is used for the 
-detector simulation. \\
+\cite{pythia6} with Tune Z2 (based on CTECQ6 parton distribution functions 
+\cite{tuneZ2}). GEANT \cite{geant} is used for the detector simulation. \\
 
 Pile-up is simulated in the Monte Carlo samples however the MC does not
 reproduce the vertex mutiplicity distribution seen in the data. To correctly
@@ -66,22 +69,22 @@ re-weighting factors for each number of vertices. \\
 \label{fig:nVertices}
 \end{figure}
 
-\begin{table}
-\begin{center}
-{\scriptsize
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-nVertices & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
-\hline
-Weight & 0.15 & 0.82 & 1.41 & 1.79 & 1.71 & 1.38 & 0.97 & 0.64 & 0.40 & 0.22 &
-0.12 & 0.04 \\
-\hline
-\end{tabular}}
-\end{center}
-\caption{Re-weighting factors to be applied to the MC to correctly reproduce the
-number of vertices distribution in the data.}
-\label{tab:factors}
-\end{table}
+%\begin{table}
+%\begin{center}
+%{\scriptsize
+%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+%\hline
+%nVertices & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+%\hline
+%Weight & 0.15 & 0.82 & 1.41 & 1.79 & 1.71 & 1.38 & 0.97 & 0.64 & 0.40 & 0.22 &
+%0.12 & 0.04 \\
+%\hline
+%\end{tabular}}
+%\end{center}
+%\caption{Re-weighting factors to be applied to the MC to correctly reproduce the
+%number of vertices distribution in the data.}
+%\label{tab:factors}
+%\end{table}
 
 Figure \ref{fig:Data_vs_MC} shows plots of two variables, $\HT$ and $\MET$,  to 
 show how accurately the Monte Carlo models the data. $\HT$ is a measure of the 
@@ -133,19 +136,7 @@ along with the corresponding L1 seed and rate at $10^{33}\unit{cm^{-2}s^{-1}}$.}
 As the luminosity has increased more stringent trigger requirements have been 
 necessary to keep the data rate manageable. If the rate of a trigger becomes too
 high, the trigger must be pre-scaled. This means that only every $n^{th}$ event 
-which fires the trigger is read out where $n$ is the prescale factor. Figure 
-\ref{fig:Trigger_vs_Run_Number} shows the run ranges over which the various 
-photon and jet triggers are in the trigger menu and when they become pre-scaled.
-\\
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{Trigger_vs_Run_Number.pdf}
-\end{center}
-\caption{The run range over which photon and jet triggers are in the menu and
-when they are pre-scaled.}
-\label{fig:Trigger_vs_Run_Number}
-\end{figure}
+which fires the trigger is read out where $n$ is the prescale factor. \\
 
 The efficiency of a trigger is evaluated with respect to a lower threshold
 trigger. Data ranges are selected such that the two triggers are both in the
@@ -241,12 +232,12 @@ negative sum of the transverse energies of all the energy deposits (Equation
 \label{eq:met}
 \end{equation}
 
-Events with small missing transverse energy are to be expected because the 
-detectors are not perfect: they have a non-zero resolution. In addition to this
-there can be $\MET$ from fluctuations inherent in the hadronic shower. Missing
-transverse energy from these sources is expected to be gaussian distributed in x
-and y. Large missing transverse energy can also come from undetected particles 
-e.g. neutrinos or detector imperfections e.g. dead cells. \\
+Events with small missing transverse energy are to be expected because of the 
+detector resolution part of which comes from fluctuations inherent in the 
+hadronic shower. Missing transverse energy from these sources is expected to be 
+gaussian distributed in x and y. Large missing transverse energy can also come 
+from undetected particles e.g. neutrinos or detector imperfections e.g. dead 
+cells. \\
 
 Motivated by SUSY, this search is based on missing energy. In R-parity
 conserving SUSY models events have decay chains ending in the Lightest 

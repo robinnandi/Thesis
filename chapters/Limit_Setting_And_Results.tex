@@ -8,24 +8,24 @@ section of a possible SUSY signal (according to a specific model) or, if a
 discovery has been made, the significance of that discovery. In the present case 
 no discovery has been made so a limit on the cross section must be found. There 
 are various statistical procedures for doing this and no consensus on the best 
-method. In this thesis the CLs method, which is widely used in the field of 
-particle physics. \\
+method. Here the CLs method is used. The CLs method is widely used in the field 
+of particle physics. \\
 
 A likelihood function must be defined. The likelihood is the probability of 
-observing the data given a model. This encompasses the statistical uncertainties
-on the expected number of events as well as the systematic uncertainties 
-associated with the background estimation and signal prediction (e.g. luminosity 
-measurement and jet energy scale uncertainty). Parameters in the likelihood 
-include the parameter of interest on which we wish to set a limit -- the amount
-of signal in this case -- in addition to nuisance parameters associated with 
-the systematic uncertainties. \\
+the data being observed given a model. This encompasses the statistical 
+uncertainties on the expected number of events as well as the systematic 
+uncertainties associated with the background estimation and signal prediction 
+(e.g. luminosity measurement and jet energy scale uncertainty). Parameters in 
+the likelihood include the parameter of interest on which we wish to set a limit 
+-- the amount of signal in this case -- in addition to nuisance parameters 
+associated with the systematic uncertainties. \\
 
 The goal is to find a confidence interval for the parameter of interest based
 on the likelihood. This gives an upper limit on the size of a possible SUSY 
 signal at a given confidence level. An exclusion plot with the expected limit
 and the observed limit is given for the GMSB models considered here in squark 
 mass vs gluino mass parameter space. The exclusion plot for another CMS analysis
-looking at the same SUSY models is shown for comparison.
+of the same dataset looking at the same SUSY models is shown for comparison.
 
 \section{Likelihood Function}
 
@@ -33,13 +33,14 @@ The likelihood function is the probability of observing the data given the
 model. There is a statistical component to the likelihood based on the number of
 events we can expect given a model prediction. The statistical component follows
 a poisson distribution. There are also systematic uncertainties based on how 
-well we know the signal and background predictions. These contribute a gaussian
+well the signal and background are predicted. These contribute a gaussian
 component to the likelihood. \\
 
 Let: 
 \begin{itemize}
 \item $b$ = Estimated number of background events;
-\item $s$ = Number of expected signal events according to a specific SUSY model;
+\item $s$ = Number of expected signal events according to the model being
+tested;
 \item $n$ = Number of events observed.
 \end{itemize}
 

@@ -18,24 +18,19 @@ photons, jets and missing transverse energy ($\gamma + \mbox{jets} + \MET$) and
 puts a limit on the cross-section of these models. The exclusion limit is 
 compared with the results of other analyses looking at the same models. \\ 
 
-This introductory section sets out the units and conventions used in this thesis 
-which are standard in particle physics. An outline of the thesis is given to 
-give the reader an indication of what is coming and to put it in context.
-Finally, the work done by the author during his Ph.D. is specified.
+The introductory section below sets out the units and conventions used in this 
+thesis which are standard in particle physics and an outline of the thesis is 
+given.
 
 \section{Units and Conventions}
 
-{\bf Special Relativity} \\
-
-All energies, momenta and masses are given in units of energy (e.g. GeV) with
-$c=1$ to naturally embody special relativity. \\
+In this thesis, all energies, momenta and masses are given in units of energy 
+(e.g. GeV) with $c=1$ to naturally embody special relativity. \\
 
 For lengths and times where special relativity is not important (e.g. detector
 size) metres (m) and seconds (s) will be used. \\
 
-{\bf Indices} \\
-
-Greek letters (e.g. $\alpha$, $\mu$) are reserved for lorentz indices and take
+Greek letters (e.g. $\alpha$, $\mu$) are reserved for Lorentz indices and take
 values 0, 1, 2, 3 with the 0-index corresponding to the energy/time component
 and the other indices corresponding to the momentum/spatial components. \\
 
@@ -52,7 +47,7 @@ $p_{a}$, known as the helicity, can be written as in Equation \ref{eq:latinsum}.
 \label{eq:latinsum}
 \end{eqnarray}
 
-When lorentz indices are involved use of the minkowski metric $\eta_{\mu\nu} =
+When Lorentz indices are involved use of the Minkowski metric $\eta_{\mu\nu} =
 \mathrm{diag}(1, -1, -1, -1)$ is implied. In this thesis there is no distinction 
 between ``up'' indices (e.g. $p^{\mu}$) and ``down'' indices (e.g. $p_{\mu}$). 
 For example, the invariant mass squared of a particle with four-momentum 
@@ -66,11 +61,9 @@ p_{\mu}p_{\mu} &=& p_{0}p_{0} - p_{1}p_{1} - p_{2}p_{2} - p_{3}p_{3} \nonumber
 \label{eq:greeksum}
 \end{eqnarray}
 
-{\bf Detector Co-ordinates} \\
-
 Spherical polar co-ordinates ($r$, $\theta$, $\phi$) are used for detector
-co-ordinates. The interaction point at the centre of the detector is (0, 0, 0).
-The beam axis is the z-axis. \\
+co-ordinates. The nominal interaction point at the centre of the detector is 
+(0, 0, 0). The beam axis is the z-axis. \\
 
 Often pseudorapidity $\eta$ is used in replace of $\theta$: there is a 
 one-to-one mapping between the two. Pseudorapidity is defined in Equation 
@@ -84,10 +77,13 @@ to the beam pipe has $\theta = \frac{\pi}{2}$ and $\eta = 0$.
 \label{eq:pseudorapidity}
 \end{equation}
 
-Pseudorapidity is closely related to the rapidity, $y$, which is given by
-Equation \ref{eq:rapidity}. The rapidity has the useful property that it is
-invariant under lorentz boosts along the z-axis. For relativistic particles ($E 
-\gg m$), the pseudorapidity is equivalent to the rapidity.
+There is a difference between detector pseudorapidity defined with respect to
+the nominal interaction point and the pseudorapidity of a particle, which is
+measured with respect to the interaction vertex. Pseudorapidity is closely 
+related to the rapidity, $y$, which is given by Equation \ref{eq:rapidity}. The 
+rapidity has the useful property that it is invariant under lorentz boosts along 
+the z-axis. For relativistic particles ($E \gg m$), the pseudorapidity is 
+equivalent to the rapidity.
 
 \begin{equation}
 y = \frac{1}{2}\ln\frac{E + |p_{z}|}{E - |p_{z}|}
@@ -99,7 +95,7 @@ the beampipe and position of primary vertices from the interaction point. \\
 
 {\bf Abbreviations} \\
 
-Abbreviations defined as they are introduced. The more comonly used
+Abbreviations are defined as they are introduced. The more comonly used
 abbreviations are listed here:
 
 \begin{itemize}
@@ -116,13 +112,12 @@ the energy of hadronic particles.
 \item SUSY: Supersymmetry -- a theory which proposes a symmetry between bosons
 and fermions. 
 \item GMSB: Gauge Mediated SUSY Breaking -- the mechanism of SUSY breaking
-considered in this thesis. It predicts events with photons, jets and missing
-transverse energy.
+considered in this thesis.
 \end{itemize}
 
 \section{Outline of this thesis}
 
-This thesis looks at the exclusion of Gauge Mediated SUSY Breaking (GMSB) in
+This thesis describes a search for Gauge Mediated SUSY Breaking (GMSB) in
 events with photons, jets and missing transverse energy from proton-proton
 collisions data at centre-of-mass energy $\sqrt{s}=7\unit{TeV}$ taken by the
 Compact Muon Solenoid (CMS) detector. \\
@@ -132,7 +127,7 @@ emphasis on the structure of the theory and giving the key experimental results
 that support the theories. Problems with the standard model and reasons to 
 expect to find new physics at the TeV scale are considered. SUSY is introduced 
 as a possible extension to the standard model which solves the problem of the 
-theoretical calculation of the higgs mass being a divergent series. The 
+theoretical calculation of the Higgs boson mass being a divergent series. The 
 particular flavour of SUSY considered in this thesis, GMSB, is introduced along 
 with its parameters. Previous results on the exclusion of GMSB from LEP, 
 Tevatron and LHC are mentioned. \\
@@ -146,13 +141,10 @@ taking and analysis are also described. The reconstruction of photons and jets,
 the main physics objects used in this analysis, are detailed along with the
 selection variables associated with these physics objects. \\
 
-The data and the issues with the data and triggers are described. The trigger
-efficeincy is evaluated with respect to a lower threshold trigger this motivates
-the selection cuts to ensure that the trigger is fully efficient. Simulated data 
-are examined and compared to the experimentally observed data to establish what 
-the simulation models well and what it does not. The event selection is 
+The dataset and trigger used in this search are described. Simulated 
+data are examined and compared to the experimentally observed data to establish 
+what the simulation models well and what it does not. The event selection is 
 motivated by the signature of GMSB: photons, jets and missing transverse energy. 
-The cleaning cuts and pre-selection applied to the data are given and explained. 
 The object selection cuts are listed and the event varibles used to search for 
 GMSB are examined. \\
 
@@ -163,16 +155,16 @@ Simulated samples are used to validate the data-driven QCD background model and
 estimate the small electroweak backgrounds. \\
 
 The prediction of the number of signal events is made and all the sources of
-systematic uncertainty are considered. A grid of signal samples are considered
-each with different parameter values. The signal efficiency for each parameter
-point on the grid is determined by applying the event selection to Monte Carlo 
-samples. The sources of systematic uncertainty are investigated and their effect
-on the signal prediction is evaluated. \\
+systematic uncertainty are considered. A range of possible signals with
+different parameters are considered. The signal efficiency is determined by 
+applying the event selection to the simulated data. The sources of systematic 
+uncertainty are investigated and their effect on the signal prediction is 
+evaluated. \\
 
-The CLs method \cite{cls} is used to determine what level of signal can be 
-excluded at 95\% confidence level. An exclusion plot in GMSB parameter space is 
-given based on this analysis and compared with other analyses looking at the 
-same signal.
+The CLs method \cite{cls} is used to determine the magnitude of the signal that
+can be excluded at 95\% confidence level. An exclusion plot in GMSB parameter 
+space is given based on this analysis and compared with other analyses looking 
+at the same signal.
 
 \section{Other Work}
 
@@ -186,8 +178,7 @@ setting. The only exceptions are the cross-section calculations and
 corresponding uncertainties in Section \ref{sec:xsec} and the photon efficiency
 correction in Section \ref{sec:phoeff}. \\
 
-In addition to the work included in this thesis, I also worked on two major
-projects: ECAL ``spikes'' and Erstaz $\MET$. ECAL spikes are anomalous energy 
-deposits in the electromagnetic calorimeter. Ersatz $\MET$ is a technique to
-measure the $\MET$ in W events using $Z\rightarrow ee$ events from data, which
-is important for the W cross-section measurement.
+In addition to the work included in this thesis, I also worked on anomalous 
+energy deposits in the electromagnetic calorimeter and a technique to measure 
+the missing transverse energy in W events, which is important for the W
+cross-section measurement, using $Z\rightarrow ee$ events from data.

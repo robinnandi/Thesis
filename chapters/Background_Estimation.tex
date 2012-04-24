@@ -45,14 +45,14 @@ process falls with the $\pT$ of the photon.
 
 QCD events are balanced in the transverse plane. All three sources of QCD 
 background have only fake $\MET$. Fake $\MET$ can come from the HCAL resolution, 
-severe mismeasurements such as dead ECAL Trigger Towers, poor HCAL response or 
-from fluctuations inherent in the hadronic showering process. \\
+severe mismeasurements such as ``dead'' regions, poor HCAL response or from 
+fluctuations inherent in the hadronic showering process. \\
 
-ECAL Trigger Towers are groups of ECAL crystals used for triggering and readout.
-Some of the trigger towers are dead (i.e. there is no data coming from them).
-Any object going down a dead trigger tower will be missed causing fake $\MET$.
-There are also individual dead cells. Figure \ref{fig:Dead_ECAL_TTs} shows a map 
-of the ECAL barrel with the dead regions marked. \\
+In the ECAL there are single crystals and groups of crystals (ECAL trigger
+towers) which are non-functioning or partially functioning resulting in ``dead''
+areas -- energy deposited in these regions is not reconstructed resulting in
+fake missing transverse energy. Figure \ref{fig:Dead_ECAL_TTs} shows a map of 
+the ECAL barrel with the dead regions marked. \\
 
 \begin{figure}
 \begin{center}
@@ -63,16 +63,14 @@ of the ECAL barrel with the dead regions marked. \\
 \label{fig:Dead_ECAL_TTs}
 \end{figure}
 
-There are also resolution effects which can cause fake
-
 Poor HCAL response is another cause of large fake $\MET$. Sometimes a jet is
 reconstructed with a much lower $\pT$ than it actually has. Such mismeasurements
-are extremely pathelogical and not at all well understood. These are not
+are extremely unusual and not at all well understood. These are not
 correlated with any specific region of the detector. \\
 
 The core resolution is approximately Gaussian in x and y components of $\MET$ 
 while the severe mismeasurements contribute a non-Gaussian tail to the $\MET$ 
-distribution. Both components scale up with $\HT$. The core resolution scales as
+distribution. Both components scale with $\HT$. The core resolution scales as
 $\sim\sqrt{\HT}$ while the tails increase because higher $\HT$ events contain 
 higher $\pT$ objects which give larger $\MET$ when missed. \\
 
