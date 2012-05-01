@@ -33,69 +33,38 @@ time until September 2011. \\
 \label{fig:intlumi}
 \end{figure}
 
-\section{$\HT$ and Missing Transverse Energy ($\MET$)}
-
-$\HT$ and $\MET$ are two event variables used to search for GMSB in the data. \\ 
-
-$\HT$ is the scalar sum of the $\pT$ of all jets with $\pT > 40\unit{GeV}$.
-
-\begin{equation}
-\HT = \sum \pT^{jet}
-\end{equation}
-
-$\MET$ is 
-
 \section{Monte Carlo Samples}
 \label{sec:Monte_Carlo_Samples}
 
-Event generation using Monte Carlo techniques overlayed with detector simulation
-are used to obtain simulated data with which to compare to observations and
-validate analysis methods. Monte Carlo samples are generated using Pythia 6 
-\cite{pythia6} with Tune Z2 (based on CTECQ6 parton distribution functions 
-\cite{tuneZ2}). GEANT \cite{geant} is used for the detector simulation. \\
+Events of QCD processes, SUSY signal models and Electroweak processes are 
+generated using Monte Carlo (MC) techniques followed by detector simulation. The
+simulated data gives predictions to be compared with obsevations and used to 
+validate analysis methods. The samples are generated using Pythia 6 
+\cite{pythia6} and GEANT 4 \cite{geant} is used for the detector simulation. \\
 
-Pile-up is simulated in the Monte Carlo samples however the MC does not
-reproduce the vertex mutiplicity distribution seen in the data. To correctly
-simulate pile-up the MC is re-weighted to reproduce the number of vertices
-distribution seen in the data. Figure \ref{fig:nVertices} shows the distribution
-of number of vertices in the data and MC. Table \ref{tab:factors} gives the 
-re-weighting factors for each number of vertices. \\
+Pile-up is simulated in the MC samples however the MC does not reproduce the 
+vertex mutiplicity distribution seen in the data. To correctly simulate pile-up 
+the MC is re-weighted to reproduce the number of vertices distribution seen in 
+the data. Figure \ref{fig:nVertices} shows the distribution of number of 
+vertices in the data and MC. \\
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{nVertices_Data.pdf}
-\includegraphics[width=0.5\textwidth]{nVertices_MC.pdf}
-\caption{The distribution of number of vertices in the data (left) and the MC
-(right).}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{nVertices.pdf}
+\end{center}
+%\includegraphics[width=0.5\textwidth]{nVertices_Data.pdf}
+%\includegraphics[width=0.5\textwidth]{nVertices_MC.pdf}
+%\caption{The distribution of number of vertices in the data (left) and the MC
+%(right).}
+\caption{The distribution of number of vertices in the data compared to the MC}
 \label{fig:nVertices}
 \end{figure}
 
-%\begin{table}
-%\begin{center}
-%{\scriptsize
-%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-%\hline
-%nVertices & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
-%\hline
-%Weight & 0.15 & 0.82 & 1.41 & 1.79 & 1.71 & 1.38 & 0.97 & 0.64 & 0.40 & 0.22 &
-%0.12 & 0.04 \\
-%\hline
-%\end{tabular}}
-%\end{center}
-%\caption{Re-weighting factors to be applied to the MC to correctly reproduce the
-%number of vertices distribution in the data.}
-%\label{tab:factors}
-%\end{table}
-
-Figure \ref{fig:Data_vs_MC} shows plots of two variables, $\HT$ and $\MET$,  to 
-show how accurately the Monte Carlo models the data. $\HT$ is a measure of the 
-energy scale of the event. SUSY events have high $\HT$. $\MET$ is the missing
-transverse energy which is the used to distinguish SUSY events from the
-background. These variables are defined properly in Sections
-\ref{sec:Missing_Transverse_Energy} and \ref{sec:Event_Selection}. The Monte 
-Carlo prediction is good for $\HT$, but the $\MET$ distribution is broader in 
-the data than the Monte Carlo. This shows that jets with $\pT > 40 \unit{GeV}$
-are well described by the Monte Carlo, but lower enregy jets and unclustered
-energy are less well modelled. \\
+Figure \ref{fig:Data_vs_MC} shows plots of $\HT$ and $\MET$ to show how 
+accurately the MC models the data. The prediction is good for $\HT$, but the 
+$\MET$ distribution is broader in the data than the MC. This shows that jets 
+with $\pT > 40 \unit{GeV}$ are well described by the MC, but lower energy jets 
+and unclustered energy are less well modelled. \\
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{Data_MC_HT.pdf}
@@ -105,15 +74,67 @@ the Monte Carlo models the data.}
 \label{fig:Data_vs_MC}
 \end{figure}
 
-Since the background estimation (see Section \ref{sec:QCD_Background}) is 
-largely data-driven the dependence of the result on Monte Carlo is limited.
+%Since the background estimation (see Section \ref{sec:QCD_Background}) is 
+%largely data-driven the dependence of the result on Monte Carlo is limited.
+
+\section{$\HT$ and Missing Transverse Energy ($\MET$)}
+
+$\HT$ is the scalar sum of the $\pT$ of all jets with $\pT > 40\unit{GeV}$. The
+$\HT$ gives a measure of the activity in the event.
+
+\begin{equation}
+\HT = \sum \pT^{jet}
+\end{equation}
+
+Particles such as neutrinos and the LSP in SUSY events are not detected by CMS.
+Momentum conservation in the proton collision means that the undetected 
+particles show up as an imbalance of reconstructed particles. $\MET$ is the
+negative vector sum of the transverse momenta of all the reconstructed
+particles. The transverse component is used because much of the longitudinal
+momentum goes down the beampipe (i.e. outside the acceptance of the detector). 
+For high energy photons and jets the most accurate measurement of the
+momentum comes from the energy in the calorimeters. The transverse energy,
+$\vec{E}_{T}$, of an energy deposit $E$ is calculated using Equation 
+\ref{eq:et}. The missing transverse energy $\MET$ is given by Equation
+\ref{eq:met}.
+
+\begin{equation}
+\vec{E}_{T} = E\sin{\theta}\cos{\phi}\vec{x} + E\sin{\theta}\sin{\phi}\vec{y}
+\label{eq:et}
+\end{equation}
+
+\begin{equation}
+\MET = \left| - \sum \vec{E}_{T} \right|
+\label{eq:met}
+\end{equation}
+
+$\HT$ and $\MET$ are the two variables used to search for GMSB in the data.
+Figures \ref{fig:susy_ht} and \ref{fig:susy_met} show the distribution of $\HT$ 
+and $\MET$ in the signal events compared to the background from MC.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{SUSY_HT.pdf}
+\end{center}
+\caption{The $\HT$ distribution in SUSY events compared to the background from
+MC samples.}
+\end{figure} 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{SUSY_MET.pdf}
+\end{center}
+\caption{The $\MET$ distribution in SUSY events compared to the background from
+MC samples.}
+\end{figure} 
 
 \section{Trigger}
 
 Based on the properties of strong production GMSB, a photon + $\HT$ trigger 
 is ideal for this search. Table \ref{tab:Triggers} shows a list of all the 
 photon + $\HT$ triggers in the 2011 data with the corresponding L1 seed and the
-rate at $10^{33}\unit{cm^{-2}s^{-1}}$. \\
+rate at $10^{33}\unit{cm^{-2}s^{-1}}$. The 70\unit{GeV} photon + 350\unit{GeV}
+$\HT$ trigger is used for this search. \\
 
 \begin{table}
 \begin{center}
@@ -138,16 +159,20 @@ necessary to keep the data rate manageable. If the rate of a trigger becomes too
 high, the trigger must be pre-scaled. This means that only every $n^{th}$ event 
 which fires the trigger is read out where $n$ is the prescale factor. \\
 
-The efficiency of a trigger is evaluated with respect to a lower threshold
+An inefficiency of the trigger can come from a difference between the trigger 
+and offline definitions of $\HT$ and photon $\pT$ caused by extra corrections
+applied to the jets and the photons after the reconstruction. The offline cuts 
+for $\HT$ and photon $\pT$ are chosen to avoid any inefficiency of the trigger 
+due to the thresholds.
+
+To evaluate the thresholds at which the trigger becomes efficient, the
+efficiency of the trigger is evaluated with respect to a lower threshold 
 trigger. Data ranges are selected such that the two triggers are both in the
 menu and the higher threshold trigger is unprescaled. To evaluate the trigger
 efficiency as a function of $\HT$ the $\HT$ distribution of events passing both
 triggers is divided by the $\HT$ distribution of events passing the lower
 threshold trigger. The efficiency curve tells us where to put the off-line cut 
-in $\HT$ such that the trigger is fully efficient. \\
-
-The efficiency is determined over the run ranges where the trigger overlaps with
-one of a lower threshold (see Figure \ref{fig:Trigger_vs_Run_Number}). Figure 
+in $\HT$ such that the trigger is fully efficient. Figure 
 \ref{fig:Trigger_Efficiency} shows the trigger efficiency against $\HT$ and 
 photon $\pT$.
 
@@ -165,7 +190,8 @@ Photons are selected based on variables such as isolation and shower shape which
 are designed to select prompt photons over fakes from jets. The photon 
 reconstruction is described in detail in Section \ref{sec:photon_recontruction}. 
 The cut values on each of the photon selection varaibles are listed in Table 
-\ref{tab:photoncuts}. 
+\ref{tab:photoncuts}. These cut values were chosen to have 90\unit{\%} efficiency
+for prompt photons according to MC \cite{photon_cuts}.
 
 \begin{table}
 \begin{center}
@@ -203,129 +229,39 @@ rejection (blue) as a function of the jet $\pT$ threshold.}
 \label{fig:Jet_Threshold}
 \end{figure}
 
-\section{Missing Transverse Energy}
-\label{sec:Missing_Transverse_Energy}
-
-By conservation of momentum, the sum of the momenta of all the final state
-particles in a collision is equal to the sum of the momenta of all the inital
-state particles. The initial longitudinal momentum of the colliding partons is
-unknown since the fraction of the proton momentum that each parton carries is
-unknown for any individual event. However, the initial transverse momentum is
-known to be close to zero so the final transverse momentum must also be close to 
-zero. \\
-
-The missing transverse energy is calculated using the sum of the transverse
-momentum of the reconstructed particles. For high energy photons and jets, the 
-most accurate determination of the momentum comes from the energy measurement in
-the calorimeters. The transverse energy of an energy deposit E is calculated as 
-in Equation \ref{eq:et}. The missing transverse energy is calculated as the
-negative sum of the transverse energies of all the energy deposits (Equation
-\ref{eq:met}). \\
-
-\begin{equation}
-\overrightarrow{\ET} = E\sin{\theta}\cos{\phi}\vec{x} + E\sin{\theta}\sin{\phi}\vec{y}
-\label{eq:et}
-\end{equation}
-
-\begin{equation}
-\overrightarrow{\MET} = - \sum \overrightarrow{\ET}
-\label{eq:met}
-\end{equation}
-
-Events with small missing transverse energy are to be expected because of the 
-detector resolution part of which comes from fluctuations inherent in the 
-hadronic shower. Missing transverse energy from these sources is expected to be 
-gaussian distributed in x and y. Large missing transverse energy can also come 
-from undetected particles e.g. neutrinos or detector imperfections e.g. dead 
-cells. \\
-
-Motivated by SUSY, this search is based on missing energy. In R-parity
-conserving SUSY models events have decay chains ending in the Lightest 
-Supersymmetric Particle (LSP) which goes undetected and hence shows up as 
-missing transverse energy. In contrast, QCD events (which are the dominant 
-background) have only fake missing energy due to detector imperfections. \\
-
 \section{Event Selection}
 \label{sec:Event_Selection}
 
 The event selection criteria are listed below. 
 
 \begin{itemize}
-\item Noise Cleaning
 \item $\HT > 400 \unit{GeV}$
 \item $\geq 2$ jets
 \item $\geq 1$ photon
 \item $\MET > 50 \unit{GeV}$
 \end{itemize}
 
-Threee types of noise cleaning are applied to the events. 
-\begin{itemize}
-\item {\bf Primary Vertex Selection:} Events are required to have at least one
-Primary Vertex with $|z| < 24\unit{cm}$, $\mbox{nDOF} > 4$ and $\rho <
-2\unit{cm}$.
-\item {\bf HCAL Noise Filter:} There are three types of HCAL noise: HPD noise, 
-RBX noise and PMT window noise. HPD noise comes from the hybrid photodiodes in
-the HB, HE and HO. Misalignment between the HPD electric field and the external
-magnetic field can lower the flashover voltage of the HPD resulting in 
-occasional cascades where all or most of the 18 channels within the HPD report
-large energy deposits. RBX noise is when all or most of the 72 channels in a
-Readout Box report large energies. The origin of this noise is cross-over in the
-electronics where a signal causes an induced signal in neighbouring wires.
-PMT window noise comes from charged particles occasionally hit an HF PMT window 
-directly instead of interacting with the quartz fibres. The HCAL noise filter 
-removes HCAL noise by vetoing on variables related to pulse shape, timing, hit 
-multiplicity and number of zero ADC counts.
-\item {\bf ECAL Spike Cleaning:} ECAL Spikes are isolated energy deposits in 
-the ECAL which do not come from EM showers. The origin of ECAL spikes is pions
-going directly into the depleted region of the photodetector (without
-interacting in the ECAL) making it look like there is a significant energy 
-deposit in the ECAL. ECAL spikes lead to fake photons and fake MET. There are 
-two properties which characterise ECAL spikes: topology and timing. ECAL spikes 
-tend to be single crystal enrgy deposits in the ECAL which are often not vetoed 
-by the shower shape variable. Some spikes occur at the same time as the bunch
-crossing while some occur between bunch crossings. The energy varies from a few 
-MeV to a few TeV. A cut of $1 - e4/e1 < 0.96$ is made to avoid ECAL Spikes. 1 - 
-e4/e1 is the ``Swiss Cross'' variable in which e1 is the highest energy crystal 
-in a 3x3 array and e4 is the energy of the four adjacent crystals. Remaining 
-spikes are vetoed by requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the 
-timing of the signal. e2 is the energy of the highest energy crystal plus the
-energy of the highest energy adjacent crystal in a 3x3 array. e9 is the total
-energy of all the crystals in the 3x3 array. This is illustrated by Figure 
-\ref{fig:spikes}.
-\end{itemize}
+A $\HT$ cut is applied because strongly production SUSY events have high $\HT$
+since high mass particles (squarks and gluinos) are produced. The value of this 
+cut is motivated by the desire for the trigger to be fully efficiency for the 
+event selection. Figure \ref{fig:Trigger_Efficiency} shows that the trigger 
+becomes fully efficient in $\HT$ at around $400\unit{GeV}$. \\
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{spikes.pdf}
-\end{center}
-\caption{A plot of e2/e9 vs seed time to show how double crystal ECAL spikes are
-vetoed.}
-\label{fig:spikes}
-\end{figure}
-
-$\HT$, the scalar sum of the transverse momentum of all the objects in the 
-event, is used as a measure of the energy scale of the event. Strongly produced 
-SUSY events have high $\HT$ because high mass particles are produced (squarks
-and gluinos) which decay hadronically. The value of this cut is motivated by the 
-desire for the trigger to be fully efficiency for the event selection. Figure 
-\ref{fig:Trigger_Efficiency} shows that the trigger becomes fully efficient in
-$\HT$ at around $400\unit{GeV}$. \\
-
-The $\geq 2$ jets cut is well motivated from the SUSY perspective: strongly
-produced SUSY events start with two squarks/gluinos each of which decay to a 
+The $\geq 2$ jets cut is well motivated from the SUSY perspective: strong
+production SUSY events start with two squarks/gluinos each of which decay to a 
 quark/gluon (which forms a jet in the detector) and the next SUSY particle in 
 the mass hierarchy. \\
 
-In strongly produced Gauge Mediated SUSY Breaking the Next-to-Lightest SUSY 
-Particle (NLSP) is the neutralino ($\tilde{\chi}^{0}$) which decays to a photon 
-and a gravitino. At least two photons are expected in each event. However, due 
-to the high activity in these events, photons often fall inside the cone of a 
-jet and so only one photon is reconstructed. Hence the $\geq 1$ photon cut. \\
+In strong production GMSB the Next-to-Lightest SUSY Particle (NLSP) is the 
+neutralino ($\tilde{\chi}^{0}$) which decays to a photon and a gravitino. At 
+least two photons are expected in each event. However, due to the high activity 
+in these events, photons often fall inside the cone of a jet and so only one 
+photon is reconstructed. Hence the $\geq 1$ photon cut. \\
 
-The search is done in bins of $\MET$ and $\HT$, but an initial $\MET$ cut is
-made to avoid the low $\MET$ bins where there is no sensitivity due to the huge
-amount of background. Figure \ref{fig:met_threshold} shows the signal efficiency
-and the background rejection as a function of $\MET$ cut.
+The background estimation is done in bins of $\MET$ and $\HT$, but an initial 
+$\MET$ cut is made to avoid the low $\MET$ bins where there is no sensitivity 
+due to the huge amount of background. Figure \ref{fig:met_threshold} shows the 
+signal efficiency and the background rejection as a function of $\MET$ cut.
 
 \begin{figure}
 \begin{center}
@@ -359,3 +295,22 @@ $200\unit{GeV}+$ & 9 & 4 & 4 & 7 \\
 \caption{The number of events passing the selection in bins of $\HT$ and $\MET$.}
 \label{tab:events}
 \end{table}
+
+\section{Outline of the Search}
+
+The event selection is applied to the data and the number of events passing the
+selection is recorded in bins of ($\HT$, $\MET$). \\
+
+An estimate is made for the expected number of background events in each ($\HT$,
+$\MET$) bin. The background estimation is done using a sample from data and
+checked using the MC. \\
+
+A prediction for the number of signal events in the only significant bin 
+($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) is made by applying the event
+selection to the signal MC. The prediction is made for a variety of signal 
+models with different squark mass and gluino mass. Systematic uncertainties are 
+estimated by varying within their uncertainties the variables that could affect 
+the signal prediction. \\
+
+The CLs method is used to exclude the signal at 95\unit{\%} CL in the squark
+mass vs gluino mass parameter space.

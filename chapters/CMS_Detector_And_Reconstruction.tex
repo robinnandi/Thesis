@@ -73,7 +73,7 @@ function of the number of tracks for various average track $\pT$ ranges.
 \includegraphics[width=\textwidth]{primary_vertex_resolution.pdf}
 \end{center}
 \caption{The primary vertex resolution as a function of the number of tracks for
-various average track $\pT$ ranges (reproduced from \cite{primary_vertex}).}
+various average track $\pT$ ranges. Reproduced from \cite{primary_vertex}.}
 \label{fig:primary_vertex}
 \end{figure}
 
@@ -81,7 +81,7 @@ various average track $\pT$ ranges (reproduced from \cite{primary_vertex}).}
 
 The silicon strip tracker is designed to measure the trajectory of charged 
 particles. It is made from strips of silicon which charged particles ionise. The
-technology is the pn junction with a reverse bias voltage applied, which creates
+technology is the pn junction with a reverse bias voltage applied that creates
 a depletion region. Charged particles ionise the silicon in the depleted region 
 creating electron hole pairs which travel to the electrodes giving rise to a 
 signal. \\
@@ -412,18 +412,24 @@ electrons and converted photons, the strip can be extended in the $\phi$
 direction. A description of the superclustering algorithm is given here 
 \cite{supercluster}. \\ 
 
-Fake photons from QCD come from jets and so tend to have plenty of activity in
-the surrounding detectors. In contrast, prompt photons tend to be isolated with
-little surrounding activity. Isolation is one of the variables used to select 
-photons because of its background rejection power. There are three independent 
-isolation measures based on the ECAL, the HCAL and the tracker. \\
+Electromagnetic showers have a particular shower shape. Prompt photons can be 
+distinguished from fakes by the shower shape. The main backgrounds to prompt 
+photons come from single and multiple $\pi^{0}$s. The $\pi^{0}$ decays to two
+photons which produce an EM shower in the calorimeter. Shower shape alone
+does not distiguish single $\pi^{0}$ from prompt photons however it does reject 
+multiple $\pi^{0}$s. \\
+
+Fake photons from QCD jets tend to have plenty of activity in the surrounding 
+detectors. In contrast, prompt photons tend to be isolated with little 
+surrounding activity. Isolation is one of the variables used to select photons 
+because of its background rejection power. There are three independent isolation 
+measures based on the ECAL, the HCAL and the tracker. \\
 
 Fake photons from jets also tend to have a hadronic component as well as an
 electromagnetic component while prompt photons are purely electromagnetic.
-Electromagnetic showers have a particular shower shape. Prompt photons can be 
-distinguished from fakes by the shower shape. Photons are distinguished from 
-electrons by the tracker. Electrons, being charged particles, ionise the 
-silicon and so leave a track while photons do not. \\ 
+Photons are distinguished from electrons by the tracker. Electrons, being 
+charged particles, ionise the silicon and so leave a track while photons do not. 
+\\ 
 
 Based on these considerations, there are six variables used for the photon 
 selection:
@@ -558,3 +564,37 @@ the cone. \\
 
 The Anti-KT algorithm is the most widely used within CMS because it has good
 energy resolution and good efficiency \cite{ak5best}.
+
+\section{ECAL Spikes}
+
+ECAL Spikes are isolated energy deposits in the ECAL which do not come from EM 
+showers. They tend to be single crystal enrgy deposits in the ECAL which are 
+often not vetoed by the shower shape variable. The origin of ECAL spikes is
+energy deposited directly into the sensitive region of the photodetectors
+(without showering in the ECAL). ECAL spikes lead to fake photons and fake 
+$\MET$. There are two properties which characterise ECAL spikes: topology and 
+timing. Some spikes occur at the same time as the rest of the event from pions 
+and other particles in the hadronic shower, while others are out of time with 
+the rest of the event due to slow neutrons travelling from where they were 
+created (the hadronic shower) to the photodetector where they interact. A cut of 
+$1 - e4/e1 < 0.96$ is made to avoid spikes. 1 - e4/e1 is the ``Swiss Cross'' 
+variable in which e1 is the highest energy crystal in a 3x3 array and e4 is the 
+energy of the four adjacent crystals. The vast majority of spikes are vetoed by 
+the swiss cross cut. Many of the remaining spikes double spikes (where energy is 
+deposited in the photodetectors of two adjacent crystals). These spikes are 
+vetoed by requiring $e2/e9 < 0.96$ and $|t| < 5\unit{ns}$, t is the timing of 
+the signal relative to the bunch crossing time. e2 is the energy of the highest 
+energy crystal plus the energy of the highest energy adjacent crystal in a 3x3 
+array. e9 is the total energy of all the crystals in the 3x3 array. The 
+distribution of spikes remaining after the swiss cross cut is illustrated by 
+Figure \ref{fig:spikes}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{spikes.pdf}
+\end{center}
+\caption{A plot of e2/e9 vs seed time to show how double crystal ECAL spikes are
+vetoed.}
+\label{fig:spikes}
+\end{figure}
+

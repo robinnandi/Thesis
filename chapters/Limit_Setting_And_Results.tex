@@ -8,17 +8,18 @@ section of a possible SUSY signal (according to a specific model) or, if a
 discovery has been made, the significance of that discovery. In the present case 
 no discovery has been made so a limit on the cross section must be found. There 
 are various statistical procedures for doing this and no consensus on the best 
-method. Here the CLs method is used. The CLs method is widely used in the field 
-of particle physics. \\
+method. Here the CLs method is used \cite{cls, junk, read, higgs_combination}. 
+The CLs method is widely used in the field of particle physics. The results are 
+interpreted as an exclusion in the squark mass vs gluino mass plane. \\
 
 A likelihood function must be defined. The likelihood is the probability of 
-the data being observed given a model. This encompasses the statistical 
-uncertainties on the expected number of events as well as the systematic 
-uncertainties associated with the background estimation and signal prediction 
-(e.g. luminosity measurement and jet energy scale uncertainty). Parameters in 
-the likelihood include the parameter of interest on which we wish to set a limit 
--- the amount of signal in this case -- in addition to nuisance parameters 
-associated with the systematic uncertainties. \\
+the data being observed given a model. The CLs method encompasses the 
+statistical uncertainties on the expected number of events as well as the 
+systematic uncertainties associated with the background estimation and signal 
+prediction (e.g. luminosity measurement and jet energy scale uncertainty). 
+Parameters in the likelihood include the parameter of interest on which we wish 
+to set a limit -- the amount of signal in this case -- in addition to nuisance 
+parameters associated with the systematic uncertainties. \\
 
 The goal is to find a confidence interval for the parameter of interest based
 on the likelihood. This gives an upper limit on the size of a possible SUSY 
@@ -129,7 +130,7 @@ are various possible choises for the this, here the profile likelihood ratio is
 used (Equation \ref{eq:Test_Statistic}).
 \begin{equation}
 q_{f} =
-\frac{L_{s+b}(f;\hat{\boldsymbol\theta})}{L_{b}(0;\hat{\boldsymbol\theta})}
+\frac{L_{s+b}(f;\hat{\boldsymbol\theta})}{L_{b}(0;\hat{\hat{\boldsymbol\theta}})}
 \label{eq:Test_Statistic}
 \end{equation}
 \item Step through the possible values of the parameter of interest, $f$.
@@ -207,8 +208,8 @@ excluded for 68\% of the pseudo experiments, is also drawn. \\
 
 Figure \ref{fig:finallimit} shows the final limit plot at 95\% CL with the
 expected limit, the $\pm1$ sigma band and the observed exclusion limit. The
-exclusion limit from another CMS analysis \cite{ra3} looking at the same signal 
-model is also shown for comparison. \\
+exclusion limit from another CMS analysis, RA3 \cite{ra3}, looking at the same 
+signal model is also shown for comparison. \\
 
 The limits on GMSB from previous experiments such as ALEPH \cite{aleph}, CDF
 \cite{cdf} and D0 \cite{d0} are concerned with electroweak production rather than 
@@ -216,12 +217,12 @@ strong production. A direct comparison is difficult since the results are
 interpreted in a different parameter space, but these experiments have a much 
 lower reach in terms of squark and gluino mass due to the lower $\sqrt{s}$. \\
 
-The limit presented here excludes more parameter space than the RA3 limit
-(Figure \ref{fig:finallimit}) at high gluino mass and less parameter space at 
-high squark mass. This makes sense because the RA3 search looks at the
-$\gamma\gamma+\MET$ signature which is better in a cleaner environment with
-fewer jets, but worse in an environment with more jets because a photon can
-get lost. Parameter points with high gluino mass tend to have more jets.
+The limit presented here is similar to the RA3 limit at high gluino mass, but 
+excludes more parameter space at high squark mass (Figure \ref{fig:finallimit}).
+The RA3 search selects events using the $\gamma\gamma+\MET$ signature which is 
+better in a cleaner environment with fewer jets, but worse in an environment 
+with more jets because the photon efficieny is lower as a photon may be lost in
+a jet. Parameter points with high squark mass tend to have more jets.
 
 \begin{figure}
 \begin{center}

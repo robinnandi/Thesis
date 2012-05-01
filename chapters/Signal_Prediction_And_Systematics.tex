@@ -31,8 +31,7 @@ difference between the photon efficiency in data and MC and to account for
 pile-up. In addition to these corrections uncertainties on the signal prediction
 need to be determined. These include statistical errors and systematic errors. 
 Since 10,000 events were used for each signal point, the statistical error is 
-small. It is the systematic error on which attention must be focussed. 
-\\
+small and so it is the systematic error on which attention must be focussed. \\
 
 Cuts are made on jets, photons, $\HT$ and $\MET$. The major sources of
 uncertainty for the jet and $\HT$ cuts are the jet energy scale and jet energy 
@@ -85,9 +84,20 @@ be sure that it is an electron. Another electron (probe) with looser
 requirements is located such that the invariant mass of the two electrons lies 
 in the Z peak. \\
 
-The scale factor is found to be $\epsilon_{e}^{data}/\epsilon_{e}^{MC} =
-0.953\pm 0.014(stat.)$ for events with at least one jet. Two possible sources
-of systematic uncertainty on this number were considered. \\
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{EffCorr_vs_nPV.pdf}
+\end{center}
+\caption{The efficiency correction between data and MC as a function of the
+number of primary vertices.}
+\label{fig:EffCorr_vs_nPV}
+\end{figure}
+
+Figure \ref{fig:EffCorr_vs_nPV} shows the variation of the efficiency correction 
+as a function of the number of reconstructed primary vertices. The MC photon 
+efficiency is $\epsilon_{\gamma}^{MC} = 0.824\pm0.003$ and the scale factor is 
+found to be $\epsilon_{e}^{data}/\epsilon_{e}^{MC} = 0.953\pm 0.014(stat.)$. Two 
+possible sources of systematic uncertainty on this number were considered: \\
 
 {\bf Electrons and photons behave differently in MC:} Both electrons and photons
 give EM showers in the ECAL and the selection cuts have been chosen to be
@@ -124,7 +134,7 @@ measured by the ECAL. The response $\frac{p_{T}^{jet}}{p_{T}^{\gamma}}$
 is measured in bins of jet $p_{T}$ and $\eta$ to get the jet energy corrections. 
 Details of the procedure to determine the jet energy corrections and their 
 uncertainties are given in \cite{jec}. Figure \ref{fig:JEC_vs_pT_And_Eta} shows 
-the jet energy correction factors as a fucntion of jet $\pT$ for jets with 
+the jet energy correction factors as a function of jet $\pT$ for jets with 
 $|\eta| = 1.0$ and as a function of $\eta$ for jets with $\pT = 200 \unit{GeV}$. 
 \\
 
@@ -139,7 +149,7 @@ from \cite{jec}}
 \label{fig:JEC_vs_pT_And_Eta}
 \end{figure}
 
-The uncertainty is $\sim 2 \unit{\%}$ on jets above $50 \unit{GeV}$ and $\sim 5 
+The uncertainty is $\sim 3 \unit{\%}$ on jets above $50 \unit{GeV}$ and $\sim 5 
 \unit{\%}$ on smaller jets and unclustered energy. Figure \ref{fig:JES_Unc_pT} 
 shows the jet energy scale uncertainty against jet $\pT$ for central jets and 
 Figure \ref{fig:JES_Unc_Eta} shows the jet energy scale uncertainty against jet
@@ -163,9 +173,10 @@ $100\unit{GeV}$ jets.}
 \label{fig:JES_Unc_Eta}
 \end{figure}
 
-The $\pT$ of all the jets is modified upward and downward according to the jet 
-energy uncertainties before applying the event selection. The $\MET$ can be 
-expressed as Equation \ref{eq:MET}.
+In order to evaluate the effect of the jet energy scale uncertainty on the
+signal efficiency $\times$ acceptance, the $\pT$ of all the jets is modified 
+upward and downward according to the jet energy uncertainties before applying 
+the event selection. The $\MET$ can be expressed as Equation \ref{eq:MET}.
 
 \begin{equation}
 \MET = -\Sigma \mbox{ jets} - \mbox{photon} - \mbox{unclustered energy}
@@ -173,14 +184,15 @@ expressed as Equation \ref{eq:MET}.
 \end{equation}
 
 The $\MET$ is modified to take account of the jet energy correction
-uncertainties by the following procedure. 
+uncertainties by the following procedure: 
 
 \begin{itemize}
 \item Add the photon to the $\MET$ (i.e. remove it from consideration).
 \item Add the jets also to get the unclustered energy.
-\item Modify the unclustered energy by $5\unit{\%}$.
-\item Subtract the jets scaled according to the jet energy correction 
-uncertainties.
+\item Modify the unclustered energy up and down by $5\unit{\%}$ in a correlated
+way with the jet energy correction uncertainties.
+\item Subtract the jets scaled both up and down according to the jet energy 
+correction uncertainties.
 \item Subtract the photon to get the modified $\MET$.
 \end{itemize}
 
@@ -208,12 +220,14 @@ events with a one sigma upward variaton (red) and one sigma downward variation
 \label{fig:JES_MET_And_HT}
 \end{figure}
 
-The important result is how the variation in jet energy scale affects the signal
-efficiency. The signal efficiency is $0.382\pm0.017$ when the jet energy scale
-is varied within its uncertainty. This means the uncertainty on the signal
-efficiency from the jet energy scale is 4.4\unit{\%}.
+The variation in signal efficiency $\times$ acceptance resulting from the
+$\pm1\sigma$ variations of the jet energy scale on the jet $\pT$, $\MET$ and
+$\HT$ is extracted. The value of $\epsilon$ varies about its nominal value,
+0.382, by 0.017 when the jet energy scale is varied within its uncertainty.
+This means the uncertainty on the signal efficiency $\times$ acceptance from the 
+jet energy scale is 4.4\unit{\%}.
 
-\section{Jet Energy Resolution}
+\section{Jet $\pT$ Resolution}
 
 The jet $\pT$ resolution is determined using two different methods: 
 
@@ -240,8 +254,9 @@ be measured in the data:
 \item {\bf $\gamma$/Z+jet balance:} This method uses $\gamma$+jet or Z+jet
 events from data and uses the $\gamma$ or Z as a well measured reference object
 to which the jet $\pT$ can be compared. In balanced events the $\gamma$/Z has 
-the same $\pT$ as the jet. The ratio, R, of the jet $\pT$ relative to the 
-$\gamma$/Z $\pT$ in bins of $\gamma$/Z $\pT$ gives the jet $\pT$ resolution. 
+the same $\pT$ as the jet. The variation of the ratio, R, of the jet $\pT$ 
+relative to the $\gamma$/Z $\pT$ in bins of $\gamma$/Z $\pT$ gives the jet $\pT$ 
+resolution. 
 \begin{equation}
 R = \frac{\pT^{jet}}{\pT^{\gamma/Z}}
 \end{equation}
@@ -251,7 +266,7 @@ R = \frac{\pT^{jet}}{\pT^{\gamma/Z}}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{jet_res.pdf}
 \end{center}
-\caption{The jet energy resolution measured from data for jets with $|\eta| <
+\caption{The jet $\pT$ resolution measured from data for jets with $|\eta| <
 0.5$ (black points) compared to MC (red line). The yellow band gives the
 systematic uncertainty. Reproduced from \cite{jec}.}
 \label{fig:jet_res}
@@ -262,10 +277,10 @@ associated uncertainty can be found in \cite{jec}. The jet $\pT$ resolution as a
 function of jet $\pT$ and for $|\eta| < 0.5$ is shown in Figure
 \ref{fig:jet_res}. The figure also shows that MC agrees well with the
 data as far as jet energy resolution is concerned. For the SUSY events the 
-``true'' jet energy comes from the generator level in the MC. The jet energy 
-resolution is determined by comparing the reconstructed jet energy with the 
-generator level jet energy. This gives a jet $\pT$ resolution similar to that 
-measured in \cite{jec}. \\
+``true'' jet energy comes from matching the reconstructed jets to the generator 
+level in the MC. The jet energy resolution is determined by comparing the 
+reconstructed jet energy with the generator level jet energy. This gives a jet 
+$\pT$ resolution similar to that measured in \cite{jec}. \\
 
 \begin{figure}
 \begin{center}
@@ -279,9 +294,8 @@ variation of 50\unit{\%} in the jet $\pT$ resolution.}
 
 The resolution is varied upward and downward by 50\unit{\%}, which correspond to 
 the uncertainty on the forward jets but is conservative for the central jets. 
-The variation in resolution is made by changing $\frac{\pT^{reco} -
-\pT^{gen}}{\pT^{gen}}$ by 50\unit{\%} for each jet. Figure \ref{fig:Resolution}
-shows the jet energy reolution with an upward and a downward variation. \\
+Figure \ref{fig:Resolution} shows the jet energy reolution with an upward and a 
+downward variation. \\
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{JER_HT.pdf}
@@ -315,7 +329,7 @@ surrounding activity which can populate the isolation cone.
 Most of the pile-up events are soft with, at most, low $\pT$ jets and do not
 contribute much to $\HT$. Since the signal MC does not have pile-up simulated, 
 the effect of pile-up on the $\HT$ is evaluated by looking at the $\HT$ 
-distribution in MC QCD events with and without pile-up. A shift of $7.0\pm0.8$ 
+distribution in MC QCD events with and without pile-up. A shift of $6.8\pm0.8$ 
 is applied to the no pile-up $\HT$ distribution to match the pile-up $\HT$ 
 distribution (Figure \ref{fig:Pile_Up_HT}). With a $\pm1\sigma$ variation in 
 the $\HT$ shift the signal efficiency is $0.3821\pm0.0003$, an uncertainty of
@@ -339,7 +353,7 @@ pile-up. To determine the amount of smearing necessary a QCD sample with similar
 $\HT$ and no pile-up is smeared until the shape agrees with the $\MET$ 
 distribution with pile-up. Figure \ref{fig:Pile_Up_MET} shows the 
 average $\MET$ in QCD events without pile-up as a function of the $\MET$ 
-smearing. From the plot a $\MET$ smearing of $5.6\pm1.0\unit{GeV}$ is applied to 
+smearing. From the plot a $\MET$ smearing of $3.5\pm0.5\unit{GeV}$ is applied to 
 account for pile-up. The important number is the uncertainty in
 the signal efficiency due to the uncertainty in the $\MET$ smearing to account
 for pile-up, which is found to be $0.3821\pm0.0004$. This corresponds to an
@@ -372,26 +386,16 @@ modelling the photon efficiency in pile-up well. This can be checked by looking
 at $Z\rightarrow ee$ events in data. The efficiency requires only a small 
 correction between data and MC which is relatively stable with respect to the
 number of reconstructed primary vertices (Figure \ref{fig:EffCorr_vs_nPV}). The 
-efficiency correction due to pile-up is found to be 
-$0.83\pm0.01(stat.)\pm0.01(syst.)$. This produces an uncertainty of 
-$3.8\unit{\%}$ on the signal efficiency.
+photon efficiency correction due to pile-up is $0.83\pm0.01$. This produces an 
+uncertainty of $2.6\unit{\%}$ on the signal efficiency $times$ acceptance.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{Efficiency_vs_nVertices.pdf}
 \end{center}
-\caption{The relative photon efficiency as a function of the number of primary 
-vertices.}
+\caption{The photon efficiency as a function of the number of primary 
+vertices relative to the photon efficiency with only one primary vertex.}
 \label{fig:Efficiency_vs_nVertices}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{EffCorr_vs_nPV.pdf}
-\end{center}
-\caption{The efficiency correction between data and MC as a function of the
-number of primary vertices.}
-\label{fig:EffCorr_vs_nPV}
 \end{figure}
 
 \section{Signal Cross-Section}
@@ -410,7 +414,7 @@ To calculate the cross-section for $p + p \rightarrow X$, the parton collision
 $a + b \rightarrow X$ must first be considered (Figure 
 \ref{fig:QCDFactorization}). The cross-section for partons $a$ and $b$ with 
 momentum fractions $x_{1}$ and $x_{2}$ is calculated. To get the cross-section 
-from protons the parton density functions must be folded in and the possible 
+from protons the PDFs must be folded in and the possible 
 partons must be summed over as in Equation \ref{eq:xsec_factorisation}.
 
 \begin{equation}
@@ -420,20 +424,20 @@ partons must be summed over as in Equation \ref{eq:xsec_factorisation}.
 \end{equation}
 
 The cross-section for the parton process $a + b \rightarrow X$ is an infinte sum
-over terms corresponding to processes with extra vertices and radiations as in
-Equation \ref{eq:xsec_series}. The terms get smaller as more vertices are 
-introduced. To do the calculation the series must be cut off at some order. Here
-the series is cut off at Next to Leading Order (NLO).
+over terms corresponding to processes with extra Feynman diagram vertices and 
+radiations as in Equation \ref{eq:xsec_series}. The terms get smaller as more 
+vertices are introduced. To do the calculation the series must be cut off at 
+some order. Here the series is cut off at Next to Leading Order (NLO).
 
 \begin{equation}
-\sigma = \sigma_{LO} + \sigma_{NLO} + ...
+\sigma = \sigma_{0} + \sigma_{1} + ...
 \label{eq:xsec_series}
 \end{equation}
 
-There are two major sources of uncertainty on the signal cross-section:
+Thus there are two major sources of uncertainty on the signal cross-section:
 
 \begin{itemize} 
-\item The uncertainties on the PDFs.
+\item The uncertainties on the PDFs, $f_{a}(x,Q^{2})$ and $f_{b}(x,Q^{2})$ above.
 \item The uncertainty from higher order terms.
 \end{itemize}
 
@@ -452,34 +456,51 @@ each parameter point in the mSquark vs mGluino plane. Reproduced from
 
 \section{Integrated Luminosity}
 
-The LHC beam luminosity can be measured from the beam parameters as in Equation
-\ref{eq:lumi}.
+The luminosity is calculated using the HF and normalised by van der Meer scans
+of the beam profile \cite{lumi}. The integrated luminosity can be written as:
 
 \begin{equation}
-L = \frac{N^{2}n_{b}f}{A_{eff}}
+L = \frac{\mu n_{b}f}{\sigma_{eff}}
 \label{eq:lumi}
 \end{equation}
 
-where N is the number of particles in each of the colliding bunches, $n_{b}$ is
-the number of bunches, f is the revolution frequency of the beams and $A_{eff}$
-is the effective transverse area in which the collisions occur. \\
+where:
+\begin{itemize}
+\item $\mu$ is the mean number of interactions per bunch crossing;
+\item $n_{b}$ is the number of bunches;
+\item $f$ is the revolution frequency of the bunches;
+\item $\sigma_{eff}$ is the effective cross-section of the selection.
+\end{itemize}
 
-The revolution frequency and the number of bunches are known precisely (to $\sim
-1\unit{\%}$) from measurements of the beam current. The limiting uncertainty for 
-the luminosity measurement is that of $A_{eff}$. The beam sizes must be 
-controlled to $20-30\unit{\%}$ for safe operation of the LHC. $A_{eff}$ is 
-measured using van der Meer scans of the transverse beam profile 
-\cite{vdm_scans}. Assuming a gaussian transverse beam profile, $A_{eff}$ can be 
-calculated as $A_{eff} = 4\pi\sigma_{x}\sigma_{y}$. The uncertainty on the 
-integrated luminosity measurement for this method is $5\unit{\%}$. \\
+The number of bunches and the revolution frequency are known precisely. The mean
+number of interactions per bunch crossing is determined from the fraction of
+empty towers in the HF. A relative value for the effective cross-section is 
+found from the linear relationship between tower $E_{T}$ and luminosity. \\
+
+The normalisation of the luminosity measurement is done using van der Meer scans
+of the transverse beam profile \cite{vdm_scans}. The size and shape of the
+interaction region is measured as a function of transverse beam separation. With
+a proton density of $F(x, y) = f_{x}(x)f_{y}(y)$ and N protons per bunch, the 
+absolute luminosity can be written as:
+
+\begin{equation}
+L = \frac{N^{2}f n_{b}F(0,0)}{\int f_{x^{\prime}}dx^{\prime}\int
+f_{y^{\prime}}dy^{\prime}}
+\end{equation}
+
+Assuming a gaussian transverse beam profile, the denominator can be 
+calculated as $4\pi\sigma_{x}\sigma_{y}$, where $\sigma_{x}$ and $\sigma_{y}$
+are extracted from gaussian fits to the transverse beam profile. \\
+
+The dominant uncertainty on the luminosity measurement comes from the beam
+current measurement (3.1\unit{\%}). The total uncertainty on the integrated 
+luminosity measurement is $5\unit{\%}$.
 
 \section{Summary of Systematics}
 
 Table \ref{tab:Systematics_Summary} shows a summary of all the systematic
 uncertainties for the backgrounds and the signal. These are the uncertainties on
-the number of events in the ($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin. A
-GMSB parameter point close to exclusion with squark mass $1200\unit{GeV}$ and 
-gluino mass $1200\unit{GeV}$ is used for the signal uncertainties.
+the number of events in the ($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin.
 
 \begin{table}
 \begin{center}

@@ -37,8 +37,8 @@ magnetic moment of the electron \cite{emagmom}. \\
 The neutrino was postulated by Pauli in 1930 \cite{pauli} to explain the 
 continuous electron energy spectrum in $\beta$-decay. The neutrino was 
 discovered by direct detection in 1956 \cite{neutrino} by beta capture in a 
-huge detector of water with CdCl$_{2}$ dissolved in it by the Savannah River 
-nuclear reactor. Three flavours of neutrinos corresponding to each of the 
+huge detector of water with CdCl$_{2}$ dissolved in it next to the Savannah 
+River nuclear reactor. Three flavours of neutrinos corresponding to each of the 
 leptons has been discovered. More recently neutrino oscillations have been 
 observed in which neutrinos can change flavour \cite{oscillations}. The 
 flavour change happens due to a difference between the mass eigenstates and the 
@@ -60,8 +60,8 @@ angular distribution of electrons was measured. An asymmetry in the distribution
 between $\theta$ and $180^{\circ} - \theta$ (where $\theta$ is the angle between 
 the electron momentum and the orientation of the parent nucleus) was observed
 providing unequivocal proof that parity is not conserved in beta decay. This is
-represented in the SM by the V-A structure of the weak interaction
-and the consequent presence of chiral fermions. \\
+represented in the SM by the vector minus axial vector structure of the weak 
+interaction and the consequent presence of chiral fermions. \\
 
 Electroweak theory was introduced by Glashow, Salam and Weinberg \cite{salam,
 weinberg} who proposed that the electromagnetic force and the weak force are 
@@ -146,8 +146,8 @@ L = -\frac{1}{4}F_{\mu\nu}F_{\mu\nu} + \bar{\psi}\gamma_{\mu}D_{\mu}\psi
 
 The first term represents the free electromagnetic field. $F_{\mu\nu} = 
 \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}$, where $A_{\mu}$ is the 
-electromagnetic vector potential. The second term reresents the electron kinetic 
-energy and the interaction between electron and photon. $D_{\mu} = 
+electromagnetic vector potential. The second term represents the electron 
+kinetic energy and the interaction between electron and photon. $D_{\mu} = 
 \partial_{\mu} - ieA_{\mu}$ is the covariant derivative (i.e. it transforms in 
 the same way as $\psi$ under the gauge transformation). The third term 
 represents the mass of the electron. This lagrangian is invariant under the U(1) 
@@ -214,7 +214,7 @@ lagrangain can be written as:
 \begin{equation}
 L = -\frac{1}{4}F_{\mu\nu}^{a}F_{\mu\nu}^{a}
 -\frac{1}{4}G_{\mu\nu}G_{\mu\nu} + (D_{\mu}\phi)^{\dagger}(D_{\mu}\phi) -
-\lambda\left(\phi^{\dagger}\phi - \frac{v^{2}}{2}\right)
+\lambda\left(\phi^{\dagger}\phi - \frac{v^{2}}{2}\right)^{2}
 \label{eq:ew}
 \end{equation}
 
@@ -227,11 +227,11 @@ D_{\mu}\phi &=& \partial_{\mu}\phi - i\frac{g}{2}\sigma^{a}A_{\mu}^{a}\phi -
 i\frac{g^{\prime}}{2}B_{\mu}\phi
 \end{eqnarray}
 
-This form of the potential is obtained by allowing the quadratic term to be
-negative giving a non-zero vaccuum expectation value. There is a continuum of 
-ground states giving equivalent physics, one of which must be chosen by nature. 
-Choosing a particular ground state is known as symmetry breaking. Arbitrarily 
-choose:
+The final term is the scalar field potential with a quadratic and quartic term
+assuming a non-zero vaccuum expectation value for $\phi$. There is a 
+continuum of ground states giving equivalent physics, one of which must be 
+chosen by nature. Choosing a particular ground state is known as symmetry 
+breaking. Arbitrarily choose:
 
 \begin{equation}
 A_{\mu} = 0 \hspace{2cm} B_{\mu} = 0 \hspace{2cm} \phi_{0} =
@@ -262,7 +262,7 @@ Consider small perturbations around the ground state:
 \phi = \frac{1}{\sqrt{2}} \left(
 \begin{array}{c}
 0 \\ 
-v + \chi(x)
+v + H(x)
 \end{array}
 \right)
 \end{equation}
@@ -272,9 +272,9 @@ Thus we get the following expression for $D_{\mu}\phi$:
 \begin{equation}
 D_{\mu}\phi = \left(
 \begin{array}{c}
--\frac{ig}{2\sqrt{2}}\left(A_{\mu}^{1} - iA_{\mu}^{2}\right)(v + \chi(x)) \\
--\frac{i}{2\sqrt{2}}\left(g^{\prime}B_{\mu} - gA_{\mu}^{3}\right)(v + \chi(x)) +
-\frac{1}{\sqrt{2}}\partial_{\mu}\chi(x)
+-\frac{ig}{2\sqrt{2}}\left(A_{\mu}^{1} - iA_{\mu}^{2}\right)(v + H(x)) \\
+-\frac{i}{2\sqrt{2}}\left(g^{\prime}B_{\mu} - gA_{\mu}^{3}\right)(v + H(x)) +
+\frac{1}{\sqrt{2}}\partial_{\mu}H(x)
 \end{array}
 \right)
 \end{equation}
@@ -308,7 +308,7 @@ m_{W}^{2}W_{\mu}^{+}W_{\mu}^{-} \\
 -\frac{1}{4}\mathcal{Z}_{\mu\nu}\mathcal{Z}_{\mu\nu} + 
 \frac{m_{Z}^{2}}{2}Z_{\mu}Z_{\mu} \\
 -\frac{1}{4}F_{\mu\nu}F_{\mu\nu} \\
-+\frac{1}{2}(\partial_{\mu}\chi)^{2} - \frac{m_{\chi}^{2}}{2}\chi^{2}
++\frac{1}{2}(\partial_{\mu}H)^{2} - \frac{m_{H}^{2}}{2}H^{2}
 \end{eqnarray}
 
 where
@@ -330,7 +330,7 @@ Field & Mass & Particle \\
 $W_{\mu}^{\pm}$ & $m_{W} = \frac{gv}{2}$ & $W^{\pm}$ \\
 $Z_{\mu}$ & $m_{Z} = \frac{\sqrt{g^{2} + g^{\prime 2}}v}{2}$ & $Z^{0}$ \\
 $A_{\mu}$ & $m_{\gamma} = 0$ & $\gamma$ \\
-$\chi$ & $m_{\chi} = \sqrt{2\lambda}v$ & Higgs \\
+$H$ & $m_{H} = \sqrt{2\lambda}v$ & Higgs \\
 \hline
 \end{tabular}
 \end{center}
@@ -493,8 +493,9 @@ strong, weak and electromagnetic force as a function of energy.
 \begin{center}
 \includegraphics[width=0.8\textwidth]{coupling2.jpg}
 \end{center}
-\caption{The coupling strengths of the electromagnetic force, the weak force and
-the strong force as a function of energy. Reproduced from \cite{nobel_2004}.}
+\caption{The coupling strengths of the electromagnetic force ($\alpha_{1}$), the 
+weak force ($\alpha_{2}$) and the strong force ($\alpha_{3}$) as a function of 
+energy. Reproduced from \cite{nobel_2004}.}
 \label{fig:coupling}
 \end{figure}
 
@@ -515,7 +516,7 @@ the TeV energy scale to avoid violating unitarity \cite{halzen_and_martin}. \\
 {\bf New energy scale} \\
 
 This is simply the observation that while exploring a higher energy scale than
-has previously been explored so one can expect to find new things. In the same
+has previously been explored one can expect to find new things. In the same
 way as when explorers explore a new land they can expect to see things they
 have not seen before. \\
 
@@ -591,10 +592,10 @@ mass of the galaxies is made up of collisionless dark matter. \\
 If dark matter interacts through the weak force, then it could be observed at
 the LHC. Dark matter may not interact weakly. Perhaps it interacts only 
 gravitationally. Additionally it may not show up at the TeV scale. However, 
-SUSY (which is one of the popular theories of physics beyond the standard model) 
+SUSY (which is one of the popular theories of physics beyond the SM) 
 predicts a set of supersymmetric particles the lightest of which could be a 
-dark matter candidate. Direct searches from CDMS \cite{cdms} put a limit of 
-$\sim 10^{-5}\unit{pb^{-1}}$ on the cross-section of weakly interacting massive 
+dark matter candidate. Direct searches from CDMS \cite{cdms} put an upper limit 
+of $\sim 1\unit{pb}$ on the cross-section of weakly interacting massive 
 particles over the energy range $10\unit{GeV}$ to $1\unit{TeV}$.
 
 \section{Supersymmetry}
@@ -603,28 +604,36 @@ Supersymmetry (SUSY) proposes that for every particle there is a supersymmetric
 partner which is a boson for fermions and a fermion for bosons \cite{primer}. 
 If unbroken, such a symmetry ensures cancellation of the divergence in the Higgs 
 boson mass. The operator Q which generates the supersymmetric transformations 
-can be written as Equation \ref{eq:susy_operator}.
+can be written as Equation \ref{eq:susy_operator}. Since the particles within 
+the supermultiplets must maintain the gauge symmetries of the SM, Q must 
+commute with the internal symmetries of the SM.
 
 \begin{equation}
 Q|\mbox{Boson}> = |\mbox{Fermion}> \hspace{10pt} Q|\mbox{Fermion}> = |\mbox{Boson}>
 \label{eq:susy_operator}
 \end{equation}
 
-The forms of additional symmetries to the Poincare group are highly restricted
-by the Coleman Mandula theorem \cite{coleman}. Supersymmetry is one of the few
-possible symmetry extensions. \\ 
+Each lepton SU(2) doublet ($\nu_{l}$, $l$)$_{L}$ has two superpartners, both spin-0:
+a sneutrino $\tilde{\nu}_{lL}$ and a slepton $\tilde{l}_{L}$. Each singlet
+$l_{R}$ has a spin-0 superpartner $l_{R}$. \\
 
-The SM particles and their SUSY partners form supermultiplets as in
-Equation \ref{eq:supermultiplets}. Since the particles within the
-supermultiplets must maintain the gauge symmetries of the SM, Q must 
-commute with the internal symmetries of the SM.
+In an analagous way, each quark doublet ($q$, $q^{\prime}$)$_{L}$ has squark partners
+$\tilde{q}_{L}$, $\tilde{q}^{\prime}_{L}$ and each singlet $q_{R}$ has a partner
+$\tilde{q}_{R}$. \\
 
-\begin{equation}
-\left(\begin{array}{c}fermion\\sfermion\end{array}\right) \hspace{1cm}
-\left(\begin{array}{c}gauge\hspace{3pt}boson\\gaugino\end{array}\right) \hspace{1cm}
-\left(\begin{array}{c}graviton\\gravitino\end{array}\right)
-\label{eq:supermultiplets}
-\end{equation}
+The two spin-1/2 higgsino doublets ($\tilde{H}_{u}^{+}$, $\tilde{H}_{u}^{0}$),
+($\tilde{H}_{d}^{0}$, $\tilde{H}_{d}^{-}$), have as partners two spin-0 Higgs
+doublets ($H_{u}^{+}$, $H_{u}^{0}$) and ($H_{d}^{0}$, $H_{d}^{-}$). \\
+
+The spin-1 gauge bosons (before electroweak symmetry breaking) $g$, $W^{\pm}$,
+$W^{0}$, $B^{0}$ have spin-1/2 partners the gluino, wino and bino ($\tilde{g}$,
+$\tilde{W}^{\pm}$, $\tilde{W}^{0}$, $B^{0}$). \\
+
+After electroweak symmetry breaking, three of the eight degrees of freedom of
+the two complex Higgs doublets become longitudinal modes of the $Z^{0}$ and
+$W^{\pm}$ bosons. Five Higgs scalars remain: $h^{0}$, $H^{0}$, $A^{0}$,
+$H^{\pm}$. The parameter $\tan\beta$ is the ratio of the vaccuum expectation
+values of the neutral Higgs fields. \\
 
 A straightforward implementation of supersymmetry would predict a whole new set
 of particles with the same mass and same interactions as the SM
@@ -638,7 +647,7 @@ often introduced to SUSY models to preserve lepton number and baryon number.
 $R_{P}$ is +1 for SM particles and -1 for supersymmetric partners.
 
 \begin{equation}
-R_{P} = (-1)^{3B+L+2S}
+R_{P} = (-1)^{3(B-L)+2S}
 \label{eq:rparity}
 \end{equation}
 
@@ -655,11 +664,11 @@ supersymmetric particles in each supersymmetric event. The second point means
 that SUSY events contain missing energy since the LSP is not detected. The LSP 
 also provides a possible dark matter candidate.
 
-\section{Gauge Mediated SUSY breaking (GMSB)}
+\section{Gauge Mediated SUSY Breaking (GMSB)}
 
 Under GMSB the messenger particles between the visible sector (SM
 and SUSY particles) and the hidden sector (responsible for the SUSY breaking)
-are gauge particles. In the Minimal Supersymmetric SM (MSSM) there 
+are gauge particles. In the Minimal Supersymmetric Standard Model (MSSM) there 
 are 6 parameters describing GMSB:
 
 \begin{itemize}
@@ -672,10 +681,9 @@ are 6 parameters describing GMSB:
 \end{itemize}
 
 SUSY events contain real missing transverse energy ($\MET$) from the Lightest 
-Supersymmetric Particle (LSP). In GMSB models with $N_{5} = 1$ and low
-$\tan\beta$, the LSP is the gravitino ($\tilde{G}$) and the Next Lightest 
-Supersymmetric Particle (NLSP) is the lightest neutralino 
-($\tilde{\chi}_{1}^{0}$). The Neutralino decays into a photon and a gravitino 
+Supersymmetric Particle (LSP). The LSP is the gravitino ($\tilde{G}$) and the 
+Next Lightest Supersymmetric Particle (NLSP) is the lightest neutralino 
+($\tilde{\chi}_{1}^{0}$). The neutralino decays into a photon and a gravitino 
 $\tilde{\chi}_{1}^{0}\rightarrow\gamma\tilde{G}$. Since the two photons come 
 from separate decay chains there is little correlation betweeen the two: they do 
 not have a particular invariant mass nor a particular angular separation. \\
@@ -708,12 +716,3 @@ resulting in one jet. Gluinos decay to a quark anti-quark pair and the next
 particle in the SUSY mass hierarchy ($\tilde{g}\rightarrow q\bar{q}\tilde{X}$) 
 resulting in two jets. The only previous limits on strong production GMSB come 
 from ATLAS \cite{atlas} and CMS \cite{ra3} at the LHC. \\
-
-\section{Conclusion}
-
-The SM has been described with particular emphasis on the gauge
-structure of the theory. Experimental results that back up the theories have
-been given. The motivations for expecting the discovery of new physics at the
-TeV scale have been examined. Supersymmetry (SUSY) and in particluar Gauge
-Mediated SUSY Breaking (GMSB) have been introduced. Previous limits on GMSB, the
-flavour of SUSY considered in this thesis, have been mentioned.

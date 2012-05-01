@@ -4,9 +4,9 @@
 
 The Standard Model backgrounds to the search are estimated in 16 bins of ($\HT$,
 $\MET$). The $\HT$ bins are $400-500\unit{GeV}$, $500-600\unit{GeV}$,
-$600-700\unit{GeV}$ and $700\unit{GeV}+$ and the $\MET$ bins are
+$600-700\unit{GeV}$ and $>700\unit{GeV}$ and the $\MET$ bins are
 $50-100\unit{GeV}$, $100-150\unit{GeV}$, $150-200\unit{GeV}$ and
-$200\unit{GeV}+$. Only the ($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin is
+$>200\unit{GeV}$. Only the ($\HT>700\unit{GeV}$, $\MET>200\unit{GeV}$) bin is
 significant in terms of setting a limit on the GMSB cross-section. The other
 bins are used only to give confidence in the background estimation procedure. \\
 
@@ -35,8 +35,7 @@ end up in the isolated tail.
 \item {\bf Prompt $\gamma$+jet:} In these events the photon comes directly from
 the parton hard scattering. The other jet can come from gluon radiation or
 jet fragmentation. These events contain prompt photons which tend to be isolated
-and have good shower shape. The $\pT$ of the photons is distributed around half
-the $\HT$ of the event.
+and have good shower shape.
 \item {\bf QCD jets with ISR/FSR:} A QCD jets event where an initial state quark
 or final state quark radiates a photon. These events also contain prompt photons
 which tend to be isolated and have good shower shape. The cross section of this 
@@ -198,12 +197,10 @@ number of events is plotted and a flat line is fitted.}
 The systematic uncertainty on the background estimation comes from the assumption 
 that the control sample accurately estimates the number of selected events. Due
 to the small number of events in the sideband region, the MC alone is used to
-determine the systematic uncertainty. The uncertainty has two components: the
-uncertainty due to a systematic difference between the estimation and the truth 
-in the MC, $\sigma_{\delta}$, and an uncertainty in the values of the estimation 
-and the truth due to the statistics of the MC, $\sigma_{stat}$. These two 
-components are added in quadrature to get the systematic uncertainty assigned to 
-the background estimation (Equation \ref{eq:syst}).
+determine the systematic uncertainty. The uncertainty is taken to be the
+magnitude of the difference between the estimation and the truth in the MC, 
+$\sigma_{\delta}$, added in quadrature to the statistical uncertainty on the 
+knowledge of that value, $\sigma_{stat}$ (Equation \ref{eq:syst}).
 
 \begin{equation}
 \sigma_{total} = \sqrt{\sigma_{\delta}^{2} + \sigma_{stat}^{2}}
@@ -223,8 +220,7 @@ Electroweak processes can contribute real $\MET$ through the neutrino which is
 not detected. The cross section of electroweak processes is much lower than
 that of QCD and this rules out any background due to fakes from jets. There are
 two possible sources of photons: $W\rightarrow e\nu$ where the electron has been
-misidentied as a photon or W/Z with ISR/FSR which is negligible due to the high 
-$\HT$ requirement. \\
+misidentied as a photon or W/Z with ISR/FSR. \\
 
 The $W\rightarrow e\nu$ background is estimated using the MC and by measuring 
 the electron/photon misidentification rate in data. The misidentification rate 
