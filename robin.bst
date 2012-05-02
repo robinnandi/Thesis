@@ -443,7 +443,7 @@ FUNCTION {format.etc}
   if$
   note empty$
     'skip$
-    { note lc.first.letter * }
+    { note * }
   if$
 }
 
@@ -453,11 +453,6 @@ FUNCTION {format.pub.add.year.etc}
   publisher empty$
     { "PUBLISHER" "No publisher for entry " cite$ "." * * warning$ }
     { publisher }
-  if$
-  ", " * *
-  address empty$
-    { "ADDRESS" "Missing address in entry " cite$ * "." * warning$ }
-    { address }
   if$
   ", " * *
   year empty$
@@ -571,11 +566,11 @@ FUNCTION {article}
   "date" format.date paren #0 add.string.check
   note empty$
     'skip$
-    { ", " * note lc.first.letter * }
+    { ", " * note * }
   if$
   arxiv empty$
     'skip$
-    { ", " * arxiv lc.first.letter * }
+    { ", " * arxiv * }
   if$
   fin.entry
   crossref empty$
@@ -617,7 +612,7 @@ FUNCTION {booklet}
   if$
   note empty$
     'skip$
-    { ", " note  lc.first.letter * * }
+    { ", " note  * * }
   if$
   fin.entry
 }
